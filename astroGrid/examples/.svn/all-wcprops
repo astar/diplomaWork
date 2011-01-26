@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/118/astrogrid/trunk/astrogrid/examples
+END
+conesearch_iphas.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/115/astrogrid/trunk/astrogrid/examples/conesearch_iphas.py
+END
+sextractor.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/115/astrogrid/trunk/astrogrid/examples/sextractor.py
+END
+conesearch_2mass.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/115/astrogrid/trunk/astrogrid/examples/conesearch_2mass.py
+END
+montage_2mass.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/115/astrogrid/trunk/astrogrid/examples/montage_2mass.py
+END
+objects.txt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/118/astrogrid/trunk/astrogrid/examples/objects.txt
+END
+siapsearch.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/118/astrogrid/trunk/astrogrid/examples/siapsearch.py
+END
+conesearch_sdss.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/118/astrogrid/trunk/astrogrid/examples/conesearch_sdss.py
+END
+siapsearch_xmlrpc.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/118/astrogrid/trunk/astrogrid/examples/siapsearch_xmlrpc.py
+END

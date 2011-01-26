@@ -1,0 +1,53 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -N 3 -A "weka.core.EuclideanDistance -R first-last" -I 500 -S 10
+Relation:     Galaxy-Star-QSO
+Instances:    298
+Attributes:   4
+              ug
+              gr
+              ri
+Ignored:
+              grp
+Test mode:    Classes to clusters evaluation on training data
+=== Model and evaluation on training set ===
+
+
+kMeans
+======
+
+Number of iterations: 10
+Within cluster sum of squared errors: 13.11235504764106
+Missing values globally replaced with mean/mode
+
+Cluster centroids:
+                         Cluster#
+Attribute    Full Data          0          1          2
+                 (298)       (58)      (151)       (89)
+=======================================================
+ug              0.9843     0.5452     1.5222     0.3579
+gr               0.434     0.0096     0.7108      0.241
+ri              0.2069     -0.086     0.3423      0.168
+
+
+Clustered Instances
+
+0       58 ( 19%)
+1      151 ( 51%)
+2       89 ( 30%)
+
+
+Class attribute: grp
+Classes to Clusters:
+
+  0  1  2  <-- assigned to cluster
+ 29 54 17 | 1
+  0 97  2 | 2
+ 29  0 70 | 3
+
+Cluster 0 <-- 1
+Cluster 1 <-- 2
+Cluster 2 <-- 3
+
+Incorrectly clustered instances :	102.0	 34.2282 %
+

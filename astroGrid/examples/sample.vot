@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VOTABLE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xmlns=http://www.ivoa.net/xml/VOTable/v1.1">
+ <DESCRIPTION>
+   VizieR Astronomical Server: vizier.u-strasbg.fr 	2006-04-26T08:07:13
+   Explanations and Statistics of UCDs:			See LINK below
+   In case of problem, please report to:	question@simbad.u-strasbg.fr
+ </DESCRIPTION>
+<!-- VOTable description at http://www.ivoa.net/Documents/latest/VOT.html -->
+
+<DEFINITIONS>
+  <COOSYS ID="J2000" system="eq_FK5" equinox="J2000"/>
+</DEFINITIONS>
+
+
+<!-- Parameters used for the Query:
+ -to=4
+ -from=-2
+ -this=-4
+ -source=
+ -out.max=50
+ -out.form=XML-VOTable
+ !-ignore=-to=!*;-4;=  ReSubmit
+ -order=I
+ -c=245.0 54.5
+ -c.eq=J2000
+ -oc.form=dec
+ -c.r= 10
+ -c.u=deg
+ -c.geom=r
+ -out.add=_r
+ -out.add=_RA*-c.eq,_DE*-c.eq
+ -sort=_r
+ -source=VII/248/vv06
+ -out=Cl
+ -out=nR
+ -out=Name
+ -out=RAJ2000
+ -out=DEJ2000
+ -out=n_RAh
+ -out=l_z
+ -out=z
+ -out=Sp
+ -out=n_Vmag
+ -out=Vmag
+ -out=r_z
+ -meta.ucd=0
+ -->
+<INFO ID="Ref" name="-ref" value="VOTx13931"/>
+<INFO ID="Target" name="-c" value="245.000000+54.500000,rm=600."/>
+
+<RESOURCE ID="yCat_7248" name="VII/248">
+  <DESCRIPTION>Quasars and Active Galactic Nuclei (12th Ed.) (Veron+ 2006)</DESCRIPTION>
+  <TABLE ID="VII_248_vv06" name="VII/248/vv06">
+    <DESCRIPTION>Quasars (M_v_&lt;-23), BL Lac and AGNs(M_v_&gt;-23)</DESCRIPTION>
+    <!-- Now comes the definition of each field -->
+    <FIELD name="_r" ucd="POS_ANG_DIST_GENERAL" datatype="double" width="8" precision="5" unit="deg">
+      <DESCRIPTION>Distance from center (RAJ2000=16 20 00.0, DEJ2000=+54 30 00)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="_RAJ2000" ucd="POS_EQ_RA_MAIN" ref="J2000" datatype="float" width="8" precision="4" unit="deg">
+      <DESCRIPTION>Right ascension (FK5) Equinox=J2000. (computed by VizieR, not part of the original data)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="_DEJ2000" ucd="POS_EQ_DEC_MAIN" ref="J2000" datatype="float" width="8" precision="4" unit="deg">
+      <DESCRIPTION>Declination (FK5) Equinox=J2000. (computed by VizieR, not part of the original data)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="Cl" ucd="CLASS_OBJECT" datatype="char">
+      <DESCRIPTION>Class, as {\bf Q} (quasar, M_v_&lt;-23), {\bf B} (BL Lac) and {\bf A} (Active galaxy nucleus, M_v_&gt;-23)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="nR" ucd="CODE_MISC" datatype="char">
+      <DESCRIPTION>[*] '*' if not detected in radio (1)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="Name" ucd="ID_IDENTIFIER" datatype="char" arraysize="17*">
+      <DESCRIPTION>Most common name of the object</DESCRIPTION>
+      <LINK href="http://vizier.u-strasbg.fr/viz-bin/VizieR-5?-info=XML&amp;-out.add=.&amp;-source=VII/248/vv06&amp;recno=${recno}"/>
+    </FIELD>
+    <FIELD name="RAJ2000" ucd="POS_EQ_RA_MAIN" ref="J2000" datatype="char" arraysize="10" unit="&quot;h:m:s&quot;">
+      <DESCRIPTION>Right Ascension J2000 (see also n_RAh)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="DEJ2000" ucd="POS_EQ_DEC_MAIN" ref="J2000" datatype="char" arraysize="9" unit="&quot;d:m:s&quot;">
+      <DESCRIPTION>Declination J2000</DESCRIPTION>
+    </FIELD>
+    <FIELD name="n_RAh" ucd="NOTE" datatype="char">
+      <DESCRIPTION>[AOR] Approximative/Optical/Radio position (2)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="l_z" ucd="CODE_LIMIT" datatype="char">
+      <DESCRIPTION>[&gt;*] limit or method flag on z (4)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="z" ucd="REDSHIFT_HC" datatype="float" width="6" precision="3">
+      <DESCRIPTION>? redshift</DESCRIPTION>
+      <VALUES null=""/>
+    </FIELD>
+    <FIELD name="Sp" ucd="CLASS_OBJECT" datatype="char" arraysize="4">
+      <DESCRIPTION>[S0-9?HPQBLbhin. ] Spectrum classification (3)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="n_Vmag" ucd="NOTE" datatype="char">
+      <DESCRIPTION>[*BRIJKO] Photographic(*), blue(B), red(R), infra-red (I J K) or photographic O- or J- plates(O)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="Vmag" ucd="PHOT_MAG_V" datatype="float" width="5" precision="2" unit="mag">
+      <DESCRIPTION>? magnitude, V or other (see n_Vmag)</DESCRIPTION>
+      <VALUES null=""/>
+    </FIELD>
+    <FIELD name="r_z" ucd="REFER_CODE" datatype="short" width="4">
+      <DESCRIPTION>[1,2477]? Reference of the redshift</DESCRIPTION>
+      <LINK href="http://vizier.u-strasbg.fr/viz-bin/VizieR-n?-info=XML&amp;-source=VII/248/refs&amp;%2a%231==${r_z}" value="${r_z}"/>
+      <VALUES null=""/>
+    </FIELD>
+    <FIELD name="recno" ucd="RECORD" datatype="int" width="8" type="hidden">
+      <DESCRIPTION>Record number within the original table (starting from 1)</DESCRIPTION>
+      <LINK href="http://vizier.u-strasbg.fr/viz-bin/VizieR-5?-info=XML&amp;-out.add=.&amp;-source=VII/248/vv06&amp;recno=${recno}"/>
+    </FIELD>
+<DATA>      <TABLEDATA>
+<TR><TD>0.25791</TD><TD>245.4375</TD><TD>+54.4564</TD><TD>A</TD><TD> </TD><TD>SBS 1620+545</TD><TD>16 21 45.0</TD><TD>+54 27 23</TD><TD>O</TD><TD> </TD><TD>0.052</TD><TD>S1.9</TD><TD> </TD><TD>15.56</TD><TD>365</TD><TD>104754</TD></TR>
+<TR><TD>0.46130</TD><TD>244.2342</TD><TD>+54.6250</TD><TD>A</TD><TD>*</TD><TD>ELAIS J16169+5437</TD><TD>16 16 56.2</TD><TD>+54 37 30</TD><TD>O</TD><TD> </TD><TD>0.454</TD><TD>S1  </TD><TD> </TD><TD>19.21</TD><TD>1763</TD><TD>104708</TD></TR>
+<TR><TD>0.66150</TD><TD>243.8608</TD><TD>+54.5014</TD><TD>Q</TD><TD>*</TD><TD>ELAIS J16154+5430</TD><TD>16 15 26.6</TD><TD>+54 30 05</TD><TD>O</TD><TD> </TD><TD>1.367</TD><TD>    </TD><TD> </TD><TD>19.40</TD><TD>1763</TD><TD>70633</TD></TR>
+<TR><TD>0.67356</TD><TD>243.8408</TD><TD>+54.5303</TD><TD>Q</TD><TD>*</TD><TD>SBS 1614+546</TD><TD>16 15 21.8</TD><TD>+54 31 49</TD><TD>O</TD><TD> </TD><TD>0.474</TD><TD>    </TD><TD> </TD><TD>18.00</TD><TD>157</TD><TD>70624</TD></TR>
+<TR><TD>0.69077</TD><TD>243.9313</TD><TD>+54.8081</TD><TD>Q</TD><TD>*</TD><TD>ELAIS J16157+5448</TD><TD>16 15 43.5</TD><TD>+54 48 29</TD><TD>O</TD><TD> </TD><TD>1.692</TD><TD>    </TD><TD> </TD><TD>18.23</TD><TD>1763</TD><TD>70655</TD></TR>
+<TR><TD>0.87404</TD><TD>243.5296</TD><TD>+54.3219</TD><TD>A</TD><TD>*</TD><TD>FN1-018</TD><TD>16 14 07.1</TD><TD>+54 19 19</TD><TD>O</TD><TD> </TD><TD>0.085</TD><TD>S   </TD><TD>R</TD><TD>18.92</TD><TD>537</TD><TD>104666</TD></TR>
+<TR><TD>1.15874</TD><TD>246.9671</TD><TD>+54.3206</TD><TD>Q</TD><TD> </TD><TD>RX J16278+5419</TD><TD>16 27 52.1</TD><TD>+54 19 14</TD><TD>R</TD><TD> </TD><TD>0.315</TD><TD>    </TD><TD> </TD><TD>17.00</TD><TD>2292</TD><TD>71275</TD></TR>
+<TR><TD>1.31547</TD><TD>245.9963</TD><TD>+55.6856</TD><TD>Q</TD><TD>*</TD><TD>CADIS 1622+5547</TD><TD>16 23 59.1</TD><TD>+55 41 08</TD><TD>O</TD><TD> </TD><TD>2.260</TD><TD>    </TD><TD>O</TD><TD>21.53</TD><TD>2390</TD><TD>71048</TD></TR>
+<TR><TD>1.36171</TD><TD>246.1004</TD><TD>+55.7075</TD><TD>Q</TD><TD>*</TD><TD>CADIS 1623+5549B</TD><TD>16 24 24.1</TD><TD>+55 42 27</TD><TD>O</TD><TD> </TD><TD>1.570</TD><TD>    </TD><TD>R</TD><TD>21.58</TD><TD>2390</TD><TD>71072</TD></TR>
+<TR><TD>1.36236</TD><TD>246.0879</TD><TD>+55.7119</TD><TD>Q</TD><TD>*</TD><TD>CADIS 1623+5549A</TD><TD>16 24 21.1</TD><TD>+55 42 43</TD><TD>O</TD><TD> </TD><TD>2.270</TD><TD>    </TD><TD>R</TD><TD>21.84</TD><TD>2390</TD><TD>71069</TD></TR>
+<TR><TD>1.36776</TD><TD>246.2038</TD><TD>+55.6817</TD><TD>Q</TD><TD>*</TD><TD>CADIS 1623+5547</TD><TD>16 24 48.9</TD><TD>+55 40 54</TD><TD>O</TD><TD> </TD><TD>3.720</TD><TD>    </TD><TD>R</TD><TD>21.15</TD><TD>2390</TD><TD>71095</TD></TR>
+<TR><TD>1.38075</TD><TD>246.0392</TD><TD>+55.7464</TD><TD>Q</TD><TD>*</TD><TD>CADIS 1623+5551A</TD><TD>16 24 09.4</TD><TD>+55 44 47</TD><TD>O</TD><TD> </TD><TD>1.130</TD><TD>    </TD><TD>R</TD><TD>20.89</TD><TD>2390</TD><TD>71057</TD></TR>
+<TR><TD>1.38411</TD><TD>246.0538</TD><TD>+55.7461</TD><TD>Q</TD><TD>*</TD><TD>CADIS 1623+5551B</TD><TD>16 24 12.9</TD><TD>+55 44 46</TD><TD>O</TD><TD> </TD><TD>2.800</TD><TD>    </TD><TD>R</TD><TD>20.25</TD><TD>2390</TD><TD>71060</TD></TR>
+<TR><TD>1.39653</TD><TD>242.7900</TD><TD>+53.9689</TD><TD>A</TD><TD>*</TD><TD>MCG+098.26.063</TD><TD>16 11 09.6</TD><TD>+53 58 08</TD><TD>O</TD><TD> </TD><TD>0.064</TD><TD>S2  </TD><TD>R</TD><TD>16.84</TD><TD>537</TD><TD>104601</TD></TR>
+<TR><TD>1.40331</TD><TD>246.2492</TD><TD>+55.7078</TD><TD>Q</TD><TD>*</TD><TD>CADIS 1623+5549</TD><TD>16 24 59.8</TD><TD>+55 42 28</TD><TD>O</TD><TD> </TD><TD>2.410</TD><TD>    </TD><TD>R</TD><TD>18.68</TD><TD>2390</TD><TD>71103</TD></TR>
+<TR><TD>1.43720</TD><TD>246.9842</TD><TD>+55.3756</TD><TD>Q</TD><TD> </TD><TD>PG 1626+554</TD><TD>16 27 56.2</TD><TD>+55 22 32</TD><TD>O</TD><TD> </TD><TD>0.132</TD><TD>S1.0</TD><TD> </TD><TD>15.68</TD><TD>254</TD><TD>71278</TD></TR>
+<TR><TD>1.44188</TD><TD>246.0567</TD><TD>+55.8094</TD><TD>Q</TD><TD>*</TD><TD>CADIS 1623+5555A</TD><TD>16 24 13.6</TD><TD>+55 48 34</TD><TD>O</TD><TD> </TD><TD>3.360</TD><TD>    </TD><TD>R</TD><TD>21.97</TD><TD>2390</TD><TD>71062</TD></TR>
+<TR><TD>1.44360</TD><TD>246.1096</TD><TD>+55.7969</TD><TD>A</TD><TD>*</TD><TD>CADIS 1623+5554</TD><TD>16 24 26.3</TD><TD>+55 47 49</TD><TD>O</TD><TD> </TD><TD>0.470</TD><TD>S   </TD><TD>R</TD><TD>20.11</TD><TD>2390</TD><TD>104785</TD></TR>
+<TR><TD>1.47824</TD><TD>246.1971</TD><TD>+55.8106</TD><TD>A</TD><TD>*</TD><TD>CADIS 1623+5555B</TD><TD>16 24 47.3</TD><TD>+55 48 38</TD><TD>O</TD><TD> </TD><TD>1.430</TD><TD>    </TD><TD>R</TD><TD>22.35</TD><TD>2390</TD><TD>104789</TD></TR>
+<TR><TD>1.53776</TD><TD>242.5296</TD><TD>+53.9706</TD><TD>Q</TD><TD>*</TD><TD>SDSS J16101+5358</TD><TD>16 10 07.1</TD><TD>+53 58 14</TD><TD>O</TD><TD> </TD><TD>2.030</TD><TD>    </TD><TD> </TD><TD>19.14</TD><TD>3</TD><TD>70340</TD></TR>
+<TR><TD>1.55689</TD><TD>243.1596</TD><TD>+53.3817</TD><TD>Q</TD><TD>*</TD><TD>SDSS J16126+5322</TD><TD>16 12 38.3</TD><TD>+53 22 54</TD><TD>O</TD><TD> </TD><TD>2.138</TD><TD>    </TD><TD> </TD><TD>18.06</TD><TD>3</TD><TD>70471</TD></TR>
+<TR><TD>1.56366</TD><TD>244.9263</TD><TD>+52.9369</TD><TD>Q</TD><TD> </TD><TD>SBS 1618+530</TD><TD>16 19 42.3</TD><TD>+52 56 13</TD><TD>O</TD><TD> </TD><TD>2.347</TD><TD>    </TD><TD>R</TD><TD>16.70</TD><TD>2009</TD><TD>70824</TD></TR>
+<TR><TD>1.57799</TD><TD>243.4096</TD><TD>+53.2308</TD><TD>Q</TD><TD>*</TD><TD>SDSS J16136+5313</TD><TD>16 13 38.3</TD><TD>+53 13 51</TD><TD>O</TD><TD> </TD><TD>1.306</TD><TD>    </TD><TD> </TD><TD>18.62</TD><TD>3</TD><TD>70531</TD></TR>
+<TR><TD>1.61546</TD><TD>243.0042</TD><TD>+53.3908</TD><TD>A</TD><TD>*</TD><TD>SDSS J16120+5323</TD><TD>16 12 01.0</TD><TD>+53 23 27</TD><TD>O</TD><TD> </TD><TD>0.162</TD><TD>S2  </TD><TD> </TD><TD>19.06</TD><TD>875</TD><TD>104622</TD></TR>
+<TR><TD>1.67391</TD><TD>242.2367</TD><TD>+54.0536</TD><TD>Q</TD><TD>*</TD><TD>SDSS J16089+5403</TD><TD>16 08 56.8</TD><TD>+54 03 13</TD><TD>O</TD><TD> </TD><TD>1.915</TD><TD>    </TD><TD> </TD><TD>19.49</TD><TD>3</TD><TD>70267</TD></TR>
+<TR><TD>1.68365</TD><TD>242.3050</TD><TD>+53.9081</TD><TD>Q</TD><TD> </TD><TD>SDSS J16092+5354</TD><TD>16 09 13.2</TD><TD>+53 54 29</TD><TD>O</TD><TD> </TD><TD>0.992</TD><TD>    </TD><TD> </TD><TD>18.43</TD><TD>3</TD><TD>70286</TD></TR>
+<TR><TD>1.72062</TD><TD>243.0633</TD><TD>+53.2131</TD><TD>Q</TD><TD>*</TD><TD>SDSS J16122+5312</TD><TD>16 12 15.2</TD><TD>+53 12 47</TD><TD>O</TD><TD> </TD><TD>1.301</TD><TD>    </TD><TD> </TD><TD>19.39</TD><TD>3</TD><TD>70456</TD></TR>
+<TR><TD>1.74749</TD><TD>242.4708</TD><TD>+53.5789</TD><TD>Q</TD><TD>*</TD><TD>SDSS J16098+5334</TD><TD>16 09 53.0</TD><TD>+53 34 44</TD><TD>O</TD><TD> </TD><TD>1.212</TD><TD>    </TD><TD> </TD><TD>18.18</TD><TD>3</TD><TD>70328</TD></TR>
+<TR><TD>1.75988</TD><TD>242.7783</TD><TD>+53.3231</TD><TD>A</TD><TD>*</TD><TD>SDSS J16111+5319</TD><TD>16 11 06.8</TD><TD>+53 19 23</TD><TD>O</TD><TD> </TD><TD>0.137</TD><TD>S2  </TD><TD> </TD><TD>19.45</TD><TD>875</TD><TD>104598</TD></TR>
+<TR><TD>1.76706</TD><TD>242.0154</TD><TD>+54.8839</TD><TD>A</TD><TD>*</TD><TD>FN1-009</TD><TD>16 08 03.7</TD><TD>+54 53 02</TD><TD>O</TD><TD> </TD><TD>0.052</TD><TD>S2  </TD><TD>R</TD><TD>16.58</TD><TD>537</TD><TD>104540</TD></TR>
+<TR><TD>1.77225</TD><TD>242.7404</TD><TD>+53.3294</TD><TD>Q</TD><TD>*</TD><TD>SDSS J16109+5319</TD><TD>16 10 57.7</TD><TD>+53 19 46</TD><TD>O</TD><TD> </TD><TD>1.576</TD><TD>    </TD><TD> </TD><TD>19.56</TD><TD>3</TD><TD>70387</TD></TR>
+<TR><TD>1.79620</TD><TD>242.1179</TD><TD>+53.8808</TD><TD>Q</TD><TD>*</TD><TD>SDSS J16084+5352</TD><TD>16 08 28.3</TD><TD>+53 52 51</TD><TD>O</TD><TD> </TD><TD>2.960</TD><TD>    </TD><TD> </TD><TD>21.07</TD><TD>3</TD><TD>70235</TD></TR>
+<TR><TD>1.80414</TD><TD>242.4321</TD><TD>+53.5111</TD><TD>Q</TD><TD>*</TD><TD>SDSS J16097+5330</TD><TD>16 09 43.7</TD><TD>+53 30 40</TD><TD>O</TD><TD> </TD><TD>1.328</TD><TD>    </TD><TD> </TD><TD>19.02</TD><TD>3</TD><TD>70315</TD></TR>
+<TR><TD>1.80429</TD><TD>242.4613</TD><TD>+53.4858</TD><TD>Q</TD><TD>*</TD><TD>SDSS J16098+5329</TD><TD>16 09 50.7</TD><TD>+53 29 09</TD><TD>O</TD><TD> </TD><TD>1.716</TD><TD>    </TD><TD> </TD><TD>18.30</TD><TD>3</TD><TD>70323</TD></TR>
+<TR><TD>1.81892</TD><TD>243.6367</TD><TD>+52.8700</TD><TD>A</TD><TD> </TD><TD>SDSS J16145+5252</TD><TD>16 14 32.8</TD><TD>+52 52 12</TD><TD>O</TD><TD> </TD><TD>0.146</TD><TD>S2  </TD><TD> </TD><TD>18.52</TD><TD>875</TD><TD>104676</TD></TR>
+<TR><TD>1.86159</TD><TD>243.3333</TD><TD>+52.9211</TD><TD>A</TD><TD>*</TD><TD>SDSS J16133+5255</TD><TD>16 13 20.0</TD><TD>+52 55 16</TD><TD>O</TD><TD> </TD><TD>0.166</TD><TD>S2  </TD><TD> </TD><TD>19.27</TD><TD>875</TD><TD>104646</TD></TR>
+<TR><TD>1.86273</TD><TD>242.9712</TD><TD>+53.0739</TD><TD>A</TD><TD>*</TD><TD>SDSS J16118+5304</TD><TD>16 11 53.1</TD><TD>+53 04 26</TD><TD>O</TD><TD> </TD><TD>0.088</TD><TD>S1  </TD><TD> </TD><TD>18.46</TD><TD>875</TD><TD>104617</TD></TR>
+<TR><TD>1.86504</TD><TD>242.2871</TD><TD>+53.5314</TD><TD>Q</TD><TD>*</TD><TD>SDSS J16091+5331</TD><TD>16 09 08.9</TD><TD>+53 31 53</TD><TD>O</TD><TD> </TD><TD>0.816</TD><TD>    </TD><TD> </TD><TD>18.79</TD><TD>3</TD><TD>70281</TD></TR>
+<TR><TD>1.88161</TD><TD>242.1483</TD><TD>+53.6392</TD><TD>A</TD><TD> </TD><TD>SDSS J16085+5338</TD><TD>16 08 35.6</TD><TD>+53 38 21</TD><TD>O</TD><TD> </TD><TD>0.108</TD><TD>S2  </TD><TD> </TD><TD>18.31</TD><TD>875</TD><TD>104551</TD></TR>
+<TR><TD>1.88723</TD><TD>242.6854</TD><TD>+53.1969</TD><TD>A</TD><TD>*</TD><TD>SDSS J16107+5311</TD><TD>16 10 44.5</TD><TD>+53 11 49</TD><TD>O</TD><TD> </TD><TD>0.174</TD><TD>S1  </TD><TD> </TD><TD>19.19</TD><TD>875</TD><TD>104589</TD></TR>
+<TR><TD>1.89127</TD><TD>243.2212</TD><TD>+52.9286</TD><TD>Q</TD><TD>*</TD><TD>Q J1612+5255</TD><TD>16 12 53.1</TD><TD>+52 55 43</TD><TD>O</TD><TD> </TD><TD>4.950</TD><TD>    </TD><TD>R</TD><TD>22.21</TD><TD>1911</TD><TD>70497</TD></TR>
+<TR><TD>1.94695</TD><TD>243.6325</TD><TD>+52.7300</TD><TD>A</TD><TD>*</TD><TD>SDSS J16145+5243</TD><TD>16 14 31.8</TD><TD>+52 43 48</TD><TD>O</TD><TD> </TD><TD>0.247</TD><TD>S1  </TD><TD> </TD><TD>19.39</TD><TD>3</TD><TD>104675</TD></TR>
+<TR><TD>1.96908</TD><TD>241.6275</TD><TD>+54.3353</TD><TD>Q</TD><TD>*</TD><TD>SDSS J16065+5420</TD><TD>16 06 30.6</TD><TD>+54 20 07</TD><TD>O</TD><TD> </TD><TD>0.820</TD><TD>    </TD><TD> </TD><TD>18.99</TD><TD>3</TD><TD>70103</TD></TR>
+<TR><TD>1.98654</TD><TD>243.2400</TD><TD>+52.8092</TD><TD>Q</TD><TD>*</TD><TD>SDSS J16129+5248</TD><TD>16 12 57.6</TD><TD>+52 48 33</TD><TD>O</TD><TD> </TD><TD>1.214</TD><TD>    </TD><TD> </TD><TD>19.82</TD><TD>3</TD><TD>70499</TD></TR>
+<TR><TD>1.98998</TD><TD>243.8733</TD><TD>+52.6258</TD><TD>A</TD><TD>*</TD><TD>SDSS J16154+5237</TD><TD>16 15 29.6</TD><TD>+52 37 33</TD><TD>O</TD><TD> </TD><TD>0.259</TD><TD>S1  </TD><TD> </TD><TD>18.79</TD><TD>3</TD><TD>104688</TD></TR>
+<TR><TD>1.99163</TD><TD>243.2575</TD><TD>+52.7969</TD><TD>Q</TD><TD> </TD><TD>SDSS J16130+5247</TD><TD>16 13 01.8</TD><TD>+52 47 49</TD><TD>O</TD><TD> </TD><TD>0.528</TD><TD>    </TD><TD> </TD><TD>18.93</TD><TD>3</TD><TD>70502</TD></TR>
+<TR><TD>1.99553</TD><TD>242.3579</TD><TD>+53.2522</TD><TD>A</TD><TD>*</TD><TD>SDSS J16094+5315</TD><TD>16 09 25.9</TD><TD>+53 15 08</TD><TD>O</TD><TD> </TD><TD>0.088</TD><TD>S2  </TD><TD> </TD><TD>18.16</TD><TD>875</TD><TD>104565</TD></TR>
+<TR><TD>2.02524</TD><TD>241.5979</TD><TD>+54.0986</TD><TD>Q</TD><TD> </TD><TD>TEX 1605+542</TD><TD>16 06 23.5</TD><TD>+54 05 55</TD><TD>O</TD><TD> </TD><TD>0.875</TD><TD>S1  </TD><TD> </TD><TD>17.92</TD><TD>157</TD><TD>70094</TD></TR>
+<TR><TD>2.06601</TD><TD>241.6579</TD><TD>+53.8356</TD><TD>Q</TD><TD>*</TD><TD>SDSS J16066+5350</TD><TD>16 06 37.9</TD><TD>+53 50 08</TD><TD>O</TD><TD> </TD><TD>2.943</TD><TD>    </TD><TD> </TD><TD>20.11</TD><TD>3</TD><TD>70112</TD></TR>
+<TR><TD>2.06764</TD><TD>241.4421</TD><TD>+54.6525</TD><TD>A</TD><TD>*</TD><TD>SDSS J16057+5439</TD><TD>16 05 46.1</TD><TD>+54 39 09</TD><TD>O</TD><TD> </TD><TD>0.245</TD><TD>S1  </TD><TD> </TD><TD>18.93</TD><TD>3</TD><TD>104500</TD></TR>
+</TABLEDATA></DATA>
+  </TABLE>
+</RESOURCE>
+
+</VOTABLE>

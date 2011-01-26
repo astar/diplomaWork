@@ -1,0 +1,42 @@
+#!/usr/bin/python
+"""
+Given a list containing just the name of the objects, resolve them and perform 
+a SIAP search saving the resultant VOTables and images to MySpace.
+"""
+import os
+from astrogrid import SiapSearch
+from astrogrid import sesame
+
+inputfile='objects.txt'
+
+# Read file skipping lines which start with hash
+objects = [items.strip() for items in open(inputfile).readlines() if items[0]<>'#']
+
+# Initialize siap service search and name resolver
+siap = SiapSearch('ivo://roe.ac.uk/services/SIAPDR4-images')
+s = sesame()
+
+# Loop for each object of the list, query Vizier to get coordinates and execute
+# the SIAP search. The resultant VOTable is then saved to a file in the local
+# directory named after the object.
+
+# Create out/ directory in local disk.
+#if not os.access('out', os.R_OK): os.makedirs('out')
+#
+#for obj in objects:
+#   coords, ra, dec = s.resolve(obj)
+#   votable = siap.execute(ra, dec, 30.0/3600.0)
+#   open(os.path.join('out', '%s.vot' % obj), 'w').write(votable)
+    
+# Same loop as above. Now we save the VOTables to MySpace
+# We convert spaces to underscores in the saved filename due to MySpace complains
+# We do not overwrite existing files. We assume here that the username, password
+# and community credentials are specified in the configuration file (see docs)
+from astrogrid import acr
+acr.login()
+
+for obj in objects:
+    coords, ra, dec = s.resolve(obj)
+    odir = '#siap/%s' % obj.replace(' ','_')
+    siap.execute(ra, dec, 30.0/3600.0, saveAs=odir+'/sdssdr4.vot', \
+                 saveDatasets=odir)
