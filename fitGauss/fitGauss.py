@@ -67,7 +67,7 @@ x, flag = opt.leastsq(residuals, x0, args=(ydata, xdata))
 
 
 if 1:
-    print amplitude
+    print amplitude, x[1]
     print 'emission: ' + str(emission)
     print 'fit: ' +  str(x)
     plot(file,xdata, ydata, model, x, title )
