@@ -30,11 +30,11 @@ def model(t, coeffs):
 def plot(file,xdata,ydata,model,x,title):
     fig = plt.figure()
     ax = fig.add_subplot(111)
-    dGraph = ax.plot(xdata, ydata, 'r+')
+    dGraph = ax.plot(xdata, ydata, 'r')
     mGraph = ax.plot(xdata, model(xdata, x),'b')
     ax.set_title(title)
     fig.savefig(file[:-4] + '.png')
-    
+    fig.show()
 def saveData(name,emisson,value):
     f = open('emission.dat','a')
     sep = ','
@@ -56,8 +56,7 @@ else:
 # initial guess
 noise = np.median(ydata)
 center = spLine
-width = 5
-
+width = 1
 
 x0 = np.array([noise, amplitude, spLine, width], dtype=float)
 
@@ -67,7 +66,7 @@ def residuals(coeffs, y, t):
 x, flag = opt.leastsq(residuals, x0, args=(ydata, xdata))
 
 
-if emission:
+if 1:
     print amplitude
     print 'emission: ' + str(emission)
     print 'fit: ' +  str(x)
