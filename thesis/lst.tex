@@ -1,0 +1,33 @@
+% vylepseny listing z http://texnik.de/TeXnik/listings/listing0.pdf
+ \definecolor{hellgelb}{rgb}{1,1,0.8}
+ \definecolor{colKeys}{rgb}{0,0,1}
+ \definecolor{colIdentifier}{rgb}{0,0,0}
+ \definecolor{colComments}{rgb}{1,0,0}
+ \definecolor{colString}{rgb}{0,0.5,0}
+ \lstset{%
+   language={SQL},%
+    morekeywords={AND,ASC,avg,CHECK,COMMIT,count,DECODE,DESC,DISTINCT,%
+                 GROUP,IN,LIKE,NUMBER,ROLLBACK,SUBSTR,sum,VARCHAR2}%
+ }
+
+ \lstset{%
+     float=hbp,%
+     basicstyle=\ttfamily\small, %
+%     identifierstyle=\color{colIdentifier}, %
+%     keywordstyle=\color{colKeys}, %
+     stringstyle=\color{colString}, %
+     commentstyle=\color{colComments}, %
+     columns=flexible, %
+     tabsize=4, %
+     frame=single, %
+     extendedchars=true, %
+     showspaces=false, %
+     showstringspaces=false, %
+   numbers=left, %
+   numberstyle=\tiny, %
+   breaklines=true, %
+   backgroundcolor=\color{hellgelb}, %
+   breakautoindent=true, %
+   captionpos=b%
+ }
+

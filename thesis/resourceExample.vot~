@@ -1,0 +1,67 @@
+\begin{lstlisting}[frame=single]
+<?xml version='1.0'?>
+<VOTABLE version="1.1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.1 http://www.ivoa.net/xml/VOTable/v1.1"
+ xmlns="http://www.ivoa.net/xml/VOTable/v1.1">
+<!--
+ !  VOTable written by STIL version 3.0 (uk.ac.starlink.votable.VOTableWriter)
+ !  at 2011-03-24T00:45:59
+ !-->
+<RESOURCE>
+<TABLE nrows="1">
+<LINK title="Registry Location" href="http://registry.euro-vo.org/services/RegistrySearch"/>
+<PARAM arraysize="23" datatype="char" name="Registry Query" value="shortName like 'AIASCR'">
+<DESCRIPTION>Text of query made to the registry</DESCRIPTION>
+</PARAM>
+<FIELD arraysize="*" datatype="char" name="ID">
+<DESCRIPTION>Registry identifier URI for resource</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="*" datatype="char" name="ShortName">
+<DESCRIPTION>Short name for resource</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="*" datatype="char" name="Title">
+<DESCRIPTION>Title for resource</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="*" datatype="char" name="Publisher">
+<DESCRIPTION>Person or organisation responsible for publishing the resource</DESCRIPTION>
+</FIELD>
+<!-- Omitted column Subjects(String[*]) -->
+<FIELD arraysize="*" datatype="char" name="ReferenceURL">
+<DESCRIPTION>URL describing the resource</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="*" datatype="char" name="Contact">
+<DESCRIPTION>Person to contact concerning this resource</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="*" datatype="char" name="CapDesc">
+<DESCRIPTION>Description of the service capability</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="*" datatype="char" name="CapStdId">
+<DESCRIPTION>Standard ID URI describing the type of service capability provided</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="*" datatype="char" name="AccessURL">
+<DESCRIPTION>Access URL for the service capability</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="*" datatype="char" name="CapVersion">
+<DESCRIPTION>Version of the service capability provided</DESCRIPTION>
+</FIELD>
+<DATA>
+<TABLEDATA>
+  <TR>
+    <TD>ivo://asu.cas.cz</TD>
+    <TD>AIASCR</TD>
+    <TD>Astronomical Institute of the Academy of Sciences of the Czech Republic Naming Authority</TD>
+    <TD>Astronomical Institute of the Academy of Sciences of the Czech Republic</TD>
+    <TD>http://stelweb.asu.cas.cz/web/index/index-en.php</TD>
+    <TD>Petr Skoda &lt;skoda@sunstel.asu.cas.cz&gt;</TD>
+    <TD></TD>
+    <TD></TD>
+    <TD></TD>
+    <TD></TD>
+  </TR>
+</TABLEDATA>
+</DATA>
+</TABLE>
+</RESOURCE>
+</VOTABLE>
+\end{lstlisting}

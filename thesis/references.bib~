@@ -1,0 +1,47 @@
+% ------------------------------------------------------------------------
+% BIBLIOGRAPHY FILE
+% ------------------------------------------------------------------------
+
+@article{hanisch2010international,
+  title={{The international virtual observatory}},
+  author={Hanisch, RJ and Quinn, PJ},
+  journal={Retrieved from http://www. ivoa. net/pub/info/TheIVOA. pdf on},
+  volume={24},
+  year={2010}
+}
+
+@article{williams2004virtual,
+  title={{Virtual Observatory Architecture Overview}},
+  author={Williams, R. and Hanischet, B. and others},
+  journal={Retrieved October},
+  volume={24},
+  pages={2008},
+  year={2004}
+}
+
+@article{berners1990worldwideweb,
+  title={{WorldWideWeb: Proposal for a HyperText project}},
+  author={Berners-Lee, T. and Cailliau, R.},
+  journal={European Particle Physics Laboratory (CERN)},
+  year={1990}
+}
+
+@article{gray2007,
+  title={{An RDF version of the VO Registry}},
+  author={Norman Gray},
+  journal={IVOA Note (V1.0, 2007 September 20) },
+  volume={},
+  year={2007}
+}
+
+
+@article{bensonivoa,
+  title={{IVOA Registry Interfaces}},
+  author={Benson, K. and Plante, R. and Auden, E. and others},
+  journal={IVOA Working Draft}
+}
+
+
+
+
+% ------------------------------------------------------------------------

@@ -1,0 +1,110 @@
+%%% Thesis Introduction --------------------------------------------------
+\chapter*{Introduction}
+% \ifpdf
+%     \graphicspath{{Introduction/IntroductionFigs/PNG/}{Introduction/IntroductionFigs/PDF/}{Introduction/IntroductionFigs/}}
+% \else
+%     \graphicspath{{Introduction/IntroductionFigs/EPS/}{Introduction/IntroductionFigs/}}
+% \fi
+
+%\pagestyle{empty}
+
+%\thispagestyle{plain}
+\renewcommand{\LettrineFontHook}{\color{red}}
+
+
+\lettrine[lines = 3, loversize=-0.1, lraise=0.1]{F}rom the dawn of existence astronomy has always been starved for
+data, but in the last few decades the situation has changed and now we
+are facing the data flood of biblical proportions. The data are not
+just increasing in size but in complexity and
+dimensionality. \cite{ballastroinformatics} Astroinformatics is the
+new field of science which has emerged from this technology driven
+progress.  Virtual Observatory, Machine learning, Data Mining, Grid
+computing are just few examples of new tools available to
+scientist. 
+
+% \begin{wrapfigure}{r}{0.5\textwidth}
+%   \vspace{25pt}
+%   \begin{center}
+%     \includegraphics[width=0.4\textwidth]{astroinformatics}
+%   \end{center}
+%   \vspace{-10pt}
+%    \caption{Astroinformatics in the context of astronomy \cite{ballastroinformatics} }
+%   \vspace{10pt}
+% \end{wrapfigure}
+
+
+\vspace{10pt}
+\begin{figure}[!htbp]
+  \begin{center}
+    \leavevmode
+    \ifpdf
+    \includegraphics[scale = .8]{astroinformatics}
+    \else
+    \includegraphics[bb = 92 86 545 742, height=6in]{architecture}
+    \fi
+    \caption{Astroinformatics in the context of astronomy \cite{ballastroinformatics} }
+    \label{FigAir}
+  \end{center}
+\end{figure}
+\vspace{-10pt}
+
+
+
+Of course astronomers are not alone and particle physics, biology and
+other sciences are also in the vanguard of the data intensive
+science. This is great opportunity for interdisciplinary
+collaboration. 
+
+This work deals with the problem of semi-automatic procedures for
+finding Be stars candidates in the astronomy surveys. More than
+straight forward process it's trail and error approach probing new
+possibilities with rather interesting that useful results.
+
+The aim of this work is to be introductory to the technologies of
+Virtual Observatory and Data Mining and for this reason it is intended
+to have following properties:
+
+\begin{itemize}
+\item Main Chapters starts with questions answered in the text and
+  diagram to ease orietation,
+\item is full of examples, 
+\item is non-linear in nature,
+\item is meant to be compact and consistent,
+\item is far from complete.
+\end{itemize}
+
+Chapter one is an introduction to the technologies related to Virtual
+Observatory. The motivation behind the concept is given without paying
+too much attention to historical details. Main standards and protocols
+are discussed and explained. Important aspect are demonstrated on
+numerous examples. Chapter two is an introduction to Machine Learning
+and Data Mining in the context of astrophysics. Only methods used in
+practical part of this work are described in detail: Decision Trees
+and Support Vector Machines. Examples of several classifications are
+demonstrated. Third chapter introduces problematic of Be
+stars. Chapter Four is practical application of previously described
+technologies and methods. Training data of confirmed Be stars from
+Ondrejov are correlated with others catalogues to obtain color indexes
+and spectra. Results are processed by Data Mining algorithms using
+several libraries and tools. In the last chapter achieved results are
+critically discussed.
+
+Activities related to this work go beyond this text. Wiki pages were
+created to present the results and discuss related topic with
+supervisor as well as with others scientist around the world. Several
+programs were created to analyze and process acquired data. Source
+codes were maintained by GIT version system allowing easy sharing. All
+software used and produced are open source.
+
+
+
+
+
+
+%%% ----------------------------------------------------------------------
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../thesis"
+%%% End: 

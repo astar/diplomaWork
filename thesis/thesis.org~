@@ -1,0 +1,108 @@
+* Theoretical part
+** Introduction
+
+   Astronomy has become data-rich science. This was predictable and the
+   fact alone it is not very interesting. What is interesting and
+   important is that other sciences (and society in general) has the same
+   problem. This bring great opportunity to use There are two problems
+   with patabyte scale data. 1.) The infrastructure 2.) Data
+   processing. In other words "how to store and connect" and "what do to"
+   with such ammount of data. First problem (or at least the hardware
+   part) is solvable and I will no discuss this issue here.  
+   
+   There is nice analogy with the problem Timothy Burnse Lee was facing
+   during his work on LEP project at CERN in early 90's. There were
+   documents in different formats on different platforms. The World Wide
+   Web was born from this "frustration and misssed opportunities" and He
+   described it later. What is even more related to our problem is what
+   He is working now and it's called "linked data". This is the concept
+   of linking raw data in such a way that computers can understant it. As
+   we will see later this is crucial.
+
+   Second problem is much more complicated. The ammount of data is so
+   large there is no chance humans can possibly even read it. On the
+   other side computers (or more precisicely the software) are very
+   limited in understating and naive visions of artificial intelligence
+   was transformed into more realistic Machine Learning, Data Mining and
+   Knowledge Discovery from Databases. These techniques are described in
+   chapter X and We will see there is lots of limitations. 
+
+
+** Virtual Observatory (VO)
+
+   What is the motivation behind Virtual Observatory? Is data
+   avalanche problem of astronomy only? What is IVOA?  What is Virtual
+   Observatory architecture, standards and protocols?
+
+*** Data avalanche: Opprtunity or disaster?
+    The cumulative compressed data holdings of the ESO archive will
+    reach 1 PetaByte by 2012 \ref{hanisch2010international}. Projects
+    like Large Synoptic Survey Telescope (LSST) will produce about 30
+    TB per night, leading to a total database over the ten years of
+    operations of 60 PB for the raw data. It is clear that such
+    amount of data is not possible transfer over the network. Data
+    storage and processing must be distributed in nature.
+   
+    Also modern surveys will cover the sky in different wavebands, from
+    gamma- and X-rays, optical, infrared, through to radio. The ability
+    to crossmatch these observations toghether may lead to the new
+    understanding of physical phenomenas.
+
+    Particle physics, neuroscience and other sciences are facing the
+    same chalange. This is an opportunity for interdisciplinary
+    collaboration. There is an interesting analogy with the problem
+    (and the solution) which led to World Wide Web during LEP project
+    at CERN. \ref{berners1990worldwideweb}
+
+*** International Virtual Observatory Alliance (IVOA)
+    What is neccessary is sets of standards and protocols to deal with
+    heterogenous distributed data and the authority which encourages
+    their implementation. Such authority is the International Virtual
+    Observatory Alliance (IVOA). It comprises 19 VO programs from
+    Argentina, Armenia, Australia, Brazil, Canada, China, Europe,
+    France, Germany, Hungary, India, Italy, Japan, Russia, Spain, the
+    United Kingdom, and the United States and inter-governmental
+    organizations (ESA and ESO).\ref{hanisch2010international}
+   
+    http://www.ivoa.net/Documents/
+
+*** Architecture
+    The Virtual Observatory is the necessary “middle layer” framework
+    which connects the Resource Layer to the User Layer in a seamless
+    and transparent manner. The is to improve and unify access to
+    astronomical data and services.
+
+*** VO-Resources
+    
+*** VO-registry
+    Is the standard defined by IVOA for registration of VO-Resources
+
+**** Services
+     Architecture of the VO is Service Oriented
+     
+autonomous, and its boundaries well-defined
+inherently distributed
+
+*** Data Access Protocols
+**** Cone Search Protocol
+**** Simple Image Access Protocol
+**** Simple Spectra Access Protocol
+*** Data Formats
+**** VOTable
+*** Tools
+**** Astrogrid
+***** Python
+****** ATPY
+****** iPython
+****** Matplotlib
+**** Topcat
+**** VODesktop
+** Data Mining
+** Support Vector Machines
+** Decision Trees
+** Clustering
+** Difusion Maps
+** Tools
+*** Weka
+* Practical Part
+
