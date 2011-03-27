@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.3.22)  25 MAR 2011 22:46
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.3.22)  28 MAR 2011 00:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -415,14 +415,7 @@ Package: fncychapleo 1997/04/06 v1.11 LaTeX package (Revised chapters)
 \pyy=\skip60
 \pxx=\skip61
 ) (./thesis.aux (./dedication.aux) (./acknowledgement.aux) (./abstract.aux)
-(./introduction.aux) (./chapter1.aux
-
-LaTeX Warning: Label `FigAir' multiply defined.
-
-
-LaTeX Warning: Label `FigAir' multiply defined.
-
-))
+(./introduction.aux) (./chapter1.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
@@ -439,7 +432,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
 LaTeX Font Info:    ... okay on input line 71.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
 LaTeX Font Info:    ... okay on input line 71.
- (/usr/share/texmf/tex/context/base/supp-pdf.mkii
+
+(/usr/share/texmf/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count118
 \scratchdimen=\dimen147
@@ -564,7 +558,7 @@ File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 \openout2 = `introduction.aux'.
 
  (./introduction.tex
-<pic/astroinformatics.pdf, id=142, 216.81pt x 136.51pt>
+<pic/astroinformatics.pdf, id=140, 216.81pt x 136.51pt>
 File: pic/astroinformatics.pdf Graphic file (type pdf)
 
 <use pic/astroinformatics.pdf>
@@ -588,7 +582,7 @@ Chapter 1.
 LaTeX Font Warning: Font shape `OT1/cmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 18.
 
-<pic/ivoamembers.jpg, id=170, 853.1875pt x 602.25pt>
+<pic/ivoamembers.jpg, id=168, 853.1875pt x 602.25pt>
 File: pic/ivoamembers.jpg Graphic file (type jpg)
  <use pic/ivoamembers.jpg>
 [3
@@ -602,58 +596,60 @@ Missing character: There is no ú in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
- <pic/architecture.png, id=192, 722.7pt x 542.025pt>
+ <pic/architecture.png, id=190, 722.7pt x 542.025pt>
 File: pic/architecture.png Graphic file (type png)
 
 <use pic/architecture.png> [4 <./pic/ivoamembers.jpg>] [5 <./pic/architecture.p
 ng (PNG copy)>] <pic/resource.png, id=209, 576.1525pt x 464.73625pt>
 File: pic/resource.png Graphic file (type png)
 
-<use pic/resource.png> (./resourceExample.vot [6
+<use pic/resource.png> [6
 
-] [7 <./pic/resource.png (PNG copy)>]) <pic/registry.png, id=257, 616.3025pt x 
-806.01125pt>
-File: pic/registry.png Graphic file (type png)
+] [7 <./pic/resource.png (PNG copy)>]
+(./resourceExample.vot [8
 
-<use pic/registry.png>) [8] [9 <./pic/registry.png (PNG copy)>] (./thesis.bbl
-(./thesis.brf)
+]) [9] [10]) [11] (./thesis.bbl (./thesis.brf)
 \tf@brf=\write7
 \openout7 = `thesis.brf'.
 
-) [10
+Missing character: There is no Ô in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Å in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ô in font cmr12!
+)
+[12
 
 
 
-] (./thesis.aux (./dedication.aux) (./acknowledgement.aux)
-(./abstract.aux) (./introduction.aux) (./chapter1.aux))
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+] (./thesis.aux (./dedication.aux) (./acknowledgement.aux) (./abstract.aux)
+(./introduction.aux) (./chapter1.aux)) ) 
 Here is how much of TeX's memory you used:
- 8406 strings out of 493848
- 118945 string characters out of 1152823
- 342647 words of memory out of 3000000
- 11370 multiletter control sequences out of 15000+50000
+ 8561 strings out of 493848
+ 120770 string characters out of 1152823
+ 527766 words of memory out of 3000000
+ 11468 multiletter control sequences out of 15000+50000
  18332 words of font info for 61 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 45i,12n,45p,321b,1713s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
-ve/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/ty
-pe1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-texlive/fonts/type1/public
-/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
-/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb><
-/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/te
-xmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-texlive/f
-onts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
-ts/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt1
-0.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr
-/share/texmf-texlive/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texmf-tex
-live/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis.pdf (16 pages, 634486 bytes).
+ 45i,12n,45p,321b,1709s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf-texlive/fonts/enc/dvi
+ps/base/8r.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.
+pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/
+share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf
+-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fon
+ts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/pub
+lic/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
+/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb>
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/t
+exmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texliv
+e/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/typ
+e1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/public/a
+msfonts/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvb8a
+c.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on thesis.pdf (18 pages, 657302 bytes).
 PDF statistics:
- 352 PDF objects out of 1000 (max. 8388607)
- 91 named destinations out of 1000 (max. 500000)
- 175 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 441 PDF objects out of 1000 (max. 8388607)
+ 149 named destinations out of 1000 (max. 500000)
+ 170 words of extra memory for PDF output out of 10000 (max. 10000000)
 

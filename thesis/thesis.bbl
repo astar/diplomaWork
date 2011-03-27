@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{7}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -20,6 +20,11 @@ T.~Berners-Lee and R.~Cailliau.
 \newblock {WorldWideWeb: Proposal for a HyperText project}.
 \newblock \emph{European Particle Physics Laboratory (CERN)}, 1990.
 
+\bibitem[Council(1995)]{nrc1995}
+National~Research Council.
+\newblock {Preserving Scientiﬁc Data on our Physical Universe}.
+\newblock 1995.
+
 \bibitem[Gray(2007)]{gray2007}
 Norman Gray.
 \newblock {An RDF version of the VO Registry}.
@@ -30,5 +35,10 @@ RJ~Hanisch and PJ~Quinn.
 \newblock {The international virtual observatory}.
 \newblock \emph{Retrieved from http://www. ivoa. net/pub/info/TheIVOA. pdf on},
   24, 2010.
+
+\bibitem[Schlesinger(1997)]{fits1997}
+B.~Schlesinger.
+\newblock {A User’s Guide for the Flexible Image Transport System}.
+\newblock 1997.
 
 \end{thebibliography}

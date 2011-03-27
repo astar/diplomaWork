@@ -31,14 +31,14 @@ There are two important trends in current astronomy surveys:
     TB per night, leading to a total database over the ten years of
     operations of 60 PB for the raw data.
    
-  \item{Complexity:}  Modern surveys will cover the sky in different wavebands, from
+  \item{Complexity:}  Modern surveys will cover the sky in different wave-bands, from
     gamma- and X-rays, optical, infrared, through to radio. The ability
-    to crosscorelate these observations toghether may lead to the new
+    to cross correlate these observations together may lead to the new
     understanding of physical phenomenas.
 \end{itemize}
 
     Such amount of data is not possible transfer over the network. It
-    imply they are heterogenous, distributed and decentralized in nature.
+    imply they are heterogeneous, distributed and decentralized in nature.
 
 
     There is an interesting analogy with the problem (and the
@@ -48,7 +48,7 @@ There are two important trends in current astronomy surveys:
       engineer and computer scientist and MIT professor credited with
       inventing the World Wide Web.} designed set of protocols (URIs,
     HTTP and HTML) which allowed link and share documents
-    \cite{berners1990worldwideweb}. This was recognized as generaly
+    \cite{berners1990worldwideweb}. This was recognized as generally
     useful and World Wide Web was born. An important role plays the
     World Wide Web Consortium (W3C) in developing Web
     standards. \footnote{Prior to its creation, incompatible versions
@@ -69,8 +69,8 @@ There are two important trends in current astronomy surveys:
    \end{wrapfigure}
 
 
-    What is neccessary is sets of standards and protocols to deal with
-    heterogenous distributed data and the authority which encourages
+    What is necessary is sets of standards and protocols to deal with
+    heterogeneous distributed data and the authority which encourages
     their implementation. Such authority is the International Virtual
     Observatory Alliance (IVOA). It comprises 19 VO programs from
     Argentina, Armenia, Australia, Brazil, Canada, China, Europe,
@@ -116,11 +116,11 @@ There are two important trends in current astronomy surveys:
 \clearpage
 
 The Architecture is depicted on the figure \ref{FigArchitecture}.The
-level of abstraction goes from top to bottom. Starting with iterfaces,
-used by people or applicatian to discover resources.  Next level is
+level of abstraction goes from top to bottom. Starting with interfaces,
+used by people or application to discover resources.  Next level is
 the service layer implemented by standard protocols, followed by the
 hardware level where actual data are stored. This onion like structure
-hide the complexity of the lower layer and provide data and metadata
+hide the complexity of the lower layer and provide data and meta-data
 to the higher layer. This concept is similar to TCP/IP
 \footnote{TCP/IP (Transmission Control Protocol/Internet Protocol).
   The basic communication language or protocol of the Internet.}
@@ -137,7 +137,7 @@ astronomy (FITS) and computers science (XML \footnote{Extensible
 \footnote{Simple Object Access Protocol, is a protocol specification
   for exchanging structured information in the implementation of Web
   Services in computer networks.}) for many years. In other words VO
-does not reinvent the wheell but it's stands on the shoulders of
+does not reinvent the wheel but it's stands on the shoulders of
 giants.
 
 
@@ -155,7 +155,7 @@ UML \footnote{Unified Modeling Language. Standardized general-purpose
   modeling language in the field of object-oriented software
   engineering.}  diagram of the resource in on the figure
 \ref{FigResource}. Resource can be a generalization of organization,
-data collection, apllication or service. Organization can be linked
+data collection, application or service. Organization can be linked
 together with other organization. The same is true for data
 collection. Organization ia a generalization of and/or provider which
 can own zero to N services. Publisher can have zero to N resources.
@@ -238,7 +238,7 @@ the data are read." \cite{nrc1995}
 
 \bigskip
 
-FITS (Flexible Image Transport System) was originaly created for
+FITS (Flexible Image Transport System) was originally created for
 exchange of radio astronomy images between WSRT \footnote{Westerbork
   Synthesis Radio Telescope} and the VLA \footnote{Very Large Array}
 \cite{fits1997}. It is now used as a file format to store, transmit,
@@ -260,7 +260,7 @@ of the data that follow.
 \end{itemize}
 
 
-Standards and documents related to FITS are maintaned by IAUFWG
+Standards and documents related to FITS are maintained by IAUFWG
 \footnote{International Astronomical Union FITS} and aviable at
 \url{http://fits.gsfc.nasa.gov}.
 
