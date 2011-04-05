@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Architecture</TITLE>
+<META NAME="description" CONTENT="Architecture">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis.css">
+
+<LINK REL="next" HREF="node8.html">
+<LINK REL="previous" HREF="node6.html">
+<LINK REL="up" HREF="node4.html">
+<LINK REL="next" HREF="node8.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html162"
+  HREF="node8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html158"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html152"
+  HREF="node6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html160"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html163"
+  HREF="node8.html">VOResources</A>
+<B> Up:</B> <A NAME="tex2html159"
+  HREF="node4.html">Virtual Observatory (VO)</A>
+<B> Previous:</B> <A NAME="tex2html153"
+  HREF="node6.html">International Virtual Observatory Alliance</A>
+ &nbsp; <B>  <A NAME="tex2html161"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00430000000000000000">
+Architecture</A>
+</H1>
+    The Virtual Observatory is the  “middle layer” framework
+    which connects the Resource Layer to the User Layer in a seamless
+    and transparent manner. The objective is to improve and unify access to
+    astronomical data and services.
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="FigArchitecture"></A><A NAME="229"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 1.2:</STRONG>
+VO Architecture</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+        
+        [scale =.6]architecture
+        
+        [bb = 92 86 545 742, height=6in]architecture.png
+
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+
+<P>
+The Architecture is depicted on the figure <A HREF="#FigArchitecture">1.2</A>.The
+level of abstraction goes from top to bottom. Starting with interfaces,
+used by people or applications to discover resources.  Next level is
+the service layer implemented by standard protocols, followed by the
+hardware level where actual data are stored. This onion like structure
+hide the complexity of the lower layer and provide data and meta-data
+to the higher layer. This concept is similar to TCP/IP
+<A NAME="tex2html6"
+  HREF="footnode.html#foot234"><SUP><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]"
+ SRC="/usr/share/latex2html/icons/footnote.png"></SUP></A>protocol.
+
+<P>
+The essence of VO architecture is service orientation. Each service is
+autonomous with well defined defined boundaries. Very important aspect
+of VO implementation is the adoption of formats and protocols used in
+astronomy (FITS) and computers science (XML <A NAME="tex2html7"
+  HREF="footnode.html#foot235"><SUP><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]"
+ SRC="/usr/share/latex2html/icons/footnote.png"></SUP></A> , Web service <A NAME="tex2html8"
+  HREF="footnode.html#foot236"><SUP><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]"
+ SRC="/usr/share/latex2html/icons/footnote.png"></SUP></A> SOAP
+<A NAME="tex2html9"
+  HREF="footnode.html#foot237"><SUP><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]"
+ SRC="/usr/share/latex2html/icons/footnote.png"></SUP></A>) for many years. In other words VO
+does not try to reinvent the wheel but it's stands on the shoulders of
+giants.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html162"
+  HREF="node8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html158"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html152"
+  HREF="node6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html160"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html163"
+  HREF="node8.html">VOResources</A>
+<B> Up:</B> <A NAME="tex2html159"
+  HREF="node4.html">Virtual Observatory (VO)</A>
+<B> Previous:</B> <A NAME="tex2html153"
+  HREF="node6.html">International Virtual Observatory Alliance</A>
+ &nbsp; <B>  <A NAME="tex2html161"
+  HREF="node1.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Astar Seran
+2011-04-01
+</ADDRESS>
+</BODY>
+</HTML>

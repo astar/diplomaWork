@@ -1,0 +1,188 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Virtual Observatory</TITLE>
+<META NAME="description" CONTENT="Virtual Observatory">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis.css">
+
+<LINK REL="next" HREF="node1.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html24"
+  HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up_g.png"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev_g.png"> 
+<A NAME="tex2html22"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html25"
+  HREF="node1.html">Contents</A>
+ &nbsp; <B>  <A NAME="tex2html23"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+hellgelbrgb1,1,0.8
+ colKeysrgb0,0,1
+ colIdentifierrgb0,0,0
+ colCommentsrgb1,0,0
+ colStringrgb0,0.5,0
+ language=SQL,morekeywords=AND,ASC,avg,CHECK,COMMIT,count,DECODE,DESC,DISTINCT,GROUP,IN,LIKE,NUMBER,ROLLBACK,SUBSTR,sum,VARCHAR2
+
+<P>
+float=hbp,basicstyle=<TT><SMALL CLASS="SMALL">, stringstyle=colString, commentstyle=colComments, columns=flexible, tabsize=4, frame=single, extendedchars=true, showspaces=false, showstringspaces=false, numbers=left, numberstyle=<SMALL CLASS="TINY">, breaklines=true, backgroundcolor=hellgelb, breakautoindent=true, captionpos=b</SMALL></SMALL></TT>
+
+<P>
+<H1 ALIGN="CENTER">Virtual Observatory</H1>
+<DIV CLASS="author_info">
+
+<P ALIGN="CENTER"><STRONG>mailto:jaroslav.vazny@gmail.comJaroslav Vazny</STRONG></P>
+</DIV>
+<DIV CLASS="author_info">
+
+<P ALIGN="CENTER"><STRONG>Jaroslav Vazny</STRONG></P>
+</DIV>
+
+<P>
+
+<P>
+
+
+<P>
+<BR>
+<IMG
+ WIDTH="455" HEIGHT="42" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="\begin{dedication}%this creates the heading for the dedication page
+\par
+I would like to dedicate this thesis to my loving parents ...
+\par
+\end{dedication}">
+<BR>
+
+<P>
+
+<P>
+<BR>
+<IMG
+ WIDTH="358" HEIGHT="115" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="\begin{acknowledgements}%this creates the heading for the acknowlegments
+\par
+And I would like to acknowledge ...
+\par
+\end{acknowledgements}">
+<BR>
+
+<P>
+
+<P>
+<BR>
+<IMG
+ WIDTH="328" HEIGHT="115" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="\begin{abstracts}%this creates the heading for the abstract page
+\par
+This is where you write your abstract ...
+\par
+\end{abstracts}">
+<BR>
+
+<P>
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html26"
+  HREF="node1.html">Contents</A>
+<LI><A NAME="tex2html27"
+  HREF="node2.html">List of Figures</A>
+<LI><A NAME="tex2html28"
+  HREF="node3.html">Introduction</A>
+<LI><A NAME="tex2html29"
+  HREF="node4.html">Virtual Observatory (VO)</A>
+<UL>
+<LI><A NAME="tex2html30"
+  HREF="node5.html">Data avalanche: Opportunity or disaster?</A>
+<LI><A NAME="tex2html31"
+  HREF="node6.html">International Virtual Observatory Alliance (IVOA)</A>
+<LI><A NAME="tex2html32"
+  HREF="node7.html">Architecture</A>
+<LI><A NAME="tex2html33"
+  HREF="node8.html">VOResources</A>
+<LI><A NAME="tex2html34"
+  HREF="node9.html">Data Access Protocols</A>
+<UL>
+<LI><A NAME="tex2html35"
+  HREF="node10.html">Cone Search Protocol</A>
+<LI><A NAME="tex2html36"
+  HREF="node11.html">Simple Image Access Protocol</A>
+<LI><A NAME="tex2html37"
+  HREF="node12.html">Simple Spectra Access Protocol</A>
+</UL>
+<LI><A NAME="tex2html38"
+  HREF="node13.html">Data Formats</A>
+<UL>
+<LI><A NAME="tex2html39"
+  HREF="node14.html">VOTable</A>
+<UL>
+<LI><A NAME="tex2html40"
+  HREF="node15.html">Motivation</A>
+<LI><A NAME="tex2html41"
+  HREF="node16.html">Structure</A>
+<LI><A NAME="tex2html42"
+  HREF="node17.html">Tools and libraries</A>
+<LI><A NAME="tex2html43"
+  HREF="node18.html">Examples</A>
+</UL>
+<LI><A NAME="tex2html44"
+  HREF="node19.html">FITS</A>
+<UL>
+<LI><A NAME="tex2html45"
+  HREF="node20.html">Motivation</A>
+<LI><A NAME="tex2html46"
+  HREF="node21.html">Structure</A>
+<LI><A NAME="tex2html47"
+  HREF="node22.html">Examples</A>
+</UL>
+</UL>
+</UL>
+<BR>
+<LI><A NAME="tex2html48"
+  HREF="node23.html">References</A>
+<LI><A NAME="tex2html49"
+  HREF="node24.html">About this document ...</A>
+</UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+<ADDRESS>
+Astar Seran
+2011-04-01
+</ADDRESS>
+</BODY>
+</HTML>

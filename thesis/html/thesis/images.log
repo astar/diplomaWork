@@ -1,0 +1,674 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.3.22)  1 APR 2011 00:19
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./images.tex
+(./images.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
+ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
+9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
+skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
+orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
+, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
+rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
+
+(/home/astar/projects/diplomka/source/thesis/Classes/CUEDthesisPSnPDF.cls
+
+LaTeX Warning: You have requested document class `Classes/CUEDthesisPSnPDF',
+               but the document class provides `CUEDthesisPSnPDF'.
+
+Document Class: CUEDthesisPSnPDF 2010/07/14 v1.1 CUED thesis class
+(/usr/share/texmf-texlive/tex/latex/base/book.cls
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/bk12.clo
+File: bk12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (/usr/share/texmf-texlive/tex/latex/setspace/setspace.sty
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+Package: `setspace' 6.7 <2000/12/01>
+) (/usr/share/texmf-texlive/tex/latex/tocbibind/tocbibind.sty
+Package: tocbibind 2009/09/04 v1.5i extra ToC listings
+
+Package tocbibind Note: The document has chapter divisions.
+
+
+Package tocbibind Note: Using chapter style headings, unless overridden.
+
+) (/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks14
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+)) (/usr/share/texmf-texlive/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip43
+\f@ncyO@elh=\skip44
+\f@ncyO@erh=\skip45
+\f@ncyO@olh=\skip46
+\f@ncyO@orh=\skip47
+\f@ncyO@elf=\skip48
+\f@ncyO@erf=\skip49
+\f@ncyO@olf=\skip50
+\f@ncyO@orf=\skip51
+) (/usr/share/texmf-texlive/tex/latex/amsfonts/eucal.sty
+Package: eucal 2009/06/22 v3.00 Euler Script fonts
+LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
+(Font)                  U/eus/m/n --> U/eus/b/n on input line 33.
+) (/var/lib/texmf/tex/generic/babel/babel.sty
+Package: babel 2008/07/06 v3.8l The Babel package
+(/usr/share/texmf-texlive/tex/generic/babel/english.ldf
+Language: english 2005/03/30 v3.3o English support from the babel system
+(/usr/share/texmf-texlive/tex/generic/babel/babel.def
+File: babel.def 2008/07/06 v3.8l Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+)) (/usr/share/texmf-texlive/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+(/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: dvips.def on input line 130.
+(/usr/share/texmf-texlive/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+) (/usr/share/texmf-texlive/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+)) (/usr/share/texmf-texlive/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2009/09/15 v5.5a a miscellany of footnote facilities
+\FN@temptoken=\toks15
+\footnotemargin=\dimen104
+\c@pp@next@reset=\count89
+\c@@fnserial=\count90
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
+.
+) (/usr/share/texmf-texlive/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip52
+\bibsep=\skip53
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count91
+) (/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode not detected.
+) (/usr/share/texmf-texlive/tex/latex/listings/listings.sty (/usr/share/texmf-t
+exlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+\lst@mode=\count92
+\lst@gtempboxa=\box26
+\lst@token=\toks17
+\lst@length=\count93
+\lst@currlwidth=\dimen105
+\lst@column=\count94
+\lst@pos=\count95
+\lst@lostspace=\dimen106
+\lst@width=\dimen107
+\lst@newlines=\count96
+\lst@lineno=\count97
+\lst@maxwidth=\dimen108
+(/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count98
+\lst@skipnumbers=\count99
+\lst@framebox=\box27
+) (/usr/share/texmf-texlive/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+(/usr/share/texmf-texlive/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen109
+\WF@size=\dimen110
+\c@WF@wrappedlines=\count100
+\WF@box=\box28
+\WF@everypar=\toks18
+Package: wrapfig 2003/01/31  v 3.6
+) (/home/astar/projects/diplomka/source/thesis/StyleFiles/lettrine.sty
+File: lettrine.sty 2007/08/08 v1.62 (Daniel Flipo)
+\c@DefaultLines=\count101
+\DefaultFindent=\dimen111
+\DefaultNindent=\dimen112
+\DefaultSlope=\dimen113
+\L@lbox=\box29
+\L@tbox=\box30
+\c@L@lines=\count102
+\L@Pindent=\dimen114
+\L@Findent=\dimen115
+\L@Nindent=\dimen116
+\L@lraise=\dimen117
+\L@first=\dimen118
+\L@next=\dimen119
+\L@slope=\dimen120
+\L@height=\dimen121
+\LettrineWidth=\dimen122
+Loading lettrine.cfg
+(/usr/share/texmf-texlive/tex/latex/lettrine/lettrine.cfg)) (/usr/share/texmf-t
+exlive/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen123
+\lightrulewidth=\dimen124
+\cmidrulewidth=\dimen125
+\belowrulesep=\dimen126
+\belowbottomsep=\dimen127
+\aboverulesep=\dimen128
+\abovetopsep=\dimen129
+\cmidrulesep=\dimen130
+\cmidrulekern=\dimen131
+\defaultaddspace=\dimen132
+\@cmidla=\count103
+\@cmidlb=\count104
+\@aboverulesep=\dimen133
+\@belowrulesep=\dimen134
+\@thisruleclass=\count105
+\@lastruleclass=\count106
+\@thisrulewidth=\dimen135
+) (/usr/share/texmf-texlive/tex/latex/nomencl/nomencl.sty
+Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
+\nomlabelwidth=\dimen136
+\nom@tempdim=\dimen137
+\nomitemsep=\skip54
+)
+\@nomenclaturefile=\write3
+\openout3 = `images.nlo'.
+
+Writing nomenclature file images.nlo
+(/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+) (/usr/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
+) (/usr/share/texmf-texlive/tex/latex/oberdiek/hycolor.sty
+Package: hycolor 2009/10/02 v1.5 Code for color options of hyperref/bookmark (H
+O)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
+Package: xcolor-patch 2009/10/02 xcolor patch
+))
+\@linkdim=\dimen138
+\Hy@linkcounter=\count107
+\Hy@pagecounter=\count108
+(/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
+) (/usr/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+) (/usr/share/texmf-texlive/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+) (/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
+t (HO)
+))
+Package hyperref Info: Option `bookmarks' set `true' on input line 2864.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 2864.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 2864
+.
+Package hyperref Info: Option `breaklinks' set `true' on input line 2864.
+Package hyperref Info: Option `linktocpage' set `true' on input line 2864.
+Package hyperref Info: Option `colorlinks' set `true' on input line 2864.
+Package hyperref Info: Option `hyperindex' set `true' on input line 2864.
+Package hyperref Info: Option `hyperfigures' set `true' on input line 2864.
+Package hyperref Info: Hyper figures ON on input line 2973.
+Package hyperref Info: Link nesting OFF on input line 2980.
+Package hyperref Info: Hyper index ON on input line 2983.
+Package hyperref Info: Plain pages OFF on input line 2990.
+Package hyperref Info: Backreferencing ON on input line 2993.
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 3191.
+(/usr/share/texmf-texlive/tex/latex/hyperref/backref.sty
+Package: backref 2006/09/05 v1.28 Bibliographical back referencing
+) (/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 3428.
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bitset.sty
+Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/intcalc.sty
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+) (/usr/share/texmf-texlive/tex/generic/oberdiek/bigintcalc.sty
+Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2009/09/23 v0.6 LuaTeX support for pdfTeX utility functions
+ (HO)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2009/04/17 v1.2 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+) (/usr/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2009/08/05 v1.0 Some LaTeX kernel commands for general use (HO
+)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+)))
+\Fld@menulength=\count109
+\Field@Width=\dimen139
+\Fld@charsize=\dimen140
+\Field@toks=\toks19
+Package hyperref Info: Hyper figures ON on input line 4375.
+Package hyperref Info: Link nesting OFF on input line 4382.
+Package hyperref Info: Hyper index ON on input line 4385.
+Package hyperref Info: backreferencing ON on input line 4390.
+Package hyperref Info: Link coloring ON on input line 4395.
+Package hyperref Info: Link coloring with OCG OFF on input line 4402.
+Package hyperref Info: PDF/A mode OFF on input line 4407.
+(/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
+)
+\Hy@abspage=\count110
+\c@Item=\count111
+\c@Hfootnote=\count112
+)
+*hyperref using driver hdvips*
+(/usr/share/texmf-texlive/tex/latex/hyperref/hdvips.def
+File: hdvips.def 2009/10/09 v6.79a Hyperref driver for dvips
+(/usr/share/texmf-texlive/tex/latex/hyperref/pdfmark.def
+File: pdfmark.def 2009/10/09 v6.79a Hyperref definitions for pdfmark specials
+
+Package hyperref Warning: You have enabled option `breaklinks'.
+(hyperref)                But driver `hdvips.def' does not suppport this.
+(hyperref)                Expect trouble with the link areas of broken links.
+
+\pdf@docset=\toks20
+\pdf@box=\box31
+\pdf@toks=\toks21
+\pdf@defaulttoks=\toks22
+\Fld@listcount=\count113
+)) (/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+) (/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+)
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+)
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 170.
+
+) (/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
+Package: geometry 2008/12/21 v4.2 Page Geometry
+\Gm@cnth=\count114
+\Gm@cntv=\count115
+\c@Gm@tempcnt=\count116
+\Gm@bindingoffset=\dimen143
+\Gm@wd@mp=\dimen144
+\Gm@odd@mp=\dimen145
+\Gm@even@mp=\dimen146
+\Gm@dimlist=\toks23
+(/usr/share/texmf-texlive/tex/xelatex/xetexconfig/geometry.cfg)) (/home/astar/p
+rojects/diplomka/source/thesis/StyleFiles/watermark.sty
+
+LaTeX Warning: You have requested package `StyleFiles/watermark',
+               but the package provides `watermark'.
+
+Package: watermark 2002/01/29 v1.00 Watermarks (NCC)
+) (/usr/share/texmf-texlive/tex/latex/type1cm/type1cm.sty
+Package: type1cm 2002/09/05 v0.04 BlueSky/Y&Y Type1 CM font definitions (DPC, p
+atched RF)
+) (/home/astar/projects/diplomka/source/thesis/StyleFiles/fncychapleo.sty
+
+LaTeX Warning: You have requested package `StyleFiles/fncychapleo',
+               but the package provides `fncychapleo'.
+
+Package: fncychapleo 1997/04/06 v1.11 LaTeX package (Revised chapters)
+\RW=\skip55
+\mylen=\skip56
+\myhi=\skip57
+\px=\skip58
+\py=\skip59
+\pyy=\skip60
+\pxx=\skip61
+)
+
+! LaTeX Error: Option clash for package color.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 
+     
+The package color has already been loaded with options:
+  [usenames,dvipsnames]
+There has now been an attempt to load it with options
+  [dvips]
+Adding the global options:
+  usenames,dvipsnames,dvips
+to your \documentclass declaration may fix this.
+Try typing  <return>  to proceed.
+
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks24
+\inpenc@posthook=\toks25
+)
+\sizebox=\box32
+\lthtmlwrite=\write4
+
+LaTeX Warning: Unused global option(s):
+    [pdftex].
+
+(./images.aux (/home/astar/projects/diplomka/source/thesis/dedication.aux) (/ho
+me/astar/projects/diplomka/source/thesis/acknowledgement.aux) (/home/astar/proj
+ects/diplomka/source/thesis/abstract.aux) (/home/astar/projects/diplomka/source
+/thesis/introduction.aux) (/home/astar/projects/diplomka/source/thesis/chapter1
+.aux))
+\openout1 = `images.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 165.
+LaTeX Font Info:    ... okay on input line 165.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 165.
+LaTeX Font Info:    ... okay on input line 165.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 165.
+LaTeX Font Info:    ... okay on input line 165.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 165.
+LaTeX Font Info:    ... okay on input line 165.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 165.
+LaTeX Font Info:    ... okay on input line 165.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 165.
+LaTeX Font Info:    ... okay on input line 165.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 165.
+LaTeX Font Info:    ... okay on input line 165.
+\c@lstlisting=\count117
+Package hyperref Info: Link coloring ON on input line 165.
+(/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
+Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
+(/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
+Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
+)
+\c@section@level=\count118
+)
+LaTeX Info: Redefining \ref on input line 165.
+LaTeX Info: Redefining \pageref on input line 165.
+\@outlinefile=\write5
+\openout5 = `images.out'.
+
+Package backref Info: ** backref set up for natbib ** on input line 165.
+\AtBeginShipoutBox=\box33
+*geometry auto-detecting driver*
+*geometry detected driver: dvips*
+-------------------- Geometry parameters
+paper: class default
+landscape: --
+twocolumn: --
+twoside: --
+asymmetric: --
+h-parts: 71.13188pt, 455.24411pt, 71.13188pt
+v-parts: 71.13188pt, 702.78308pt, 71.13188pt
+hmarginratio: --
+vmarginratio: --
+lines: --
+heightrounded: --
+bindingoffset: 0.0pt
+truedimen: --
+includehead: --
+includefoot: --
+includemp: --
+driver: dvips
+-------------------- Page layout dimensions and switches
+\paperwidth  597.50787pt
+\paperheight 845.04684pt
+\textwidth  349.0pt
+\textheight 768.79349pt
+\oddsidemargin  -1.1381pt
+\evensidemargin -1.1381pt
+\topmargin  0.0pt
+\headheight 0.0pt
+\headsep    0.0pt
+\footskip   0.0pt
+\marginparwidth 85.35826pt
+\marginparsep   2.84526pt
+\columnsep  10.0pt
+\skip\footins  10.8pt plus 4.0pt minus 2.0pt
+\hoffset 0.0pt
+\voffset 0.0pt
+\mag 1000
+
+(1in=72.27pt, 1cm=28.45pt)
+-----------------------
+
+latex2htmlLength hsize=349.0pt
+
+latex2htmlLength vsize=768.79349pt
+
+latex2htmlLength hoffset=0.0pt
+
+latex2htmlLength voffset=0.0pt
+
+latex2htmlLength topmargin=0.0pt
+
+latex2htmlLength topskip=0.00003pt
+
+latex2htmlLength headheight=0.0pt
+
+latex2htmlLength headsep=0.0pt
+
+latex2htmlLength parskip=0.0pt plus 1.0pt
+
+latex2htmlLength oddsidemargin=-1.1381pt
+
+latex2htmlLength evensidemargin=-1.1381pt
+
+l2hSize :dedication109:144.89441pt::0.0pt::349.0pt.
+[1
+
+
+
+]
+l2hSize :acknowledgements119:141.23325pt::0.0pt::349.0pt.
+[2
+
+
+]
+l2hSize :abstracts129:141.23325pt::0.0pt::349.0pt.
+[3
+
+
+]
+Overfull \hbox (130.39917pt too wide) in paragraph at lines 225--226
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (137.44916pt too wide) in paragraph at lines 226--227
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+l2hSize :lstlisting198:59.18886pt::0.0pt::349.0pt.
+[4
+
+
+]
+File: pic/ivoamembers.jpg Graphic file (type eps)
+<pic/ivoamembers.jpg>
+Overfull \hbox (124.94371pt too wide) in paragraph at lines 244--246
+ [] 
+ []
+
+l2hSize :wrapfigure210:0.0pt::0.0pt::0.0pt.
+[5
+
+
+]
+Overfull \hbox (59.89929pt too wide) in paragraph at lines 260--261
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 261.
+l2hSize :lstlisting250:59.18886pt::0.0pt::349.0pt.
+[6
+
+
+]
+Overfull \hbox (320.74884pt too wide) in paragraph at lines 272--273
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+
+ []
+
+
+Overfull \hbox (200.89905pt too wide) in paragraph at lines 275--276
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (299.59888pt too wide) in paragraph at lines 280--281
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (299.59888pt too wide) in paragraph at lines 281--282
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (81.04926pt too wide) in paragraph at lines 282--283
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (363.04877pt too wide) in paragraph at lines 292--293
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (243.19897pt too wide) in paragraph at lines 293--294
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (81.04926pt too wide) in paragraph at lines 294--295
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 295.
+
+Overfull \hbox (186.79907pt too wide) in paragraph at lines 295--296
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+l2hSize :lstlisting330:599.02223pt::0.0pt::349.0pt.
+[7
+
+
+]
+Overfull \hbox (137.44916pt too wide) in paragraph at lines 321--322
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+l2hSize :lstlisting343:407.87813pt::0.0pt::349.0pt.
+[8
+
+
+]
+Overfull \hbox (81.04926pt too wide) in paragraph at lines 345--346
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+l2hSize :lstlisting348:101.97229pt::0.0pt::349.0pt.
+[9
+
+
+]
+Overfull \hbox (59.89929pt too wide) in paragraph at lines 358--359
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+l2hSize :lstlisting364:371.8892pt::0.0pt::349.0pt.
+[10
+
+
+]
+Overfull \hbox (214.99902pt too wide) in paragraph at lines 379--380
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][] 
+ []
+
+
+Overfull \hbox (52.8493pt too wide) in paragraph at lines 389--390
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+l2hSize :lstlisting366:263.92244pt::0.0pt::349.0pt.
+[11
+
+
+]
+Overfull \hbox (73.99927pt too wide) in paragraph at lines 399--400
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+l2hSize :lstlisting368:65.98337pt::0.0pt::349.0pt.
+[12
+
+
+]
+l2hSize :tex2html_wrap_inline380:8.2pt::0.0pt::18.7999pt.
+[13
+
+
+]
+Overfull \hbox (66.94928pt too wide) in paragraph at lines 414--415
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+l2hSize :lstlisting370:299.91136pt::0.0pt::349.0pt.
+[14
+
+
+] (./images.aux) ) 
+Here is how much of TeX's memory you used:
+ 7518 strings out of 493849
+ 108087 string characters out of 1152846
+ 231774 words of memory out of 3000000
+ 10639 multiletter control sequences out of 15000+50000
+ 9198 words of font info for 35 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 45i,7n,45p,290b,987s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on images.dvi (14 pages, 48112 bytes).

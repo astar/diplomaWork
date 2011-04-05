@@ -16,7 +16,7 @@
 \begin{lstlisting}[frame=single]
 What is the motivation behind Virtual Observatory? Is data avalanche
 problem only in astronomy? What is IVOA?  What is Virtual Observatory
-architecture, standards and protocols
+architecture?
 \end{lstlisting}
 
 \section{ Data avalanche: Opportunity or disaster?}
@@ -29,31 +29,32 @@ There are two important trends in current astronomy surveys:
     reach 1 PetaByte by 2012 \cite{hanisch2010international}. Projects
     like Large Synoptic Survey Telescope (LSST) will produce about 30
     TB per night, leading to a total database over the ten years of
-    operations of 60 PB for the raw data.
+    operations of 60 PB for the raw data \cite{becla2006designing}.
    
-  \item{Complexity:}  Modern surveys will cover the sky in different wavebands, from
+  \item{Complexity:}  Modern surveys will cover the sky in different wave-bands, from
     gamma- and X-rays, optical, infrared, through to radio. The ability
-    to crosscorelate these observations toghether may lead to the new
-    understanding of physical phenomenas.
+    to cross correlate these observations together may lead to the new
+    understanding of physical phenomenas. \cite{hanisch2010international}
 \end{itemize}
 
-    Such amount of data is not possible transfer over the network. It
-    imply they are heterogenous, distributed and decentralized in nature.
 
 
-    There is an interesting analogy with the problem (and the
-    solution) which had scientist during LEP project at CERN.  Their
-    problem was too many documents in different formats. Tim
-    Berners-Lee \footnote{ Sir Timothy John "Tim" Berners-Lee. British
-      engineer and computer scientist and MIT professor credited with
-      inventing the World Wide Web.} designed set of protocols (URIs,
-    HTTP and HTML) which allowed link and share documents
-    \cite{berners1990worldwideweb}. This was recognized as generaly
-    useful and World Wide Web was born. An important role plays the
-    World Wide Web Consortium (W3C) in developing Web
-    standards. \footnote{Prior to its creation, incompatible versions
-      of HTML were offered by different vendors, increasing the
-      potential for inconsistency between web pages.}
+Such amount of data is not possible to transfer over the network. Data
+resources are heterogeneous, distributed and decentralized in nature.
+
+
+There is an interesting analogy with the problem (and the solution)
+which had scientist during LEP project at CERN.  Their problem was too
+many documents in different formats. Tim Berners-Lee\footnote{ Sir
+  Timothy John "Tim" Berners-Lee. British engineer and computer
+  scientist and MIT professor credited with inventing the World Wide
+  Web.} designed set of protocols (URIs, HTTP and HTML) which allowed
+link and share documents\cite{berners1990worldwideweb}. This was
+recognized as generally useful and World Wide Web was born. An
+important role plays the World Wide Web Consortium (W3C) in developing
+Web standards\footnote{Prior to its creation, incompatible versions
+  of HTML were offered by different vendors, increasing the potential
+  for inconsistency between web pages.}.
     
     
 \section{International Virtual Observatory Alliance (IVOA)}
@@ -61,7 +62,11 @@ There are two important trends in current astronomy surveys:
    \begin{wrapfigure}{r}{0.5\textwidth}
      \vspace{0pt}
      \begin{center}
+       \ifpdf
        \includegraphics[width=0.4\textwidth]{ivoamembers}
+       \else
+       \includegraphics[bb = 92 86 545 742, height=6in]{ivoamembers.jpg}
+       \fi
      \end{center}
      \vspace{-20pt}
      \caption{IVOA members}
@@ -69,16 +74,17 @@ There are two important trends in current astronomy surveys:
    \end{wrapfigure}
 
 
-    What is neccessary is sets of standards and protocols to deal with
-    heterogenous distributed data and the authority which encourages
+    What is necessary is sets of standards and protocols to deal with
+    heterogeneous distributed data and the authority which encourages
     their implementation. Such authority is the International Virtual
-    Observatory Alliance (IVOA). It comprises 19 VO programs from
+    Observatory Alliance (IVOA). It comprises 19~VO programs from
     Argentina, Armenia, Australia, Brazil, Canada, China, Europe,
     France, Germany, Hungary, India, Italy, Japan, Russia, Spain, the
     United Kingdom, and the United States and inter-governmental
     organizations (ESA and ESO)\cite{hanisch2010international}.
    
-    Standards specifications can be obtained on \url{http://www.ivoa.net/}.
+    Standards and specifications produced by IVOA can be obtained at
+    \url{http://www.ivoa.net/}.
 
     %% \begin{figure}[!htbp]
     %%   \begin{center}
@@ -95,10 +101,24 @@ There are two important trends in current astronomy surveys:
 
 
 \section{Architecture}
-    The Virtual Observatory is the  “middle layer” framework
-    which connects the Resource Layer to the User Layer in a seamless
-    and transparent manner. The objective is to improve and unify access to
-    astronomical data and services.
+    % The Virtual Observatory is the  “middle layer” framework
+    % which connects the Resource Layer to the User Layer in a seamless
+    % and transparent manner. The objective is to improve and unify access to
+    % astronomical data and services.
+
+
+The Architecture is depicted on the figure \ref{FigArchitecture}.The
+level of abstraction goes from top to bottom. Starting with interfaces,
+used by people or applications to discover resources.  Next level is
+the service layer implemented by standard protocols, followed by the
+hardware level where actual data are stored. This onion like structure
+hide the complexity of the lower layer and provide data and meta-data
+to the higher layer. This concept is similar to TCP/IP
+\footnote{TCP/IP (Transmission Control Protocol/Internet Protocol).
+  The basic communication language or protocol of the Internet.}
+protocol.
+
+
 
     \begin{figure}[!htbp]
       \begin{center}
@@ -106,7 +126,7 @@ There are two important trends in current astronomy surveys:
         \ifpdf
         \includegraphics[scale =.6]{architecture}
         \else
-        \includegraphics[bb = 92 86 545 742, height=6in]{architecture}
+        \includegraphics[bb = 92 86 545 742, height=6in]{architecture.png}
         \fi
         \caption{VO Architecture}
         \label{FigArchitecture}
@@ -114,18 +134,6 @@ There are two important trends in current astronomy surveys:
     \end{figure}
 
 \clearpage
-
-The Architecture is depicted on the figure \ref{FigArchitecture}.The
-level of abstraction goes from top to bottom. Starting with iterfaces,
-used by people or applicatian to discover resources.  Next level is
-the service layer implemented by standard protocols, followed by the
-hardware level where actual data are stored. This onion like structure
-hide the complexity of the lower layer and provide data and metadata
-to the higher layer. This concept is similar to TCP/IP
-\footnote{TCP/IP (Transmission Control Protocol/Internet Protocol).
-  The basic communication language or protocol of the Internet.}
-protocol.
-
 
 The essence of VO architecture is service orientation. Each service is
 autonomous with well defined defined boundaries. Very important aspect
@@ -137,7 +145,7 @@ astronomy (FITS) and computers science (XML \footnote{Extensible
 \footnote{Simple Object Access Protocol, is a protocol specification
   for exchanging structured information in the implementation of Web
   Services in computer networks.}) for many years. In other words VO
-does not reinvent the wheell but it's stands on the shoulders of
+does not try to reinvent the wheel but it's stands on the shoulders of
 giants.
 
 
@@ -150,15 +158,18 @@ resource: it can be an abstract idea, such as sky coverage or an
 instrumental setup, or it can be fairly concrete, like an organization
 or a data collection. \cite{bensonivoa}
 
-
-UML \footnote{Unified Modeling Language. Standardized general-purpose
+UML\footnote{Unified Modeling Language. Standardized general-purpose
   modeling language in the field of object-oriented software
   engineering.}  diagram of the resource in on the figure
-\ref{FigResource}. Resource can be a generalization of organization,
-data collection, apllication or service. Organization can be linked
-together with other organization. The same is true for data
-collection. Organization ia a generalization of and/or provider which
-can own zero to N services. Publisher can have zero to N resources.
+\ref{FigResource}. Next paragraph is an attempt to explain thsi
+diagram to non-programmers. Full arrow means generalization, Resource
+can be a generalization of organization, data collection, application
+or service. Single arrow means association. Organization can be linked
+(assosiated) together with other organization (multiplicity is
+represented by number 1, 0..). The same is true for data
+collection. Organization is a generalization of and/or provider which
+can own zero to N services. Diamond means aggregation Publisher can
+have any resources.
   
     \begin{figure}[!htbp]
       \begin{center}
@@ -166,7 +177,7 @@ can own zero to N services. Publisher can have zero to N resources.
         \ifpdf
         \includegraphics[height=10cm]{resource}
         \else
-        \includegraphics[bb = 92 86 545 742, height=6in]{resource}
+        \includegraphics[bb = 92 86 545 742, height=6in]{resource.png}
         \fi
         \caption{UML diagram of VOResource}
         \label{FigResource}
@@ -175,13 +186,23 @@ can own zero to N services. Publisher can have zero to N resources.
 
 \clearpage
 
-Example of resources
+Following example uses program stilts\footnote{STIL Tool Set. Set of
+  command-line tools based on STIL, the Starlink Tables Infrastructure
+  Library.} to query registry with parameter shortName equal to
+'AIASCR'\footnote{Astronomical Institute of the Academy of Sciences of
+  the Czech Republic}. This return VOTable containing informations
+about the resource. 
 
 \begin{lstlisting}[frame=single]
 stilts regquery query="shortName like 'AIASCR'"
 regurl=http://registry.euro-vo.org/services/RegistrySearch
 ofmt=votable-tabledata > resourceExample.vot
 \end{lstlisting}
+
+Rows 1--4 define XML nad VOTable schema with adequate locations
+(xmlns\footnote{XML namespaces. Provide uniquely named elements and
+  attributes in an XML document.}) followed by informations about the
+actual resource. The listing is abbreviated.
 
   \input{resourceExample.vot}
 
@@ -227,6 +248,72 @@ ofmt=votable-tabledata > resourceExample.vot
 \subsection{Simple Spectra Access Protocol}
 \section{Data Formats}
 \subsection{VOTable}
+\subsubsection*{Motivation}
+VOTable is flexible storage and exchange format fundamentaly
+interconnected with Virtual Observatory. It has features for big-data
+and Grid computing. Data can be stored in different ways in dependence
+on the charatecter and size. Small tables can be stored in pure XML
+\footnote{Extensible Markup Language. W3C standard. Set of rules for
+  encoding documents in machine-readable form}, while large-scale data
+can be referenced with the URL \footnote{Uniform Resource
+  Locator. Uniform Resource Identifier (URI) that specifies where an
+  identified resource is available and the mechanism for retrieving
+  it.} syntax protocol://location.  It combine web standards (it is
+based on XML) and astronomy tradition in storing data (it is FITS
+compatible). Expiration and authentication are also supported.
+
+\subsubsection*{Structure}
+Following example of VOTable was created from SDSS FITS file used in
+this work. First there is an information about XML and VOTable
+versions and references to corresponding XML Schema \footnote{Define
+  the legal building blocks of an XML document. Note: XML schema can
+  be described by XML Schema, Document Type Definition (DTD) or RELAX
+  NG }. <TABLE> tag encapsulating tabular data. <FIELD>
+tag describe identifinaction (ID), type and precision of
+columns. <DATA> tag contains data (here) in TABLEDATA format (other
+types are FITS and BINARY)
+ 
+\begin{lstlisting}
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Produced with vo.table version 0.6
+     http://www.stsci.edu/trac/ssb/astrolib
+     Author: Michael Droettboom <support@stsci.edu> -->
+<VOTABLE version="1.0"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="http://www.ivoa.net/xml/VOTable/v1.0"
+ xmlns="http://www.ivoa.net/xml/VOTable/v1.0">
+ <RESOURCE type="results" >
+  <TABLE >
+   <FIELD ID="col0" name="wave" datatype="float" unit=""
+   precision="F9"/>
+  <DATA>
+    <TABLEDATA>
+     <TR>
+      <TD>4012.50757</TD>
+     </TR>
+ </TABLEDATA>
+   </DATA>
+  </TABLE>
+ </RESOURCE>
+</VOTABLE>
+\end{lstlisting}
+
+
+\subsubsection*{Tools and libraries}
+\subsubsection*{Examples}
+All example created using ATpy\footnote{High-level Python package
+providing a way to manipulate tables of astronomical data in a uniform
+way.}
+
+Following example shows transformation FITS into VOTable. 
+\begin{lstlisting}
+  In [1]: import atpy
+  In [2]: tbl = atpy.Table('spSpec-53401-2052-458.fit',hdu=1)
+  Auto-detected input type: fits
+  In [3]: tbl.write('votableExample.xml')
+  Auto-detected input type: vo
+\end{lstlisting}
+
 \subsection{FITS}
 \subsubsection*{Motivation}
 
@@ -238,12 +325,12 @@ the data are read." \cite{nrc1995}
 
 \bigskip
 
-FITS (Flexible Image Transport System) was originaly created for
-exchange of radio astronomy images between WSRT \footnote{Westerbork
-  Synthesis Radio Telescope} and the VLA \footnote{Very Large Array}
-\cite{fits1997}. It is now used as a file format to store, transmit,
-and manipulate scientific data and it is (thanks to it's revolutionary
-design) de facto standard in astronomy.
+FITS (Flexible Image Transport System) was originally created for data
+exchange between WSRT \footnote{Westerbork Synthesis Radio Telescope}
+and the VLA \footnote{Very Large Array} \cite{fits1997}. It is now
+used as a file format to store, transmit, and manipulate scientific
+data and it is (thanks to it's revolutionary design) de facto standard
+in astronomy.
 
 
 \subsubsection*{Structure}
@@ -260,11 +347,11 @@ of the data that follow.
 \end{itemize}
 
 
-Standards and documents related to FITS are maintaned by IAUFWG
+Standards and documents related to FITS are maintained by IAUFWG
 \footnote{International Astronomical Union FITS} and aviable at
 \url{http://fits.gsfc.nasa.gov}.
 
-\subsubsection{Examples}
+\subsubsection*{Examples}
 
 There are many libraries for working with FITS files. The official
 list is aviable at

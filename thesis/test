@@ -1,0 +1,24 @@
+{Introduction}
+
+{\LettrineFontHook}{\color{red}}[lines = 3, loversize=-0.1, lraise=0.1]{F}rom the dawn of existence astronomy has always been starved for data, but in the last few decades the situation has changed and now we are facing the data flood of biblical proportions. The data are not just increasing in size but in complexity and dimensionality. {ballastroinformatics}Astroinformatics is the new field of science which has emerged from this technology driven progress. Virtual Observatory, Machine learning, Data Mining, Grid computing are just few examples of new tools available to scientist.
+
+{10pt}
+
+<blockquote><blockquote>[[Image:astroinformatics|image]] [[Image:astroinformatics.png|image]] {Astroinformatics in the context of astronomy \cite{ballastroinformatics} }(FigAir)
+</blockquote></blockquote>
+{-10pt}Of course astronomers are not alone and particle physics, biology and other sciences are also in the vanguard of the data intensive science. This is great opportunity for interdisciplinary collaboration.
+
+This work deals with the problem of semi-automatic procedures for finding Be stars candidates in the astronomy surveys. More than straight forward process it&rsquo;s trail and error approach probing new possibilities with rather interesting that useful results.
+
+The aim of this work is to be introductory to the technologies of Virtual Observatory and Data Mining and for this reason it is intended to have following properties:
+
+* Main Chapters starts with questions answered in the text and diagram to ease orietation,
+* is full of examples,
+* is non-linear in nature,
+* is meant to be compact and consistent,
+* is far from complete.
+
+Chapter one is an introduction to the technologies related to Virtual Observatory. The motivation behind the concept is given without paying too much attention to historical details. Main standards and protocols are discussed and explained. Important aspect are demonstrated on numerous examples. Chapter two is an introduction to Machine Learning and Data Mining in the context of astrophysics. Only methods used in practical part of this work are described in detail: Decision Trees and Support Vector Machines. Examples of several classifications are demonstrated. Third chapter introduces problematic of Be stars. Chapter Four is practical application of previously described technologies and methods. Training data of confirmed Be stars from Ondrejov are correlated with others catalogues to obtain color indexes and spectra. Results are processed by Data Mining algorithms using several libraries and tools. In the last chapter achieved results are critically discussed.
+
+Activities related to this work go beyond this text. Wiki pages were created to present the results and discuss related topic with supervisor as well as with others scientist around the world. Several programs were created to analyze and process acquired data. Source codes were maintained by GIT version system allowing easy sharing. All software used and produced are open source.
+

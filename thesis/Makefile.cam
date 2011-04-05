@@ -108,6 +108,7 @@ DVIPS=dvips
 MAKEINDEX=makeindex
 DVIVIEWER=xdvi -geometry 710x950-0+10
 LATEX2HTML=latex2html
+HTMLDIR=html
 
 FIGURES=$(wildcard *.fig)
 FIGUREOBJS=$(FIGURES:.fig=.eps)

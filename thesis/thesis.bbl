@@ -1,4 +1,4 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{8}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -9,6 +9,13 @@
 N.M. Ball and D.~Schade.
 \newblock {ASTROINFORMATICS IN CANADA}.
 \newblock 2010.
+
+\bibitem[Becla et~al.(2006)Becla, Hanushevsky, Nikolaev, Abdulla, Szalay,
+  Nieto-Santisteban, Thakar, and Gray]{becla2006designing}
+J.~Becla, A.~Hanushevsky, S.~Nikolaev, G.~Abdulla, A.~Szalay,
+  M.~Nieto-Santisteban, A.~Thakar, and J.~Gray.
+\newblock {Designing a multi-petabyte database for LSST}.
+\newblock \emph{Arxiv preprint cs/0604112}, 2006.
 
 \bibitem[Benson et~al.(2009)Benson, Plante, Auden, et~al.]{bensonivoa}
 K.~Benson, R.~Plante, E.~Auden, et~al.
@@ -25,16 +32,18 @@ National~Research Council.
 \newblock {Preserving Scientiﬁc Data on our Physical Universe}.
 \newblock 1995.
 
-\bibitem[Gray(2007)]{gray2007}
-Norman Gray.
-\newblock {An RDF version of the VO Registry}.
-\newblock \emph{IVOA Note (V1.0, 2007 September 20)}, 2007.
-
 \bibitem[Hanisch and Quinn(2010)]{hanisch2010international}
 RJ~Hanisch and PJ~Quinn.
 \newblock {The international virtual observatory}.
 \newblock \emph{Retrieved from http://www. ivoa. net/pub/info/TheIVOA. pdf on},
   24, 2010.
+
+\bibitem[Porter and Rivinius(2003)]{porter2003classical}
+J.M. Porter and T.~Rivinius.
+\newblock {Classical Be Stars}.
+\newblock \emph{Publications of the Astronomical Society of the Pacific},
+  115\penalty0 (812):\penalty0 1153--1170, 2003.
+\newblock ISSN 0004-6280.
 
 \bibitem[Schlesinger(1997)]{fits1997}
 B.~Schlesinger.

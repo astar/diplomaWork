@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Examples</TITLE>
+<META NAME="description" CONTENT="Examples">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis.css">
+
+<LINK REL="previous" HREF="node21.html">
+<LINK REL="up" HREF="node19.html">
+<LINK REL="next" HREF="node23.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html351"
+  HREF="node23.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html347"
+  HREF="node19.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html343"
+  HREF="node21.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html349"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html352"
+  HREF="node23.html">References</A>
+<B> Up:</B> <A NAME="tex2html348"
+  HREF="node19.html">FITS</A>
+<B> Previous:</B> <A NAME="tex2html344"
+  HREF="node21.html">Structure</A>
+ &nbsp; <B>  <A NAME="tex2html350"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00462300000000000000">
+Examples</A>
+</H3>
+
+<P>
+There are many libraries for working with FITS files. The official
+list is aviable at
+<TT><A NAME="tex2html20"
+  HREF="http://fits.gsfc.nasa.gov/fits_libraries.html">http://fits.gsfc.nasa.gov/fits_libraries.html</A></TT>. PyFITS, library
+for Python programming language was used for following
+examples. PyFITS is a development project of the Science Software
+Branch at the Space Telescope Science Institute
+<TT><A NAME="tex2html21"
+  HREF="http://www.stsci.edu/resources/software_hardware/pyfits">http://www.stsci.edu/resources/software_hardware/pyfits</A></TT>.
+
+<P>
+Reading FITS headers.
+
+<P>
+<BR>
+<IMG
+ WIDTH="646" HEIGHT="563" ALIGN="BOTTOM" BORDER="0"
+ SRC="img10.png"
+ ALT="\begin{lstlisting}
+In [1]: import pyfits
+In [2]: hdulist = pyfits.open('spSpec-5...
+...36R x 9C [19A, 1E, ...
+6 BinTableHDU 14 3874R x 3C [1J, 1J, 1E]
+\end{lstlisting}">
+<BR>
+
+<P>
+Printing primary HDU.
+
+<P>
+<BR>
+<IMG
+ WIDTH="898" HEIGHT="391" ALIGN="BOTTOM" BORDER="0"
+ SRC="img11.png"
+ ALT="\begin{lstlisting}
+In [4]: print hdulist[0].header
+-------&gt; print(hdulist[0].hea...
+...= 'science '
+TELESCOP= 'SDSS 2.5-M' / Sloan Digital Sky Survey
+\end{lstlisting}">
+<BR>
+
+<P>
+Updating FITS file.
+
+<P>
+<BR>
+<IMG
+ WIDTH="644" HEIGHT="76" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="\begin{lstlisting}
+In [16]: prihdr = hdulist[0].header
+In [17]: prihdr.update(...
+...r')
+In [18]: prihdr.add_history('I updated this file 3/27/11')
+\end{lstlisting}">
+<BR>
+
+<P>
+Example from program pf (plot fits) created for purposes of this work
+to plot <SPAN CLASS="MATH"><IMG
+ WIDTH="34" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img13.png"
+ ALT="$H\alpha$"></SPAN> emission in the spectra.
+
+<P>
+<BR>
+<IMG
+ WIDTH="656" HEIGHT="448" ALIGN="BOTTOM" BORDER="0"
+ SRC="img14.png"
+ ALT="\begin{lstlisting}
+def read(file):
+'''''' Read fits file. Convert wavelength t...
+.../s/cm^2/\\ AA]$'')
+ax.axvline(x=spLine, color = 'g', ls ='--')
+\end{lstlisting}">
+<BR>
+
+<P>
+I would also like to add an extra bookmark in acroread like so ...
+
+  [2]bookmark text is hereAnd this is what I want bookmarked
+
+<P>
+
+<P>
+
+<P>
+ <BR><HR>
+<ADDRESS>
+Astar Seran
+2011-04-01
+</ADDRESS>
+</BODY>
+</HTML>
