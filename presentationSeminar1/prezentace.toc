@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.07pt}
+\select@language {czech}
+\beamer@sectionintoc {1}{Zad\IeC {\'a}n\IeC {\'\i }}{2}{0}{1}
+\beamer@sectionintoc {2}{Motivace}{3}{0}{1}
+\beamer@sectionintoc {3}{Virtu\IeC {\'a}ln\IeC {\'\i } observato\IeC {\v r}}{5}{0}{1}
+\beamer@sectionintoc {4}{Dob\IeC {\'y}v\IeC {\'a}n\IeC {\'\i }/r\IeC {\'y}\IeC {\v z}ov\IeC {\'a}n\IeC {\'\i } znalost\IeC {\'\i }}{7}{0}{1}
+\beamer@sectionintoc {5}{Stav}{8}{0}{1}

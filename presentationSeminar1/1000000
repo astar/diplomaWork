@@ -1,0 +1,4 @@
+aptitude search beamer
+aptitude install beamer
+aptitude install latex-beamer
+aptitude search auctex

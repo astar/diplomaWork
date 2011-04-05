@@ -1,0 +1,280 @@
+% $Header: /cvsroot/latex-beamer/latex-beamer/solutions/generic-talks/generic-ornate-15min-45min.en.tex,v 1.5 2007/01/28 20:48:23 tantau Exp $
+
+\documentclass[fleqn]{beamer}
+
+% This file is a solution template for:
+
+% - Giving a talk on some subject.
+% - The talk is between 15min and 45min long.
+% - Style is ornate.
+
+
+
+% Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
+%
+% In principle, this file can be redistributed and/or modified under
+% the terms of the GNU Public License, version 2.
+%
+% However, this file is supposed to be a template to be modified
+% for your own needs. For this reason, if you use this file as a
+% template and not specifically distribute it as part of a another
+% package/program, I grant the extra permission to freely copy and
+% modify this file as you see fit and even to delete this copyright
+% notice. 
+
+
+\mode<presentation>
+% {
+%   \usetheme{Warsaw}
+%   % or ...
+
+%   \setbeamercovered{transparent}
+%   % or whatever (possibly just delete it)
+% }
+
+\usepackage{beamerthemeshadow}
+\usepackage[english,czech]{babel}
+\usepackage{bibentry}
+%\usepackage{natbib}
+%\selectbiblanguage{czech}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{lmodern}
+\def\uv#1{\glqq#1\grqq}
+\usepackage{graphicx}
+\usepackage{listings}
+% or whatever
+\usepackage{amsmath}
+\usepackage{xspace}
+\usepackage{natbib}
+\usepackage{float}
+%\usepackage{wrapfig}
+%\usepackage{sidecap}
+%\usepackage{txfonts}            
+\usepackage{color}
+
+
+
+\usepackage[utf8]{inputenc}
+% or whatever
+
+%\usepackage{times}
+\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+
+\title[Dobývání znalostí z astronomických dat] % (optional, use only with long paper titles)
+{Studium astronomických objektů s použitím technologií Virtuální observatoře} 
+
+%\subtitle
+%{Nástroje pro získávání a zpracování dat} % (optional)
+
+\author[Jaroslav Vážný] % (optional, use only with lots of authors)
+{Jaroslav Vážný }
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[Universities of Somewhere and Elsewhere] % (optional, but mostly needed)
+{
+
+    Masarykova univerzita
+
+}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+%\date[Short Occasion] % (optional)
+%{Date / Occasion}
+
+\subject{Talks}
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+\pgfdeclareimage[height=0.5cm]{university-logo}{sci-logo}
+\logo{\pgfuseimage{university-logo}}
+
+
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each subsection:
+\AtBeginSubsection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command: 
+
+%\beamerdefaultoverlayspecification{<+->}
+
+
+\begin{document}
+\input{lst.tex} 
+
+%\begin{frame}
+%  \begin{center}
+%    \frametitle{Vítejte ...}
+%    \small{Anybody who is not shocked by this subject has failed to understand it.}\cite{skala2005ukm} 
+%  \end{center}
+%\end{frame}
+
+
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+%\begin{frame}
+%  \tableofcontents
+%\end{frame}
+
+\begin{section}{Zadání}
+\begin{frame}\frametitle{Zadání}
+    Současné astronomické archivy obsahují nejen Petabyty informací o
+    stovkách milionů objektů v celém rozsahu elektromagnetického
+    spektra, ale navíc další data přibývající exponenciálním tempem
+    jsou ukládána na desítkách serverů jednotlivých projektů
+    roztroušených po celé zeměkouli.  Efektivní analýza dat v
+    takovémto prostředí pak vyžaduje \textcolor{green}{zcela nový
+      systémový přístup} a odlišné nástroje používající technologie a
+    infrastrukturu astronomické Virtuální observatoře. Jejich správné
+    využití spolu s metodami dobývání znalostí z dat (data mining) pak
+    umožňuje získat principiálně nové informace o fyzikální podstatě
+    astronomických objektů na základě jejich multispektrálních
+    charakteristik či statistické výjimečnosti.  \textcolor{red}{Cílem
+      práce je studium charakteristik vybrané třídy hvězd či
+      extragalaktických objektů s použitím Virtuální observatoře.}
+\end{frame}
+\end{section}
+
+\begin{section}{Motivace}
+\begin{frame}\frametitle{Záplava dat (datová krize) v astrofyzice}
+\begin{itemize}
+
+\item  Tycho Brahe $500\:\rm kB$ 
+\item  Sloan Digital Sky Survey: $3\:\rm TB$
+\item  LHC (Atlas, CMS, LHCb, ALICE) $15\:\rm PB/rok$
+\item  Large Synoptic Survey Telescope: $150\:\rm PB$ ($30\:\rm PB/noc$)
+
+\end{itemize}
+
+motto: Dat je moc a neumíme s nimi nakládat. I kdybychom to uměli,
+nevíme co s nimi.
+
+\end{frame}
+
+
+\begin{frame}\frametitle{Počítače používáme špatně}
+
+\begin{itemize}
+\item  Co je špatně
+    \begin{itemize}
+    \item  Umělá inteligence (Podvod;-), opakování, lokální přístup    
+    \end{itemize}
+\item  Co je správně
+  \begin{itemize}
+  \item  Fraktály, SETI, sítě
+  \end{itemize}
+\end{itemize}
+
+motto: Problém není v technologiích, ale v přístupu
+\end{frame}
+\end{section}
+
+\begin{section}{Virtuální observatoř}
+\begin{frame}\frametitle{Tim Berners-Lee www a raw data}
+
+\begin{itemize}
+\item  Skrytý potenciál a frustrace
+\item  Raw data: Revoluce?
+\item  Problém: Database hugging
+\end{itemize}
+
+\url{http://video.ted.com/talks/podcast/TimBerners-Lee_2009_480.mp4}
+
+\end{frame}
+
+\begin{frame}\frametitle{Co je to Virtuální observatoř}
+
+\begin{itemize}
+\item Infrastruktura pro přístup k datům
+\item Sada protokolů (VOTable, FITS, SAMP)
+\item Programy (Topcat, Aladin, VODesktop)
+\end{itemize}
+\end{frame}
+\end{section}
+
+\begin{section}{Dobývání/rýžování znalostí}
+
+\begin{frame}\frametitle{Co je to data mining}
+
+    Třídění a hledaní souvislostí.
+
+    \begin{itemize}
+    \item  Klasifikace
+
+      \begin{itemize}
+        \item  Na základě kontrolní skupiny roztřídíme data
+      \end{itemize}
+
+    \item  Shluková analýza      
+      
+      \begin{itemize}
+      \item  Pomocí metriky najdeme vzdálenosti mezi objekty        
+      \end{itemize}
+
+    \end{itemize}
+\end{frame}
+\end{section}
+
+\begin{section}{Stav}
+\begin{frame}\frametitle{Jak jsem na tom?}
+  
+  \begin{itemize}
+  \item Technologie
+
+    \begin{itemize}
+    \item  Virtuální observatoř
+    \item  Astrogrid
+    \item  Python
+    \item  Weka
+    \item Objekty
+    \end{itemize}
+
+  \begin{itemize}
+  \item  Be Hvězdy
+  \item  Blazary
+  \end{itemize}
+
+
+  
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+ \huge Děkuji za pozornost!    
+
+  \end{center}
+
+\end{frame}
+
+\end{section}
+
+
+
+\end{document}
+
+
