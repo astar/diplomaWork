@@ -243,10 +243,212 @@ actual resource. The listing is abbreviated.
 % \clearpage
 
 \section{Data Access Protocols}
-\subsection{Cone Search Protocol}
+
+Protocols are very important part of Virtual Observatory. Their
+understanding is key to comprehence the concepts behind VO. They allow
+to discover resource and obtain desirable data. All of them are based
+on existing web standards and are designed to be simple and thefor
+easy to implement on existing astronomical archives. The main idea is
+simple and universal: HTTP GET reqest with parametr is sent ot the
+resource and the structural document (VOTable) is sent back.
+
+\subsection{Cone Search Protocol} \label{sec:csp}
+Cone Search was the first standard protocol of Virtual Observatory. It
+enables to retrieve records from an astronomical catalog. The input is
+the query which describes sky position and the radius on the sky. The
+output is a list of objects whose positions lie in the defined
+vicinity. The output is formatted as a VOTable. Service compliant with
+Cone Search Protocol is called Cone Search Service. Only the request
+and response is specified not the implementation or data storage.
+
+
+The requirements are:
+
+
+\begin{enumerate}
+\item Respond to a HTTP GET request represented by a URL 
+
+\begin{lstlisting}
+  http://<server-address>/<path>?[<extra-GET-arg>&[...]]
+\end{lstlisting}
+
+The constraits are expressed as a list of ampersand-delimited GET
+arguments. For example:
+
+\begin{lstlisting}
+  http://simbad.u-strasbg.fr/simbad-conesearch.pl?RA=24.5&DEC=-57.2&SR=0.1
+\end{lstlisting}
+
+Where RA is right-ascension, DEC declination and SR the radius of the
+cone in the ICRS coordinate system in decimal degrees. 
+
+\item Return an XML document in the VOTable format.  
+
+  There are several requirements on the contents of the table:
+
+  \begin{itemize}
+  \item UCD fields "ID\_MAIN", "POS\_EQ\_RA\_MAIN", "POS\_EQ\_DEC\_MAIN" must
+    be present.
+  \item Return VOTable with single PARAM element name="Error" in the
+    case of error.
+  \end{itemize}
+
+\end{enumerate}
+
+Cone Search is implemented in many software packages. Besides standard
+VO tools like TOPCAT or STILTS also in MUNIPACK and many others.
+Following example show simple query to SIMBAD\cite{wenger2000simbad}
+catalog using method \emph{urlopen} of Python library \emph{urllib2}.
+
+\begin{lstlisting}
+  import urllib2
+  response = urllib2.urlopen('http://simbad.u-strasbg.fr/simbad-conesearch.pl?RA=24.5&DEC=-57&SR=0.1')
+  print response.read()
+\end{lstlisting}
+
+\noindent The same result can be obtained using program like wget\footnote{program
+  for non-interactive download of files from the Web} or Web browser.
+
 \subsection{Simple Image Access Protocol}
+The key idea behind the SIA Protocol is to allow users and programs to
+retrieve images created by an image service on-the-fly. From technical
+point of view it is designed in a similar way as Cone Search Protocol
+(see \ref{sec:csp}), specifically as name-value HTTP GET requests and
+the VOTable XML format output. The user specify ideal image (position
+and the size) he wants to receive and the image service produces a
+list of images it can return in VOTable format. The user then could
+issue getImage request to retrieve desirable images.
+
+There are following requirements for compliance. To be a SIA service
+To be a SIA service, it must support:
+
+\begin{itemize}
+\item Image Query web method,
+\item Image Retrieval (getImage) web method.
+\end{itemize}
+
+\noindent Furthermore the image service should be registered to allow locate
+optimal service. There are several types of image services:
+
+\begin{itemize}
+\item Image Cutout Service.
+
+  Provides rectagular regions of large images.
+\item Image Mosaicing Service.
+
+  Size, scale and projection could be specified.
+\item Atlas Image Archive
+
+  Pre-computed atlas of images.
+\item Pointed Image Archive.  
+
+  Images are not part of a sky survey but
+  rather focused on specific source
+\end{itemize}
+
+
+To get a list of images query has to send via HTTP GET method. The
+first part is base URL. The second part are paramters specifing image
+properies such as position (POS), size (SIZE), etc.
+
+\begin{lstlisting}
+  http://<server-address>/<path>?[<extra GET arg>&[...]]
+\end{lstlisting}
+
+Example of using SIA protocol to obtain image from SDSS. 
+
+\begin{lstlisting}
+  http://skyview.gsfc.nasa.gov/cgi-bin/vo/sia.pl?SURVEY=SDSS&POS=18.87667,-0.86083&SIZE=1
+  http://hubblesite.org/cgi-bin/sia/hst_pr_sia.pl?POS=83.6,22.0&SIZE=1.0
+\end{lstlisting}
+
+There is more complex example using Astrogrid framework to show how to
+discover SIA service and obtain an image. First registry method
+searchSiap is used to find SIA service for SDSS, this is then used in
+SiapSearch method to obtain result in VOTable format.  
+
+\begin{lstlisting}
+  In [1]: from astrogrid import Registry, ConeSearch
+  In [2]: list = reg.searchSiap('SDSS')
+  In [3]: print [p['id'] for p in list]
+  -------> print([p['id'] for p in list])
+  ['ivo://nasa.heasarc/skyview/sdss']
+  
+  In [4]: siap = SiapSearch('ivo://nasa.heasarc/skyview/sdss')
+  In [5]: result = siap.execute(18.8, -0.8, 1.0)
+\end{lstlisting}
+
+% Even more sophisticated example is described below. The STILTS tool is
+% used to get images from 2MASS survey for many objects from the file
+% using SIA protocol. This file is the list of Be starts from Ondrejov
+% used later in this work.
+
+
+ 
+
 \subsection{Simple Spectra Access Protocol}
+
+SSA Protocol allow ot discover and obtain 1-D spectra from VO
+Service. It shares many similarities to the previosly discussed SIA
+Protocol.
+
+defines a uniform interface to remotely discover and access simple 1-D spectra. 
+
+similar to that of the older Simple Image Access (SIA)
+
+The process to obtain a spectrum compose of following steps:
+
+\begin{itemize}
+\item Query the resource registry.
+\item Data discovery to selected service to get aviable resources in
+  VOTable format.
+\item Download selected spectra using URL.
+\end{itemize}
+
+The spectra could be on of the following types:
+
+\begin{itemize}
+\item Precomputed
+\item Computed on the fly
+\end{itemize}
+
+To be a SSA-compliant, the service must provide:
+
+\begin{enumerate}
+\item HTTP GET interface, returning the query response encoded as a
+VOTable document, with at least paramters POS, SIZE, TIME, BAND, and FORMAT.
+\item GetData method returning data in at least one of the
+  SSA-compliant data formats (VOTable, FITS)
+\item FORMAT=METADATA� metadata query feature
+\end{enumerate}
+
+
+Following example show how to discover resources with SSA capability
+using STILTS program. 
+
+\begin{lstlisting}
+  stilts regquery query="shortName like 'ESO' capability/@standardID =
+  'ivo://ivoa.net/std/SSA'" ocmd="keepcols 'ShortName accessUrl'"
+  ofmt=ascii
+\end{lstlisting}
+
+With information of service URL, one can specify a query to obtain a
+list with avible spectra in VOTable format. This can be used in Web
+browser or via programs such \emph{wget} or \emph{curl}.
+
+\begin{lstlisting}
+  http://archive.eso.org/apps/ssaserver/EsoProxySsap?REQUEST=queryData&POS=83.63,22&SIZE=1
+\end{lstlisting}
+
 \section{Data Formats}
+Astronomy has allways been, by its nature, on vanguard of image
+producing and processing. This is especially true for the era of
+digitalization. The situation with data formats in astronomy is
+unique. There are just few very good standards with variety of
+implementation in many programming languages. Virtual Observatory
+takes advantage of this heritage and implement these formats in
+sensible way into its own standards. 
+ 
 \subsection{VOTable}
 \subsubsection*{Motivation}
 VOTable is flexible storage and exchange format fundamentaly
@@ -316,11 +518,11 @@ Following example shows transformation FITS into VOTable.
 
 \subsection{FITS}
 \subsubsection*{Motivation}
-
+\emph{
 "An archival format must be utterly portable and self-describing, on
 the assumption that, apart from the transcription device, neither the
 software nor the hardware that wrote the data will be available when
-the data are read." \cite{nrc1995}
+the data are read." \cite{nrc1995}}
 
 
 \bigskip
@@ -374,9 +576,6 @@ No.    Name         Type      Cards   Dimensions   Format
 1                BinTableHDU     54  6R x 23C      [1E, 1E, ...
 2                BinTableHDU     54  44R x 23C     [1E, 1E, ...
 3                BinTableHDU     18  1R x 5C       [1E, 1E, ...
-4                BinTableHDU     32  53R x 12C     [1J, 1J, ...
-5                BinTableHDU     26  36R x 9C      [19A, 1E, ...
-6                BinTableHDU     14  3874R x 3C    [1J, 1J, 1E]
 \end{lstlisting}
 
 Printing primary HDU.
@@ -386,48 +585,44 @@ In [4]: print hdulist[0].header
 -------> print(hdulist[0].header)
 DATE-OBS= '2004-08-20'         / 1st row - TAI date                             
 TAIHMS  = '10:36:18.11'        / 1st row - TAI time (HH:MM:SS.SS) (TAI-UT = appr
-TIMESYS = 'tai     '           / TAI, not UTC                                   
 TAI-BEG =        4599713999.00 / Exposure Start Time                            
 TAI-END =        4599717089.00 / Exposure End Time                              
 MJD     =                53237 / MJD of observation                             
 MJDLIST = '53237   '           /                                                
 VERSION = 'v3_140_0'           / version of IOP                                 
-CAMVER  = 'SPEC1 v4_8'         / Camera code version                            
-OBSERVER= 'prn     '                                                            
-OBSCOMM = 'science '                                                            
 TELESCOP= 'SDSS 2.5-M'         / Sloan Digital Sky Survey
 \end{lstlisting}
 
 Updating FITS file.
 
 \begin{lstlisting}
-  In [16]: prihdr = hdulist[0].header
-  In [17]: prihdr.update('observer', 'Astar')
-  In [18]: prihdr.add_history('I updated this file 3/27/11')
+  In [1]: prihdr = hdulist[0].header
+  In [2]: prihdr.update('observer', 'Astar')
+  In [3]: prihdr.add_history('I updated this file 3/27/11')
 \end{lstlisting}
 
 
-Example from program pf (plot fits) created for purposes of this work
-to plot $H\alpha$ emission in the spectra.
+% Example from program pf (plot fits) created for purposes of this work
+% to plot $H\alpha$ emission in the spectra.
 
-\begin{lstlisting}
- def read(file):
-    """ Read fits file. Convert wavelength to angstroms """ 
-    data = pyfits.getdata(file)
-    w = lambda x : 10.0**(3.5796 + x*10.0**(-4))
-    x = np.arange(1,data[0].size + 1)
-    xx  = w(x) # convert to actual wavelenght
-    return np.asarray([xx, data[0]])
+% \begin{lstlisting}
+%  def read(file):
+%     """ Read fits file. Convert wavelength to angstroms """ 
+%     data = pyfits.getdata(file)
+%     w = lambda x : 10.0**(3.5796 + x*10.0**(-4))
+%     x = np.arange(1,data[0].size + 1)
+%     xx  = w(x) # convert to actual wavelenght
+%     return np.asarray([xx, data[0]])
 
- def plot(file,xdata,ydata,spLine):
-    fig = plt.figure()
-    ax = fig.add_subplot(111)
-    graph = ax.plot(xdata,ydata, 'r')
-    ax.set_title(file)
-    ax.set_xlabel("$Wavelenght [\\AA]$")                                                                            
-    ax.set_ylabel("$Energy [10^{-17} erg/s/cm^2/\\AA]$")
-    ax.axvline(x=spLine, color = 'g', ls ='--')
-\end{lstlisting}
+%  def plot(file,xdata,ydata,spLine):
+%     fig = plt.figure()
+%     ax = fig.add_subplot(111)
+%     graph = ax.plot(xdata,ydata, 'r')
+%     ax.set_title(file)
+%     ax.set_xlabel("$Wavelenght [\\AA]$")                                                                            
+%     ax.set_ylabel("$Energy [10^{-17} erg/s/cm^2/\\AA]$")
+%     ax.axvline(x=spLine, color = 'g', ls ='--')
+% \end{lstlisting}
 
 
 
@@ -483,10 +678,10 @@ to plot $H\alpha$ emission in the spectra.
 %% can talk about it all we want and when we are tired we can move on to the next
 %% chapter ...
 
-I would also like to add an extra bookmark in acroread like so ...
-\ifpdf
-  \pdfbookmark[2]{bookmark text is here}{And this is what I want bookmarked}
-\fi
+%%I would also like to add an extra bookmark in acroread like so ...
+% \ifpdf
+%   \pdfbookmark[2]{bookmark text is here}{And this is what I want bookmarked}
+% \fi
 % ------------------------------------------------------------------------
 
 
