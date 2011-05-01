@@ -13,11 +13,11 @@
 
 \chapter{ Virtual Observatory (VO)}
 
-\begin{lstlisting}[frame=single]
-What is the motivation behind Virtual Observatory? Is data avalanche
-problem only in astronomy? What is IVOA?  What is Virtual Observatory
-architecture?
-\end{lstlisting}
+% \begin{lstlisting}[frame=single]
+% What is the motivation behind Virtual Observatory? Is data avalanche
+% problem only in astronomy? What is IVOA?  What is Virtual Observatory
+% architecture?
+% \end{lstlisting}
 
 \section{ Data avalanche: Opportunity or disaster?}
 
@@ -59,11 +59,11 @@ Web standards\footnote{Prior to its creation, incompatible versions
     
 \section{International Virtual Observatory Alliance (IVOA)}
 
-   \begin{wrapfigure}{r}{0.5\textwidth}
+   \begin{wrapfigure}{r}{0.7\textwidth}
      \vspace{0pt}
      \begin{center}
        \ifpdf
-       \includegraphics[width=0.4\textwidth]{ivoamembers}
+       \includegraphics[width=0.7\textwidth]{ivoamembers}
        \else
        \includegraphics[bb = 92 86 545 742, height=6in]{ivoamembers.jpg}
        \fi
@@ -161,11 +161,11 @@ or a data collection. \cite{bensonivoa}
 UML\footnote{Unified Modeling Language. Standardized general-purpose
   modeling language in the field of object-oriented software
   engineering.}  diagram of the resource in on the figure
-\ref{FigResource}. Next paragraph is an attempt to explain thsi
+\ref{FigResource}. Next paragraph is an attempt to explain this
 diagram to non-programmers. Full arrow means generalization, Resource
 can be a generalization of organization, data collection, application
 or service. Single arrow means association. Organization can be linked
-(assosiated) together with other organization (multiplicity is
+(associated) together with other organization (multiplicity is
 represented by number 1, 0..). The same is true for data
 collection. Organization is a generalization of and/or provider which
 can own zero to N services. Diamond means aggregation Publisher can
@@ -245,11 +245,11 @@ actual resource. The listing is abbreviated.
 \section{Data Access Protocols}
 
 Protocols are very important part of Virtual Observatory. Their
-understanding is key to comprehence the concepts behind VO. They allow
+understanding is key to comprehend the concepts behind VO. They allow
 to discover resource and obtain desirable data. All of them are based
-on existing web standards and are designed to be simple and thefor
+on existing web standards and are designed to be simple and therefor
 easy to implement on existing astronomical archives. The main idea is
-simple and universal: HTTP GET reqest with parametr is sent ot the
+simple and universal: HTTP GET request with parameter is sent to the
 resource and the structural document (VOTable) is sent back.
 
 \subsection{Cone Search Protocol} \label{sec:csp}
@@ -272,7 +272,7 @@ The requirements are:
   http://<server-address>/<path>?[<extra-GET-arg>&[...]]
 \end{lstlisting}
 
-The constraits are expressed as a list of ampersand-delimited GET
+The constrains are expressed as a list of ampersand-delimited GET
 arguments. For example:
 
 \begin{lstlisting}
@@ -333,7 +333,7 @@ optimal service. There are several types of image services:
 \begin{itemize}
 \item Image Cutout Service.
 
-  Provides rectagular regions of large images.
+  Provides rectangular regions of large images.
 \item Image Mosaicing Service.
 
   Size, scale and projection could be specified.
@@ -348,8 +348,8 @@ optimal service. There are several types of image services:
 
 
 To get a list of images query has to send via HTTP GET method. The
-first part is base URL. The second part are paramters specifing image
-properies such as position (POS), size (SIZE), etc.
+first part is base URL. The second part are parameters specifying image
+properties such as position (POS), size (SIZE), etc.
 
 \begin{lstlisting}
   http://<server-address>/<path>?[<extra GET arg>&[...]]
@@ -388,8 +388,8 @@ SiapSearch method to obtain result in VOTable format.
 
 \subsection{Simple Spectra Access Protocol}
 
-SSA Protocol allow ot discover and obtain 1-D spectra from VO
-Service. It shares many similarities to the previosly discussed SIA
+SSA Protocol allow to discover and obtain 1-D spectra from VO
+Service. It shares many similarities to the previously discussed SIA
 Protocol.
 
 defines a uniform interface to remotely discover and access simple 1-D spectra. 
@@ -408,7 +408,7 @@ The process to obtain a spectrum compose of following steps:
 The spectra could be on of the following types:
 
 \begin{itemize}
-\item Precomputed
+\item Pre-computed
 \item Computed on the fly
 \end{itemize}
 
@@ -416,7 +416,7 @@ To be a SSA-compliant, the service must provide:
 
 \begin{enumerate}
 \item HTTP GET interface, returning the query response encoded as a
-VOTable document, with at least paramters POS, SIZE, TIME, BAND, and FORMAT.
+VOTable document, with at least parameters POS, SIZE, TIME, BAND, and FORMAT.
 \item GetData method returning data in at least one of the
   SSA-compliant data formats (VOTable, FITS)
 \item FORMAT=METADATA� metadata query feature
@@ -433,7 +433,7 @@ using STILTS program.
 \end{lstlisting}
 
 With information of service URL, one can specify a query to obtain a
-list with avible spectra in VOTable format. This can be used in Web
+list with aviable spectra in VOTable format. This can be used in Web
 browser or via programs such \emph{wget} or \emph{curl}.
 
 \begin{lstlisting}
@@ -441,7 +441,7 @@ browser or via programs such \emph{wget} or \emph{curl}.
 \end{lstlisting}
 
 \section{Data Formats}
-Astronomy has allways been, by its nature, on vanguard of image
+Astronomy has always been, by its nature, on vanguard of image
 producing and processing. This is especially true for the era of
 digitalization. The situation with data formats in astronomy is
 unique. There are just few very good standards with variety of
@@ -451,7 +451,7 @@ sensible way into its own standards.
  
 \subsection{VOTable}
 \subsubsection*{Motivation}
-VOTable is flexible storage and exchange format fundamentaly
+VOTable is flexible storage and exchange format fundamentally
 interconnected with Virtual Observatory. It has features for big-data
 and Grid computing. Data can be stored in different ways in dependence
 on the charatecter and size. Small tables can be stored in pure XML
@@ -501,7 +501,6 @@ types are FITS and BINARY)
 \end{lstlisting}
 
 
-\subsubsection*{Tools and libraries}
 \subsubsection*{Examples}
 All example created using ATpy\footnote{High-level Python package
 providing a way to manipulate tables of astronomical data in a uniform
@@ -600,6 +599,28 @@ Updating FITS file.
   In [2]: prihdr.update('observer', 'Astar')
   In [3]: prihdr.add_history('I updated this file 3/27/11')
 \end{lstlisting}
+
+\section{Tools \& Libraries}
+There are many programs and libraries allowing user to interact with
+VO services. Such application is called VO Enabled. Thanks to openness
+and standardisation anyone can develop his own application or enable
+existing\footnote{For example Astroweka or Mirage.} application to
+interact with VO Sevices . Libraries are also aviable for many
+programming languages enabling advanced users to interact with VO from
+scripts and programs. Such diversity is healthy and propably the only
+possible way to ensure natural evolution of Virtual Observatory. This
+chapter describes some of the libraries and applications ued during
+this work. Low level tools and libraries are stressed as opposite to
+standard introductory texts of Virtual Observatory where the emphasis
+is on "user friendly" GUI applications.
+
+
+\subsection{Command line tools}
+\subsubsection*{Astro Runtime}
+
+middleware that makes it simple to call Virtual Observatory services
+from any programming language
+\subsection{GUI Appliactions}
 
 
 % Example from program pf (plot fits) created for purposes of this work

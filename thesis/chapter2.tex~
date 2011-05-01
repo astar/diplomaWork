@@ -1,0 +1,94 @@
+\chapter{Data Mining}
+Virtual Observatory may be seen as data infrastructure. It enables
+astronomers to get data more easily in a uniform way. But there is
+another and even bigger problem now. How to deal with such amount of
+data? Can we change the problem to opportunity? Can we discover new
+phenomena, new types of objects or exploit natural groups in the data?
+Data Mining and related techniques are created exactly for such
+purposes. Used correctly, it can be powerfull approach, promising
+scientific advance. On the other side this field is very complex with
+dozens of different methods and algoritms. This forms needs and
+opportunity for interdisciplinary cooperation with Data Minig
+experts. This can be very beneficially for both fileds, providing
+astronomers with intersting methods for data analysis and computer
+scientist with large ammout of quality data.
+
+\section{Supervised Methods}
+These methods are also known as predictive\cite{ball2010data}. They
+rely on training set with known target property. This set must be
+representative. The selected method is trained on that set and the
+result is then used on data for which the target property is not
+known. Among supervised method are clasification, regresion, anomaly
+detection and others.
+
+\subsection{Decision Tree (DT)}
+Is an example of supervised clasification. Based on final number of
+data $(x^{(1)},\ldots,x^{(p)})$ with known class $C_1,\ldots, C_m$
+classificator is created, i.e. image $f$ classifing any $x \in
+\mathcal{X}, f:\mathcal{X}\rightarrow \mathcal{Y}$, where
+$\mathcal{X}$ is a set of possible input vectors and $\mathcal{Y}$ is
+a set which values represents classes $C_1,\ldots, C_m$ (for example
+$\mathcal{Y} = {1,\ldots,m}$). The model is consctructed based on
+traning set as a tree structure, where leaves represent
+classifications and branches conjunctions of features that lead to
+those classifications. The main advatages of DT are:
+
+\begin{itemize}
+\item Simple to understand and interpret.
+\item Able to handle both numerical and categorical data.
+\item Uses a white box model.
+\item Perform well with large data in a short time.
+\end{itemize}
+
+In pseudocode, the general algorithm for building decision trees is
+\cite{kotsiantis2007supervised}:
+\begin{enumerate}
+\item Check for base cases
+\item For each attribute a
+  \begin{itemize}
+  \item Find the normalized information gain from splitting on a
+  \end{itemize}
+\item Let "a best" be the attribute with the highest normalized information gain
+\item Create a decision node that splits on "a best"
+\item Recur on the sublists obtained by splitting on "a best", and add
+  those nodes as children of node
+\end{enumerate}
+
+Furtheremore algoritms C4.5 is described for several reasons: Its code
+is aviable and free implementeations exist (J48 in weka), is de-facto
+standard in classsifiction using DT, is used in practical part of this
+work. The key question of DT algoritm is how to choose attribute for
+splitting the tree. C4.5 Uses meassures based on information entropy:
+
+\begin{equation}
+  \label{eq:entropy}
+  H(X) = -\sum_{i=1}^n {p(x_i) \log_2 p(x_i)},
+\end{equation}
+where $p(x_i)$ is propability of occurence of class $i$ and $n$ is the
+number of classes.
+
+After the tree is created it is optimized by pruning, which prevent
+overfitting.
+
+\subsubsection{pruning}
+\subsubsection{Cross-validation}
+The quality of the trainning set is crucial to good results. The amout
+of data for testing is allways limited. In general, one cannot be sure
+whether a sample is representative. If for example certain group is
+missing, one could not expect a classifier learned from such data to
+perform well on the exampless of that class. One of the technique used
+here is cross-validation.
+
+The data is divided into fixed number of partitions and each in turn
+is used for tesing and the reminder is used for trainning. Finally,
+the number of partitions error estimates are averaged to yield an
+overall error. The standard is to used 10-fold cross-validation. This
+number is a result of tests on numerous data sets \cite{witten2005data}
+
+\subsection{Support Vector Machine (SVM)}
+
+\section{Unsupervised Methods}
+\section{Existing Projects}
+\subsection{Weka}
+\subsection{SVM lib}
+\subsection{DAME}

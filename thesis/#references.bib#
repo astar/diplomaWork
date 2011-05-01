@@ -1,0 +1,158 @@
+% ------------------------------------------------------------------------
+% BIBLIOGRAPHY FILE
+% ------------------------------------------------------------------------
+
+@article{hanisch2010international,
+  title={{The international virtual observatory}},
+  author={Hanisch, RJ and Quinn, PJ},
+  journal={Retrieved from http://www. ivoa. net/pub/info/TheIVOA. pdf on},
+  volume={24},
+  year={2010}
+}
+
+@article{williams2004virtual,
+  title={{Virtual Observatory Architecture Overview}},
+  author={Williams, R. and Hanischet, B. and others},
+  journal={Retrieved October},
+  volume={24},
+  pages={2008},
+  year={2004}
+}
+
+@article{berners1990worldwideweb,
+  title={{WorldWideWeb: Proposal for a HyperText project}},
+  author={Berners-Lee, T. and Cailliau, R.},
+  journal={European Particle Physics Laboratory (CERN)},
+  year={1990}
+}
+
+@article{gray2007,
+  title={{An RDF version of the VO Registry}},
+  author={Norman Gray},
+  journal={IVOA Note (V1.0, 2007 September 20) },
+  volume={},
+  year={2007}
+}
+
+
+@article{bensonivoa,
+  title={{IVOA Registry Interfaces}},
+  author={Benson, K. and Plante, R. and Auden, E. and others},
+  journal={IVOA Working Draft},
+  year={2009}
+}
+
+@article{ballastroinformatics,
+  title={{ASTROINFORMATICS IN CANADA}},
+  author={Ball, N.M. and Schade, D.},
+  year={2010}
+}
+
+@article{fits1997,
+  title={{A User’s Guide for the Flexible Image Transport System}},
+  author={Schlesinger, B.},
+  year={1997},
+  publisher={Goddard Space Flight Center}
+}
+
+@article{nrc1995,
+  title={{Preserving Scientiﬁc Data on our Physical Universe}},
+  author={National Research Council},
+  year={1995},
+  publisher={National Academy Press}
+}
+
+@article{porter2003classical,
+  title={{Classical Be Stars}},
+  author={Porter, J.M. and Rivinius, T.},
+  journal={Publications of the Astronomical Society of the Pacific},
+  volume={115},
+  number={812},
+  pages={1153--1170},
+  issn={0004-6280},
+  year={2003}
+}
+
+@article{becla2006designing,
+  title={{Designing a multi-petabyte database for LSST}},
+  author={Becla, J. and Hanushevsky, A. and Nikolaev, S. and Abdulla, G. and Szalay, A. and Nieto-Santisteban, M. and Thakar, A. and Gray, J.},
+  journal={Arxiv preprint cs/0604112},
+  year={2006}
+}
+
+
+@article{wenger2000simbad,
+  title={{The SIMBAD astronomical database}},
+  author={Wenger, M. and Ochsenbein, F. and Egret, D. and Dubois, P. and Bonnarel, F. and Borde, S. and Genova, F. and Jasniewicz, G. and Lalo{\\"e}, S. and Lesteven, S. and others},
+  journal={Arxiv preprint astro-ph/0002110},
+  year={2000}
+}
+
+@article{ball2010data,
+  title={{Data mining and machine learning in astronomy}},
+  author={Ball, N.M. and Brunner, R.J. and Gregory, R.},
+  journal={International Journal of Modern Physics D},
+  volume={19},
+  number={7},
+  pages={1049--1106},
+  issn={0218-2718},
+  year={2010},
+  publisher={World Scientific Publishing Co., Inc., 27 Warren Street Suite 401-402 Hackensack NJ 07601 USA}
+}
+
+@article{kotsiantis2007supervised,
+  title={{Supervised machine learning: A review of classification techniques}},
+  author={Kotsiantis, SB and Zaharakis, ID and Pintelas, PE},
+  journal={Emerging artificial intelligence applications in computer engineering: real word AI systems with applications in eHealth, HCI, information retrieval and pervasive technologies},
+  volume={160},
+  pages={3},
+  isbn={1586037803},
+  year={2007},
+  publisher={Ios Pr Inc}
+}
+
+@book{quinlan1993c4,
+  title={{C4. 5: programs for machine learning}},
+  author={Quinlan, J.R.},
+  isbn={1558602380},
+  year={1993},
+  publisher={Morgan Kaufmann}
+}
+
+@article{perryman1997hipparcos,
+  title={{The HIPPARCOS catalogue}},
+  author={Perryman, MAC and Lindegren, L. and Kovalevsky, J. and Hoeg, E. and Bastian, U. and Bernacca, PL and Cr{\'e}z{\'e}, M. and Donati, F. and Grenon, M. and van Leeuwen, F. and others},
+  journal={Astronomy and Astrophysics},
+  volume={323},
+  pages={L49--L52},
+  issn={0004-6361},
+  year={1997}
+}
+
+@ARTICLE{2006AJ131.1163S,
+   author = {{Skrutskie}, M.~F. and {Cutri}, R.~M. and {Stiening}, R. and 
+	{Weinberg}, M.~D. and {Schneider}, S. and {Carpenter}, J.~M. and 
+	{Beichman}, C. and {Capps}, R. and {Chester}, T. and {Elias}, J. and 
+	{Huchra}, J. and {Liebert}, J. and {Lonsdale}, C. and {Monet}, D.~G. and 
+	{Price}, S. and {Seitzer}, P. and {Jarrett}, T. and {Kirkpatrick}, J.~D. and 
+	{Gizis}, J.~E. and {Howard}, E. and {Evans}, T. and {Fowler}, J. and 
+	{Fullmer}, L. and {Hurt}, R. and {Light}, R. and {Kopan}, E.~L. and 
+	{Marsh}, K.~A. and {McCallon}, H.~L. and {Tam}, R. and {Van Dyk}, S. and 
+	{Wheelock}, S.},
+    title = "{The Two Micron All Sky Survey (2MASS)}",
+  journal = {\aj},
+ keywords = {Catalogs, Infrared: General, Surveys},
+     year = 2006,
+    month = feb,
+   volume = 131,
+    pages = {1163-1183},
+      doi = {10.1086/498708},
+   adsurl = {http://adsabs.harvard.edu/abs/2006AJ....131.1163S},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+
+
+
+% ------------------------------------------------------------------------

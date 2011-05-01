@@ -1,4 +1,4 @@
-\backcite {ballastroinformatics}{{v}{(document)}{Doc-Start}}
+\backcite {ballastroinformatics}{{vi}{(document)}{Doc-Start}}
 \backcite {ballastroinformatics}{{1}{(document)}{Doc-Start}}
 \backcite {ballastroinformatics}{{1}{1}{figure.0.1}}
 \backcite {porter2003classical}{{1}{(document)}{Doc-Start}}
@@ -8,5 +8,6 @@
 \backcite {berners1990worldwideweb}{{3}{1.1}{section.1.1}}
 \backcite {hanisch2010international}{{4}{1.2}{figure.1.1}}
 \backcite {bensonivoa}{{6}{1.4}{section.1.4}}
-\backcite {nrc1995}{{10}{1.6.2}{section*.7}}
-\backcite {fits1997}{{10}{1.6.2}{section*.7}}
+\backcite {nrc1995}{{14}{1.6.2}{section*.6}}
+\backcite {fits1997}{{14}{1.6.2}{section*.6}}
+\backcite {porter2003classical}{{23}{3.1}{section.3.1}}

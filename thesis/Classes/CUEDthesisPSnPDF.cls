@@ -53,7 +53,8 @@
 \usepackage{wrapfig}
 \usepackage{StyleFiles/lettrine}
 \usepackage{booktabs}
-
+\usepackage{mathtools}
+%\usepackage[utf8x]{inputenc}	% Doporucujeme pouzivat UTF-8 (unicode).
 %Bibliography
 %uncomment next line to change bibliography name to references for Book document class
 \renewcommand{\bibname}{References}

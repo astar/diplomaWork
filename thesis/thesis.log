@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.3.22)  5 APR 2011 11:09
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.3.22)  1 MAY 2011 12:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -214,11 +214,91 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count107
 \@thisrulewidth=\dimen135
 )
+(/usr/share/texmf-texlive/tex/latex/mh/mathtools.sty
+Package: mathtools 2008/08/01 v1.06 mathematical typesetting tools (MH)
+
+(/usr/share/texmf-texlive/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count108
+\calc@Bcount=\count109
+\calc@Adimen=\dimen136
+\calc@Bdimen=\dimen137
+\calc@Askip=\skip54
+\calc@Bskip=\skip55
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count110
+\calc@Cskip=\skip56
+)
+(/usr/share/texmf-texlive/tex/latex/mh/mhsetup.sty
+Package: mhsetup 2007/12/03 v1.2 programming setup (MH)
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip57
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks19
+\ex@=\dimen138
+))
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen139
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count111
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count112
+\leftroot@=\count113
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count114
+\DOTSCASE@=\count115
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box31
+\strutbox@=\box32
+\big@size=\dimen140
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count116
+\c@MaxMatrixCols=\count117
+\dotsspace@=\muskip10
+\c@parentequation=\count118
+\dspbrk@lvl=\count119
+\tag@help=\toks20
+\row@=\count120
+\column@=\count121
+\maxfields@=\count122
+\andhelp@=\toks21
+\eqnshift@=\dimen141
+\alignsep@=\dimen142
+\tagshift@=\dimen143
+\tagwidth@=\dimen144
+\totwidth@=\dimen145
+\lineht@=\dimen146
+\@envbody=\toks22
+\multlinegap=\skip58
+\multlinetaggap=\skip59
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+\g_MT_multlinerow_int=\count123
+\l_MT_multwidth_dim=\dimen147
+)
 (/usr/share/texmf-texlive/tex/latex/nomencl/nomencl.sty
 Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
-\nomlabelwidth=\dimen136
-\nom@tempdim=\dimen137
-\nomitemsep=\skip54
+\nomlabelwidth=\dimen148
+\nom@tempdim=\dimen149
+\nomitemsep=\skip60
 )
 \@nomenclaturefile=\write3
 \openout3 = `thesis.nlo'.
@@ -242,9 +322,9 @@ O)
 (/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
 Package: xcolor-patch 2009/10/02 xcolor patch
 ))
-\@linkdim=\dimen138
-\Hy@linkcounter=\count108
-\Hy@pagecounter=\count109
+\@linkdim=\dimen150
+\Hy@linkcounter=\count124
+\Hy@pagecounter=\count125
 
 (/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
@@ -304,7 +384,7 @@ Package hyperref Info: Bookmarks ON on input line 3191.
 Package: backref 2006/09/05 v1.28 Bibliographical back referencing
 )
 (/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
-\Urlmuskip=\muskip10
+\Urlmuskip=\muskip11
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 3428.
@@ -334,10 +414,10 @@ Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 )))
-\Fld@menulength=\count110
-\Field@Width=\dimen139
-\Fld@charsize=\dimen140
-\Field@toks=\toks19
+\Fld@menulength=\count126
+\Field@Width=\dimen151
+\Fld@charsize=\dimen152
+\Field@toks=\toks24
 Package hyperref Info: Hyper figures ON on input line 4375.
 Package hyperref Info: Link nesting OFF on input line 4382.
 Package hyperref Info: Hyper index ON on input line 4385.
@@ -349,14 +429,14 @@ Package hyperref Info: PDF/A mode OFF on input line 4407.
 (/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
 Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
 )
-\Hy@abspage=\count111
-\c@Item=\count112
-\c@Hfootnote=\count113
+\Hy@abspage=\count127
+\c@Item=\count128
+\c@Hfootnote=\count129
 )
 *hyperref using driver hpdftex*
 (/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
-\Fld@listcount=\count114
+\Fld@listcount=\count130
 )
 (/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
@@ -372,23 +452,23 @@ File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 )
-\Gin@req@height=\dimen141
-\Gin@req@width=\dimen142
+\Gin@req@height=\dimen153
+\Gin@req@width=\dimen154
 )
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 170.
+less on input line 171.
 
 ) (/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
 Package: geometry 2008/12/21 v4.2 Page Geometry
-\Gm@cnth=\count115
-\Gm@cntv=\count116
-\c@Gm@tempcnt=\count117
-\Gm@bindingoffset=\dimen143
-\Gm@wd@mp=\dimen144
-\Gm@odd@mp=\dimen145
-\Gm@even@mp=\dimen146
-\Gm@dimlist=\toks20
+\Gm@cnth=\count131
+\Gm@cntv=\count132
+\c@Gm@tempcnt=\count133
+\Gm@bindingoffset=\dimen155
+\Gm@wd@mp=\dimen156
+\Gm@odd@mp=\dimen157
+\Gm@even@mp=\dimen158
+\Gm@dimlist=\toks25
 
 (/usr/share/texmf-texlive/tex/xelatex/xetexconfig/geometry.cfg))
 (./StyleFiles/watermark.sty
@@ -407,64 +487,67 @@ LaTeX Warning: You have requested package `StyleFiles/fncychapleo',
                but the package provides `fncychapleo'.
 
 Package: fncychapleo 1997/04/06 v1.11 LaTeX package (Revised chapters)
-\RW=\skip55
-\mylen=\skip56
-\myhi=\skip57
-\px=\skip58
-\py=\skip59
-\pyy=\skip60
-\pxx=\skip61
+\RW=\skip61
+\mylen=\skip62
+\myhi=\skip63
+\px=\skip64
+\py=\skip65
+\pyy=\skip66
+\pxx=\skip67
 ) (./thesis.aux (./dedication.aux) (./acknowledgement.aux) (./abstract.aux)
-(./introduction.aux) (./chapter1.aux))
+(./introduction.aux) (./chapter1.aux) (./chapter2.aux) (./chapter3.aux
+
+LaTeX Warning: Label `FigReduction' multiply defined.
+
+))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-
-(/usr/share/texmf/tex/context/base/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+ (/usr/share/texmf/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count118
-\scratchdimen=\dimen147
-\scratchbox=\box31
-\nofMPsegments=\count119
-\nofMParguments=\count120
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count121
-\MPscratchDim=\dimen148
-\MPnumerator=\count122
-\everyMPtoPDFconversion=\toks22
+\scratchcounter=\count134
+\scratchdimen=\dimen159
+\scratchbox=\box33
+\nofMPsegments=\count135
+\nofMParguments=\count136
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count137
+\MPscratchDim=\dimen160
+\MPnumerator=\count138
+\everyMPtoPDFconversion=\toks27
 )
-\c@lstlisting=\count123
-Package hyperref Info: Link coloring ON on input line 71.
+\c@lstlisting=\count139
+Package hyperref Info: Link coloring ON on input line 72.
  (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
 (/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
 Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
-\c@section@level=\count124
+\c@section@level=\count140
 )
-LaTeX Info: Redefining \ref on input line 71.
-LaTeX Info: Redefining \pageref on input line 71.
+LaTeX Info: Redefining \ref on input line 72.
+LaTeX Info: Redefining \pageref on input line 72.
  (./thesis.out)
 (./thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
 
-Package backref Info: ** backref set up for natbib ** on input line 71.
-\AtBeginShipoutBox=\box32
+Package backref Info: ** backref set up for natbib ** on input line 72.
+\AtBeginShipoutBox=\box34
 
 *geometry auto-detecting driver*
 *geometry detected driver: pdftex*
@@ -510,7 +593,7 @@ driver: pdftex
 (./lst.tex (/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 ))
-<pic/ivoa_logo.png, id=70, 451.6875pt x 253.69781pt>
+<pic/ivoa_logo.png, id=166, 451.6875pt x 253.69781pt>
 File: pic/ivoa_logo.png Graphic file (type png)
  <use pic/ivoa_logo.png>
 [1
@@ -535,74 +618,188 @@ File: pic/ivoa_logo.png Graphic file (type png)
 
 
 ])
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 107.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 108.
 
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
-) (./thesis.toc)
-\tf@toc=\write5
-\openout5 = `thesis.toc'.
-
- [4
+) (./thesis.toc [4
 \FN@pp@footnotehinttrue 
 
 
-] (./thesis.lof)
+])
+\tf@toc=\write5
+\openout5 = `thesis.toc'.
+
+ [5] (./thesis.lof
+Missing character: There is no Å in font cmr12!
+Missing character: There is no ™ in font cmr12!
+)
 \tf@lof=\write6
 \openout6 = `thesis.lof'.
 
- (./thesis.nls) [5
+ (./thesis.nls) [6
 
 ]
 \openout2 = `introduction.aux'.
 
  (./introduction.tex
-<pic/astroinformatics.pdf, id=135, 216.81pt x 136.51pt>
+<pic/astroinformatics.pdf, id=272, 216.81pt x 136.51pt>
 File: pic/astroinformatics.pdf Graphic file (type pdf)
 
 <use pic/astroinformatics.pdf>
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 69.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 59.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.72 \item i
-            s non-linear in nature, [1
+l.62 \item i
+            s meant to be compact and consistent, [1
 
 
 
  <./pic/astroinformatics.pdf>]) [2]
 \openout2 = `chapter1.aux'.
 
-
-(./chapter1.tex
+ (./chapter1.tex
 Chapter 1.
+<pic/ivoamembers.jpg, id=317, 964.64738pt x 520.55348pt>
+File: pic/ivoamembers.jpg Graphic file (type jpg)
+
+<use pic/ivoamembers.jpg> [3
+
+
+
+]
+<pic/architecture.png, id=333, 722.7pt x 542.025pt>
+File: pic/architecture.png Graphic file (type png)
+ <use pic/architecture.png>
+[4 <./pic/ivoamembers.jpg (PNG copy)>] [5 <./pic/architecture.png (PNG copy)>]
+<pic/resource.png, id=351, 576.1525pt x 464.73625pt>
+File: pic/resource.png Graphic file (type png)
+ <use pic/resource.png>
+[6
+
+] [7 <./pic/resource.png (PNG copy)>] (./resourceExample.vot
 
 LaTeX Font Warning: Font shape `OT1/cmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 18.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 13.
 
-<pic/ivoamembers.jpg, id=176, 853.1875pt x 602.25pt>
-File: pic/ivoamembers.jpg Graphic file (type jpg)
- <use pic/ivoamembers.jpg>
-[3
+) [8
+
+]
+
+Package natbib Warning: Citation `wenger2000simbad' on page 9 undefined on inpu
+t line 300.
+
+[9] [10]
+Missing character: There is no ï in font cmr12!
+Missing character: There is no ¿ in font cmr12!
+Missing character: There is no ½ in font cmr12!
+ [11] [12] [13] [14]) [15] [16]
+\openout2 = `chapter2.aux'.
+
+ (./chapter2.tex
+Chapter 2.
+
+Package natbib Warning: Citation `ball2010data' on page 17 undefined on input l
+ine 17.
+
+[17
 
 
 
-] <pic/architecture.png, id=198, 722.7pt x 542.025pt>
-File: pic/architecture.png Graphic file (type png)
+]
 
-<use pic/architecture.png> [4 <./pic/ivoamembers.jpg>] [5 <./pic/architecture.p
-ng (PNG copy)>] <pic/resource.png, id=217, 576.1525pt x 464.73625pt>
-File: pic/resource.png Graphic file (type png)
+Package natbib Warning: Citation `kotsiantis2007supervised' on page 18 undefine
+d on input line 44.
 
-<use pic/resource.png> [6
 
-] [7 <./pic/resource.png (PNG copy)>]
-(./resourceExample.vot) [8
+Package natbib Warning: Citation `witten2005data' on page 18 undefined on input
+ line 86.
 
-] [9] [10] [11]) [12] (./thesis.bbl (./thesis.brf)
+[18]
+
+LaTeX Warning: Command \r invalid in math mode on input line 121.
+
+[19] <pic/starsGalaxiesQSO.pdf, id=599, 556.0775pt x 348.30125pt>
+File: pic/starsGalaxiesQSO.pdf Graphic file (type pdf)
+
+<use pic/starsGalaxiesQSO.pdf> [20] [21 <./pic/starsGalaxiesQSO.pdf>]) [22
+
+]
+\openout2 = `chapter3.aux'.
+
+
+(./chapter3.tex
+Chapter 3.
+Missing character: There is no Å in font cmr12!
+Missing character: There is no ™ in font cmr12!
+
+Package natbib Warning: Citation `perryman1997hipparcos' on page 23 undefined o
+n input line 30.
+
+
+Package natbib Warning: Citation `2006AJ131.1163S' on page 23 undefined on inpu
+t line 31.
+
+[23
+
+
+
+] <pic/jhk_be_b.pdf, id=638, 722.7pt x 542.025pt>
+File: pic/jhk_be_b.pdf Graphic file (type pdf)
+ <use pic/jhk_be_b.pdf>
+<pic/jhk_be_b_errors.pdf, id=640, 722.7pt x 542.025pt>
+File: pic/jhk_be_b_errors.pdf Graphic file (type pdf)
+
+<use pic/jhk_be_b_errors.pdf> [24 <./pic/jhk_be_b.pdf>] [25 <./pic/jhk_be_b_err
+ors.pdf>] [26
+
+]
+Missing character: There is no Å in font cmr12!
+Missing character: There is no ™ in font cmr12!
+Missing character: There is no Å in font cmr12!
+Missing character: There is no ™ in font cmr12!
+Missing character: There is no Å in font cmr12!
+Missing character: There is no ™ in font cmr12!
+ [27]
+Missing character: There is no Å in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no Å in font cmr12!
+Missing character: There is no ™ in font cmr12!
+ <pic/convolution.pdf, id=720, 587.19376pt x 442.65375pt>
+File: pic/convolution.pdf Graphic file (type pdf)
+
+<use pic/convolution.pdf>
+Overfull \hbox (14.51154pt too wide) in paragraph at lines 242--253
+ [] 
+ []
+
+Missing character: There is no Å in font cmr12!
+Missing character: There is no ™ in font cmr12!
+Missing character: There is no Å in font cmr12!
+Missing character: There is no ™ in font cmr12!
+[28] [29 <./pic/convolution.pdf>]
+
+LaTeX Warning: Command \r invalid in math mode on input line 269.
+
+Missing character: There is no Å in font cmr12!
+Missing character: There is no ™ in font cmr12!
+<pic/beta_cyg_b.pdf, id=812, 587.19376pt x 442.65375pt>
+File: pic/beta_cyg_b.pdf Graphic file (type pdf)
+
+<use pic/beta_cyg_b.pdf>
+Overfull \hbox (14.51154pt too wide) in paragraph at lines 282--292
+ [] 
+ []
+
+[30
+
+ <./pic/beta_cyg_b.pdf>]) [31
+
+] (./thesis.bbl (./thesis.brf)
 \tf@brf=\write7
 \openout7 = `thesis.brf'.
 
@@ -613,37 +810,48 @@ Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
 )
-[13
+
+Package natbib Warning: There were undefined citations.
+
+[32
 
 
 
 ] (./thesis.aux (./dedication.aux) (./acknowledgement.aux) (./abstract.aux)
-(./introduction.aux) (./chapter1.aux)) ) 
+(./introduction.aux) (./chapter1.aux) (./chapter2.aux) (./chapter3.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 8599 strings out of 493848
- 121412 string characters out of 1152823
- 527906 words of memory out of 3000000
- 11483 multiletter control sequences out of 15000+50000
- 18500 words of font info for 62 fonts, out of 3000000 for 9000
+ 9951 strings out of 493848
+ 139671 string characters out of 1152823
+ 427088 words of memory out of 3000000
+ 12598 multiletter control sequences out of 15000+50000
+ 21148 words of font info for 74 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 45i,12n,45p,321b,1205s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf-texlive/fonts/enc/dvi
-ps/base/8r.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.
-pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/
-share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf
--texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fon
-ts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/pub
-lic/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
-/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/t
-exmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texliv
-e/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/typ
-e1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/public/a
-msfonts/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvb8a
-c.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis.pdf (19 pages, 669543 bytes).
+ 45i,12n,50p,439b,1704s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
+ve/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-texlive/fonts/type1/public
+/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
+m/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pf
+b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/shar
+e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texl
+ive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/a
+msfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
+r7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/
+share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf
+-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fon
+ts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/type1/pu
+blic/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
+ts/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/euler/eu
+sm10.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/s
+hare/texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on thesis.pdf (39 pages, 1141082 bytes).
 PDF statistics:
- 486 PDF objects out of 1000 (max. 8388607)
- 172 named destinations out of 1000 (max. 500000)
- 162 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1044 PDF objects out of 1200 (max. 8388607)
+ 360 named destinations out of 1000 (max. 500000)
+ 379 words of extra memory for PDF output out of 10000 (max. 10000000)
 
