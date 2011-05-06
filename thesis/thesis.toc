@@ -1,7 +1,7 @@
 \select@language {english}
 \contentsline {chapter}{Contents}{iv}{section*.1}
 \contentsline {chapter}{List of Figures}{vi}{section*.2}
-\contentsline {chapter}{Nomenclature}{vi}{section*.2}
+\contentsline {chapter}{Nomenclature}{vii}{section*.2}
 \contentsline {chapter}{\numberline {1} Virtual Observatory (VO)}{3}{chapter.1}
 \contentsline {section}{\numberline {1.1} Data avalanche: Opportunity or disaster?}{3}{section.1.1}
 \contentsline {section}{\numberline {1.2}International Virtual Observatory Alliance (IVOA)}{3}{section.1.2}
@@ -30,13 +30,19 @@
 \contentsline {subsection}{\numberline {2.3.3}DAME}{22}{subsection.2.3.3}
 \contentsline {chapter}{\numberline {3}Be candidates}{23}{chapter.3}
 \contentsline {section}{\numberline {3.1}Be stars}{23}{section.3.1}
-\contentsline {section}{\numberline {3.2}Photometric Data Mining}{23}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Data preprocessing}{23}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Classification}{26}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Spectral Data Mining}{26}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Testing Data}{26}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Training Data}{27}{subsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.2.1}Spectra Reduction}{27}{subsubsection.3.3.2.1}
-\contentsline {subsection}{\numberline {3.3.3}Spectra Lines Characteristics}{30}{subsection.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.3.1}Normalization}{30}{subsubsection.3.3.3.1}
-\contentsline {chapter}{References}{32}{section*.10}
+\contentsline {section}{\numberline {3.2}Photometric Data Mining}{25}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Data preprocessing}{25}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Classification}{28}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Spectral Data Mining}{28}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Testing Data}{28}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Training Data}{29}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Spectra Reduction}{30}{subsubsection.3.3.2.1}
+\contentsline {subsection}{\numberline {3.3.3}Spectra Lines Characteristics}{32}{subsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.3.1}Normalization}{32}{subsubsection.3.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.3.2}The hight of the H$\alpha $ line}{32}{subsubsection.3.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3.3}The noise level of the spectrum}{32}{subsubsection.3.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.3.4}The width of the H$\alpha $ line}{33}{subsubsection.3.3.3.4}
+\contentsline {subsection}{\numberline {3.3.4}Data Mining}{36}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Results}{36}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}Conclusion}{44}{subsection.3.3.6}
+\contentsline {chapter}{References}{45}{section*.30}

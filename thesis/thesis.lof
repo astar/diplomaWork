@@ -1,13 +1,22 @@
 \select@language {english}
-\contentsline {figure}{\numberline {1}{\ignorespaces Astroinformatics in the context of astronomy \cite {ballastroinformatics} }}{1}{figure.0.1}
+\contentsline {figure}{\numberline {1}{\ignorespaces Astroinformatics in the context of astronomy \cite {ballastroinformatics} \relax }}{1}{figure.caption.3}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces IVOA members}}{4}{figure.1.1}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces VO Architecture}}{5}{figure.1.2}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces UML diagram of VOResource}}{7}{figure.1.3}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces IVOA members\relax }}{4}{figure.caption.5}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces VO Architecture\relax }}{5}{figure.caption.6}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces UML diagram of VOResource\relax }}{7}{figure.caption.7}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Color Diagram of the problem. It shows that individual objects classes occupies different region in the digram.}}{21}{figure.2.1}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Color Diagram of the problem. It shows that individual objects classes occupies different region in the digram.\relax }}{21}{figure.caption.16}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Color diagram of confirmed Be stars Vs B stars}}{24}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Color diagram of confirmed Be stars Vs B stars with errors}}{25}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Reduction of Ondřejov's spectra of the Be star 4 Hercules. The top figure shows gaussian function used for convolution with the structrum, followed by the original spectrum then there is a spectrum after convolution with the gausian function. The last is the final spectrum after reduction.}}{29}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Normalized spectrum of $\beta $ Cygni B (Albireo B). The top figure depicts the continuum fit. The bottom figure shows the region (width of the red line) used for extraction. The position of the line correspond to the characteristic value.}}{30}{figure.3.4}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Model of a typical Be star \cite {hirata1984star}\relax }}{23}{figure.caption.17}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Example of spectra of Be stars based on view angle \cite {slettebak1988stars}\relax }}{24}{figure.caption.18}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Color diagram of confirmed Be stars Vs B stars\relax }}{26}{figure.caption.19}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Color diagram of confirmed Be stars Vs B stars with errors\relax }}{27}{figure.caption.20}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Reduction of Ondřejov's spectra of the Be star 4 Hercules. The top figure shows gaussian function used for convolution with the structrum, followed by the original spectrum then there is a spectrum after convolution with the gausian function. The last is the final spectrum after reduction.\relax }}{31}{figure.caption.21}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Normalized spectrum of Be star 60 Cyg. The top figure depicts the continuum fit. The bottom figure shows the region (width of the green line) used for extraction. The position of the line correspond to the maximum value in the region of $50\r A$. The gaussian fit is in red.\relax }}{34}{figure.caption.22}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Normalized spectrum of Be star HR 8682. The top figure depicts the continuum fit. The bottom figure shows the region (width of the green line) used for extraction. The position of the line correspond to the maximum value in the region of $50\r A$. The gaussian fit is in red.\relax }}{35}{figure.caption.23}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Spectrum of \relax }}{38}{figure.caption.24}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Spectrum of \relax }}{39}{figure.caption.25}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Spectrum of \relax }}{40}{figure.caption.26}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Spectrum of 4 Her. Be star. Spectral Type B9pe. \relax }}{41}{figure.caption.27}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Spectrum of HR 7418 (Albireo B). A fast-rotating Be star, with an equatorial rotational velocity of at least 250 kilometers per second. Its surface temperature has been spectroscopically estimated to be about 13.200 K. Spectral Type B8Ve. \relax }}{42}{figure.caption.28}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Spectrum of 6 Cepheus. Be star. Spectral Type B3IVe.\relax }}{43}{figure.caption.29}

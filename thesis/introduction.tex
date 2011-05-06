@@ -12,7 +12,7 @@
 \renewcommand{\LettrineFontHook}{\color{red}}
 
 
-\lettrine[lines = 3, loversize=-0.1, lraise=0.1]{F}rom the dawn of
+\lettrine[lines = 3, loversize=-0.1, lraise=0.1]{F}rom the dawn of the
 existence astronomy has always been starved for data, but in the last
 few decades the situation has changed and now we are facing the data
 deluge of biblical proportions. The data are not just increasing in
@@ -40,10 +40,9 @@ tools available to scientist.
 
 
 
-Of course astronomers are not alone and particle physics, biology and
-other sciences are also in the vanguard of the data intensive
-science. This is great opportunity for interdisciplinary
-collaboration.
+The astronomers are not alone and particle physics, biology and other
+sciences are also in the vanguard of the data intensive science. This
+is great opportunity for interdisciplinary collaboration.
 
 This work deals with the problem of semi-automatic procedures for
 finding Be stars \cite{porter2003classical} candidates in the
@@ -84,24 +83,25 @@ there are numerous commented snippets of codes. Their purpose is to
 demonstrate the concept and they are thefore short and without
 auxiliary technicalities such are error handling etc. They are mostly
 Python and shell scripts. Any interested person can obtain the full
-source codes (including thesis itself) from GIT repository at
-\url{git://github.com/astar/diplomaWork}
+source codes (including thesis itself) from GIT repository
+\footnote{\url{git://github.com/astar/diplomaWork}}.
 
 
 \begin{table}[ht]
   \centering
   \small
-     \begin{tabular}[ht]{l l l l}
+     \begin{tabular}[ht]{l l}
      \toprule
-     Name & Input & Output & Description \\
+     Name & Description \\
      \midrule
-     analyse.py & Spectrum & Spectrum & Check the \\
-     getSpectraList.py & List of objects & SSA Compliant list & \\
-     getSpectra.py & SSA Compliant list & Links to spectra & \\
-     getMax.py & Spectrum & List of extracted values & \\
-     reduce.py & Spectrum & Reduced spectrum & \\
-     pf.py & Spectrum & Figure of the spectrum & \\
-     dm.sh & Trainnig and testing sets & List of classified objects & \\ 
+     analyse.py & Check the wavelength range, raneme according to
+     target name.\\
+     getSpectraList.py & Create SSA Compliant list from\\
+     getSpectra.py & Get spectra links from SSA Server.\\
+     getMax.py & Extract feautres from spectra. \\
+     convolve.py &  \\
+     pf.py & Print Fits. Shows the spectrum. \\
+     dm.sh &  \\ 
      \bottomrule
    \end{tabular}
   \caption{Scripts developed within the scope of the thesis.}
