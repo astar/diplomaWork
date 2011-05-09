@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.3.22)  9 MAY 2011 03:49
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.3.22)  10 MAY 2011 00:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**thesis.tex
+**thesis
 (./thesis.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
@@ -487,12 +487,8 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 )
 \Gin@req@height=\dimen160
 \Gin@req@width=\dimen161
-)
-
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 173.
-
-) (/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
+))
+(/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
 Package: geometry 2008/12/21 v4.2 Page Geometry
 \Gm@cnth=\count139
 \Gm@cntv=\count140
@@ -555,7 +551,10 @@ LaTeX Warning: Label `FigSpecChar' multiply defined.
 
 LaTeX Warning: Label `FigResult3' multiply defined.
 
-) (./conclusion.aux))
+
+LaTeX Warning: Label `FigBe3' multiply defined.
+
+) (./conclusion.aux) (./appendix1.aux) (./appendix2.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
@@ -572,7 +571,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
 LaTeX Font Info:    ... okay on input line 73.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
 LaTeX Font Info:    ... okay on input line 73.
- (/usr/share/texmf/tex/context/base/supp-pdf.mkii
+
+(/usr/share/texmf/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count142
 \scratchdimen=\dimen166
@@ -616,7 +616,7 @@ Package backref Info: ** backref set up for natbib ** on input line 73.
 paper: class default
 landscape: --
 twocolumn: --
-twoside: --
+twoside: true
 asymmetric: --
 h-parts: 71.13188pt, 455.24411pt, 71.13188pt
 v-parts: 71.13188pt, 702.78308pt, 71.13188pt
@@ -648,23 +648,24 @@ driver: pdftex
 \hoffset 0.0pt
 \voffset 0.0pt
 \mag 1000
-
+\@twosidetrue \@mparswitchtrue 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
 (./lst.tex (/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 ))
-<pic/sci-logo.pdf, id=182, 427.5975pt x 427.5975pt>
+<pic/sci-logo.pdf, id=186, 427.5975pt x 427.5975pt>
 File: pic/sci-logo.pdf Graphic file (type pdf)
  <use pic/sci-logo.pdf>
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./pic/sci-logo.pdf>]
+[2
+
+]
 \openout2 = `dedication.aux'.
 
-
-(./dedication.tex [1
-
+ (./dedication.tex [1
 
 ])
 \openout2 = `cite.aux'.
@@ -710,21 +711,35 @@ File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 \FN@pp@footnotehinttrue 
 
 
-])
+]
+Missing character: There is no ≈ in font cmbx12!
+Missing character: There is no ô in font cmbx12!
+)
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
  [6] (./thesis.lof
+
+Package natbib Warning: Citation `ballastroinformatics' on page vii undefined o
+n input line 2.
+
+
+Package natbib Warning: Citation `hirata1984star' on page vii undefined on inpu
+t line 14.
+
+
+Package natbib Warning: Citation `slettebak1988stars' on page vii undefined on 
+input line 15.
+
 Missing character: There is no ≈ in font cmr12!
 Missing character: There is no ô in font cmr12!
 Missing character: There is no ≈ in font cmr12!
 Missing character: There is no ô in font cmr12!
- [7
+Missing character: There is no ≈ in font cmr12!
+Missing character: There is no ô in font cmr12!
+[7
 
 ]
-Missing character: There is no ≈ in font cmr12!
-Missing character: There is no ô in font cmr12!
-
 
 LaTeX Warning: Command \r invalid in math mode on input line 21.
 
@@ -739,11 +754,27 @@ LaTeX Warning: Command \r invalid in math mode on input line 22.
 \openout2 = `introduction.aux'.
 
  (./introduction.tex
+
+Package natbib Warning: Citation `ballastroinformatics' on page 1 undefined on 
+input line 20.
+
 <pic/astroinformatics.pdf, id=343, 216.81pt x 136.51pt>
 File: pic/astroinformatics.pdf Graphic file (type pdf)
 
 <use pic/astroinformatics.pdf>
-<pic/mapThesis.pdf, id=351, 382.42876pt x 229.85875pt>
+
+Package natbib Warning: Citation `ballastroinformatics' on page 1 undefined on 
+input line 35.
+
+
+Package natbib Warning: Citation `ballastroinformatics' on page 1 undefined on 
+input line 35.
+
+
+Package natbib Warning: Citation `porter2003classical' on page 1 undefined on i
+nput line 48.
+
+<pic/mapThesis.pdf, id=345, 382.42876pt x 229.85875pt>
 File: pic/mapThesis.pdf Graphic file (type pdf)
  <use pic/mapThesis.pdf>pdfTeX warning (ext4): destination with the same identi
 fier (name{page.1}) has been already used, duplicate ignored
@@ -757,37 +788,66 @@ l.96
  <./pic/astroinformatics.pdf>]
 Missing character: There is no ≈ in font cmr10!
 Missing character: There is no ô in font cmr10!
-) [2 <./pic/mapThesis.pdf>] [3]
+)pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.117 \include{introduction}
+                             [2 <./pic/mapThesis.pdf>]
 \openout2 = `chapter1.aux'.
 
-
-(./chapter1.tex
+ (./chapter1.tex
 Chapter 1.
-<pic/mapVirtualObservatory.pdf, id=385, 391.4625pt x 163.61125pt>
+<pic/mapVirtualObservatory.pdf, id=373, 391.4625pt x 163.61125pt>
 File: pic/mapVirtualObservatory.pdf Graphic file (type pdf)
 
 <use pic/mapVirtualObservatory.pdf>
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 41.
- [4
+
+
+Package natbib Warning: Citation `hanisch2010international' on page 3 undefined
+ on input line 42.
+
+
+Package natbib Warning: Citation `becla2006designing' on page 3 undefined on in
+put line 45.
+
+
+Package natbib Warning: Citation `hanisch2010international' on page 3 undefined
+ on input line 51.
+
+
+Package natbib Warning: Citation `berners1990worldwideweb' on page 3 undefined 
+on input line 67.
+
+[3
 
 
 
  <./pic/mapVirtualObservatory.pdf>]
-<pic/ivoamembers.jpg, id=411, 964.64738pt x 520.55348pt>
+<pic/ivoamembers.jpg, id=388, 964.64738pt x 520.55348pt>
 File: pic/ivoamembers.jpg Graphic file (type jpg)
 
 <use pic/ivoamembers.jpg>
-<pic/architecture.png, id=417, 464.4853pt x 380.92313pt>
-File: pic/architecture.png Graphic file (type png)
 
-<use pic/architecture.png>
-Overfull \hbox (9.24007pt too wide) in paragraph at lines 140--146
+Package natbib Warning: Citation `hanisch2010international' on page 4 undefined
+ on input line 99.
+
+<pic/architecture.pdf, id=392, 464.73625pt x 382.42876pt>
+File: pic/architecture.pdf Graphic file (type pdf)
+
+<use pic/architecture.pdf>
+Overfull \hbox (9.491pt too wide) in paragraph at lines 140--146
  [] 
  []
 
-[5 <./pic/ivoamembers.jpg (PNG copy)>] [6 <./pic/architecture.png (PNG copy)>]
-<pic/resources.pdf, id=438, 597.50786pt x 845.04686pt>
+[4 <./pic/ivoamembers.jpg (PNG copy)>] [5 <./pic/architecture.pdf>]
+
+Package natbib Warning: Citation `bensonivoa' on page 6 undefined on input line
+ 174.
+
+<pic/resources.pdf, id=415, 597.50786pt x 845.04686pt>
 File: pic/resources.pdf Graphic file (type pdf)
  <use pic/resources.pdf>
 Overfull \hbox (142.26228pt too wide) in paragraph at lines 191--197
@@ -797,39 +857,68 @@ Overfull \hbox (142.26228pt too wide) in paragraph at lines 191--197
 
 LaTeX Warning: Float too large for page by 180.7617pt on input line 200.
 
-[7
+[6
 
-] [8 <./pic/resources.pdf>] (./resourceExample.vot
+] [7 <./pic/resources.pdf>] (./resourceExample.vot
 
 LaTeX Font Warning: Font shape `OT1/cmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 13.
 
-) [9
+) [8
 
-] [10] [11]
+]
+
+Package natbib Warning: Citation `wenger2000simbad' on page 9 undefined on inpu
+t line 316.
+
+[9] [10]
 Missing character: There is no Ô in font cmr12!
 Missing character: There is no ø in font cmr12!
 Missing character: There is no Ω in font cmr12!
- [12] [13] [14] [15]) [16]
+ [11]
+
+Package natbib Warning: Citation `nrc1995' on page 12 undefined on input line 5
+42.
+
+[12]
+
+Package natbib Warning: Citation `fits1997' on page 13 undefined on input line 
+549.
+
+[13]) [14]
 \openout2 = `chapter2.aux'.
 
  (./chapter2.tex
 Chapter 2.
-<pic/mapDataMining.pdf, id=659, 285.065pt x 97.36375pt>
+<pic/mapDataMining.pdf, id=621, 285.065pt x 97.36375pt>
 File: pic/mapDataMining.pdf Graphic file (type pdf)
 
-<use pic/mapDataMining.pdf> [17
+<use pic/mapDataMining.pdf>
+
+Package natbib Warning: Citation `ball2010data' on page 15 undefined on input l
+ine 32.
+
+[15
 
 
 
- <./pic/mapDataMining.pdf>] [18]
+ <./pic/mapDataMining.pdf>]
+
+Package natbib Warning: Citation `kotsiantis2007supervised' on page 16 undefine
+d on input line 59.
+
+
+Package natbib Warning: Citation `witten2005data' on page 16 undefined on input
+ line 101.
+
+[16]
 
 LaTeX Warning: Command \r invalid in math mode on input line 136.
 
-[19] <pic/starsGalaxiesQSO.pdf, id=716, 587.19376pt x 442.65375pt>
+[17] <pic/starsGalaxiesQSO.pdf, id=680, 587.19376pt x 442.65375pt>
 File: pic/starsGalaxiesQSO.pdf Graphic file (type pdf)
 
-<use pic/starsGalaxiesQSO.pdf> [20] [21 <./pic/starsGalaxiesQSO.pdf>]
+<use pic/starsGalaxiesQSO.pdf> [18 <./pic/starsGalaxiesQSO.pdf>]
 Overfull \hbox (70.64041pt too wide) in paragraph at lines 212--213
 [][][][] 
  []
@@ -839,56 +928,81 @@ Overfull \hbox (70.64041pt too wide) in paragraph at lines 217--218
 [][][][] 
  []
 
-[22
+[19
 
-]) [23]
+]) [20]
 \openout2 = `chapter3.aux'.
 
  (./chapter3.tex
 Chapter 3.
-<pic/mapBeCandidates.pdf, id=808, 442.65375pt x 212.795pt>
+<pic/mapBeCandidates.pdf, id=757, 442.65375pt x 212.795pt>
 File: pic/mapBeCandidates.pdf Graphic file (type pdf)
 
-<use pic/mapBeCandidates.pdf> [24
+<use pic/mapBeCandidates.pdf>
+
+Package natbib Warning: Citation `porter2003classical' on page 21 undefined on 
+input line 35.
+
+<pic/beStarLine.pdf, id=758, 524.96124pt x 297.11pt>
+File: pic/beStarLine.pdf Graphic file (type pdf)
+ <use pic/beStarLine.pdf>
+
+Package natbib Warning: Citation `hirata1984star' on page 21 undefined on input
+ line 54.
+
+
+Package natbib Warning: Citation `hirata1984star' on page 21 undefined on input
+ line 54.
+
+[21
 
 
 
  <./pic/mapBeCandidates.pdf>]
-<pic/beStarLine.pdf, id=820, 524.96124pt x 297.11pt>
-File: pic/beStarLine.pdf Graphic file (type pdf)
- <use pic/beStarLine.pdf>
-<pic/beStarLine2.png, id=825, 580.41844pt x 374.90062pt>
+<pic/beStarLine2.png, id=769, 580.41844pt x 374.90062pt>
 File: pic/beStarLine2.png Graphic file (type png)
 
-<use pic/beStarLine2.png> [25 <./pic/beStarLine.pdf> <./pic/beStarLine2.png (PN
-G copy)>] <pic/flowPhoto.pdf, id=839, 614.295pt x 794.97pt>
-File: pic/flowPhoto.pdf Graphic file (type pdf)
+<use pic/beStarLine2.png>
 
-<use pic/flowPhoto.pdf> [26
+Package natbib Warning: Citation `slettebak1988stars' on page 22 undefined on i
+nput line 69.
+
+
+Package natbib Warning: Citation `slettebak1988stars' on page 22 undefined on i
+nput line 69.
+
+[22 <./pic/beStarLine.pdf> <./pic/beStarLine2.png (PNG copy)>]
+<pic/flowPhoto.pdf, id=779, 614.295pt x 794.97pt>
+File: pic/flowPhoto.pdf Graphic file (type pdf)
+ <use pic/flowPhoto.pdf>
+[23
 
  <./pic/flowPhoto.pdf>]
+
+Package natbib Warning: Citation `van1995halpha' on page 24 undefined on input 
+line 123.
+
 Missing character: There is no ≈ in font cmr12!
 Missing character: There is no ô in font cmr12!
 
-
-Package natbib Warning: Citation `perryman1997hipparcos' on page 27 undefined o
+Package natbib Warning: Citation `perryman1997hipparcos' on page 24 undefined o
 n input line 129.
 
 
-Package natbib Warning: Citation `2006AJ131.1163S' on page 27 undefined on inpu
+Package natbib Warning: Citation `2006AJ131.1163S' on page 24 undefined on inpu
 t line 130.
 
-<pic/jhk_be_b.pdf, id=856, 587.19376pt x 442.65375pt>
+<pic/jhk_be_b.pdf, id=794, 587.19376pt x 442.65375pt>
 File: pic/jhk_be_b.pdf Graphic file (type pdf)
  <use pic/jhk_be_b.pdf>
-[27
+[24
 
  <./pic/jhk_be_b.pdf>]
-<pic/jhk_be_b_errors.pdf, id=904, 587.19376pt x 442.65375pt>
+<pic/jhk_be_b_errors.pdf, id=841, 587.19376pt x 442.65375pt>
 File: pic/jhk_be_b_errors.pdf Graphic file (type pdf)
 
-<use pic/jhk_be_b_errors.pdf> [28 <./pic/jhk_be_b_errors.pdf>]
-<pic/flowSpectra.pdf, id=951, 614.295pt x 794.97pt>
+<use pic/jhk_be_b_errors.pdf> [25 <./pic/jhk_be_b_errors.pdf>]
+<pic/flowSpectra.pdf, id=887, 614.295pt x 794.97pt>
 File: pic/flowSpectra.pdf Graphic file (type pdf)
  <use pic/flowSpectra.pdf>
 Missing character: There is no ≈ in font cmr12!
@@ -900,14 +1014,14 @@ Missing character: There is no ô in font cmr12!
 Missing character: There is no ≈ in font cmr12!
 Missing character: There is no ô in font cmr12!
 
-[29
+[26
 
-] [30 <./pic/flowSpectra.pdf>]
+] [27 <./pic/flowSpectra.pdf>]
 Missing character: There is no ≈ in font cmr12!
 Missing character: There is no ô in font cmr12!
 Missing character: There is no ≈ in font cmr12!
 Missing character: There is no ô in font cmr12!
- [31
+ [28
 
 ]
 Missing character: There is no ≈ in font cmr12!
@@ -916,8 +1030,8 @@ Missing character: There is no ≈ in font cmtt10!
 Missing character: There is no ô in font cmtt10!
 Missing character: There is no ≈ in font cmr12!
 Missing character: There is no ô in font cmr12!
- [32]
-<pic/convolution.pdf, id=1040, 587.19376pt x 442.65375pt>
+
+<pic/convolution.pdf, id=950, 587.19376pt x 442.65375pt>
 File: pic/convolution.pdf Graphic file (type pdf)
 
 <use pic/convolution.pdf>
@@ -929,7 +1043,7 @@ Missing character: There is no ≈ in font cmr12!
 Missing character: There is no ô in font cmr12!
 Missing character: There is no ≈ in font cmr12!
 Missing character: There is no ô in font cmr12!
-[33 <./pic/convolution.pdf>]
+[29] [30 <./pic/convolution.pdf>]
 Missing character: There is no ≈ in font cmr12!
 Missing character: There is no ô in font cmr12!
 
@@ -948,9 +1062,6 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 LaTeX Warning: Command \r invalid in math mode on input line 420.
 
-[34
-
-]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 447.
@@ -966,19 +1077,26 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
+[31
 
-LaTeX Warning: Reference `FigSpecChar1' on page 35 undefined on input line 476.
+]
+
+Package natbib Warning: Citation `launer1979robustness' on page 32 undefined on
+ input line 459.
+
+
+LaTeX Warning: Reference `FigSpecChar1' on page 32 undefined on input line 476.
 
 
 
-LaTeX Warning: Reference `FigSpecChar2' on page 35 undefined on input line 477.
+LaTeX Warning: Reference `FigSpecChar2' on page 32 undefined on input line 477.
 
 
 Missing character: There is no ≈ in font cmr12!
 Missing character: There is no ô in font cmr12!
 Missing character: There is no ≈ in font cmr12!
 Missing character: There is no ô in font cmr12!
-<pic/figSpecCharCyg60.pdf, id=1129, 587.19376pt x 442.65375pt>
+<pic/figSpecCharCyg60.pdf, id=1065, 587.19376pt x 442.65375pt>
 File: pic/figSpecCharCyg60.pdf Graphic file (type pdf)
 
 <use pic/figSpecCharCyg60.pdf>
@@ -992,7 +1110,7 @@ LaTeX Warning: Command \r invalid in math mode on input line 497.
 
 LaTeX Warning: Command \r invalid in math mode on input line 497.
 
-<pic/figSpecCharhd216057.pdf, id=1130, 587.19376pt x 442.65375pt>
+<pic/figSpecCharhd216057.pdf, id=1066, 587.19376pt x 442.65375pt>
 File: pic/figSpecCharhd216057.pdf Graphic file (type pdf)
 
 <use pic/figSpecCharhd216057.pdf>
@@ -1006,71 +1124,217 @@ LaTeX Warning: Command \r invalid in math mode on input line 515.
 
 LaTeX Warning: Command \r invalid in math mode on input line 515.
 
-[35] [36 <./pic/figSpecCharCyg60.pdf>] [37 <./pic/figSpecCharhd216057.pdf>]
-[38
+[32] [33 <./pic/figSpecCharCyg60.pdf>] [34 <./pic/figSpecCharhd216057.pdf>]
+[35
 
-] [39] <pic/result1.pdf, id=1344, 578.16pt x 433.62pt>
+] <pic/result1.pdf, id=1246, 578.16pt x 433.62pt>
 File: pic/result1.pdf Graphic file (type pdf)
-
-<use pic/result1.pdf> <pic/result2.pdf, id=1345, 578.16pt x 433.62pt>
+ <use pic/result1.pdf>
+<pic/result2.pdf, id=1247, 578.16pt x 433.62pt>
 File: pic/result2.pdf Graphic file (type pdf)
-
-<use pic/result2.pdf> <pic/result3.pdf, id=1346, 578.16pt x 433.62pt>
-File: pic/result3.pdf Graphic file (type pdf)
-
-<use pic/result3.pdf>
+ <use pic/result2.pdf>
+<pic/result3.pdf, id=1248, 578.16pt x 433.62pt>
 File: pic/result3.pdf Graphic file (type pdf)
  <use pic/result3.pdf>
-<pic/be1_4_her.pdf, id=1347, 587.19376pt x 442.65375pt>
-File: pic/be1_4_her.pdf Graphic file (type pdf)
+File: pic/result3.pdf Graphic file (type pdf)
 
-<use pic/be1_4_her.pdf>
-<pic/be4_bet_cyg_b.pdf, id=1348, 587.19376pt x 442.65375pt>
-File: pic/be4_bet_cyg_b.pdf Graphic file (type pdf)
+<use pic/result3.pdf> <pic/4_her.pdf, id=1249, 578.16pt x 433.62pt>
+File: pic/4_her.pdf Graphic file (type pdf)
 
-<use pic/be4_bet_cyg_b.pdf>
-<pic/be3_6_cep.pdf, id=1349, 587.19376pt x 442.65375pt>
-File: pic/be3_6_cep.pdf Graphic file (type pdf)
+<use pic/4_her.pdf> <pic/bet_cyg_b.pdf, id=1250, 578.16pt x 433.62pt>
+File: pic/bet_cyg_b.pdf Graphic file (type pdf)
 
-<use pic/be3_6_cep.pdf> [40] [41 <./pic/result1.pdf> <./pic/result2.pdf>]
-[42 <./pic/result3.pdf>] [43 <./pic/be1_4_her.pdf> <./pic/be4_bet_cyg_b.pdf>]
-[44 <./pic/be3_6_cep.pdf>] [45
+<use pic/bet_cyg_b.pdf> <pic/6_cep.pdf, id=1251, 578.16pt x 433.62pt>
+File: pic/6_cep.pdf Graphic file (type pdf)
+
+<use pic/6_cep.pdf> <pic/gama_cas.pdf, id=1252, 578.16pt x 433.62pt>
+File: pic/gama_cas.pdf Graphic file (type pdf)
+
+<use pic/gama_cas.pdf> [36] [37 <./pic/result1.pdf> <./pic/result2.pdf>]
+[38 <./pic/result3.pdf>] [39 <./pic/4_her.pdf> <./pic/bet_cyg_b.pdf>] [40 <./pi
+c/6_cep.pdf> <./pic/gama_cas.pdf>] [41] [42
 
 ]
 
-Package natbib Warning: Citation `bukvic2008advanced' on page 46 undefined on i
-nput line 902.
+Package natbib Warning: Citation `bukvic2008advanced' on page 43 undefined on i
+nput line 916.
 
-) [46]
+) [43]
 \openout2 = `conclusion.aux'.
 
- (./conclusion.tex
+ (./conclusion.tex [44
+
+
+
+]
 Chapter 4.
-) [47
+) [45] [46
+
+
+]
+\openout2 = `appendix1.aux'.
+
+ (./appendix1.tex <pic/results/1.pdf, id=1717, 578.16pt x 433.62pt>
+File: pic/results/1.pdf Graphic file (type pdf)
+
+<use pic/results/1.pdf> <pic/results/2.pdf, id=1718, 578.16pt x 433.62pt>
+File: pic/results/2.pdf Graphic file (type pdf)
+
+<use pic/results/2.pdf> <pic/results/3.pdf, id=1719, 578.16pt x 433.62pt>
+File: pic/results/3.pdf Graphic file (type pdf)
+
+<use pic/results/3.pdf> <pic/results/4.pdf, id=1720, 578.16pt x 433.62pt>
+File: pic/results/4.pdf Graphic file (type pdf)
+
+<use pic/results/4.pdf> <pic/results/5.pdf, id=1721, 578.16pt x 433.62pt>
+File: pic/results/5.pdf Graphic file (type pdf)
+
+<use pic/results/5.pdf> <pic/results/6.pdf, id=1722, 578.16pt x 433.62pt>
+File: pic/results/6.pdf Graphic file (type pdf)
+
+<use pic/results/6.pdf> <pic/results/7.pdf, id=1723, 578.16pt x 433.62pt>
+File: pic/results/7.pdf Graphic file (type pdf)
+
+<use pic/results/7.pdf> <pic/results/8.pdf, id=1724, 578.16pt x 433.62pt>
+File: pic/results/8.pdf Graphic file (type pdf)
+
+<use pic/results/8.pdf> <pic/results/9.pdf, id=1725, 578.16pt x 433.62pt>
+File: pic/results/9.pdf Graphic file (type pdf)
+
+<use pic/results/9.pdf>) [47
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.1
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.129 \include{appendix1}
+                         pdfTeX warning (ext4): destination with the same ident
+ifier (name{subfigure.1.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.129 \include{appendix1}
+                         pdfTeX warning (ext4): destination with the same ident
+ifier (name{subfigure.1.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.129 \include{appendix1}
+                         pdfTeX warning (ext4): destination with the same ident
+ifier (name{subfigure.1.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.129 \include{appendix1}
+                         pdfTeX warning (ext4): destination with the same ident
+ifier (name{subfigure.1.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.129 \include{appendix1}
+                         pdfTeX warning (ext4): destination with the same ident
+ifier (name{subfigure.1.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.129 \include{appendix1}
+                          <./pic/results/1.pdf> <./pic/results/2.pdf> <./pic/re
+sults/3.pdf> <./pic/results/4.pdf> <./pic/results/5.pdf> <./pic/results/6.pdf> 
+<./pic/results/7.pdf> <./pic/results/8.pdf> <./pic/results/9.pdf>]
+\openout2 = `appendix2.aux'.
+
+
+(./appendix2.tex [48
 
 
 
-] (./thesis.bbl (./thesis.brf)
-\tf@brf=\write7
-\openout7 = `thesis.brf'.
-
-Missing character: There is no Ô in font cmr12!
-Missing character: There is no ¨ in font cmr12!
-Missing character: There is no Å in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
- [48
-
-
-
-])
+]
+Missing character: There is no ≈ in font phvb7tn!
+Missing character: There is no ô in font phvb7tn!
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5   \subfloat
+               {\includegraphics[width=0.33\textwidth]{1}}
+<pic/be/1.pdf, id=2261, 578.16pt x 433.62pt>
+File: pic/be/1.pdf Graphic file (type pdf)
+ <use pic/be/1.pdf>pdfTeX warning (ext4): destination with the same identifier 
+(name{subfigure.1.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.6   \subfloat
+               {\includegraphics[width=0.33\textwidth]{2}}
+<pic/be/2.pdf, id=2262, 578.16pt x 433.62pt>
+File: pic/be/2.pdf Graphic file (type pdf)
+ <use pic/be/2.pdf>pdfTeX warning (ext4): destination with the same identifier 
+(name{subfigure.1.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.7   \subfloat
+               {\includegraphics[width=0.33\textwidth]{3}}
+<pic/be/3.pdf, id=2263, 578.16pt x 433.62pt>
+File: pic/be/3.pdf Graphic file (type pdf)
+ <use pic/be/3.pdf>pdfTeX warning (ext4): destination with the same identifier 
+(name{subfigure.1.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.12   \subfloat
+                {\includegraphics[width=0.33\textwidth]{4}}
+<pic/be/4.pdf, id=2264, 578.16pt x 433.62pt>
+File: pic/be/4.pdf Graphic file (type pdf)
+ <use pic/be/4.pdf>pdfTeX warning (ext4): destination with the same identifier 
+(name{subfigure.1.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.13   \subfloat
+                {\includegraphics[width=0.33\textwidth]{5}}
+<pic/be/5.pdf, id=2265, 578.16pt x 433.62pt>
+File: pic/be/5.pdf Graphic file (type pdf)
+ <use pic/be/5.pdf>pdfTeX warning (ext4): destination with the same identifier 
+(name{subfigure.1.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.14   \subfloat
+                {\includegraphics[width=0.33\textwidth]{6}}
+<pic/be/6.pdf, id=2266, 578.16pt x 433.62pt>
+File: pic/be/6.pdf Graphic file (type pdf)
+ <use pic/be/6.pdf>pdfTeX warning (ext4): destination with the same identifier 
+(name{subfigure.1.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.19   \subfloat
+                {\includegraphics[width=0.33\textwidth]{7}}
+<pic/be/7.pdf, id=2267, 578.16pt x 433.62pt>
+File: pic/be/7.pdf Graphic file (type pdf)
+ <use pic/be/7.pdf>pdfTeX warning (ext4): destination with the same identifier 
+(name{subfigure.1.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.20   \subfloat
+                {\includegraphics[width=0.33\textwidth]{8}}
+<pic/be/8.pdf, id=2268, 578.16pt x 433.62pt>
+File: pic/be/8.pdf Graphic file (type pdf)
+ <use pic/be/8.pdf>pdfTeX warning (ext4): destination with the same identifier 
+(name{subfigure.1.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.21   \subfloat
+                {\includegraphics[width=0.33\textwidth]{9}}
+<pic/be/9.pdf, id=2269, 578.16pt x 433.62pt>
+File: pic/be/9.pdf Graphic file (type pdf)
+ <use pic/be/9.pdf>) [49 <./pic/be/1.pdf> <./pic/be/2.pdf> <./pic/be/3.pdf> <./
+pic/be/4.pdf> <./pic/be/5.pdf> <./pic/be/6.pdf> <./pic/be/7.pdf> <./pic/be/8.pd
+f> <./pic/be/9.pdf>]
+No file thesis.bbl.
 
 Package natbib Warning: There were undefined citations.
 
-[49] (./thesis.aux (./dedication.aux) (./cite.aux) (./acknowledgement.aux)
+(./thesis.aux (./dedication.aux) (./cite.aux) (./acknowledgement.aux)
 (./abstract.aux) (./introduction.aux) (./chapter1.aux) (./chapter2.aux)
-(./chapter3.aux) (./conclusion.aux))
+(./chapter3.aux) (./conclusion.aux) (./appendix1.aux) (./appendix2.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -1079,13 +1343,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 11366 strings out of 493848
- 164634 string characters out of 1152823
- 472291 words of memory out of 3000000
- 13822 multiletter control sequences out of 15000+50000
+ 11348 strings out of 493848
+ 163690 string characters out of 1152823
+ 476626 words of memory out of 3000000
+ 13788 multiletter control sequences out of 15000+50000
  21148 words of font info for 74 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 51i,12n,50p,725b,1705s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,12n,50p,721b,1703s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
 ve/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/ty
 pe1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-texlive/fonts/type1/public
@@ -1104,9 +1368,9 @@ blic/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
 ts/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/euler/eu
 sm10.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/s
 hare/texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis.pdf (58 pages, 1371365 bytes).
+Output written on thesis.pdf (59 pages, 1955699 bytes).
 PDF statistics:
- 1938 PDF objects out of 2073 (max. 8388607)
- 514 named destinations out of 1000 (max. 500000)
- 486 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2881 PDF objects out of 2984 (max. 8388607)
+ 509 named destinations out of 1000 (max. 500000)
+ 589 words of extra memory for PDF output out of 10000 (max. 10000000)
 

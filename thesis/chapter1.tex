@@ -121,8 +121,8 @@ Web standards\footnote{Prior to its creation, incompatible versions of
     % and transparent manner. The objective is to improve and unify access to
     % astronomical data and services.
 
-
-The Architecture is depicted on the figure \ref{FigArchitecture}.The
+ 
+The Architecture is depicted on the figure \ref{FigArchitecture}. The
 level of abstraction goes from top to bottom. Starting with interfaces,
 used by people or applications to discover resources.  Next level is
 the service layer implemented by standard protocols, followed by the
@@ -141,7 +141,7 @@ protocol.
         \ifpdf
         \includegraphics[scale = 1]{architecture}
         \else
-        \includegraphics[bb = 92 86 545 742, height=6in]{architecture.png}
+        \includegraphics[bb = 92 86 545 742, height=6in]{architecture}
         \fi
         \caption{VO Architecture}
         \label{FigArchitecture}
@@ -265,7 +265,7 @@ to discover resource and obtain desirable data. All of them are based
 on existing web standards and are designed to be simple and therefor
 easy to implement on existing astronomical archives. The main idea is
 simple and universal: HTTP GET request with parameter is sent to the
-resource and the structural document (VOTable) is sent back.
+resource and structured document (VOTable) is sent back.
 
 \subsection{Cone Search Protocol} \label{sec:csp}
 Cone Search was the first standard protocol of Virtual Observatory. It
@@ -295,7 +295,8 @@ arguments. For example:
 \end{lstlisting}
 
 Where RA is right-ascension, DEC declination and SR the radius of the
-cone in the ICRS coordinate system in decimal degrees. 
+cone in the ICRS coordinate system in decimal degrees. These
+parametrers are requied others are optional.
 
 \item Return an XML document in the VOTable format.  
 
@@ -312,9 +313,9 @@ cone in the ICRS coordinate system in decimal degrees.
 
 Cone Search is implemented in many software packages. Besides standard
 VO tools like TOPCAT or STILTS also in MUNIPACK and many others.
-Following example shows simple query to SIMBAD\cite{wenger2000simbad}
+Following example shows simple query to SIMBAD \cite{wenger2000simbad}
 catalog using method \emph{urlopen} of Python library \emph{urllib2}.
-
+ 
 \begin{lstlisting}
   import urllib2
   response = urllib2.urlopen('http://simbad.u-strasbg.fr/simbad-conesearch.pl?RA=24.5&DEC=-57&SR=0.1')
@@ -329,7 +330,7 @@ The key idea behind the SIA Protocol is to allow users and programs to
 retrieve images created by an image service on-the-fly. From technical
 point of view it is designed in a similar way as Cone Search Protocol
 (see \ref{sec:csp}), specifically as name-value HTTP GET requests and
-the VOTable XML format output. The user specifies ideal image
+the VOTable XML format output. The user specifies ideal image coverage
 (position and the size) he wants to receive and the image service
 produces a list of images it can return in the VOTable format. The
 user then could issue getImage request to retrieve desirable images.
@@ -371,7 +372,8 @@ properties such as position (POS), size (SIZE), etc.
   http://<server-address>/<path>?[<extra GET arg>&[...]]
 \end{lstlisting}
 
-Example of using SIA protocol to obtain image from SDSS. 
+There are two examples of using SIA protocol to obtain image. First
+one from SDSS, second from Hubble Space Telecope archive. 
 
 \begin{lstlisting}
   http://skyview.gsfc.nasa.gov/cgi-bin/vo/sia.pl?SURVEY=SDSS&POS=18.87667,-0.86083&SIZE=1

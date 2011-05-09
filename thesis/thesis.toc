@@ -2,45 +2,46 @@
 \contentsline {chapter}{Contents}{v}{section*.1}
 \contentsline {chapter}{List of Figures}{vii}{section*.2}
 \contentsline {chapter}{Nomenclature}{viii}{section*.2}
-\contentsline {chapter}{\numberline {1} Virtual Observatory (VO)}{4}{chapter.1}
-\contentsline {section}{\numberline {1.1} Data avalanche: Opportunity or disaster?}{4}{section.1.1}
-\contentsline {section}{\numberline {1.2}International Virtual Observatory Alliance (IVOA)}{5}{section.1.2}
-\contentsline {section}{\numberline {1.3}Architecture}{5}{section.1.3}
-\contentsline {section}{\numberline {1.4}VOResources}{7}{section.1.4}
-\contentsline {section}{\numberline {1.5}Data Access Protocols}{9}{section.1.5}
-\contentsline {subsection}{\numberline {1.5.1}Cone Search Protocol}{9}{subsection.1.5.1}
-\contentsline {subsection}{\numberline {1.5.2}Simple Image Access Protocol}{10}{subsection.1.5.2}
-\contentsline {subsection}{\numberline {1.5.3}Simple Spectra Access Protocol}{12}{subsection.1.5.3}
-\contentsline {section}{\numberline {1.6}Data Formats}{13}{section.1.6}
-\contentsline {subsection}{\numberline {1.6.1}VOTable}{13}{subsection.1.6.1}
-\contentsline {subsection}{\numberline {1.6.2}FITS}{15}{subsection.1.6.2}
-\contentsline {section}{\numberline {1.7}Tools \& Libraries}{16}{section.1.7}
-\contentsline {chapter}{\numberline {2}Data Mining}{17}{chapter.2}
-\contentsline {section}{\numberline {2.1}Supervised Methods}{17}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Decision Tree (DT)}{18}{subsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.1.1}Cross-validation}{19}{subsubsection.2.1.1.1}
-\contentsline {subsubsection}{\numberline {2.1.1.2}Example: Classifying Galaxies Stars and QSO}{19}{subsubsection.2.1.1.2}
-\contentsline {section}{\numberline {2.2}Existing Projects}{22}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Weka}{22}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}SVM lib}{23}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}DAME}{23}{subsection.2.2.3}
-\contentsline {chapter}{\numberline {3}Be candidates}{24}{chapter.3}
-\contentsline {section}{\numberline {3.1}Be stars}{24}{section.3.1}
-\contentsline {section}{\numberline {3.2}Photometric Data Mining}{26}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Data preprocessing}{27}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Classification}{29}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Spectral Data Mining}{29}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Testing Data}{31}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Training Data}{31}{subsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.2.1}Spectra Reduction}{32}{subsubsection.3.3.2.1}
-\contentsline {subsection}{\numberline {3.3.3}Spectra Lines Characteristics}{34}{subsection.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.3.1}Normalization}{34}{subsubsection.3.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.3.2}The hight of the H$\alpha $ line}{34}{subsubsection.3.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.3.3}The noise level of the spectrum}{34}{subsubsection.3.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.3.4}The width of the H$\alpha $ line}{35}{subsubsection.3.3.3.4}
-\contentsline {subsection}{\numberline {3.3.4}Data Mining}{38}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}Results}{38}{subsection.3.3.5}
-\contentsline {subsection}{\numberline {3.3.6}Experiment}{45}{subsection.3.3.6}
-\contentsline {subsection}{\numberline {3.3.7}Conclusion}{45}{subsection.3.3.7}
-\contentsline {chapter}{\numberline {4}Conclusion}{47}{chapter.4}
-\contentsline {chapter}{References}{48}{section*.38}
+\contentsline {chapter}{\numberline {1} Virtual Observatory (VO)}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1} Data avalanche: Opportunity or disaster?}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}International Virtual Observatory Alliance (IVOA)}{4}{section.1.2}
+\contentsline {section}{\numberline {1.3}Architecture}{4}{section.1.3}
+\contentsline {section}{\numberline {1.4}VOResources}{6}{section.1.4}
+\contentsline {section}{\numberline {1.5}Data Access Protocols}{8}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Cone Search Protocol}{8}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}Simple Image Access Protocol}{9}{subsection.1.5.2}
+\contentsline {subsection}{\numberline {1.5.3}Simple Spectra Access Protocol}{10}{subsection.1.5.3}
+\contentsline {section}{\numberline {1.6}Data Formats}{11}{section.1.6}
+\contentsline {subsection}{\numberline {1.6.1}VOTable}{11}{subsection.1.6.1}
+\contentsline {subsection}{\numberline {1.6.2}FITS}{12}{subsection.1.6.2}
+\contentsline {section}{\numberline {1.7}Tools \& Libraries}{14}{section.1.7}
+\contentsline {chapter}{\numberline {2}Data Mining}{15}{chapter.2}
+\contentsline {section}{\numberline {2.1}Supervised Methods}{15}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Decision Tree (DT)}{15}{subsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.1.1}Cross-validation}{16}{subsubsection.2.1.1.1}
+\contentsline {subsubsection}{\numberline {2.1.1.2}Example: Classifying Galaxies Stars and QSO}{17}{subsubsection.2.1.1.2}
+\contentsline {section}{\numberline {2.2}Existing Projects}{19}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Weka}{19}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}SVM lib}{19}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}DAME}{20}{subsection.2.2.3}
+\contentsline {chapter}{\numberline {3}Be candidates}{21}{chapter.3}
+\contentsline {section}{\numberline {3.1}Be stars}{21}{section.3.1}
+\contentsline {section}{\numberline {3.2}Photometric Data Mining}{23}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Data preprocessing}{24}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Classification}{26}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Spectral Data Mining}{26}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Testing Data}{28}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Training Data}{28}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Spectra Reduction}{29}{subsubsection.3.3.2.1}
+\contentsline {subsection}{\numberline {3.3.3}Spectra Lines Characteristics}{31}{subsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.3.1}Normalization}{31}{subsubsection.3.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.3.2}The hight of the H$\alpha $ line}{31}{subsubsection.3.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3.3}The noise level of the spectrum}{31}{subsubsection.3.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.3.4}The width of the H$\alpha $ line}{31}{subsubsection.3.3.3.4}
+\contentsline {subsection}{\numberline {3.3.4}Data Mining}{35}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Results}{35}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}Experiment}{42}{subsection.3.3.6}
+\contentsline {subsection}{\numberline {3.3.7}Conclusion}{42}{subsection.3.3.7}
+\contentsline {chapter}{\numberline {4}Conclusion}{45}{chapter.4}
+\contentsline {chapter}{Appendix1: Spectra of result objects}{47}{appendix*.39}
+\contentsline {chapter}{Appendix2: Spectra of Ondřejov Be stars}{49}{appendix*.43}

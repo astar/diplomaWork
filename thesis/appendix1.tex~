@@ -1,0 +1,16 @@
+\graphicspath{{pic/results/}}
+\chapter{Appendix1: Results}
+\begin{figure}[!htbp]
+  \centering
+  \subfloat{\includegraphics[width=0.33\textwidth]{1}}                
+  \subfloat{\includegraphics[width=0.33\textwidth]{2}}                
+  \subfloat{\includegraphics[width=0.33\textwidth]{3}}                
+\end{figure}
+
+\begin{figure}[!htbp]    
+  \centering
+  \subfloat{\includegraphics[width=0.33\textwidth]{4}}                
+  \subfloat{\includegraphics[width=0.33\textwidth]{5}}                
+  \subfloat{\includegraphics[width=0.33\textwidth]{6}}                 
+\end{figure}
+ 
