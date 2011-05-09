@@ -12,15 +12,15 @@
 \renewcommand{\LettrineFontHook}{\color{red}}
 
 
-\lettrine[lines = 3, loversize=-0.1, lraise=0.1]{F}rom the dawn of the
-existence astronomy has always been starved for data, but in the last
-few decades the situation has changed and now we are facing the data
+\lettrine[lines = 3, loversize=-0.1, lraise=0.1]{F}rom the dawn of its
+existence astronomy has always been starving for data, but in the last
+few decades the situation has changed and now we are facing data
 deluge of biblical proportions. The data are not just increasing in
-size but in complexity and dimensionality. \cite{ballastroinformatics}
-Astroinformatics is the new field of science which has emerged from
-this technology driven progress.  Virtual Observatory, Machine
-Learning, Data Mining, Grid Computing are just few examples of new
-tools available to scientist.
+size but also in complexity and
+dimensionality. \cite{ballastroinformatics} Astroinformatics is the
+new field of science which has emerged from this technology driven
+progress.  Virtual Observatory, Machine Learning, Data Mining, Grid
+Computing are just few examples of new tools available to scientists.
 
 
 \vspace{10pt}
@@ -47,20 +47,36 @@ is great opportunity for interdisciplinary collaboration.
 This work deals with the problem of semi-automatic procedures for
 finding Be stars \cite{porter2003classical} candidates in the
 astronomy surveys. More than straight forward process it's trail and
-error approach probing new possibilities with rather interesting that
+error approach probing new possibilities with rather interesting than
 useful results.
 
 The aim of this work is to be introductory to the technologies of
-Virtual Observatory and Data Mining and for this reason it is intended
-to have following properties:
+Virtual Observatory and massive data processing in general.
 
-\begin{itemize}
-\item Main Chapters starts with diagram to ease orietation,
-\item is full of examples, 
-\item is non-linear in nature,
-\item is meant to be compact and consistent,
-\item is far from complete.
-\end{itemize}
+%  and for this reason it is intended
+% to have following properties:
+
+% \begin{itemize}
+% \item Main Chapters starts with diagram to ease orietation,
+% \item is full of examples, 
+% \item is non-linear in nature,
+% \item is meant to be compact and consistent,
+% \item is far from complete.
+% \end{itemize}
+
+\begin{figure}[!htbp]
+  \begin{center}
+    \leavevmode
+    \ifpdf
+    \includegraphics[scale = 1]{mapThesis}
+    \else
+    \includegraphics[bb = 92 86 545 742, height=6in]{mapThesis}
+    \fi
+    \caption{Thesis structure}
+    \label{FigStructure}
+  \end{center}
+\end{figure}
+
 
 Chapter one is an introduction to the technologies related to Virtual
 Observatory. The motivation behind the concept is given without paying
@@ -70,13 +86,13 @@ demonstrated on numerous examples. Chapter two is an introduction to
 Machine Learning and Data Mining in the context of astrophysics. Only
 methods used in practical part of this work are described in detail:
 Decision Trees and Support Vector Machines. Examples of several
-classifications are demonstrated. Third chapter introduces problematic
-of Be stars. Chapter Four is practical application of previously
+classifications are demonstrated. Third chapter introduces issues of
+Be stars. Chapter Four is practical application of previously
 described technologies and methods. Training data of confirmed Be
 stars from Ondrejov are correlated with others catalogues to obtain
 color indexes and spectra. Results are processed by Data Mining
 algorithms using several libraries and tools. In the last chapter
-achieved results are critically discussed. 
+achieved results are critically discussed.
 
 Many scripts were written to achive individual goals. In the text
 there are numerous commented snippets of codes. Their purpose is to
@@ -94,23 +110,20 @@ source codes (including thesis itself) from GIT repository
      \toprule
      Name & Description \\
      \midrule
-     analyse.py & Check the wavelength range, raneme according to
-     target name.\\
-     getSpectraList.py & Create SSA Compliant list from\\
-     getSpectra.py & Get spectra links from SSA Server.\\
-     getMax.py & Extract feautres from spectra. \\
-     convolve.py &  \\
-     pf.py & Print Fits. Shows the spectrum. \\
-     dm.sh &  \\ 
+     analyse & Check the wavelength range, raname according to
+     target name\\
+     getSpectraList & Create SSA Compliant list from\\
+     getSpectra & Get spectra links from SSA Server\\
+     madmax & Extract feautres from spectra \\
+     convolve &  Reduction of Ondřejov's spectra\\
+     pf & Print Fits. Shows the spectrum \\
+     dm &  Perform classification\\
+     makeHTML & Creates HTML pages of results \\ 
      \bottomrule
    \end{tabular}
   \caption{Scripts developed within the scope of the thesis.}
   \label{tab:scripts}
 \end{table}
-
-
-
-
 
 
 Activities related to this work went beyond this text. Wiki

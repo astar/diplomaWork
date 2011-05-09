@@ -1,0 +1,44 @@
+<map version="0.9.0">
+<!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
+<node CREATED="1304902906000" ID="ID_300698508" MODIFIED="1304903389329">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="text-align: center">
+      Virtual Observatory
+    </p>
+    <p style="text-align: center">
+      &amp;
+    </p>
+    <p style="text-align: center">
+      Data Mining
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1304902952708" ID="ID_937119176" MODIFIED="1304902961804" POSITION="right" TEXT="Virtual Observatory">
+<node CREATED="1304903004748" ID="ID_789110758" MODIFIED="1304903018413" TEXT="Data Avalanche"/>
+<node CREATED="1304903019046" ID="ID_204952177" MODIFIED="1304903032366" TEXT="IVOA"/>
+<node CREATED="1304903032849" ID="ID_224805991" MODIFIED="1304903043694" TEXT="Architecture"/>
+<node CREATED="1304903044193" ID="ID_925085756" MODIFIED="1304903052834" TEXT="VOResource"/>
+<node CREATED="1304903107348" ID="ID_1599694236" MODIFIED="1304903122475" TEXT="Data Acess Protocols"/>
+<node CREATED="1304903123294" ID="ID_1677095504" MODIFIED="1304903131566" TEXT="Data Formats"/>
+<node CREATED="1304903135450" ID="ID_815838573" MODIFIED="1304903143615" TEXT="Tools &amp; LIbraries"/>
+</node>
+<node CREATED="1304902962708" ID="ID_1654902629" MODIFIED="1304902975598" POSITION="right" TEXT="Data Mining">
+<node CREATED="1304903056583" ID="ID_999852096" MODIFIED="1304903194914" TEXT="Supervised Methods">
+<node CREATED="1304903196996" ID="ID_832912940" MODIFIED="1304903207515" TEXT="Decision Trees"/>
+<node CREATED="1304903208024" ID="ID_1256368670" MODIFIED="1304903218298" TEXT="Cross Validation"/>
+<node CREATED="1304903224417" ID="ID_64888240" MODIFIED="1304903227245" TEXT="Example"/>
+</node>
+<node CREATED="1304903249923" ID="ID_225935508" MODIFIED="1304903256371" TEXT="Existing Projects"/>
+</node>
+<node CREATED="1304902977613" ID="ID_67781799" MODIFIED="1304902993684" POSITION="right" TEXT="Be Candidates">
+<node CREATED="1304903234232" ID="ID_850174434" MODIFIED="1304903293378" TEXT="Be Stars"/>
+<node CREATED="1304903293921" ID="ID_828416259" MODIFIED="1304903306986" TEXT="Photometric Data Mining"/>
+<node CREATED="1304903307589" ID="ID_1469254379" MODIFIED="1304903319941" TEXT="Spectral Data Mining"/>
+</node>
+</node>
+</map>

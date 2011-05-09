@@ -14,19 +14,15 @@
 \BOOKMARK [2][]{subsection.1.6.1}{1.6.1 VOTable}{section.1.6}
 \BOOKMARK [2][]{subsection.1.6.2}{1.6.2 FITS}{section.1.6}
 \BOOKMARK [1][]{section.1.7}{1.7 Tools \046 Libraries}{chapter.1}
-\BOOKMARK [2][]{subsection.1.7.1}{1.7.1 Command line tools}{section.1.7}
-\BOOKMARK [2][]{subsection.1.7.2}{1.7.2 GUI Appliactions}{section.1.7}
 \BOOKMARK [0][]{chapter.2}{2 Data Mining}{}
 \BOOKMARK [1][]{section.2.1}{2.1 Supervised Methods}{chapter.2}
 \BOOKMARK [2][]{subsection.2.1.1}{2.1.1 Decision Tree \(DT\)}{section.2.1}
 \BOOKMARK [3][]{subsubsection.2.1.1.1}{2.1.1.1 Cross-validation}{subsection.2.1.1}
 \BOOKMARK [3][]{subsubsection.2.1.1.2}{2.1.1.2 Example: Classifying Galaxies Stars and QSO}{subsection.2.1.1}
-\BOOKMARK [2][]{subsection.2.1.2}{2.1.2 Support Vector Machine \(SVM\)}{section.2.1}
-\BOOKMARK [1][]{section.2.2}{2.2 Unsupervised Methods}{chapter.2}
-\BOOKMARK [1][]{section.2.3}{2.3 Existing Projects}{chapter.2}
-\BOOKMARK [2][]{subsection.2.3.1}{2.3.1 Weka}{section.2.3}
-\BOOKMARK [2][]{subsection.2.3.2}{2.3.2 SVM lib}{section.2.3}
-\BOOKMARK [2][]{subsection.2.3.3}{2.3.3 DAME}{section.2.3}
+\BOOKMARK [1][]{section.2.2}{2.2 Existing Projects}{chapter.2}
+\BOOKMARK [2][]{subsection.2.2.1}{2.2.1 Weka}{section.2.2}
+\BOOKMARK [2][]{subsection.2.2.2}{2.2.2 SVM lib}{section.2.2}
+\BOOKMARK [2][]{subsection.2.2.3}{2.2.3 DAME}{section.2.2}
 \BOOKMARK [0][]{chapter.3}{3 Be candidates}{}
 \BOOKMARK [1][]{section.3.1}{3.1 Be stars}{chapter.3}
 \BOOKMARK [1][]{section.3.2}{3.2 Photometric Data Mining}{chapter.3}
@@ -43,5 +39,7 @@
 \BOOKMARK [3][]{subsubsection.3.3.3.4}{3.3.3.4 The width of the H line}{subsection.3.3.3}
 \BOOKMARK [2][]{subsection.3.3.4}{3.3.4 Data Mining}{section.3.3}
 \BOOKMARK [2][]{subsection.3.3.5}{3.3.5 Results}{section.3.3}
-\BOOKMARK [2][]{subsection.3.3.6}{3.3.6 Conclusion}{section.3.3}
-\BOOKMARK [0][]{section*.30}{References}{}
+\BOOKMARK [2][]{subsection.3.3.6}{3.3.6 Experiment}{section.3.3}
+\BOOKMARK [2][]{subsection.3.3.7}{3.3.7 Conclusion}{section.3.3}
+\BOOKMARK [0][]{chapter.4}{4 Conclusion}{}
+\BOOKMARK [0][]{section*.38}{References}{}

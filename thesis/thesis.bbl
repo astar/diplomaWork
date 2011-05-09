@@ -1,4 +1,4 @@
-\begin{thebibliography}{8}
+\begin{thebibliography}{16}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -9,6 +9,13 @@
 N.M. Ball and D.~Schade.
 \newblock {ASTROINFORMATICS IN CANADA}.
 \newblock 2010.
+
+\bibitem[Ball et~al.(2010)Ball, Brunner, and Gregory]{ball2010data}
+N.M. Ball, R.J. Brunner, and R.~Gregory.
+\newblock {Data mining and machine learning in astronomy}.
+\newblock \emph{International Journal of Modern Physics D}, 19\penalty0
+  (7):\penalty0 1049--1106, 2010.
+\newblock ISSN 0218-2718.
 
 \bibitem[Becla et~al.(2006)Becla, Hanushevsky, Nikolaev, Abdulla, Szalay,
   Nieto-Santisteban, Thakar, and Gray]{becla2006designing}
@@ -38,6 +45,27 @@ RJ~Hanisch and PJ~Quinn.
 \newblock \emph{Retrieved from http://www. ivoa. net/pub/info/TheIVOA. pdf on},
   24, 2010.
 
+\bibitem[Hirata and Kogure(1984)]{hirata1984star}
+R.~Hirata and T.~Kogure.
+\newblock {The Be star phenomena. II-Spectral formation and structure of
+  envelopes}.
+\newblock \emph{Bulletin of the Astronomical Society of India}, 12:\penalty0
+  109--151, 1984.
+\newblock ISSN 0304-9523.
+
+\bibitem[Kotsiantis et~al.(2007)Kotsiantis, Zaharakis, and
+  Pintelas]{kotsiantis2007supervised}
+SB~Kotsiantis, ID~Zaharakis, and PE~Pintelas.
+\newblock {Supervised machine learning: A review of classification techniques}.
+\newblock \emph{Emerging artificial intelligence applications in computer
+  engineering: real word AI systems with applications in eHealth, HCI,
+  information retrieval and pervasive technologies}, 160:\penalty0 3, 2007.
+
+\bibitem[Launer(1979)]{launer1979robustness}
+R.L. Launer.
+\newblock \emph{{Robustness in statistics: proceedings of a workshop}}.
+\newblock Academic Pr, 1979.
+
 \bibitem[Porter and Rivinius(2003)]{porter2003classical}
 J.M. Porter and T.~Rivinius.
 \newblock {Classical Be Stars}.
@@ -49,5 +77,34 @@ J.M. Porter and T.~Rivinius.
 B.~Schlesinger.
 \newblock {A User’s Guide for the Flexible Image Transport System}.
 \newblock 1997.
+
+\bibitem[Slettebak(1988)]{slettebak1988stars}
+A.~Slettebak.
+\newblock {The Be stars}.
+\newblock \emph{Publications of the Astronomical Society of the Pacific},
+  100:\penalty0 770--784, 1988.
+\newblock ISSN 0004-6280.
+
+\bibitem[Van~Kerkwijk et~al.(1995)Van~Kerkwijk, Waters, and
+  Marlborough]{van1995halpha}
+MH~Van~Kerkwijk, L.~Waters, and JM~Marlborough.
+\newblock {Halpha emission and infrared excess in Be stars: probing the
+  circumstellar disc.}
+\newblock \emph{Astronomy and Astrophysics}, 300:\penalty0 259, 1995.
+\newblock ISSN 0004-6361.
+
+\bibitem[Wenger et~al.(2000)Wenger, Ochsenbein, Egret, Dubois, Bonnarel, Borde,
+  Genova, Jasniewicz, Lalo{\\"e}, Lesteven, et~al.]{wenger2000simbad}
+M.~Wenger, F.~Ochsenbein, D.~Egret, P.~Dubois, F.~Bonnarel, S.~Borde,
+  F.~Genova, G.~Jasniewicz, S.~Lalo{\\"e}, S.~Lesteven, et~al.
+\newblock {The SIMBAD astronomical database}.
+\newblock \emph{Arxiv preprint astro-ph/0002110}, 2000.
+
+\bibitem[Witten and Frank(2005)]{witten2005data}
+I.H. Witten and E.~Frank.
+\newblock \emph{{Data Mining: Practical machine learning tools and
+  techniques}}.
+\newblock Morgan Kaufmann Pub, 2005.
+\newblock ISBN 0120884070.
 
 \end{thebibliography}

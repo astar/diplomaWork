@@ -19,6 +19,19 @@
 % architecture?
 % \end{lstlisting}
 
+\begin{figure}[!htbp]
+  \begin{center}
+    \leavevmode
+    \ifpdf
+    \includegraphics[scale = 1]{mapVirtualObservatory}
+    \else
+    \includegraphics[bb = 92 86 545 742, height=6in]{mapVirtualObservatory}
+    \fi
+    \caption{Chapter structure}
+    \label{FigStructure}
+  \end{center}
+\end{figure}
+
 \section{ Data avalanche: Opportunity or disaster?}
 
 There are two important trends in current astronomy surveys:
@@ -31,30 +44,32 @@ There are two important trends in current astronomy surveys:
     TB per night, leading to a total database over the ten years of
     operations of 60 PB for the raw data \cite{becla2006designing}.
    
-  \item{Complexity:}  Modern surveys will cover the sky in different wave-bands, from
-    gamma- and X-rays, optical, infrared, through to radio. The ability
-    to cross correlate these observations together may lead to the new
-    understanding of physical phenomenas. \cite{hanisch2010international}
+  \item{Complexity:} Modern surveys will cover the sky in different
+    wave-bands, from gamma- and X-rays, optical, infrared to
+    radio. The ability to cross correlate these observations together
+    may lead to new understanding of physical
+    phenomenas. \cite{hanisch2010international}
 \end{itemize}
 
 
 
-Such amount of data is not possible to transfer over the network. Data
-resources are heterogeneous, distributed and decentralized in nature.
+Such an amount of data is not possible to transfer over the
+network. Data resources are heterogeneous, distributed and
+decentralized in nature.
 
 
 There is an interesting analogy with the problem (and the solution)
-which had scientist during LEP project at CERN.  Their problem was too
-many documents in different formats. Tim Berners-Lee\footnote{ Sir
-  Timothy John "Tim" Berners-Lee. British engineer and computer
+which scientists discovered during LEP project at CERN.  Their problem
+was too many documents in different formats. Tim Berners-Lee\footnote{
+  Sir Timothy John "Tim" Berners-Lee. British engineer and computer
   scientist and MIT professor credited with inventing the World Wide
   Web.} designed set of protocols (URIs, HTTP and HTML) which allowed
 link and share documents\cite{berners1990worldwideweb}. This was
 recognized as generally useful and World Wide Web was born. An
 important role plays the World Wide Web Consortium (W3C) in developing
-Web standards\footnote{Prior to its creation, incompatible versions
-  of HTML were offered by different vendors, increasing the potential
-  for inconsistency between web pages.}.
+Web standards\footnote{Prior to its creation, incompatible versions of
+  HTML were offered by different vendors, increasing the potential for
+  inconsistency between web pages.}.
     
     
 \section{International Virtual Observatory Alliance (IVOA)}
@@ -74,14 +89,14 @@ Web standards\footnote{Prior to its creation, incompatible versions
    \end{wrapfigure}
 
 
-    What is necessary is sets of standards and protocols to deal with
-    heterogeneous distributed data and the authority which encourages
-    their implementation. Such authority is the International Virtual
-    Observatory Alliance (IVOA). It comprises 19~VO programs from
-    Argentina, Armenia, Australia, Brazil, Canada, China, Europe,
-    France, Germany, Hungary, India, Italy, Japan, Russia, Spain, the
-    United Kingdom, and the United States and inter-governmental
-    organizations (ESA and ESO)\cite{hanisch2010international}.
+   What is necessary is sets of standards and protocols to deal with
+   heterogeneous distributed data and authority which encourages their
+   implementation. Such an authority is the International Virtual
+   Observatory Alliance (IVOA). It comprises 19~VO programs from
+   Argentina, Armenia, Australia, Brazil, Canada, China, Europe,
+   France, Germany, Hungary, India, Italy, Japan, Russia, Spain, the
+   United Kingdom, and the United States and inter-governmental
+   organizations (ESA and ESO)\cite{hanisch2010international}.
    
     Standards and specifications produced by IVOA can be obtained at
     \url{http://www.ivoa.net/}.
@@ -112,7 +127,7 @@ level of abstraction goes from top to bottom. Starting with interfaces,
 used by people or applications to discover resources.  Next level is
 the service layer implemented by standard protocols, followed by the
 hardware level where actual data are stored. This onion like structure
-hide the complexity of the lower layer and provide data and meta-data
+hides the complexity of the lower layer and provide data and meta-data
 to the higher layer. This concept is similar to TCP/IP
 \footnote{TCP/IP (Transmission Control Protocol/Internet Protocol).
   The basic communication language or protocol of the Internet.}
@@ -135,17 +150,17 @@ protocol.
 
 \clearpage
 
-The essence of VO architecture is service orientation. Each service is
-autonomous with well defined defined boundaries. Very important aspect
-of VO implementation is the adoption of formats and protocols used in
-astronomy (FITS) and computers science (XML \footnote{Extensible
+The VO architecture is serviced oriented. Each service is autonomous
+with well defined defined boundaries. Very important aspect of VO
+implementation is the adoption of formats and protocols used in
+astronomy (FITS) and Computer Science (XML \footnote{Extensible
   Markup Language (XML) is a set of rules for encoding documents in
   machine-readable form.} , Web service \footnote{method of
   communication between two electronic devices over a network.} SOAP
 \footnote{Simple Object Access Protocol, is a protocol specification
   for exchanging structured information in the implementation of Web
   Services in computer networks.}) for many years. In other words VO
-does not try to reinvent the wheel but it's stands on the shoulders of
+does not try to reinvent the wheel but it stands on the shoulders of
 giants.
 
 
@@ -160,7 +175,7 @@ or a data collection. \cite{bensonivoa}
 
 UML\footnote{Unified Modeling Language. Standardized general-purpose
   modeling language in the field of object-oriented software
-  engineering.}  diagram of the resource in on the figure
+  engineering.}  diagram of the resource is on the figure
 \ref{FigResource}. Next paragraph is an attempt to explain this
 diagram to non-programmers. Full arrow means generalization, Resource
 can be a generalization of organization, data collection, application
@@ -168,8 +183,8 @@ or service. Single arrow means association. Organization can be linked
 (associated) together with other organization (multiplicity is
 represented by number 1, 0..). The same is true for data
 collection. Organization is a generalization of and/or provider which
-can own zero to N services. Diamond means aggregation Publisher can
-have any resources.
+can own zero to N services. Diamond means the aggregation. Publisher
+can have any resources.
   
     \begin{figure}[!htbp]
       \begin{center}
@@ -190,7 +205,7 @@ Following example uses program stilts\footnote{STIL Tool Set. Set of
   command-line tools based on STIL, the Starlink Tables Infrastructure
   Library.} to query registry with parameter shortName equal to
 'AIASCR'\footnote{Astronomical Institute of the Academy of Sciences of
-  the Czech Republic}. This return VOTable containing informations
+  the Czech Republic}. This returns VOTable containing meta-data
 about the resource. 
 
 \begin{lstlisting}[frame=single]
@@ -297,7 +312,7 @@ cone in the ICRS coordinate system in decimal degrees.
 
 Cone Search is implemented in many software packages. Besides standard
 VO tools like TOPCAT or STILTS also in MUNIPACK and many others.
-Following example show simple query to SIMBAD\cite{wenger2000simbad}
+Following example shows simple query to SIMBAD\cite{wenger2000simbad}
 catalog using method \emph{urlopen} of Python library \emph{urllib2}.
 
 \begin{lstlisting}
@@ -314,10 +329,10 @@ The key idea behind the SIA Protocol is to allow users and programs to
 retrieve images created by an image service on-the-fly. From technical
 point of view it is designed in a similar way as Cone Search Protocol
 (see \ref{sec:csp}), specifically as name-value HTTP GET requests and
-the VOTable XML format output. The user specify ideal image (position
-and the size) he wants to receive and the image service produces a
-list of images it can return in VOTable format. The user then could
-issue getImage request to retrieve desirable images.
+the VOTable XML format output. The user specifies ideal image
+(position and the size) he wants to receive and the image service
+produces a list of images it can return in the VOTable format. The
+user then could issue getImage request to retrieve desirable images.
 
 There are following requirements for compliance. To be a SIA service
 To be a SIA service, it must support:
@@ -327,8 +342,9 @@ To be a SIA service, it must support:
 \item Image Retrieval (getImage) web method.
 \end{itemize}
 
-\noindent Furthermore the image service should be registered to allow locate
-optimal service. There are several types of image services:
+\noindent Furthermore the image service should be registered to be
+able to locate optimal service. There are several types of image
+services:
 
 \begin{itemize}
 \item Image Cutout Service.
@@ -388,7 +404,7 @@ SiapSearch method to obtain result in VOTable format.
 
 \subsection{Simple Spectra Access Protocol}
 
-SSA Protocol allow to discover and obtain 1-D spectra from VO
+SSA Protocol allows to discover and obtain 1-D spectra from VO
 Service. It shares many similarities to the previously discussed SIA
 Protocol.
 
@@ -405,7 +421,7 @@ The process to obtain a spectrum compose of following steps:
 \item Download selected spectra using URL.
 \end{itemize}
 
-The spectra could be on of the following types:
+The spectra could be one of the following types:
 
 \begin{itemize}
 \item Pre-computed
@@ -460,7 +476,7 @@ on the charatecter and size. Small tables can be stored in pure XML
 can be referenced with the URL \footnote{Uniform Resource
   Locator. Uniform Resource Identifier (URI) that specifies where an
   identified resource is available and the mechanism for retrieving
-  it.} syntax protocol://location.  It combine web standards (it is
+  it.} syntax protocol://location.  It combines web standards (it is
 based on XML) and astronomy tradition in storing data (it is FITS
 compatible). Expiration and authentication are also supported.
 
@@ -502,7 +518,7 @@ types are FITS and BINARY)
 
 
 \subsubsection*{Examples}
-All example created using ATpy\footnote{High-level Python package
+All examples were created using ATpy\footnote{High-level Python package
 providing a way to manipulate tables of astronomical data in a uniform
 way.}
 
@@ -536,10 +552,10 @@ in astronomy.
 
 \subsubsection*{Structure}
 
-One file can contain several HDUs (Header Data Units).The first part
+One file can contains several HDUs (Header Data Units).The first part
 of each HDU is the header, composed of ASCII card images containing
-keyword=value statements that describe the size, format, and structure
-of the data that follow.
+\textrm{keyword=value} statements that describe the size, format, and
+structure of the data that follow.
 
 \begin{itemize}
 \item Primary header and data unit (HDU).
@@ -611,16 +627,16 @@ scripts and programs. Such diversity is healthy and propably the only
 possible way to ensure natural evolution of Virtual Observatory. This
 chapter describes some of the libraries and applications ued during
 this work. Low level tools and libraries are stressed as opposite to
-standard introductory texts of Virtual Observatory where the emphasis
-is on "user friendly" GUI applications.
+standard introductory texts of Virtual Observatory where the focus is
+on "user friendly" GUI applications.
 
 
-\subsection{Command line tools}
-\subsubsection*{Astro Runtime}
+% \subsection{Command line tools}
+% \subsubsection*{Astro Runtime}
 
-middleware that makes it simple to call Virtual Observatory services
-from any programming language
-\subsection{GUI Appliactions}
+% middleware that makes it simple to call Virtual Observatory services
+% from any programming language
+% \subsection{GUI Appliactions}
 
 
 % Example from program pf (plot fits) created for purposes of this work

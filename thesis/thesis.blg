@@ -1,54 +1,60 @@
 This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: dedication.aux
+A level-1 auxiliary file: cite.aux
 A level-1 auxiliary file: acknowledgement.aux
 A level-1 auxiliary file: abstract.aux
 A level-1 auxiliary file: introduction.aux
 A level-1 auxiliary file: chapter1.aux
+A level-1 auxiliary file: chapter2.aux
+A level-1 auxiliary file: chapter3.aux
+A level-1 auxiliary file: conclusion.aux
 The style file: plainnat.bst
 Database file #1: references.bib
+Warning--I didn't find a database entry for "perryman1997hipparcos"
+Warning--I didn't find a database entry for "2006AJ131.1163S"
 Warning--empty journal in ballastroinformatics
 Warning--empty journal in nrc1995
 Warning--empty journal in fits1997
-You've used 8 entries,
+You've used 16 entries,
             2773 wiz_defined-function locations,
-            640 strings with 5993 characters,
-and the built_in function-call counts, 3322 in all, are:
-= -- 280
-> -- 217
-< -- 6
-+ -- 74
-- -- 66
-* -- 244
-:= -- 541
-add.period$ -- 25
-call.type$ -- 8
-change.case$ -- 45
-chr.to.int$ -- 8
-cite$ -- 19
-duplicate$ -- 155
-empty$ -- 255
-format.name$ -- 82
-if$ -- 674
+            701 strings with 7609 characters,
+and the built_in function-call counts, 7086 in all, are:
+= -- 606
+> -- 470
+< -- 10
++ -- 160
+- -- 144
+* -- 555
+:= -- 1148
+add.period$ -- 54
+call.type$ -- 16
+change.case$ -- 92
+chr.to.int$ -- 16
+cite$ -- 35
+duplicate$ -- 318
+empty$ -- 541
+format.name$ -- 172
+if$ -- 1445
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 8
-newline$ -- 49
-num.names$ -- 32
-pop$ -- 93
+missing$ -- 18
+newline$ -- 94
+num.names$ -- 64
+pop$ -- 184
 preamble$ -- 1
-purify$ -- 37
+purify$ -- 78
 quote$ -- 0
-skip$ -- 128
+skip$ -- 252
 stack$ -- 0
-substring$ -- 47
-swap$ -- 5
+substring$ -- 156
+swap$ -- 13
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 88
+type$ -- 166
 warning$ -- 3
-while$ -- 26
+while$ -- 58
 width$ -- 0
-write$ -- 104
-(There were 3 warnings)
+write$ -- 215
+(There were 5 warnings)
