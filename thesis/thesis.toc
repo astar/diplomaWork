@@ -1,7 +1,7 @@
 \select@language {english}
-\contentsline {chapter}{Contents}{v}{Doc-Start}
-\contentsline {chapter}{List of Figures}{vii}{Doc-Start}
-\contentsline {chapter}{Nomenclature}{viii}{Doc-Start}
+\contentsline {chapter}{Contents}{v}{section*.1}
+\contentsline {chapter}{List of Figures}{vii}{section*.2}
+\contentsline {chapter}{Nomenclature}{viii}{section*.2}
 \contentsline {chapter}{\numberline {1} Virtual Observatory (VO)}{3}{chapter.1}
 \contentsline {section}{\numberline {1.1} Data avalanche: Opportunity or disaster?}{3}{section.1.1}
 \contentsline {section}{\numberline {1.2}International Virtual Observatory Alliance (IVOA)}{4}{section.1.2}
@@ -43,6 +43,6 @@
 \contentsline {subsection}{\numberline {3.3.6}Experiment}{42}{subsection.3.3.6}
 \contentsline {subsection}{\numberline {3.3.7}Conclusion}{42}{subsection.3.3.7}
 \contentsline {chapter}{\numberline {4}Conclusion}{45}{chapter.4}
-\contentsline {chapter}{Appendix1: Spectra of result objects}{47}{appendix*.37}
-\contentsline {chapter}{Appendix2: Spectra of Ondřejov Be stars}{49}{appendix*.41}
-\contentsline {chapter}{References}{51}{appendix*.41}
+\contentsline {chapter}{Appendix1: Spectra of result objects}{47}{appendix*.39}
+\contentsline {chapter}{Appendix2: Spectra of Ondřejov Be stars}{49}{appendix*.43}
+\contentsline {chapter}{References}{51}{section*.44}

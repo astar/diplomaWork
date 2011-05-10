@@ -1,5 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2011/dev/Mandriva)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: dedication.aux
 A level-1 auxiliary file: cite.aux
@@ -19,45 +18,45 @@ Warning--I didn't find a database entry for "2006AJ131.1163S"
 Warning--empty journal in ballastroinformatics
 Warning--empty journal in nrc1995
 Warning--empty journal in fits1997
-You've used 17 entries,
+You've used 18 entries,
             2773 wiz_defined-function locations,
-            710 strings with 7788 characters,
-and the built_in function-call counts, 7605 in all, are:
-= -- 655
-> -- 500
+            718 strings with 7987 characters,
+and the built_in function-call counts, 8256 in all, are:
+= -- 711
+> -- 557
 < -- 10
-+ -- 170
-- -- 153
-* -- 604
-:= -- 1228
-add.period$ -- 58
-call.type$ -- 17
-change.case$ -- 98
-chr.to.int$ -- 17
-cite$ -- 37
-duplicate$ -- 339
-empty$ -- 582
-format.name$ -- 182
-if$ -- 1552
++ -- 189
+- -- 171
+* -- 669
+:= -- 1333
+add.period$ -- 62
+call.type$ -- 18
+change.case$ -- 107
+chr.to.int$ -- 18
+cite$ -- 39
+duplicate$ -- 360
+empty$ -- 621
+format.name$ -- 201
+if$ -- 1682
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 19
-newline$ -- 100
-num.names$ -- 68
-pop$ -- 193
+missing$ -- 20
+newline$ -- 106
+num.names$ -- 72
+pop$ -- 208
 preamble$ -- 1
-purify$ -- 83
+purify$ -- 91
 quote$ -- 0
-skip$ -- 267
+skip$ -- 285
 stack$ -- 0
-substring$ -- 183
-swap$ -- 14
+substring$ -- 204
+swap$ -- 15
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 177
+type$ -- 188
 warning$ -- 3
-while$ -- 63
+while$ -- 68
 width$ -- 0
-write$ -- 230
+write$ -- 245
 (There were 5 warnings)

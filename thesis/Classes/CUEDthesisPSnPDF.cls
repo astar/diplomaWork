@@ -207,30 +207,55 @@
        \else\newpage\fi}
        {\if@restonecol\twocolumn\else\newpage\fi}
 
+
+
+
 %define title page layout
-\renewcommand{\maketitle}{%
+% \renewcommand{\maketitle}{%
+% \begin{alwayssingle}
+%     \renewcommand{\footnotesize}{\small}
+%     \renewcommand{\footnoterule}{\relax}
+%     \thispagestyle{empty}
+% %  \null\vfill
+%   \begin{center}
+%     { \Huge {\bfseries {\@title}} \par}
+% {\large \vspace*{35mm} {{\@crest} \par} \vspace*{25mm}}
+%     {{\Large \@author} \par}
+% {\large \vspace*{1ex}
+%     {{\@collegeordept} \par}
+% \vspace*{1ex}
+%     {{\@university} \par}
+% \vspace*{25mm}
+%     {{\submittedtext} \par}
+% \vspace*{1ex}
+%     {\it {\@degree} \par}
+% \vspace*{2ex}
+%     {\@degreedate}}
+%   \end{center}
+%   \null\vfill
+% \end{alwayssingle}}
+
+\renewcommand{\maketitle}{
 \begin{alwayssingle}
-    \renewcommand{\footnotesize}{\small}
-    \renewcommand{\footnoterule}{\relax}
-    \thispagestyle{empty}
-%  \null\vfill
-  \begin{center}
-    { \Huge {\bfseries {\@title}} \par}
-{\large \vspace*{35mm} {{\@crest} \par} \vspace*{25mm}}
-    {{\Large \@author} \par}
-{\large \vspace*{1ex}
-    {{\@collegeordept} \par}
-\vspace*{1ex}
-    {{\@university} \par}
-\vspace*{25mm}
-    {{\submittedtext} \par}
-\vspace*{1ex}
-    {\it {\@degree} \par}
-\vspace*{2ex}
-    {\@degreedate}}
-  \end{center}
-  \null\vfill
-\end{alwayssingle}}
+\pagestyle{empty}
+\begin{center}
+{\huge\textsc{\@university}}\\
+\vspace{0.5cm}
+{\large\textsc{\@collegeordept}}\\
+\vspace*{2.5cm}
+\includegraphics[width=3.5cm]{\@crest}\\
+\vspace*{2.5cm}
+{\Large\textsc{\@degree}}\\
+\vspace{1cm}
+{\sc\LARGE\textsc{\@title}}\\
+\vspace{1cm}
+{\Large\textsc{\@author}}\\
+\vspace{6.3cm}
+{\Large\textsc{\@degreedate}}
+\end{center}
+\end{alwayssingle}
+}
+
 
 % DEDICATION
 %
@@ -247,6 +272,17 @@
   \vspace{0.5cm}
   \begin{quote} \begin{center}}
 {\end{center} \end{quote} \end{alwayssingle}}
+
+\renewenvironment{quotation}
+{\begin{alwayssingle}
+  \pagestyle{empty}
+  \begin{center}
+  \vspace*{1.5cm}
+  {\LARGE }
+  \end{center}
+  \vspace{0.5cm}
+  \begin{quote} }
+{ \end{quote} \end{alwayssingle}}
 
 
 % ACKNOWLEDGEMENTS

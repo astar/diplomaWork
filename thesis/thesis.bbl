@@ -1,4 +1,4 @@
-\begin{thebibliography}{17}
+\begin{thebibliography}{18}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -46,6 +46,14 @@ S.~Bukvi{\'c}, D.~Spasojevi{\'c}, and V.~{\v{Z}}igman.
 National~Research Council.
 \newblock {Preserving Scientiﬁc Data on our Physical Universe}.
 \newblock 1995.
+
+\bibitem[Hall et~al.(2009)Hall, Frank, Holmes, Pfahringer, Reutemann, and
+  Witten]{hall2009weka}
+M.~Hall, E.~Frank, G.~Holmes, B.~Pfahringer, P.~Reutemann, and I.H. Witten.
+\newblock {The WEKA data mining software: an update}.
+\newblock \emph{ACM SIGKDD Explorations Newsletter}, 11\penalty0 (1):\penalty0
+  10--18, 2009.
+\newblock ISSN 1931-0145.
 
 \bibitem[Hanisch and Quinn(2010)]{hanisch2010international}
 RJ~Hanisch and PJ~Quinn.

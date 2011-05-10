@@ -1,33 +1,33 @@
 \select@language {english}
-\contentsline {figure}{\numberline {1}{\ignorespaces Astroinformatics in the context of astronomy \cite {ballastroinformatics} \relax }}{1}{figure.caption.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Thesis structure\relax }}{2}{figure.caption.2}
+\contentsline {figure}{\numberline {1}{\ignorespaces Astroinformatics in the context of astronomy \cite {ballastroinformatics} \relax }}{1}{figure.caption.3}
+\contentsline {figure}{\numberline {2}{\ignorespaces Thesis structure\relax }}{2}{figure.caption.4}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Chapter structure\relax }}{3}{figure.caption.4}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces IVOA members\relax }}{4}{figure.caption.5}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces VO Architecture\relax }}{5}{figure.caption.6}
-\contentsline {figure}{\numberline {1.4}{\ignorespaces UML diagram of VOResource\relax }}{7}{figure.caption.7}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Chapter structure\relax }}{3}{figure.caption.6}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces IVOA members\relax }}{4}{figure.caption.7}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces VO Architecture\relax }}{5}{figure.caption.8}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces UML diagram of VOResource\relax }}{7}{figure.caption.9}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Chapter structure\relax }}{15}{figure.caption.14}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Color Diagram of the problem.It shows that individual object classes occupy different regions in the diagram \relax }}{18}{figure.caption.16}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Chapter structure\relax }}{15}{figure.caption.16}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Color Diagram of the problem.It shows that individual object classes occupy different regions in the diagram \relax }}{18}{figure.caption.18}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Chapter structure\relax }}{21}{figure.caption.17}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Model of a typical Be star. Emission lines coming from an equatorial disk is added to the photo-spheric absorption spectrum. Central B star emits UV (Lyman continuum) and ionizes the disk, which in turn re-emits at high wavelength such as visible domain. \cite {hirata1984star}\relax }}{22}{figure.caption.18}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Example of spectra of Be stars based on view angle \cite {slettebak1988stars}\relax }}{22}{figure.caption.19}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Schematic diagram of the photometric Data Mining process. The lists of confirmed Be stars consisted of Hipparcos IDs, this was correlated with Hipparcos catalog to obtain right ascension and declination of the objects and subsequently cross-matched with 2MASS catalog to get photometric data. The second set of B stars were acquired in similar manner but using SQL the condition was set to get B type stars different from the list of Be stars.\relax }}{23}{figure.caption.20}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Color diagram of confirmed Be stars Vs B stars\relax }}{24}{figure.caption.21}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Color diagram of confirmed Be stars Vs B stars with errors\relax }}{25}{figure.caption.22}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Schematic diagram of the spectral Data Mining process. Using SSA protocol the spectra from Ondřejov server was acquired based on the list from photometric study. SSH Tunneling was necessary since Ondřejov spectra are top secret and therefore not available to the public. Convolution had to be performed to ensure compatibility with SDSS. Afterwards desired features were extracted automatically from the spectra after the continuum and H$\alpha $ line were fitted by appropriate functions. The same was done for spectra from SDSS except the convolution process.\relax }}{27}{figure.caption.23}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Reduction of Ondřejov's spectra of the Be star 4 Hercules. The top figure shows Gaussian function used for convolution with the spectrum, followed by the original spectrum then there is a spectrum after convolution with the Gaussian function. The last is the final spectrum after reduction.\relax }}{30}{figure.caption.24}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Normalized spectrum of Be star 60 Cyg. The top figure depicts the continuum fit. The bottom figure shows the region (width of the green line) used for extraction. The position of the line correspond to the maximum value in the region of $50\r A$. The Gaussian fit is in red. Although the fit is almost perfect, this approach fails to get characteristic "double peak" of the emission line. \relax }}{33}{figure.caption.25}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Normalized spectrum of Be star HR 8682. The top figure depicts the continuum fit. The bottom figure shows the region (width of the green line) used for extraction. The position of the line correspond to the maximum value in the region of $50\r A$. The Gaussian fit is in red.\relax }}{34}{figure.caption.26}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Spectrum of \relax }}{37}{figure.caption.29}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Spectrum of \relax }}{37}{figure.caption.30}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Spectrum of \relax }}{38}{figure.caption.31}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Spectrum of \relax }}{38}{figure.caption.32}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Spectrum of 4 Her. Be star. Spectral Type B9pe. \relax }}{39}{figure.caption.33}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Spectrum of HR 7418 (Albireo B). A fast-rotating Be star, with an equatorial rotational velocity of at least 250 kilometers per second. Its surface temperature has been spectroscopically estimated to be about 13.200 K. Spectral Type B8Ve. \relax }}{39}{figure.caption.34}
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Spectrum of 6 Cepheus. Be star. Spectral Type B3IVe.\relax }}{40}{figure.caption.35}
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Spectrum of Gamma Cassiopeiae. Be Star. Spectral Type B0IVpe C.\relax }}{40}{figure.caption.36}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Chapter structure\relax }}{21}{figure.caption.19}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Model of a typical Be star. Emission lines coming from an equatorial disk is added to the photo-spheric absorption spectrum. Central B star emits UV (Lyman continuum) and ionizes the disk, which in turn re-emits at high wavelength such as visible domain. \cite {hirata1984star}\relax }}{22}{figure.caption.20}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Example of spectra of Be stars based on view angle \cite {slettebak1988stars}\relax }}{22}{figure.caption.21}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Schematic diagram of the photometric Data Mining process. The lists of confirmed Be stars consisted of Hipparcos IDs, this was correlated with Hipparcos catalog to obtain right ascension and declination of the objects and subsequently cross-matched with 2MASS catalog to get photometric data. The second set of B stars were acquired in similar manner but using SQL the condition was set to get B type stars different from the list of Be stars.\relax }}{23}{figure.caption.22}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Color diagram of confirmed Be stars Vs B stars\relax }}{24}{figure.caption.23}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Color diagram of confirmed Be stars Vs B stars with errors\relax }}{25}{figure.caption.24}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Schematic diagram of the spectral Data Mining process. Using SSA protocol the spectra from Ondřejov server was acquired based on the list from photometric study. SSH Tunneling was necessary since Ondřejov spectra are top secret and therefore not available to the public. Convolution had to be performed to ensure compatibility with SDSS. Afterwards desired features were extracted automatically from the spectra after the continuum and H$\alpha $ line were fitted by appropriate functions. The same was done for spectra from SDSS except the convolution process.\relax }}{27}{figure.caption.25}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Reduction of Ondřejov's spectra of the Be star 4 Hercules. The top figure shows Gaussian function used for convolution with the spectrum, followed by the original spectrum then there is a spectrum after convolution with the Gaussian function. The last is the final spectrum after reduction.\relax }}{30}{figure.caption.26}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Normalized spectrum of Be star 60 Cyg. The top figure depicts the continuum fit. The bottom figure shows the region (width of the green line) used for extraction. The position of the line correspond to the maximum value in the region of $50\r A$. The Gaussian fit is in red. Although the fit is almost perfect, this approach fails to get characteristic "double peak" of the emission line. \relax }}{33}{figure.caption.27}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Normalized spectrum of Be star HR 8682. The top figure depicts the continuum fit. The bottom figure shows the region (width of the green line) used for extraction. The position of the line correspond to the maximum value in the region of $50\r A$. The Gaussian fit is in red.\relax }}{34}{figure.caption.28}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Spectrum of \relax }}{37}{figure.caption.31}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Spectrum of \relax }}{37}{figure.caption.32}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Spectrum of \relax }}{38}{figure.caption.33}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Spectrum of \relax }}{38}{figure.caption.34}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Spectrum of 4 Her. Be star. Spectral Type B9pe. \relax }}{39}{figure.caption.35}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Spectrum of HR 7418 (Albireo B). A fast-rotating Be star, with an equatorial rotational velocity of at least 250 kilometers per second. Its surface temperature has been spectroscopically estimated to be about 13.200 K. Spectral Type B8Ve. \relax }}{39}{figure.caption.36}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Spectrum of 6 Cepheus. Be star. Spectral Type B3IVe.\relax }}{40}{figure.caption.37}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Spectrum of Gamma Cassiopeiae. Be Star. Spectral Type B0IVpe C.\relax }}{40}{figure.caption.38}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
