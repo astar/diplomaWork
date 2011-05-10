@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.3.22)  10 MAY 2011 16:15
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.3.22)  10 MAY 2011 16:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -136,28 +136,44 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in pdf mode detected.
 )
-(/usr/share/texmf-texlive/tex/latex/listings/listings.sty
+(/usr/share/texmf-texlive/tex/latex/microtype/microtype.sty
+Package: microtype 2009/03/27 v2.3d Micro-typography with pdfTeX (RS)
+
 (/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-\lst@mode=\count93
+\MT@toks=\toks17
+\MT@count=\count93
+LaTeX Info: Redefining \lsstyle on input line 1608.
+LaTeX Info: Redefining \lslig on input line 1608.
+\MT@outer@space=\skip54
+LaTeX Info: Redefining \textls on input line 1616.
+\MT@outer@kern=\dimen105
+LaTeX Info: Redefining \textmicrotypecontext on input line 2167.
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/usr/share/texmf-texlive/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2009/03/27 v2.3d microtype main configuration file (RS)
+))
+(/usr/share/texmf-texlive/tex/latex/listings/listings.sty
+\lst@mode=\count94
 \lst@gtempboxa=\box26
-\lst@token=\toks17
-\lst@length=\count94
-\lst@currlwidth=\dimen105
-\lst@column=\count95
-\lst@pos=\count96
-\lst@lostspace=\dimen106
-\lst@width=\dimen107
-\lst@newlines=\count97
-\lst@lineno=\count98
-\lst@maxwidth=\dimen108
+\lst@token=\toks18
+\lst@length=\count95
+\lst@currlwidth=\dimen106
+\lst@column=\count96
+\lst@pos=\count97
+\lst@lostspace=\dimen107
+\lst@width=\dimen108
+\lst@newlines=\count98
+\lst@lineno=\count99
+\lst@maxwidth=\dimen109
 
 (/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
-\c@lstnumber=\count99
-\lst@skipnumbers=\count100
+\c@lstnumber=\count100
+\lst@skipnumbers=\count101
 \lst@framebox=\box27
 )
 (/usr/share/texmf-texlive/tex/latex/listings/listings.cfg
@@ -166,76 +182,76 @@ File: listings.cfg 2007/02/22 1.4 listings configuration
 Package: listings 2007/02/22 1.4 (Carsten Heinz)
 
 (/usr/share/texmf-texlive/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen109
-\WF@size=\dimen110
-\c@WF@wrappedlines=\count101
+\wrapoverhang=\dimen110
+\WF@size=\dimen111
+\c@WF@wrappedlines=\count102
 \WF@box=\box28
-\WF@everypar=\toks18
+\WF@everypar=\toks19
 Package: wrapfig 2003/01/31  v 3.6
 )
 (./StyleFiles/lettrine.sty
 File: lettrine.sty 2007/08/08 v1.62 (Daniel Flipo)
-\c@DefaultLines=\count102
-\DefaultFindent=\dimen111
-\DefaultNindent=\dimen112
-\DefaultSlope=\dimen113
+\c@DefaultLines=\count103
+\DefaultFindent=\dimen112
+\DefaultNindent=\dimen113
+\DefaultSlope=\dimen114
 \L@lbox=\box29
 \L@tbox=\box30
-\c@L@lines=\count103
-\L@Pindent=\dimen114
-\L@Findent=\dimen115
-\L@Nindent=\dimen116
-\L@lraise=\dimen117
-\L@first=\dimen118
-\L@next=\dimen119
-\L@slope=\dimen120
-\L@height=\dimen121
-\LettrineWidth=\dimen122
+\c@L@lines=\count104
+\L@Pindent=\dimen115
+\L@Findent=\dimen116
+\L@Nindent=\dimen117
+\L@lraise=\dimen118
+\L@first=\dimen119
+\L@next=\dimen120
+\L@slope=\dimen121
+\L@height=\dimen122
+\LettrineWidth=\dimen123
 
 Loading lettrine.cfg
 (/usr/share/texmf-texlive/tex/latex/lettrine/lettrine.cfg))
 (/usr/share/texmf-texlive/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen123
-\lightrulewidth=\dimen124
-\cmidrulewidth=\dimen125
-\belowrulesep=\dimen126
-\belowbottomsep=\dimen127
-\aboverulesep=\dimen128
-\abovetopsep=\dimen129
-\cmidrulesep=\dimen130
-\cmidrulekern=\dimen131
-\defaultaddspace=\dimen132
-\@cmidla=\count104
-\@cmidlb=\count105
-\@aboverulesep=\dimen133
-\@belowrulesep=\dimen134
-\@thisruleclass=\count106
-\@lastruleclass=\count107
-\@thisrulewidth=\dimen135
+\heavyrulewidth=\dimen124
+\lightrulewidth=\dimen125
+\cmidrulewidth=\dimen126
+\belowrulesep=\dimen127
+\belowbottomsep=\dimen128
+\aboverulesep=\dimen129
+\abovetopsep=\dimen130
+\cmidrulesep=\dimen131
+\cmidrulekern=\dimen132
+\defaultaddspace=\dimen133
+\@cmidla=\count105
+\@cmidlb=\count106
+\@aboverulesep=\dimen134
+\@belowrulesep=\dimen135
+\@thisruleclass=\count107
+\@lastruleclass=\count108
+\@thisrulewidth=\dimen136
 )
 (/usr/share/texmf-texlive/tex/latex/mh/mathtools.sty
 Package: mathtools 2008/08/01 v1.06 mathematical typesetting tools (MH)
 
 (/usr/share/texmf-texlive/tex/latex/tools/calc.sty
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count108
-\calc@Bcount=\count109
-\calc@Adimen=\dimen136
-\calc@Bdimen=\dimen137
-\calc@Askip=\skip54
-\calc@Bskip=\skip55
+\calc@Acount=\count109
+\calc@Bcount=\count110
+\calc@Adimen=\dimen137
+\calc@Bdimen=\dimen138
+\calc@Askip=\skip55
+\calc@Bskip=\skip56
 LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
-\calc@Ccount=\count110
-\calc@Cskip=\skip56
+\calc@Ccount=\count111
+\calc@Cskip=\skip57
 )
 (/usr/share/texmf-texlive/tex/latex/mh/mhsetup.sty
 Package: mhsetup 2007/12/03 v1.2 programming setup (MH)
 )
 (/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
-\@mathmargin=\skip57
+\@mathmargin=\skip58
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
@@ -243,56 +259,56 @@ Package: amstext 2000/06/29 v2.01
 
 (/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks19
-\ex@=\dimen138
+\@emptytoks=\toks20
+\ex@=\dimen139
 ))
 (/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen139
+\pmbraise@=\dimen140
 )
 (/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count111
+\inf@bad=\count112
 LaTeX Info: Redefining \frac on input line 211.
-\uproot@=\count112
-\leftroot@=\count113
+\uproot@=\count113
+\leftroot@=\count114
 LaTeX Info: Redefining \overline on input line 307.
-\classnum@=\count114
-\DOTSCASE@=\count115
+\classnum@=\count115
+\DOTSCASE@=\count116
 LaTeX Info: Redefining \ldots on input line 379.
 LaTeX Info: Redefining \dots on input line 382.
 LaTeX Info: Redefining \cdots on input line 467.
 \Mathstrutbox@=\box31
 \strutbox@=\box32
-\big@size=\dimen140
+\big@size=\dimen141
 LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
-\macc@depth=\count116
-\c@MaxMatrixCols=\count117
+\macc@depth=\count117
+\c@MaxMatrixCols=\count118
 \dotsspace@=\muskip10
-\c@parentequation=\count118
-\dspbrk@lvl=\count119
-\tag@help=\toks20
-\row@=\count120
-\column@=\count121
-\maxfields@=\count122
-\andhelp@=\toks21
-\eqnshift@=\dimen141
-\alignsep@=\dimen142
-\tagshift@=\dimen143
-\tagwidth@=\dimen144
-\totwidth@=\dimen145
-\lineht@=\dimen146
-\@envbody=\toks22
-\multlinegap=\skip58
-\multlinetaggap=\skip59
-\mathdisplay@stack=\toks23
+\c@parentequation=\count119
+\dspbrk@lvl=\count120
+\tag@help=\toks21
+\row@=\count121
+\column@=\count122
+\maxfields@=\count123
+\andhelp@=\toks22
+\eqnshift@=\dimen142
+\alignsep@=\dimen143
+\tagshift@=\dimen144
+\tagwidth@=\dimen145
+\totwidth@=\dimen146
+\lineht@=\dimen147
+\@envbody=\toks23
+\multlinegap=\skip59
+\multlinetaggap=\skip60
+\mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
-\g_MT_multlinerow_int=\count123
-\l_MT_multwidth_dim=\dimen147
+\g_MT_multlinerow_int=\count124
+\l_MT_multwidth_dim=\dimen148
 )
 (/usr/share/texmf-texlive/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
@@ -302,36 +318,36 @@ Package: caption 2009/10/09 v3.1k Customizing captions (AR)
 
 (/usr/share/texmf-texlive/tex/latex/caption/caption3.sty
 Package: caption3 2009/10/09 v3.1k caption3 kernel (AR)
-\captionmargin=\dimen148
-\captionmargin@=\dimen149
-\captionwidth=\dimen150
-\caption@indent=\dimen151
-\caption@parindent=\dimen152
-\caption@hangindent=\dimen153
+\captionmargin=\dimen149
+\captionmargin@=\dimen150
+\captionwidth=\dimen151
+\caption@indent=\dimen152
+\caption@parindent=\dimen153
+\caption@hangindent=\dimen154
 )
-\c@ContinuedFloat=\count124
+\c@ContinuedFloat=\count125
 Package caption Info: listings package is loaded.
 Package caption Info: wrapfig package is loaded.
 )
-\c@KVtest=\count125
-\sf@farskip=\skip60
-\sf@captopadj=\dimen154
-\sf@capskip=\skip61
-\sf@nearskip=\skip62
-\c@subfigure=\count126
-\c@subfigure@save=\count127
-\c@lofdepth=\count128
-\c@subtable=\count129
-\c@subtable@save=\count130
-\c@lotdepth=\count131
-\sf@top=\skip63
-\sf@bottom=\skip64
+\c@KVtest=\count126
+\sf@farskip=\skip61
+\sf@captopadj=\dimen155
+\sf@capskip=\skip62
+\sf@nearskip=\skip63
+\c@subfigure=\count127
+\c@subfigure@save=\count128
+\c@lofdepth=\count129
+\c@subtable=\count130
+\c@subtable@save=\count131
+\c@lotdepth=\count132
+\sf@top=\skip64
+\sf@bottom=\skip65
 )
 (/usr/share/texmf-texlive/tex/latex/nomencl/nomencl.sty
 Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
-\nomlabelwidth=\dimen155
-\nom@tempdim=\dimen156
-\nomitemsep=\skip65
+\nomlabelwidth=\dimen156
+\nom@tempdim=\dimen157
+\nomitemsep=\skip66
 )
 \@nomenclaturefile=\write3
 \openout3 = `thesis.nlo'.
@@ -355,9 +371,9 @@ O)
 (/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
 Package: xcolor-patch 2009/10/02 xcolor patch
 ))
-\@linkdim=\dimen157
-\Hy@linkcounter=\count132
-\Hy@pagecounter=\count133
+\@linkdim=\dimen158
+\Hy@linkcounter=\count133
+\Hy@pagecounter=\count134
 
 (/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
@@ -447,10 +463,10 @@ Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 )))
-\Fld@menulength=\count134
-\Field@Width=\dimen158
-\Fld@charsize=\dimen159
-\Field@toks=\toks24
+\Fld@menulength=\count135
+\Field@Width=\dimen159
+\Fld@charsize=\dimen160
+\Field@toks=\toks25
 Package hyperref Info: Hyper figures ON on input line 4375.
 Package hyperref Info: Link nesting OFF on input line 4382.
 Package hyperref Info: Hyper index ON on input line 4385.
@@ -462,14 +478,14 @@ Package hyperref Info: PDF/A mode OFF on input line 4407.
 (/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
 Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
 )
-\Hy@abspage=\count135
-\c@Item=\count136
-\c@Hfootnote=\count137
+\Hy@abspage=\count136
+\c@Item=\count137
+\c@Hfootnote=\count138
 )
 *hyperref using driver hpdftex*
 (/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
-\Fld@listcount=\count138
+\Fld@listcount=\count139
 )
 (/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
@@ -485,19 +501,19 @@ File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 )
-\Gin@req@height=\dimen160
-\Gin@req@width=\dimen161
+\Gin@req@height=\dimen161
+\Gin@req@width=\dimen162
 ))
 (/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
 Package: geometry 2008/12/21 v4.2 Page Geometry
-\Gm@cnth=\count139
-\Gm@cntv=\count140
-\c@Gm@tempcnt=\count141
-\Gm@bindingoffset=\dimen162
-\Gm@wd@mp=\dimen163
-\Gm@odd@mp=\dimen164
-\Gm@even@mp=\dimen165
-\Gm@dimlist=\toks25
+\Gm@cnth=\count140
+\Gm@cntv=\count141
+\c@Gm@tempcnt=\count142
+\Gm@bindingoffset=\dimen163
+\Gm@wd@mp=\dimen164
+\Gm@odd@mp=\dimen165
+\Gm@even@mp=\dimen166
+\Gm@dimlist=\toks26
 
 (/usr/share/texmf-texlive/tex/xelatex/xetexconfig/geometry.cfg))
 (./StyleFiles/watermark.sty
@@ -516,13 +532,13 @@ LaTeX Warning: You have requested package `StyleFiles/fncychapleo',
                but the package provides `fncychapleo'.
 
 Package: fncychapleo 1997/04/06 v1.11 LaTeX package (Revised chapters)
-\RW=\skip66
-\mylen=\skip67
-\myhi=\skip68
-\px=\skip69
-\py=\skip70
-\pyy=\skip71
-\pxx=\skip72
+\RW=\skip67
+\mylen=\skip68
+\myhi=\skip69
+\px=\skip70
+\py=\skip71
+\pyy=\skip72
+\pxx=\skip73
 ) (./thesis.aux (./dedication.aux) (./cite.aux) (./acknowledgement.aux)
 (./abstract.aux) (./introduction.aux) (./chapter1.aux
 
@@ -574,31 +590,46 @@ LaTeX Font Info:    ... okay on input line 80.
 
 (/usr/share/texmf/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count142
-\scratchdimen=\dimen166
+\scratchcounter=\count143
+\scratchdimen=\dimen167
 \scratchbox=\box33
-\nofMPsegments=\count143
-\nofMParguments=\count144
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count145
-\MPscratchDim=\dimen167
-\MPnumerator=\count146
-\everyMPtoPDFconversion=\toks27
+\nofMPsegments=\count144
+\nofMParguments=\count145
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count146
+\MPscratchDim=\dimen168
+\MPnumerator=\count147
+\everyMPtoPDFconversion=\toks28
 )
-\c@lstlisting=\count147
+LaTeX Info: Redefining \microtypecontext on input line 80.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `basictext'.
+Package microtype Info: No tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+ (/usr/share/texmf-texlive/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2008/02/29 v1.9a microtype config. file: Computer Modern Roman
+ (RS)
+)
+\c@lstlisting=\count148
 Package caption Info: Begin \AtBeginDocument code.
 Package caption3 Info: subfig package 1.2 or 1.3 is loaded.
 LaTeX Info: Redefining \subref on input line 80.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 80.
- (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
 (/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
 Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
-\c@section@level=\count148
+\c@section@level=\count149
 )
 LaTeX Info: Redefining \ref on input line 80.
 LaTeX Info: Redefining \pageref on input line 80.
@@ -677,28 +708,22 @@ File: pic/sci-logo.pdf Graphic file (type pdf)
 \openout2 = `acknowledgement.aux'.
 
  (./acknowledgement.tex
-Missing character: There is no Å in font cmr12!
-Missing character: There is no   in font cmr12!
-Missing character: There is no Å in font cmr12!
-Missing character: There is no ™ in font cmr12!
-Missing character: There is no Ã in font cmr12!
-Missing character: There is no ¡ in font cmr12!
-Missing character: There is no Ã in font cmr12!
-Missing character: There is no ¡ in font cmr12!
-Missing character: There is no Å in font cmr12!
-Missing character: There is no   in font cmr12!
-Missing character: There is no Å in font cmr12!
-Missing character: There is no ™ in font cmr12!
-Missing character: There is no Ã in font cmr12!
-Missing character: There is no ­ in font cmr12!
- [3
+(/usr/share/texmf-texlive/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+(/usr/share/texmf-texlive/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+
+Package natbib Warning: Citation `GPL' on page iii undefined on input line 49.
+
+[3
 
 
 ])
 \openout2 = `abstract.aux'.
 
-
-(./abstract.tex [4
+ (./abstract.tex [4
 
 
 ])
@@ -706,8 +731,7 @@ LaTeX Font Info:    Try loading font information for OT1+phv on input line 117.
 
  (/usr/share/texmf-texlive/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
-)
-(./thesis.toc [5
+) (./thesis.toc [5
 \FN@pp@footnotehinttrue 
 
 
@@ -801,7 +825,7 @@ Overfull \hbox (37.94376pt too wide) in paragraph at lines 140--146
 
 pdfTeX warning: pdflatex (file ./pic/resources.pdf): PDF inclusion: found PDF v
 ersion <1.5>, but at most version <1.4> allowed
-<pic/resources.pdf, id=459, 614.295pt x 794.97pt>
+<pic/resources.pdf, id=458, 614.295pt x 794.97pt>
 File: pic/resources.pdf Graphic file (type pdf)
  <use pic/resources.pdf>
 [6
@@ -822,10 +846,13 @@ Missing character: There is no ½ in font cmr12!
 
  (./chapter2.tex
 Chapter 2.
-<pic/mapDataMining.pdf, id=675, 285.065pt x 97.36375pt>
+<pic/mapDataMining.pdf, id=674, 285.065pt x 97.36375pt>
 File: pic/mapDataMining.pdf Graphic file (type pdf)
 
-<use pic/mapDataMining.pdf> [15
+<use pic/mapDataMining.pdf>
+(/usr/share/texmf-texlive/tex/latex/microtype/mt-eus.cfg
+File: mt-eus.cfg 2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
+) [15
 
 
 
@@ -833,16 +860,16 @@ File: pic/mapDataMining.pdf Graphic file (type pdf)
 
 LaTeX Warning: Command \r invalid in math mode on input line 136.
 
-[17] <pic/starsGalaxiesQSO.pdf, id=745, 587.19376pt x 442.65375pt>
+[17] <pic/starsGalaxiesQSO.pdf, id=744, 587.19376pt x 442.65375pt>
 File: pic/starsGalaxiesQSO.pdf Graphic file (type pdf)
 
 <use pic/starsGalaxiesQSO.pdf> [18 <./pic/starsGalaxiesQSO.pdf>]
-Overfull \hbox (99.09317pt too wide) in paragraph at lines 212--213
+Overfull \hbox (96.21883pt too wide) in paragraph at lines 212--213
 [][][][] 
  []
 
 
-Overfull \hbox (99.09317pt too wide) in paragraph at lines 217--218
+Overfull \hbox (96.21883pt too wide) in paragraph at lines 217--218
 [][][][] 
  []
 
@@ -857,7 +884,7 @@ Underfull \vbox (badness 2111) has occurred while \output is active []
 
  (./chapter3.tex
 Chapter 3.
-<pic/mapBeCandidates.pdf, id=823, 442.65375pt x 212.795pt>
+<pic/mapBeCandidates.pdf, id=822, 442.65375pt x 212.795pt>
 File: pic/mapBeCandidates.pdf Graphic file (type pdf)
 
 <use pic/mapBeCandidates.pdf>
@@ -865,7 +892,7 @@ Overfull \hbox (15.8613pt too wide) in paragraph at lines 5--11
  [] 
  []
 
-<pic/beStarLine.pdf, id=826, 524.96124pt x 297.11pt>
+<pic/beStarLine.pdf, id=825, 524.96124pt x 297.11pt>
 File: pic/beStarLine.pdf Graphic file (type pdf)
  <use pic/beStarLine.pdf>
 [21
@@ -873,11 +900,11 @@ File: pic/beStarLine.pdf Graphic file (type pdf)
 
 
  <./pic/mapBeCandidates.pdf>]
-<pic/beStarLine2.png, id=841, 580.41844pt x 374.90062pt>
+<pic/beStarLine2.png, id=840, 580.41844pt x 374.90062pt>
 File: pic/beStarLine2.png Graphic file (type png)
 
 <use pic/beStarLine2.png> [22 <./pic/beStarLine.pdf> <./pic/beStarLine2.png (PN
-G copy)>] <pic/flowPhoto.pdf, id=855, 614.295pt x 794.97pt>
+G copy)>] <pic/flowPhoto.pdf, id=854, 614.295pt x 794.97pt>
 File: pic/flowPhoto.pdf Graphic file (type pdf)
 
 <use pic/flowPhoto.pdf> [23
@@ -894,17 +921,17 @@ n input line 129.
 Package natbib Warning: Citation `2006AJ131.1163S' on page 24 undefined on inpu
 t line 130.
 
-<pic/jhk_be_b.pdf, id=872, 587.19376pt x 442.65375pt>
+<pic/jhk_be_b.pdf, id=871, 587.19376pt x 442.65375pt>
 File: pic/jhk_be_b.pdf Graphic file (type pdf)
  <use pic/jhk_be_b.pdf>
 [24
 
  <./pic/jhk_be_b.pdf>]
-<pic/jhk_be_b_errors.pdf, id=920, 587.19376pt x 442.65375pt>
+<pic/jhk_be_b_errors.pdf, id=919, 587.19376pt x 442.65375pt>
 File: pic/jhk_be_b_errors.pdf Graphic file (type pdf)
 
 <use pic/jhk_be_b_errors.pdf> [25 <./pic/jhk_be_b_errors.pdf>]
-<pic/flowSpectra.pdf, id=966, 614.295pt x 794.97pt>
+<pic/flowSpectra.pdf, id=965, 614.295pt x 794.97pt>
 File: pic/flowSpectra.pdf Graphic file (type pdf)
  <use pic/flowSpectra.pdf>
 Missing character: There is no Å in font cmr12!
@@ -933,7 +960,7 @@ Missing character: There is no ™ in font cmtt10!
 Missing character: There is no Å in font cmr12!
 Missing character: There is no ™ in font cmr12!
 
-<pic/convolution.pdf, id=1025, 587.19376pt x 442.65375pt>
+<pic/convolution.pdf, id=1024, 587.19376pt x 442.65375pt>
 File: pic/convolution.pdf Graphic file (type pdf)
 
 <use pic/convolution.pdf>
@@ -994,7 +1021,7 @@ Missing character: There is no Å in font cmr12!
 Missing character: There is no ™ in font cmr12!
 Missing character: There is no Å in font cmr12!
 Missing character: There is no ™ in font cmr12!
-<pic/figSpecCharCyg60.pdf, id=1146, 587.19376pt x 442.65375pt>
+<pic/figSpecCharCyg60.pdf, id=1145, 587.19376pt x 442.65375pt>
 File: pic/figSpecCharCyg60.pdf Graphic file (type pdf)
 
 <use pic/figSpecCharCyg60.pdf>
@@ -1008,7 +1035,7 @@ LaTeX Warning: Command \r invalid in math mode on input line 497.
 
 LaTeX Warning: Command \r invalid in math mode on input line 497.
 
-<pic/figSpecCharhd216057.pdf, id=1147, 587.19376pt x 442.65375pt>
+<pic/figSpecCharhd216057.pdf, id=1146, 587.19376pt x 442.65375pt>
 File: pic/figSpecCharhd216057.pdf Graphic file (type pdf)
 
 <use pic/figSpecCharhd216057.pdf>
@@ -1030,27 +1057,27 @@ Overfull \hbox (14.49051pt too wide) in paragraph at lines 689--699
 [][] 
  []
 
-<pic/result1.pdf, id=1328, 578.16pt x 433.62pt>
+<pic/result1.pdf, id=1327, 578.16pt x 433.62pt>
 File: pic/result1.pdf Graphic file (type pdf)
  <use pic/result1.pdf>
-<pic/result2.pdf, id=1329, 578.16pt x 433.62pt>
+<pic/result2.pdf, id=1328, 578.16pt x 433.62pt>
 File: pic/result2.pdf Graphic file (type pdf)
  <use pic/result2.pdf>
-<pic/result3.pdf, id=1330, 578.16pt x 433.62pt>
+<pic/result3.pdf, id=1329, 578.16pt x 433.62pt>
 File: pic/result3.pdf Graphic file (type pdf)
  <use pic/result3.pdf>
 File: pic/result3.pdf Graphic file (type pdf)
 
-<use pic/result3.pdf> <pic/4_her.pdf, id=1331, 578.16pt x 433.62pt>
+<use pic/result3.pdf> <pic/4_her.pdf, id=1330, 578.16pt x 433.62pt>
 File: pic/4_her.pdf Graphic file (type pdf)
 
-<use pic/4_her.pdf> <pic/bet_cyg_b.pdf, id=1332, 578.16pt x 433.62pt>
+<use pic/4_her.pdf> <pic/bet_cyg_b.pdf, id=1331, 578.16pt x 433.62pt>
 File: pic/bet_cyg_b.pdf Graphic file (type pdf)
 
-<use pic/bet_cyg_b.pdf> <pic/6_cep.pdf, id=1333, 578.16pt x 433.62pt>
+<use pic/bet_cyg_b.pdf> <pic/6_cep.pdf, id=1332, 578.16pt x 433.62pt>
 File: pic/6_cep.pdf Graphic file (type pdf)
 
-<use pic/6_cep.pdf> <pic/gama_cas.pdf, id=1334, 578.16pt x 433.62pt>
+<use pic/6_cep.pdf> <pic/gama_cas.pdf, id=1333, 578.16pt x 433.62pt>
 File: pic/gama_cas.pdf Graphic file (type pdf)
 
 <use pic/gama_cas.pdf> [36] [37 <./pic/result1.pdf> <./pic/result2.pdf>]
@@ -1072,31 +1099,31 @@ Chapter 4.
 ]
 \openout2 = `appendix1.aux'.
 
- (./appendix1.tex <pic/results/1.pdf, id=1802, 578.16pt x 433.62pt>
+ (./appendix1.tex <pic/results/1.pdf, id=1801, 578.16pt x 433.62pt>
 File: pic/results/1.pdf Graphic file (type pdf)
 
-<use pic/results/1.pdf> <pic/results/2.pdf, id=1803, 578.16pt x 433.62pt>
+<use pic/results/1.pdf> <pic/results/2.pdf, id=1802, 578.16pt x 433.62pt>
 File: pic/results/2.pdf Graphic file (type pdf)
 
-<use pic/results/2.pdf> <pic/results/3.pdf, id=1804, 578.16pt x 433.62pt>
+<use pic/results/2.pdf> <pic/results/3.pdf, id=1803, 578.16pt x 433.62pt>
 File: pic/results/3.pdf Graphic file (type pdf)
 
-<use pic/results/3.pdf> <pic/results/4.pdf, id=1805, 578.16pt x 433.62pt>
+<use pic/results/3.pdf> <pic/results/4.pdf, id=1804, 578.16pt x 433.62pt>
 File: pic/results/4.pdf Graphic file (type pdf)
 
-<use pic/results/4.pdf> <pic/results/5.pdf, id=1806, 578.16pt x 433.62pt>
+<use pic/results/4.pdf> <pic/results/5.pdf, id=1805, 578.16pt x 433.62pt>
 File: pic/results/5.pdf Graphic file (type pdf)
 
-<use pic/results/5.pdf> <pic/results/6.pdf, id=1807, 578.16pt x 433.62pt>
+<use pic/results/5.pdf> <pic/results/6.pdf, id=1806, 578.16pt x 433.62pt>
 File: pic/results/6.pdf Graphic file (type pdf)
 
-<use pic/results/6.pdf> <pic/results/7.pdf, id=1808, 578.16pt x 433.62pt>
+<use pic/results/6.pdf> <pic/results/7.pdf, id=1807, 578.16pt x 433.62pt>
 File: pic/results/7.pdf Graphic file (type pdf)
 
-<use pic/results/7.pdf> <pic/results/8.pdf, id=1809, 578.16pt x 433.62pt>
+<use pic/results/7.pdf> <pic/results/8.pdf, id=1808, 578.16pt x 433.62pt>
 File: pic/results/8.pdf Graphic file (type pdf)
 
-<use pic/results/8.pdf> <pic/results/9.pdf, id=1810, 578.16pt x 433.62pt>
+<use pic/results/8.pdf> <pic/results/9.pdf, id=1809, 578.16pt x 433.62pt>
 File: pic/results/9.pdf Graphic file (type pdf)
 
 <use pic/results/9.pdf>) [47
@@ -1151,22 +1178,22 @@ sults/3.pdf> <./pic/results/4.pdf> <./pic/results/5.pdf> <./pic/results/6.pdf>
 ]
 Missing character: There is no Å in font phvb7tn!
 Missing character: There is no ™ in font phvb7tn!
- <pic/be/1.pdf, id=2346, 578.16pt x 433.62pt>
+ <pic/be/1.pdf, id=2345, 578.16pt x 433.62pt>
 File: pic/be/1.pdf Graphic file (type pdf)
 
-<use pic/be/1.pdf> <pic/be/2.pdf, id=2347, 578.16pt x 433.62pt>
+<use pic/be/1.pdf> <pic/be/2.pdf, id=2346, 578.16pt x 433.62pt>
 File: pic/be/2.pdf Graphic file (type pdf)
 
-<use pic/be/2.pdf> <pic/be/4.pdf, id=2348, 578.16pt x 433.62pt>
+<use pic/be/2.pdf> <pic/be/4.pdf, id=2347, 578.16pt x 433.62pt>
 File: pic/be/4.pdf Graphic file (type pdf)
 
-<use pic/be/4.pdf> <pic/be/5.pdf, id=2349, 578.16pt x 433.62pt>
+<use pic/be/4.pdf> <pic/be/5.pdf, id=2348, 578.16pt x 433.62pt>
 File: pic/be/5.pdf Graphic file (type pdf)
 
-<use pic/be/5.pdf> <pic/be/7.pdf, id=2350, 578.16pt x 433.62pt>
+<use pic/be/5.pdf> <pic/be/7.pdf, id=2349, 578.16pt x 433.62pt>
 File: pic/be/7.pdf Graphic file (type pdf)
 
-<use pic/be/7.pdf> <pic/be/8.pdf, id=2351, 578.16pt x 433.62pt>
+<use pic/be/7.pdf> <pic/be/8.pdf, id=2350, 578.16pt x 433.62pt>
 File: pic/be/8.pdf Graphic file (type pdf)
 
 <use pic/be/8.pdf>
@@ -1219,13 +1246,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 11493 strings out of 493848
- 166765 string characters out of 1152823
- 477758 words of memory out of 3000000
- 13909 multiletter control sequences out of 15000+50000
- 21698 words of font info for 76 fonts, out of 3000000 for 9000
+ 13004 strings out of 493848
+ 193074 string characters out of 1152823
+ 531892 words of memory out of 3000000
+ 15268 multiletter control sequences out of 15000+50000
+ 25518 words of font info for 140 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 51i,12n,50p,721b,1699s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,12n,50p,721b,1709s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
 ve/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/ty
 pe1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-texlive/fonts/type1/public
@@ -1244,9 +1271,9 @@ blic/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
 ts/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/euler/eu
 sm10.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/s
 hare/texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis.pdf (62 pages, 1879521 bytes).
+Output written on thesis.pdf (62 pages, 1883438 bytes).
 PDF statistics:
- 2855 PDF objects out of 2984 (max. 8388607)
+ 2854 PDF objects out of 2984 (max. 8388607)
  528 named destinations out of 1000 (max. 500000)
- 582 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 25670 words of extra memory for PDF output out of 29859 (max. 10000000)
 

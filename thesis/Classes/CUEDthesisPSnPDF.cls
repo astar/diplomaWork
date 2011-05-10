@@ -47,6 +47,7 @@
 \usepackage[square, sort, numbers, authoryear]{natbib}
 \usepackage{ifthen}
 \usepackage{ifpdf}
+\usepackage{microtype}
 % Astar-Jarda
 %\usepackage{natbib}
 \usepackage{listings} 

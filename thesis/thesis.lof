@@ -1,5 +1,5 @@
 \select@language {english}
-\contentsline {figure}{\numberline {1}{\ignorespaces Astroinformatics in the context of astronomy \cite {ballastroinformatics} \relax }}{1}{figure.caption.3}
+\contentsline {figure}{\numberline {1}{\ignorespaces Astroinformatics in the context of astronomy \citep {ballastroinformatics} \relax }}{1}{figure.caption.3}
 \contentsline {figure}{\numberline {2}{\ignorespaces Thesis structure\relax }}{2}{figure.caption.4}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Chapter structure\relax }}{3}{figure.caption.6}
@@ -11,8 +11,8 @@
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Color Diagram of the problem.It shows that individual object classes occupy different regions in the diagram \relax }}{18}{figure.caption.18}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Chapter structure\relax }}{21}{figure.caption.19}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Model of a typical Be star. Emission lines coming from an equatorial disk is added to the photo-spheric absorption spectrum. Central B star emits UV (Lyman continuum) and ionizes the disk, which in turn re-emits at high wavelength such as visible domain. \cite {hirata1984star}\relax }}{22}{figure.caption.20}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Example of spectra of Be stars based on view angle \cite {slettebak1988stars}\relax }}{22}{figure.caption.21}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Model of a typical Be star. Emission lines coming from an equatorial disk is added to the photo-spheric absorption spectrum. Central B star emits UV (Lyman continuum) and ionizes the disk, which in turn re-emits at high wavelength such as visible domain. \citep {hirata1984star}\relax }}{22}{figure.caption.20}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Example of spectra of Be stars based on view angle \citep {slettebak1988stars}\relax }}{22}{figure.caption.21}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Schematic diagram of the photometric Data Mining process. The lists of confirmed Be stars consisted of Hipparcos IDs, this was correlated with Hipparcos catalog to obtain right ascension and declination of the objects and subsequently cross-matched with 2MASS catalog to get photometric data. The second set of B stars were acquired in similar manner but using SQL the condition was set to get B type stars different from the list of Be stars.\relax }}{23}{figure.caption.22}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Color diagram of confirmed Be stars Vs B stars\relax }}{24}{figure.caption.23}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Color diagram of confirmed Be stars Vs B stars with errors\relax }}{25}{figure.caption.24}
