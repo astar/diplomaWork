@@ -3,13 +3,17 @@
 %\include{Macros/MacroFile1}
 
  \documentclass[twoside,12pt]{Classes/CUEDthesisPSnPDF}
- \usepackage[margin=2.5cm]{geometry}
+ \usepackage[
+			margin=2.5cm, 
+			footskip=1cm,
+			left=3.5cm,
+			]{geometry}
 
 \ifpdf
     \pdfinfo { /Title  (Thesis)
                /Creator (TeX)
                /Producer (pdfTeX)
-               /Author (Jaroslav Vážný jaroslav.vazny@gmail.com)
+               /Author (Jaroslav V\'{a}\v{z}n\'{y} jaroslav.vazny@gmail.com)
                /CreationDate (D:20030101000000)  %format D:YYYYMMDDhhmmss
                /ModDate (D:20030815213532)
                /Subject (Thesis)
@@ -22,7 +26,7 @@
   Observatory}
 
 \ifpdf
-  \author{\href{mailto:jaroslav.vazny@gmail.com}{Jaroslav Vazny}}
+  \author{\href{mailto:jaroslav.vazny@gmail.com}{Jaroslav V\'{a}\v{z}n\'{y}}}
   \collegeordept{\href{http://www.physics.muni.cz}{Department of Theoretical Physics and Astrophysics }}
   \university{\href{http://www.muni.cz}{Masaryk University}}
 % insert below the file name that contains the crest in-place of 'UnivShield'
@@ -69,6 +73,9 @@
 % Z bakalarky
 %\usepackage[authoryear]{natbib}
 
+
+\clubpenalty 10000
+\widowpenalty 10000
 
 \begin{document}
 \input{lst.tex}
@@ -119,6 +126,8 @@
 %\pagestyle{fancy}
 %\fancyhf{}
 
+\fancyhead[EL]{\bfseries \leftmark}
+\fancyhead[OR]{\bfseries \rightmark}
 \include{chapter1}
 \include{chapter2}
 \include{chapter3}

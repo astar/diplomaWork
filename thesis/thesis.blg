@@ -1,4 +1,5 @@
-This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2011/dev/Mandriva)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: dedication.aux
 A level-1 auxiliary file: cite.aux
@@ -9,6 +10,8 @@ A level-1 auxiliary file: chapter1.aux
 A level-1 auxiliary file: chapter2.aux
 A level-1 auxiliary file: chapter3.aux
 A level-1 auxiliary file: conclusion.aux
+A level-1 auxiliary file: appendix1.aux
+A level-1 auxiliary file: appendix2.aux
 The style file: plainnat.bst
 Database file #1: references.bib
 Warning--I didn't find a database entry for "perryman1997hipparcos"
@@ -16,45 +19,45 @@ Warning--I didn't find a database entry for "2006AJ131.1163S"
 Warning--empty journal in ballastroinformatics
 Warning--empty journal in nrc1995
 Warning--empty journal in fits1997
-You've used 16 entries,
+You've used 17 entries,
             2773 wiz_defined-function locations,
-            701 strings with 7609 characters,
-and the built_in function-call counts, 7086 in all, are:
-= -- 606
-> -- 470
+            710 strings with 7788 characters,
+and the built_in function-call counts, 7605 in all, are:
+= -- 655
+> -- 500
 < -- 10
-+ -- 160
-- -- 144
-* -- 555
-:= -- 1148
-add.period$ -- 54
-call.type$ -- 16
-change.case$ -- 92
-chr.to.int$ -- 16
-cite$ -- 35
-duplicate$ -- 318
-empty$ -- 541
-format.name$ -- 172
-if$ -- 1445
++ -- 170
+- -- 153
+* -- 604
+:= -- 1228
+add.period$ -- 58
+call.type$ -- 17
+change.case$ -- 98
+chr.to.int$ -- 17
+cite$ -- 37
+duplicate$ -- 339
+empty$ -- 582
+format.name$ -- 182
+if$ -- 1552
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 18
-newline$ -- 94
-num.names$ -- 64
-pop$ -- 184
+missing$ -- 19
+newline$ -- 100
+num.names$ -- 68
+pop$ -- 193
 preamble$ -- 1
-purify$ -- 78
+purify$ -- 83
 quote$ -- 0
-skip$ -- 252
+skip$ -- 267
 stack$ -- 0
-substring$ -- 156
-swap$ -- 13
+substring$ -- 183
+swap$ -- 14
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 166
+type$ -- 177
 warning$ -- 3
-while$ -- 58
+while$ -- 63
 width$ -- 0
-write$ -- 215
+write$ -- 230
 (There were 5 warnings)

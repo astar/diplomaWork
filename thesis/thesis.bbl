@@ -1,4 +1,4 @@
-\begin{thebibliography}{16}
+\begin{thebibliography}{17}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -33,6 +33,14 @@ K.~Benson, R.~Plante, E.~Auden, et~al.
 T.~Berners-Lee and R.~Cailliau.
 \newblock {WorldWideWeb: Proposal for a HyperText project}.
 \newblock \emph{European Particle Physics Laboratory (CERN)}, 1990.
+
+\bibitem[Bukvi{\'c} et~al.(2008)Bukvi{\'c}, Spasojevi{\'c}, and
+  {\v{Z}}igman]{bukvic2008advanced}
+S.~Bukvi{\'c}, D.~Spasojevi{\'c}, and V.~{\v{Z}}igman.
+\newblock {Advanced fit technique for astrophysical spectra}.
+\newblock \emph{Astronomy and Astrophysics}, 477\penalty0 (3):\penalty0
+  967--977, 2008.
+\newblock ISSN 0004-6361.
 
 \bibitem[Council(1995)]{nrc1995}
 National~Research Council.

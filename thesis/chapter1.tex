@@ -64,7 +64,7 @@ was too many documents in different formats. Tim Berners-Lee\footnote{
   Sir Timothy John "Tim" Berners-Lee. British engineer and computer
   scientist and MIT professor credited with inventing the World Wide
   Web.} designed set of protocols (URIs, HTTP and HTML) which allowed
-link and share documents\cite{berners1990worldwideweb}. This was
+link and share documents \citep{berners1990worldwideweb}. This was
 recognized as generally useful and World Wide Web was born. An
 important role plays the World Wide Web Consortium (W3C) in developing
 Web standards\footnote{Prior to its creation, incompatible versions of
@@ -96,7 +96,7 @@ Web standards\footnote{Prior to its creation, incompatible versions of
    Argentina, Armenia, Australia, Brazil, Canada, China, Europe,
    France, Germany, Hungary, India, Italy, Japan, Russia, Spain, the
    United Kingdom, and the United States and inter-governmental
-   organizations (ESA and ESO)\cite{hanisch2010international}.
+   organizations (ESA and ESO) \citep{hanisch2010international}.
    
     Standards and specifications produced by IVOA can be obtained at
     \url{http://www.ivoa.net/}.
@@ -143,9 +143,9 @@ protocol.
         \else
         \includegraphics[bb = 92 86 545 742, height=6in]{architecture}
         \fi
+      \end{center}
         \caption{VO Architecture}
         \label{FigArchitecture}
-      \end{center}
     \end{figure}
 
 \clearpage
@@ -153,11 +153,10 @@ protocol.
 The VO architecture is serviced oriented. Each service is autonomous
 with well defined defined boundaries. Very important aspect of VO
 implementation is the adoption of formats and protocols used in
-astronomy (FITS) and Computer Science (XML \footnote{Extensible
+astronomy (FITS) and Computer Science (XML\,\footnote{Extensible
   Markup Language (XML) is a set of rules for encoding documents in
-  machine-readable form.} , Web service \footnote{method of
-  communication between two electronic devices over a network.} SOAP
-\footnote{Simple Object Access Protocol, is a protocol specification
+  machine-readable form.} , Web service\,\footnote{method of
+  communication between two electronic devices over a network.} SOAP\,\footnote{Simple Object Access Protocol, is a protocol specification
   for exchanging structured information in the implementation of Web
   Services in computer networks.}) for many years. In other words VO
 does not try to reinvent the wheel but it stands on the shoulders of
@@ -190,13 +189,13 @@ can have any resources.
       \begin{center}
         \leavevmode
         \ifpdf
-        \includegraphics[scale = 1]{resources}
+        \includegraphics[height=0.9\textwidth, angle=-90]{../resources}
         \else
-        \includegraphics[bb = 92 86 545 742, height=6in]{resource.png}
+        \includegraphics[width=0.9\textwidth]{resource.png}
         \fi
+      \end{center}
         \caption{UML diagram of VOResource}
         \label{FigResource}
-      \end{center}
     \end{figure}
 
 \clearpage
