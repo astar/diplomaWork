@@ -1,4 +1,4 @@
-\begin{thebibliography}{18}
+\begin{thebibliography}{22}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -7,7 +7,7 @@
 
 \bibitem[Ball and Schade(2010)]{ballastroinformatics}
 N.M. Ball and D.~Schade.
-\newblock {ASTROINFORMATICS IN CANADA}.
+\newblock {The Long Range Plan for Canadian Astronomy: 2010-2020}.
 \newblock 2010.
 
 \bibitem[Ball et~al.(2010)Ball, Brunner, and Gregory]{ball2010data}
@@ -29,6 +29,12 @@ K.~Benson, R.~Plante, E.~Auden, et~al.
 \newblock {IVOA Registry Interfaces}.
 \newblock \emph{IVOA Working Draft}, 2009.
 
+\bibitem[Berka(2003)]{berka2003dobyvani}
+P.~Berka.
+\newblock \emph{{Dob{\'y}v{\'a}n{\'\i} znalost{\'\i} z datab{\'a}z{\'\i}}}.
+\newblock Academia, 2003.
+\newblock ISBN 8020010629.
+
 \bibitem[Berners-Lee and Cailliau(1990)]{berners1990worldwideweb}
 T.~Berners-Lee and R.~Cailliau.
 \newblock {WorldWideWeb: Proposal for a HyperText project}.
@@ -46,6 +52,11 @@ S.~Bukvi{\'c}, D.~Spasojevi{\'c}, and V.~{\v{Z}}igman.
 National~Research Council.
 \newblock {Preserving Scientiﬁc Data on our Physical Universe}.
 \newblock 1995.
+
+\bibitem[{Free Software Foundation}(2007)]{GPL}
+{Free Software Foundation}.
+\newblock {GNU General Public License}, 2007.
+\newblock URL \url{http://www.gnu.org/copyleft/gpl.html}.
 
 \bibitem[Hall et~al.(2009)Hall, Frank, Holmes, Pfahringer, Reutemann, and
   Witten]{hall2009weka}
@@ -74,13 +85,21 @@ R.~Hirata and T.~Kogure.
 SB~Kotsiantis, ID~Zaharakis, and PE~Pintelas.
 \newblock {Supervised machine learning: A review of classification techniques}.
 \newblock \emph{Emerging artificial intelligence applications in computer
-  engineering: real word AI systems with applications in eHealth, HCI,
-  information retrieval and pervasive technologies}, 160:\penalty0 3, 2007.
+  engineering}, 160:\penalty0 3, 2007.
 
 \bibitem[Launer(1979)]{launer1979robustness}
 R.L. Launer.
 \newblock \emph{{Robustness in statistics: proceedings of a workshop}}.
 \newblock Academic Pr, 1979.
+
+\bibitem[Perryman et~al.(1997)Perryman, Lindegren, Kovalevsky, Hoeg, Bastian,
+  Bernacca, Cr{\'e}z{\'e}, Donati, Grenon, van Leeuwen,
+  et~al.]{perryman1997hipparcos}
+MAC Perryman, L.~Lindegren, J.~Kovalevsky, E.~Hoeg, U.~Bastian, PL~Bernacca,
+  M.~Cr{\'e}z{\'e}, F.~Donati, M.~Grenon, F.~van Leeuwen, et~al.
+\newblock {The HIPPARCOS catalogue}.
+\newblock \emph{Astronomy and Astrophysics}, 323:\penalty0 L49--L52, 1997.
+\newblock ISSN 0004-6361.
 
 \bibitem[Porter and Rivinius(2003)]{porter2003classical}
 J.M. Porter and T.~Rivinius.
@@ -93,6 +112,13 @@ J.M. Porter and T.~Rivinius.
 B.~Schlesinger.
 \newblock {A User’s Guide for the Flexible Image Transport System}.
 \newblock 1997.
+
+\bibitem[Skrutskie et~al.(2006)Skrutskie, Cutri, Stiening, Weinberg, Schneider,
+  Carpenter, Beichman, Capps, Chester, Elias, et~al.]{skrutskie2006two}
+MF~Skrutskie, RM~Cutri, R.~Stiening, MD~Weinberg, S.~Schneider, JM~Carpenter,
+  C.~Beichman, R.~Capps, T.~Chester, J.~Elias, et~al.
+\newblock {The two micron all sky survey (2MASS)}.
+\newblock \emph{The Astronomical Journal}, 131:\penalty0 1163, 2006.
 
 \bibitem[Slettebak(1988)]{slettebak1988stars}
 A.~Slettebak.

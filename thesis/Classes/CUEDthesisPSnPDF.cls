@@ -250,8 +250,10 @@
 \vspace{1cm}
 {\sc\LARGE\textsc{\@title}}\\
 \vspace{1cm}
+{\Large\textsc{Supervisor: }RNDr.\textsc{ Petr \v{S}koda, CSc.}}\\
+\vspace{1cm}
 {\Large\textsc{\@author}}\\
-\vspace{6.3cm}
+\vspace{5.3cm}
 {\Large\textsc{\@degreedate}}
 \end{center}
 \end{alwayssingle}
@@ -273,6 +275,16 @@
   \vspace{0.5cm}
   \begin{quote} \begin{center}}
 {\end{center} \end{quote} \end{alwayssingle}}
+
+\newenvironment{declare}
+{\begin{alwayssingle}
+  \pagestyle{empty}
+  
+  % \chapter*{Declaration}
+  \vfill
+  }
+{ \end{alwayssingle}}
+
 
 \renewenvironment{quotation}
 {\begin{alwayssingle}
@@ -307,6 +319,16 @@
 % The acknowledgementslong environment puts a large, bold, centered 
 % "Acknowledgements" label at the top of the page. The acknowledgement itself 
 % does not appears in a quote environment so you can get more in.
+
+\newenvironment{declaration}{%
+\pagestyle{empty}
+\begin{alwayssingle}
+ \chapter*{Declaration}
+}
+{\par\vfil
+\end{alwayssingle}
+\newpage}
+
 
 \newenvironment{acknowledgementslong}
 {\pagestyle{empty}

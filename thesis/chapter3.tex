@@ -71,7 +71,7 @@ emission. The explanation of its origin is on following pictures.
       \end{center}
     \end{figure}
  
-\clearpage
+%\clearpage
 
 There are still many open questions related to their rotation,
 evolutionary status, presence and origin of the magnetic fields, mass
@@ -109,7 +109,7 @@ obtaining new candidates could help answer these questions.
     \end{figure}
 
  
-\clearpage
+%\clearpage
 
 
 
@@ -124,13 +124,13 @@ emission \citep{van1995halpha}.
 
 \subsection{Data preprocessing}
 
-I was provided with a list of confirmed Be stars from Academy of Science
-Ondřejov. This list consist of 625 manually chosen objects. Data were
-correlated with Hipparcos \citep{perryman1997hipparcos} catalog to
-obtain RA, DEC and then with 2MASS\citep{2006AJ131.1163S} catalog to
-obtain J,H,K Colors using method of multi-cone search in Virtual
-Observatory. The second set was acquired from Hipparcos catalog using
-following SQL query:
+I was provided with a list of confirmed Be stars from Academy of
+Science Ondřejov. This list consist of 625 manually chosen
+objects. Data were correlated with Hipparcos
+\citep{perryman1997hipparcos} catalog to obtain RA, DEC and then with
+2MASS \citep{skrutskie2006two} catalog to obtain J,H,K Colors using
+method of multi-cone search in Virtual Observatory. The second set was
+acquired from Hipparcos catalog using following SQL query:
 
 \begin{lstlisting}
   Select * 
@@ -162,12 +162,12 @@ are on the figure \ref{Figjhk_be_b}
     significant certain trends are presented.
 
 \begin{align*}
-  \delta_{(j - h)} &= \sqrt{\left(\frac{\partial(j - h) }{\partial
-        j}\right)^2\delta_j^2 + \left(\frac{\partial(j - h) }{\partial
-        h}\right)^2\delta_h^2} \\
-  \frac{\partial(j - h) }{\partial j } &= 1,\frac{\partial(j - h)
-  }{\partial h } = -1 \\
-  \delta_{(j - h)} &= \sqrt{\delta_j^2 + \delta_h^2}
+  \delta_{(m_j - m_h)} &= \sqrt{\left(\frac{\partial(m_j - m_h) }{\partial
+        m_j}\right)^2\delta_{m_j}^2 + \left(\frac{\partial(m_j - m_h) }{\partial
+        m_h}\right)^2\delta_{m_h}^2} \\
+  \frac{\partial(m_j - m_h) }{\partial m_j } &= 1,\frac{\partial(m_j - m_h)
+  }{\partial m_h } = -1 \\
+  \delta_{(m_j - m_h)} &= \sqrt{\delta_{m_j}^2 + \delta_{m_h}^2}
 \end{align*}
 
 
@@ -179,12 +179,12 @@ are on the figure \ref{Figjhk_be_b}
         \else
         \includegraphics[bb = 92 86 545 742, height=6in]{jhk_be_b_errors}
         \fi
-        \caption{Color diagram of confirmed Be stars Vs B stars with errors}
+        \caption{Color diagram of confirmed Be stars, B stars with errors}
         \label{Figjhk_be_b_errors}
       \end{center}
     \end{figure}
 
-\clearpage
+%\clearpage
 
 
 \subsection{Classification}
@@ -234,27 +234,27 @@ more complicated) approach using spectra analysis was tested.
         \fi
         \caption{Schematic diagram of the spectral Data Mining
           process. Using SSA protocol the spectra from Ondřejov server
-          was acquired based on the list from photometric study. SSH
-          Tunneling was necessary since Ondřejov spectra are top
-          secret and therefore not available to the public. Convolution
-          had to be performed to ensure compatibility with
-          SDSS. Afterwards desired features were extracted
-          automatically from the spectra after the continuum and
-          H$\alpha$ line were fitted by appropriate functions. The
-          same was done for spectra from SDSS except the convolution
-          process.}
+          was acquired based on the list from photometric study. %SSH
+          %Tunneling was necessary since Ondřejov spectra are top
+          %secret and therefore not available to the public.
+          Convolution with profile of SDSS slit had to be performed to
+          ensure compatibility with SDSS. Afterwards desired features
+          were extracted automatically from the spectra after the
+          continuum and H$\alpha$ line were fitted by appropriate
+          functions. The same was done for spectra from SDSS except
+          the convolution process.}
         \label{FigFlowSpectra}
       \end{center}
     \end{figure}
 
  
-\clearpage
+%\clearpage
 
 Spectra provide much wider scientific informations over photometric
 properties. Spectral lines exhibits many distinguish features and
 astronomers have long tradition of analysing their properties. On the
 other side its much complicated to handle them because of different
-characteristics (resolution, calibration, wavelength range, etc). This
+characteristics (resolution, calibration, wavelength range, etc.). This
 is especially true for massive automated processing.  
 
 \subsection{Testing Data}
@@ -301,7 +301,7 @@ def createQuery(data):
 \end{lstlisting}
 
 The script generate the following output. The same process were used
-later for obtaining th sample of non Be stars.
+later for obtaining the sample of non Be stars.
 
 \begin{lstlisting}
 http://tvoserver/coude/..._ssa&REQUEST=queryData&POS=83.113,-65.582&SIZE=60
@@ -312,22 +312,45 @@ http://tvoserver/coude/..._ssa&REQUEST=queryData&POS=19.907,-73.502&SIZE=60
 
 \subsubsection{Spectra Reduction}
 Because spectra from SDSS and Ondřejov Observatory had different
-resolution, reduction was needed. First the parameter CD1\_1 (Coordinate
-increment per pixel) had to be obtained form FITS file.
+resolution, reduction was needed. Wavelength for spectra from Ondřejov
+Observatory is computed using formula:
 
+\begin{equation}
+  \label{eq:computeWave1}
+  \lambda = \lambda_0 + x\Delta\lambda_{OND} 
+\end{equation}
+
+and for SDSS spectra by equation:
+
+\begin{equation}
+  \label{eq:computeWave2}
+  \lambda = 10^{\lambda_0 + x\Delta\lambda_{SDSS}},
+\end{equation}
+
+where $\lambda_0$ is value of parameter $CRVAL1$ and $\Delta\lambda$
+of $CD1\_1$. Obtaining them from FITs file is easy using
+\textrm{PyFITS}\footnote{PyFITS is a product of the Space Telescope
+  Science Institute, which is operated by AURA for NASA.}  module:
 
 \begin{lstlisting}
-  In [1]: hdu = pf.open('sdss_test.fit')
-  In [2]: hdu[0].header['CD1_1']
-  Out[2]: 0.0001 # SDSS spectrum 
+  In [1]  import pyfits as pf
+  In [2]: hdu = pf.open('sdss_test.fit')
+  In [3]: hdu[0].header['CD1_1']
+  Out[3]: 0.0001 # SDSS spectrum 
   Out[3]: 0.2567 # Onřejov spectrum
 \end{lstlisting}
 
-Spectra in SDSS are stored in logarithmic scale thus the value is
-computed as $ 10^{CD1\_1} = 1.00$. The ratio is then
-$CD1\_1_{SDSS}/CD1\_1_{OND} = 3.87$. Based on this computation 4
-pixels of Ondřejov's spectra were reduced into one. There is the
-critical part of the reduction program:
+
+From equations \ref{eq:computeWave1} and \ref{eq:computeWave2} the ration
+was computed:
+
+\begin{equation}
+  \label{eq:ratio}
+  \frac{Delta\lambda_{SDSS}}{Delta\lambda_{OND}} \doteq  3.87
+\end{equation}
+
+Based on this computation 4 pixels of Ondřejov's spectra were reduced
+into one. There is the critical part of the reduction program:
 
 \begin{lstlisting}
  def convolution(f, g):
@@ -349,15 +372,23 @@ critical part of the reduction program:
     return xx, yy
 \end{lstlisting}
 
-Prior to binning pixels convolution with Gaussian function was
-performed on the spectra. Convolution is defined:
+Prior to binning pixels convolution with function representing the slit
+in SDSS spectrograph was performed. As good approximation Gaussian
+function was used for representing the slit:
+
+\begin{equation}
+  \label{eq:gauss}
+  f(x) =  e^{- { \frac{(x-\mu)^2 }{ 2 \sigma^2} } }
+\end{equation}
+
+ Convolution is defined:
 
 \begin{equation}
   \label{eq:convolution}
- (f * g )(t) \stackrel{\mathrm{def}}{=}\ \int_{-\infty}^{\infty} f(\tau)\, g(t - \tau)\, d\tau
+  (f * g )(\lambda) \stackrel{\mathrm{def}}{=}\ \int_{-\infty}^{\infty} f(\tau)\, g(\lambda - \tau)\, d\tau
 \end{equation}
  
-Here it was used in it's discrete form
+Here it was used in it's discrete form:
 
 \begin{equation}
   \label{eq:discreteConvolution}
@@ -365,9 +396,7 @@ Here it was used in it's discrete form
 \end{equation}
 
 
-
-The figure shows the result.
-
+The figure \ref{FigReduction} shows the result.
 
     \begin{figure}[!htbp]
       \begin{center}
@@ -387,7 +416,7 @@ The figure shows the result.
       \end{center}
     \end{figure}
 
-\clearpage
+%\clearpage
 
 
 
@@ -410,15 +439,20 @@ spectra. Function polyfit from numpy package was used to perform the
 fit. The solution minimizes the squared error:
 
 \begin{align}
-  \frac{d}{dq} \sum_{i = 1}^n{(y_i - \operatorname{f}(x_i) )^2} = 0,
+  \frac{\partial}{\partial q_j} \sum_{i = 1}^n{[y_i -
+    \operatorname{f}(q_j|x_i) ]^2} = 0,\hspace{2cm} j = 0,1
 \end{align}
 
-where $\operatorname{f}$ is in our case $\operatorname{f}(x) = q_1x +
-q_0$.
+where 
+
+\begin{align}
+\operatorname{f}(x) = q_1x + q_0  
+\end{align}
+
 
 \subsubsection{The hight of the H$\alpha$ line}
-The maximum value in the region of $50\AA$ were extracted from the
-spectrum.
+The maximum value in the region of $50\,\textrm{\AA}$ around H$\alpha$
+were extracted from the spectrum.
 
 \begin{lstlisting}
 def getMax(x,y,line,range):
@@ -445,7 +479,14 @@ absolute deviation was used. It is defined as:
 \end{align}
 
 \subsubsection{The width of the H$\alpha$ line}
-The Gaussian function was fitted to the spectral line. First the
+The Gaussian function:
+
+\begin{align}
+  \label{eq:gauss2}
+  f(x) =  1 + e^{- { \frac{(x-x_0)^2 }{ S^2} } }
+\end{align}
+
+ was fitted to the profile of H$\alpha$ spectral line. First the
 robust estimators were computed and used as input parameters for
 leastsq\footnote{"leastsqi"s a wrapper around MINPACK’s lmdif and
   lmder algorithms.} method from scipy.opt module, which minimize the
@@ -484,7 +525,7 @@ Mining process.
       \begin{center}
         \leavevmode
         \ifpdf
-        \includegraphics[scale =.8]{figSpecCharCyg60}
+        \includegraphics[scale =.7]{figSpecCharCyg60}
         \else
         \includegraphics[bb = 92 86 545 742, height=6in]{figSpecCharCyg60}
         \fi
@@ -492,10 +533,10 @@ Mining process.
           depicts the continuum fit. The bottom figure shows the
           region (width of the green line) used for extraction. The
           position of the line correspond to the maximum value in the
-          region of $50\AA$. The Gaussian fit is in red. Although the
+          region of $50\,\textrm{\AA}$. The Gaussian fit is in red. Although the
           fit is almost perfect, this approach fails to get
           characteristic "double peak" of the emission line. }
-        \label{FigSpecChar}
+        \label{FigSpecChar1}
       \end{center}
     \end{figure}
 
@@ -503,7 +544,7 @@ Mining process.
       \begin{center}
         \leavevmode
         \ifpdf
-        \includegraphics[scale =.8]{figSpecCharhd216057}
+        \includegraphics[scale =.7]{figSpecCharhd216057}
         \else
         \includegraphics[bb = 92 86 545 742, height=6in]{figSpecCharhd216057}
         \fi
@@ -511,14 +552,14 @@ Mining process.
           figure depicts the continuum fit. The bottom figure shows
           the region (width of the green line) used for
           extraction. The position of the line correspond to the
-          maximum value in the region of $50\AA$. The Gaussian fit is
+          maximum value in the region of $50\,\textrm{\AA}$. The Gaussian fit is
           in red.}
-        \label{FigSpecChar}
+        \label{FigSpecChar2}
       \end{center}
     \end{figure}
 
 
-\clearpage
+%\clearpage
 
 % The script was written to normalize the spectrum and extract the line
 % characteristic value. This program also plots the results of the
@@ -661,9 +702,9 @@ Spectra of some of the objects classified as Be stars are presented
 here. These samples represent tiny fraction of complete result. The
 program for generating web pages with thumbnails were created and full
 result is available on the Wiki pages of this
-project 
+project. 
 
-\url{http://physics.muni.cz/~vazny/wiki/index.php/Diploma_work}.
+%\url{http://physics.muni.cz/~vazny/wiki/index.php/Diploma_work}.
 
 \begin{table}[ht]
 %  \centering
@@ -686,7 +727,7 @@ project
 \begin{table}[ht]
 %  \centering
   \small
-     \begin{tabular}[ht]{c l}
+     \begin{tabular}[ht]{l l}
        \toprule
      \# & link \\
    \midrule
@@ -700,7 +741,7 @@ project
   \label{tab:Links}
 \end{table}
 
-
+%\clearpage
 
 
 
@@ -712,7 +753,7 @@ project
         \else
         \includegraphics[bb = 92 86 545 742, height=6in]{result1}
         \fi
-        \caption{Spectrum of }
+        \caption{Example 1: SDSS J035747.16-063850.7 }
         
         \label{FigResult1}
       \end{center}
@@ -726,7 +767,7 @@ project
         \else
         \includegraphics[bb = 92 86 545 742, height=6in]{result2}
         \fi
-        \caption{Spectrum of }
+        \caption{Example 2: SDSS J094325.89+520128.6}
         \label{FigResult2}
       \end{center}
     \end{figure}
@@ -739,7 +780,7 @@ project
         \else
         \includegraphics[bb = 92 86 545 742, height=6in]{result1}
         \fi
-        \caption{Spectrum of }
+        \caption{Example 3: SDSS J120729.12+003659.8}
         \label{FigResult3}
       \end{center}
     \end{figure}
@@ -752,11 +793,11 @@ project
         \else
         \includegraphics[bb = 92 86 545 742, height=6in]{result1}
         \fi
-        \caption{Spectrum of }
+        \caption{Example 4: SDSS J120908.18+194035.8 }
         \label{FigResult3}
       \end{center}
     \end{figure}
-
+%\clearpage
 
 % Samples of Be Stars           
  
@@ -775,7 +816,7 @@ project
         \else
         \includegraphics[bb = 92 86 545 742, height=6in]{be1_4_her}
         \fi
-        \caption{Spectrum of 4 Her. Be star. Spectral Type B9pe.  }
+        \caption{Spectrum of 4 Her. Be star}
         \label{FigBe1}
       \end{center}
     \end{figure}
@@ -791,8 +832,7 @@ project
         \caption{Spectrum of HR 7418 (Albireo B). A fast-rotating Be
           star, with an equatorial rotational velocity of at least 250
           kilometers per second. Its surface temperature has been
-          spectroscopically estimated to be about 13.200 K. Spectral
-          Type B8Ve. }
+          spectroscopically estimated to be about 13.200 K }
         \label{FigBe4}
       \end{center}
     \end{figure}
@@ -805,7 +845,7 @@ project
         \else
         \includegraphics[bb = 92 86 545 742, height=6in]{be3_6_cep}
         \fi
-        \caption{Spectrum of 6 Cepheus. Be star. Spectral Type B3IVe.}
+        \caption{Spectrum of 6 Cepheus. Be star}
         \label{FigBe3}
       \end{center}
     \end{figure}
@@ -818,15 +858,14 @@ project
         \else
         \includegraphics[bb = 92 86 545 742, height=6in]{gama_cas}
         \fi     
-        \caption{Spectrum of Gamma Cassiopeiae. Be Star. Spectral Type
-          B0IVpe C.}
+        \caption{Spectrum of Gamma Cassiopeiae. Be Star}
         \label{FigBe3}
       \end{center}
     \end{figure}
 
 
 
-\clearpage
+%\clearpage
 
 \subsection{Experiment}
 
@@ -879,63 +918,6 @@ simple cases and can provide non-trivial insight on tested data.
 % results in the \textrm{others} group where there are just 40/35 right
 % assignments.
 
-
-
-\subsection{Conclusion}
-
-It is evident that dealing with spectroscopic data is much more
-complicated but also more fruitful. One could extract many
-characteristic features which fit to the actual problem. The FITs
-standard is real godsend and makes work with spectra from different
-sources possible. The results obtained from the Data Miming process
-are reasonable. During the work it was also "discovered" how humans
-are good at visual judgment: when thumbnails of result spectra were
-created it provided much better understanding if something went wrong
-then statistics and numbers. This is one example how machines and
-humans could work together when we utilize ours and theirs natural
-abilities.
-
-There are many aspect which could be done better, some of the
-considered but not implemented subjects are discussed here.
-
-\begin{itemize}
-\item Spectral Characteristics 
-
-  The spectrum was characterized with few, very simple parameters,
-  which can be similar in different types of objects. We have
-  discussed \footnote{Petr Skoda initiated rich and interesting email
-    conversation with leading experts regarding this topic.} many
-  advanced possibilities such are wavelets eigen values etc. This
-  could be subject of further investigation.
-\item Continuum fit
-
-  The simple linear function is too rough to capture true continuum
-  features. There is an interesting and effective algorithm discussed
-  in the paper: Advanced fit technique for astrophysical spectra by
-  S. Bukvi{\'c} et. al. from University of Belgrade
-  \citep{bukvic2008advanced} which seems ideal for this purpose.
-
-\item More Data Mining algorithms
-
-Originally more advanced approaches such are Support Vector Machines
-were considered.
-\item Larger training sample
-
-  To obtain large enough meaningful training sample of confirmed Be
-  stars was a real problem and  many surveys were consider
-  (e.g. IPHAS)  but without success.
-
-\item Usage of Light curves 
-
-  The whole process static but the "Be phenomena" is dynamic in
-  nature. Using light curves could significantly improve the
-  efficiency.
-\item Unknown errors There are things we do not know we don't
-
-  know. The overall process were very complicated and involved
-  hundreds lines of codes. Any overlooked mistake could effect the
-  results. The absence of evidence is not evidence of absence.
-\end{itemize}
 
 
 

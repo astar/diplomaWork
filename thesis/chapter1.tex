@@ -39,7 +39,7 @@ There are two important trends in current astronomy surveys:
 \begin{itemize}
 
   \item{Size:} The cumulative compressed data holdings of the ESO archive will
-    reach 1 PetaByte by 2012 \citep{hanisch2010international}. Projects
+    reach 1~Petabyte by 2012 \citep{hanisch2010international}. Projects
     like Large Synoptic Survey Telescope (LSST) will produce about 30
     TB per night, leading to a total database over the ten years of
     operations of 60 PB for the raw data \citep{becla2006designing}.
@@ -74,18 +74,18 @@ Web standards\footnote{Prior to its creation, incompatible versions of
     
 \section{International Virtual Observatory Alliance (IVOA)}
 
-   \begin{wrapfigure}{r}{0.7\textwidth}
+   \begin{wrapfigure}{r}{0.69\textwidth}
      \vspace{0pt}
      \begin{center}
        \ifpdf
-       \includegraphics[width=0.7\textwidth]{ivoamembers}
+       \includegraphics[width=0.68\textwidth]{ivoamembers}
        \else
        \includegraphics[bb = 92 86 545 742, height=6in]{ivoamembers.jpg}
        \fi
      \end{center}
-     \vspace{-20pt}
+     \vspace{-15pt}
      \caption{IVOA members}
-     \vspace{-10pt}
+     \vspace{-5pt}
    \end{wrapfigure}
 
 
@@ -133,13 +133,11 @@ to the higher layer. This concept is similar to TCP/IP
   The basic communication language or protocol of the Internet.}
 protocol.
 
-
- 
     \begin{figure}[!htbp]
       \begin{center}
         \leavevmode
         \ifpdf
-        \includegraphics[scale = 1]{architecture}
+        \includegraphics[scale = .8]{architecture}
         \else
         \includegraphics[bb = 92 86 545 742, height=6in]{architecture}
         \fi
@@ -148,7 +146,7 @@ protocol.
         \label{FigArchitecture}
     \end{figure}
 
-\clearpage
+%\clearpage
 
 The VO architecture is serviced oriented. Each service is autonomous
 with well defined defined boundaries. Very important aspect of VO
@@ -189,7 +187,7 @@ can have any resources.
       \begin{center}
         \leavevmode
         \ifpdf
-        \includegraphics[height=0.9\textwidth, angle=-90]{resources}
+        \includegraphics[height=0.8\textwidth, angle=-90]{resources}
         \else
         \includegraphics[width=0.9\textwidth]{resource.png}
         \fi
@@ -198,14 +196,14 @@ can have any resources.
         \label{FigResource}
     \end{figure}
 
-\clearpage
+%\clearpage
 
 Following example uses program stilts\footnote{STIL Tool Set. Set of
   command-line tools based on STIL, the Starlink Tables Infrastructure
   Library.} to query registry with parameter shortName equal to
 'AIASCR'\footnote{Astronomical Institute of the Academy of Sciences of
-  the Czech Republic}. This returns VOTable containing meta-data
-about the resource. 
+  the Czech Republic}. This returns VOTable (see section
+\ref{sec:votable}) containing meta-data about the resource.
 
 \begin{lstlisting}[frame=single]
 stilts regquery query="shortName like 'AIASCR'"
@@ -213,7 +211,7 @@ regurl=http://registry.euro-vo.org/services/RegistrySearch
 ofmt=votable-tabledata > resourceExample.vot
 \end{lstlisting}
 
-Rows 1--4 define XML nad VOTable schema with adequate locations
+Rows 1--4 define XML nd VOTable schema with adequate locations
 (xmlns\footnote{XML namespaces. Provide uniquely named elements and
   attributes in an XML document.}) followed by informations about the
 actual resource. The listing is abbreviated.
@@ -295,7 +293,7 @@ arguments. For example:
 
 Where RA is right-ascension, DEC declination and SR the radius of the
 cone in the ICRS coordinate system in decimal degrees. These
-parametrers are requied others are optional.
+parameters are required others are optional.
 
 \item Return an XML document in the VOTable format.  
 
@@ -328,11 +326,12 @@ catalog using method \emph{urlopen} of Python library \emph{urllib2}.
 The key idea behind the SIA Protocol is to allow users and programs to
 retrieve images created by an image service on-the-fly. From technical
 point of view it is designed in a similar way as Cone Search Protocol
-(see \ref{sec:csp}), specifically as name-value HTTP GET requests and
-the VOTable XML format output. The user specifies ideal image coverage
-(position and the size) he wants to receive and the image service
-produces a list of images it can return in the VOTable format. The
-user then could issue getImage request to retrieve desirable images.
+(see section \ref{sec:csp}), specifically as name-value HTTP GET
+requests and the VOTable XML format output. The user specifies ideal
+image coverage (position and the size) he wants to receive and the
+image service produces a list of images it can return in the VOTable
+format. The user then could issue getImage request to retrieve
+desirable images.
 
 There are following requirements for compliance. To be a SIA service
 To be a SIA service, it must support:
@@ -372,7 +371,7 @@ properties such as position (POS), size (SIZE), etc.
 \end{lstlisting}
 
 There are two examples of using SIA protocol to obtain image. First
-one from SDSS, second from Hubble Space Telecope archive. 
+one from SDSS, second from Hubble Space Telescope archive. 
 
 \begin{lstlisting}
   http://skyview.gsfc.nasa.gov/cgi-bin/vo/sia.pl?SURVEY=SDSS&POS=18.87667,-0.86083&SIZE=1
@@ -407,29 +406,26 @@ SiapSearch method to obtain result in VOTable format.
 
 SSA Protocol allows to discover and obtain 1-D spectra from VO
 Service. It shares many similarities to the previously discussed SIA
-Protocol.
+Protocol. It defines a uniform interface to remotely discover and
+access simple 1-D spectra.
 
-defines a uniform interface to remotely discover and access simple 1-D spectra. 
-
-similar to that of the older Simple Image Access (SIA)
-
-The process to obtain a spectrum compose of following steps:
+\noindent The process to obtain a spectrum compose of following steps:
 
 \begin{itemize}
 \item Query the resource registry.
-\item Data discovery to selected service to get aviable resources in
+\item Data discovery to selected service to get available resources in
   VOTable format.
 \item Download selected spectra using URL.
 \end{itemize}
 
-The spectra could be one of the following types:
+\noindent The spectra could be one of the following types:
 
 \begin{itemize}
 \item Pre-computed
 \item Computed on the fly
 \end{itemize}
 
-To be a SSA-compliant, the service must provide:
+\noindent To be a SSA-compliant, the service must provide:
 
 \begin{enumerate}
 \item HTTP GET interface, returning the query response encoded as a
@@ -450,7 +446,7 @@ using STILTS program.
 \end{lstlisting}
 
 With information of service URL, one can specify a query to obtain a
-list with aviable spectra in VOTable format. This can be used in Web
+list with available spectra in VOTable format. This can be used in Web
 browser or via programs such \emph{wget} or \emph{curl}.
 
 \begin{lstlisting}
@@ -467,14 +463,15 @@ takes advantage of this heritage and implement these formats in
 sensible way into its own standards. 
  
 \subsection{VOTable}
+\label{sec:votable}
 \subsubsection*{Motivation}
 VOTable is flexible storage and exchange format fundamentally
 interconnected with Virtual Observatory. It has features for big-data
 and Grid computing. Data can be stored in different ways in dependence
-on the charatecter and size. Small tables can be stored in pure XML
-\footnote{Extensible Markup Language. W3C standard. Set of rules for
-  encoding documents in machine-readable form}, while large-scale data
-can be referenced with the URL \footnote{Uniform Resource
+on the character and size. Small tables can be stored in pure
+XML\,\footnote{Extensible Markup Language. W3C standard. Set of rules
+  for encoding documents in machine-readable form}, while large-scale
+data can be referenced with the URL\,\footnote{Uniform Resource
   Locator. Uniform Resource Identifier (URI) that specifies where an
   identified resource is available and the mechanism for retrieving
   it.} syntax protocol://location.  It combines web standards (it is
@@ -487,10 +484,10 @@ this work. First there is an information about XML and VOTable
 versions and references to corresponding XML Schema \footnote{Define
   the legal building blocks of an XML document. Note: XML schema can
   be described by XML Schema, Document Type Definition (DTD) or RELAX
-  NG }. <TABLE> tag encapsulating tabular data. <FIELD>
-tag describe identifinaction (ID), type and precision of
-columns. <DATA> tag contains data (here) in TABLEDATA format (other
-types are FITS and BINARY)
+  NG }. \textrm{TABLE} tag encapsulating tabular data. \textrm{FIELD}
+tag describe identification (ID), type and precision of
+columns. \textrm{DATA} tag contains data (here) in TABLEDATA format
+(other types are FITS and BINARY)
  
 \begin{lstlisting}
 <?xml version="1.0" encoding="utf-8"?>
@@ -519,9 +516,9 @@ types are FITS and BINARY)
 
 
 \subsubsection*{Examples}
-All examples were created using ATpy\footnote{High-level Python package
-providing a way to manipulate tables of astronomical data in a uniform
-way.}
+All examples were created using ATpy\,\footnote{High-level Python
+  package providing a way to manipulate tables of astronomical data in
+  a uniform way.}
 
 Following example shows transformation FITS into VOTable. 
 \begin{lstlisting}
@@ -544,7 +541,7 @@ the data are read." \citep{nrc1995}}
 \bigskip
 
 FITS (Flexible Image Transport System) was originally created for data
-exchange between WSRT \footnote{Westerbork Synthesis Radio Telescope}
+exchange between WSRT\,\footnote{Westerbork Synthesis Radio Telescope}
 and the VLA \footnote{Very Large Array} \citep{fits1997}. It is now
 used as a file format to store, transmit, and manipulate scientific
 data and it is (thanks to it's revolutionary design) de facto standard
@@ -565,14 +562,14 @@ structure of the data that follow.
 \end{itemize}
 
 
-Standards and documents related to FITS are maintained by IAUFWG
-\footnote{International Astronomical Union FITS} and aviable at
+Standards and documents related to FITS are maintained by IAU-FWG
+\footnote{International Astronomical Union FITS} and available at
 \url{http://fits.gsfc.nasa.gov}.
 
 \subsubsection*{Examples}
 
 There are many libraries for working with FITS files. The official
-list is aviable at
+list is available at
 \url{http://fits.gsfc.nasa.gov/fits_libraries.html}. PyFITS, library
 for Python programming language was used for following
 examples. PyFITS is a development project of the Science Software
@@ -620,16 +617,16 @@ Updating FITS file.
 \section{Tools \& Libraries}
 There are many programs and libraries allowing user to interact with
 VO services. Such application is called VO Enabled. Thanks to openness
-and standardisation anyone can develop his own application or enable
+and standardization anyone can develop his own application or enable
 existing\footnote{For example Astroweka or Mirage.} application to
-interact with VO Sevices . Libraries are also aviable for many
+interact with VO Services . Libraries are also available for many
 programming languages enabling advanced users to interact with VO from
-scripts and programs. Such diversity is healthy and propably the only
-possible way to ensure natural evolution of Virtual Observatory. This
-chapter describes some of the libraries and applications ued during
-this work. Low level tools and libraries are stressed as opposite to
-standard introductory texts of Virtual Observatory where the focus is
-on "user friendly" GUI applications.
+scripts and programs. Such diversity is healthy and probably the only
+possible way to ensure natural evolution of Virtual Observatory. 
+% This chapter describes some of the libraries and applications ued during
+% this work. Low level tools and libraries are stressed as opposite to
+% standard introductory texts of Virtual Observatory where the focus is
+% on "user friendly" GUI applications.
 
 
 % \subsection{Command line tools}
@@ -657,8 +654,8 @@ on "user friendly" GUI applications.
 %     ax = fig.add_subplot(111)
 %     graph = ax.plot(xdata,ydata, 'r')
 %     ax.set_title(file)
-%     ax.set_xlabel("$Wavelenght [\\AA]$")                                                                            
-%     ax.set_ylabel("$Energy [10^{-17} erg/s/cm^2/\\AA]$")
+%     ax.set_xlabel("$Wavelenght [\\,\textrm{\AA}]$")                                                                            
+%     ax.set_ylabel("$Energy [10^{-17} erg/s/cm^2/\\,\textrm{\AA}]$")
 %     ax.axvline(x=spLine, color = 'g', ls ='--')
 % \end{lstlisting}
 

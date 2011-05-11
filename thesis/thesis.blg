@@ -1,6 +1,6 @@
 This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: thesis.aux
-A level-1 auxiliary file: dedication.aux
+A level-1 auxiliary file: declaration.aux
 A level-1 auxiliary file: cite.aux
 A level-1 auxiliary file: acknowledgement.aux
 A level-1 auxiliary file: abstract.aux
@@ -13,50 +13,48 @@ A level-1 auxiliary file: appendix1.aux
 A level-1 auxiliary file: appendix2.aux
 The style file: plainnat.bst
 Database file #1: references.bib
-Warning--I didn't find a database entry for "perryman1997hipparcos"
-Warning--I didn't find a database entry for "2006AJ131.1163S"
 Warning--empty journal in ballastroinformatics
 Warning--empty journal in nrc1995
 Warning--empty journal in fits1997
-You've used 18 entries,
+You've used 22 entries,
             2773 wiz_defined-function locations,
-            718 strings with 7987 characters,
-and the built_in function-call counts, 8256 in all, are:
-= -- 711
-> -- 557
-< -- 10
-+ -- 189
-- -- 171
-* -- 669
-:= -- 1333
-add.period$ -- 62
-call.type$ -- 18
-change.case$ -- 107
-chr.to.int$ -- 18
-cite$ -- 39
-duplicate$ -- 360
-empty$ -- 621
-format.name$ -- 201
-if$ -- 1682
+            737 strings with 8560 characters,
+and the built_in function-call counts, 10613 in all, are:
+= -- 896
+> -- 779
+< -- 12
++ -- 265
+- -- 243
+* -- 879
+:= -- 1726
+add.period$ -- 76
+call.type$ -- 22
+change.case$ -- 140
+chr.to.int$ -- 22
+cite$ -- 47
+duplicate$ -- 437
+empty$ -- 762
+format.name$ -- 277
+if$ -- 2151
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 20
-newline$ -- 106
-num.names$ -- 72
-pop$ -- 208
+missing$ -- 24
+newline$ -- 128
+num.names$ -- 88
+pop$ -- 278
 preamble$ -- 1
-purify$ -- 91
+purify$ -- 121
 quote$ -- 0
-skip$ -- 285
+skip$ -- 357
 stack$ -- 0
-substring$ -- 204
-swap$ -- 15
+substring$ -- 249
+swap$ -- 19
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 188
+type$ -- 227
 warning$ -- 3
-while$ -- 68
+while$ -- 83
 width$ -- 0
-write$ -- 245
-(There were 5 warnings)
+write$ -- 299
+(There were 3 warnings)

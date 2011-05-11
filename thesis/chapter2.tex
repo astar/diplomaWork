@@ -55,18 +55,18 @@ those classifications. The main advantages of DT are:
 \item Perform well with large data in a short time.
 \end{itemize}
 
-In pseudo-code, the general algorithm for building decision trees is
-\citep{kotsiantis2007supervised}:
+\noindent In pseudo-code, the general algorithm for building decision
+trees is \citep{kotsiantis2007supervised}:
 \begin{enumerate}
 \item Check for base cases
-\item For each attribute a
+\item For each attribute A
   \begin{itemize}
-  \item Find the normalized information gain from splitting on a
+  \item Find the normalized information gain from splitting on A
   \end{itemize}
-\item Let "a best" be the attribute with the highest normalized information gain
-\item Create a decision node that splits on "a best"
-\item Recur on the sublists obtained by splitting on "a best", and add
-  those nodes as children of node
+\item Let "A best" be the attribute with the highest normalized information gain
+\item Create a decision node that splits on "{A best}"
+\item Recur on the sublists obtained by splitting on "{A best}",
+  and add those nodes as children of node
 \end{enumerate}
 
 Furthermore algorithms C4.5 is described for several reasons: Its code
@@ -77,10 +77,10 @@ splitting the tree. C4.5 Uses measures based on information entropy:
 
 \begin{equation}
   \label{eq:entropy}
-  H(X) = -\sum_{i=1}^n {p(x_i) \log_2 p(x_i)},
+  H = -\sum_{i=1}^T {p_t \log_2 p_t},
 \end{equation}
-where $p(x_i)$ is probability of occurrence of class $i$ and $n$ is the
-number of classes.
+where $p(x_i)$ is probability of occurrence of class $t$ and $T$ is
+the number of classes \citep{berka2003dobyvani}.
 
 After the tree is created it is optimized by pruning, which prevents
 over-fitting.
@@ -94,19 +94,44 @@ missing, one could not expect a classifier learned from such data to
 perform well on the examples s of that class. One of the technique used
 here is cross-validation.
 
-The data is divided into fixed number of partitions and each in turn
-is used for testing and the reminder is used for training. Finally,
-the number of partitions error estimates are averaged to yield an
-overall error. The standard is to used 10-fold cross-validation. This
-number is a result of tests on numerous data sets \citep{witten2005data}
+The data is divided into fixed number of partitions (folds) and each
+in turn is used for testing and the reminder is used for
+training. Finally, the number of partitions error estimates are
+averaged to yield an overall error. The standard is to used 10-fold
+cross-validation. This number is a result of tests on numerous data
+sets \citep{witten2005data}
 
-\subsubsection{Example: Classifying Galaxies Stars and QSO}
-There is an example of classifying Galaxies Stars and QSO based on
-photometric properties using Decision Tree algorithm J48 (C4.5 in
-Weka). The data come from SDSS (Sloan Digital Sky Survey) DR7. 298
-Objects were used (100 Stars, 99 Galaxies, 99 QSO). SDSS Filters
-u,g,r,i were used as parameters. Data were obtained using SQL query
-from SDSS CAS.
+\subsubsection{Example: Classifying Galaxies Stars and QSO using color
+indices}
+
+
+
+  There is an example of classifying Galaxies Stars
+and QSO based on photometric properties using Decision Tree algorithm
+J48 (C4.5 in Weka). The data come from SDSS (Sloan Digital Sky Survey)
+DR7. 298 Objects were used (100 Stars, 99 Galaxies, 99 QSO). SDSS
+Filters u,g,r,i were used as parameters. Data were obtained using SQL
+query from SDSS CAS.
+
+\begin{table}[ht]
+  \centering
+  \small
+     \begin{tabular}[ht]{l c}
+     \toprule
+     Filter & Effective wavelength [$\,\textrm{\AA}$] \\
+     \midrule
+     Ultraviolet (u) & 3543 \\
+     Green (g) & 4770\\
+     Red (r) & 6231\\
+     Near Infrared (i) & 7625\\
+     Infrared (z) & 9134 \\
+     \bottomrule
+   \end{tabular}
+  \caption{SDSS photometric system}
+  \label{tab:SDSSFilter}
+\end{table}
+
+
 
 \begin{lstlisting}
 SELECT TOP 100 u-g,g-r,r-i,s.specClass
@@ -128,23 +153,6 @@ AND u between 18 and 19
 The following listing shows the result of classification. The
 classifier was able to distinguish 95\% of the processed objects.
 
-\begin{table}[ht]
-  \centering
-  \small
-     \begin{tabular}[ht]{l r@{,}l r@{,}l l l}
-     \toprule
-     Filter & Wavelength [$\AA$] \\
-     \midrule
-     Ultraviolet (u) & 3543 \\
-     Green (g) & 4770\\
-     Red (r) & 6231\\
-     Near Infrared (i) & 7625\\
-     Infrared (z) & 9134 \\
-     \bottomrule
-   \end{tabular}
-  \caption{SDSS Filters}
-  \label{tab:SDSSFilter}
-\end{table}
 
 
 \begin{lstlisting}
@@ -199,36 +207,36 @@ galaxies. One stars was incorrectly classified as QSO.
         \includegraphics[bb = 92 86 545 742, height=6in]{starsGalaxiesQSO}
         \fi
         \caption{Color Diagram of the problem.It shows that individual
-          object classes occupy different regions in the diagram }
+          object classes occupies different regions in the diagram }
         \label{FigStarsGalaxiesQSO}
  %     \end{center}
 \end{figure}
 
-\clearpage
+%\clearpage
 
 
-\begin{lstlisting}
-Dataset                   (1) trees.J4 | (2) bayes (3) meta. (4) lazy. (5) lazy. (6) rules
-------------------------------------------------------------------------------------------
-Galaxy-Star-QSO          (100)   93.02 |   87.98 *   94.40     94.19     94.69     33.56 *
-STAR-B-BE                (100)   70.78 |   68.11 *   72.02     65.22 *   69.67     52.85 *
-STAR-AB                  (100)   69.66 |   64.96 *   69.79     65.97 *   70.45     50.76 *
-STAR-BE-O                (100)   99.28 |   72.39 *   93.86     85.28 *   96.71     56.92 *
-------------------------------------------------------------------------------------------
-                               (v/ /*) |   (0/0/4)   (0/4/0)   (0/1/3)   (0/4/0)   (0/0/4)
-Key:
-(1) trees.J48 '-C 0.25 -M 2' -217733168393644444
-(2) bayes.NaiveBayes '' 5995231201785697655
-(3) meta.RotationForest '-G 3 -H 3 -P 50 -F \"unsupervised.attribute.PrincipalComponents -R 1.0 -A 5 -M -1\" -S 1 -I 10 -W trees.J48 -- -C 0.25 -M 2' -3255631880798499936
-(4) lazy.IBk '-K 1 -W 0 -A \"weka.core.neighboursearch.LinearNNSearch -A \\\"weka.core.EuclideanDistance -R first-last\\\"\"' -3080186098777067172
-(5) lazy.KStar '-B 20 -M a' 332458330800479083
-(6) rules.ZeroR '' 48055541465867954
-\end{lstlisting}
+% \begin{lstlisting}
+% Dataset                   (1) trees.J4 | (2) bayes (3) meta. (4) lazy. (5) lazy. (6) rules
+% ------------------------------------------------------------------------------------------
+% Galaxy-Star-QSO          (100)   93.02 |   87.98 *   94.40     94.19     94.69     33.56 *
+% STAR-B-BE                (100)   70.78 |   68.11 *   72.02     65.22 *   69.67     52.85 *
+% STAR-AB                  (100)   69.66 |   64.96 *   69.79     65.97 *   70.45     50.76 *
+% STAR-BE-O                (100)   99.28 |   72.39 *   93.86     85.28 *   96.71     56.92 *
+% ------------------------------------------------------------------------------------------
+%                                (v/ /*) |   (0/0/4)   (0/4/0)   (0/1/3)   (0/4/0)   (0/0/4)
+% Key:
+% (1) trees.J48 '-C 0.25 -M 2' -217733168393644444
+% (2) bayes.NaiveBayes '' 5995231201785697655
+% (3) meta.RotationForest '-G 3 -H 3 -P 50 -F \"unsupervised.attribute.PrincipalComponents -R 1.0 -A 5 -M -1\" -S 1 -I 10 -W trees.J48 -- -C 0.25 -M 2' -3255631880798499936
+% (4) lazy.IBk '-K 1 -W 0 -A \"weka.core.neighboursearch.LinearNNSearch -A \\\"weka.core.EuclideanDistance -R first-last\\\"\"' -3080186098777067172
+% (5) lazy.KStar '-B 20 -M a' 332458330800479083
+% (6) rules.ZeroR '' 48055541465867954
+% \end{lstlisting}
 
 % \subsection{Support Vector Machine (SVM)} 
 
 % \section{Unsupervised Methods}
-\section{Existing Projects}
+\section{Data Mining tools}
 There are many open source projects related to Machine Learning and
 Data Mining. I would like to mention those which were used during
 experiments related to this work.

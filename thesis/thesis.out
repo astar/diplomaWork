@@ -18,8 +18,8 @@
 \BOOKMARK [1][]{section.2.1}{2.1 Supervised Methods}{chapter.2}
 \BOOKMARK [2][]{subsection.2.1.1}{2.1.1 Decision Tree \(DT\)}{section.2.1}
 \BOOKMARK [3][]{subsubsection.2.1.1.1}{2.1.1.1 Cross-validation}{subsection.2.1.1}
-\BOOKMARK [3][]{subsubsection.2.1.1.2}{2.1.1.2 Example: Classifying Galaxies Stars and QSO}{subsection.2.1.1}
-\BOOKMARK [1][]{section.2.2}{2.2 Existing Projects}{chapter.2}
+\BOOKMARK [3][]{subsubsection.2.1.1.2}{2.1.1.2 Example: Classifying Galaxies Stars and QSO using color indices}{subsection.2.1.1}
+\BOOKMARK [1][]{section.2.2}{2.2 Data Mining tools}{chapter.2}
 \BOOKMARK [2][]{subsection.2.2.1}{2.2.1 Weka}{section.2.2}
 \BOOKMARK [2][]{subsection.2.2.2}{2.2.2 SVM lib}{section.2.2}
 \BOOKMARK [2][]{subsection.2.2.3}{2.2.3 DAME}{section.2.2}
@@ -40,8 +40,7 @@
 \BOOKMARK [2][]{subsection.3.3.4}{3.3.4 Data Mining}{section.3.3}
 \BOOKMARK [2][]{subsection.3.3.5}{3.3.5 Results}{section.3.3}
 \BOOKMARK [2][]{subsection.3.3.6}{3.3.6 Experiment}{section.3.3}
-\BOOKMARK [2][]{subsection.3.3.7}{3.3.7 Conclusion}{section.3.3}
 \BOOKMARK [0][]{chapter.4}{4 Conclusion}{}
 \BOOKMARK [0][]{appendix*.39}{Appendix1: Spectra of result objects}{}
-\BOOKMARK [0][]{appendix*.43}{Appendix2: Spectra of Ondřejov Be stars}{}
-\BOOKMARK [0][]{section*.44}{References}{}
+\BOOKMARK [0][]{appendix*.40}{Appendix2: Spectra of Be stars from Ondrejov}{}
+\BOOKMARK [0][]{section*.41}{References}{}
