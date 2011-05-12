@@ -1,152 +1,107 @@
-\begin{thebibliography}{22}
-\providecommand{\natexlab}[1]{#1}
-\providecommand{\url}[1]{\texttt{#1}}
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi: #1}\else
-  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+\begin{thebibliography}{24}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
-\bibitem[Ball and Schade(2010)]{ballastroinformatics}
-N.M. Ball and D.~Schade.
-\newblock {The Long Range Plan for Canadian Astronomy: 2010-2020}.
-\newblock 2010.
+\bibitem[{Ball {et~al.}(2010)Ball, Brunner, \& Gregory}]{ball2010data}
+Ball, N., Brunner, R., \& Gregory, R. 2010, International Journal of Modern
+  Physics D, 19, 1049
 
-\bibitem[Ball et~al.(2010)Ball, Brunner, and Gregory]{ball2010data}
-N.M. Ball, R.J. Brunner, and R.~Gregory.
-\newblock {Data mining and machine learning in astronomy}.
-\newblock \emph{International Journal of Modern Physics D}, 19\penalty0
-  (7):\penalty0 1049--1106, 2010.
-\newblock ISSN 0218-2718.
+\bibitem[{Ball \& Schade(2010)}]{ballastroinformatics}
+Ball, N. \& Schade, D. 2010, {The Long Range Plan for Canadian Astronomy:
+  2010-2020}
 
-\bibitem[Becla et~al.(2006)Becla, Hanushevsky, Nikolaev, Abdulla, Szalay,
-  Nieto-Santisteban, Thakar, and Gray]{becla2006designing}
-J.~Becla, A.~Hanushevsky, S.~Nikolaev, G.~Abdulla, A.~Szalay,
-  M.~Nieto-Santisteban, A.~Thakar, and J.~Gray.
-\newblock {Designing a multi-petabyte database for LSST}.
-\newblock \emph{Arxiv preprint cs/0604112}, 2006.
+\bibitem[{Becla {et~al.}(2006)Becla, Hanushevsky, Nikolaev, Abdulla, Szalay,
+  Nieto-Santisteban, Thakar, \& Gray}]{becla2006designing}
+Becla, J., Hanushevsky, A., Nikolaev, S., {et~al.} 2006, Arxiv preprint
+  cs/0604112
 
-\bibitem[Benson et~al.(2009)Benson, Plante, Auden, et~al.]{bensonivoa}
-K.~Benson, R.~Plante, E.~Auden, et~al.
-\newblock {IVOA Registry Interfaces}.
-\newblock \emph{IVOA Working Draft}, 2009.
+\bibitem[{Benson {et~al.}(2009)Benson, Plante, Auden, {et~al.}}]{bensonivoa}
+Benson, K., Plante, R., Auden, E., {et~al.} 2009, IVOA Working Draft
 
-\bibitem[Berka(2003)]{berka2003dobyvani}
-P.~Berka.
-\newblock \emph{{Dob{\'y}v{\'a}n{\'\i} znalost{\'\i} z datab{\'a}z{\'\i}}}.
-\newblock Academia, 2003.
-\newblock ISBN 8020010629.
+\bibitem[{Berka(2003)}]{berka2003dobyvani}
+Berka, P. 2003, {Dob{\'y}v{\'a}n{\'\i} znalost{\'\i} z datab{\'a}z{\'\i}}
+  (Academia)
 
-\bibitem[Berners-Lee and Cailliau(1990)]{berners1990worldwideweb}
-T.~Berners-Lee and R.~Cailliau.
-\newblock {WorldWideWeb: Proposal for a HyperText project}.
-\newblock \emph{European Particle Physics Laboratory (CERN)}, 1990.
+\bibitem[{Berners-Lee \& Cailliau(1990)}]{berners1990worldwideweb}
+Berners-Lee, T. \& Cailliau, R. 1990, European Particle Physics Laboratory
+  (CERN)
 
-\bibitem[Bukvi{\'c} et~al.(2008)Bukvi{\'c}, Spasojevi{\'c}, and
-  {\v{Z}}igman]{bukvic2008advanced}
-S.~Bukvi{\'c}, D.~Spasojevi{\'c}, and V.~{\v{Z}}igman.
-\newblock {Advanced fit technique for astrophysical spectra}.
-\newblock \emph{Astronomy and Astrophysics}, 477\penalty0 (3):\penalty0
-  967--977, 2008.
-\newblock ISSN 0004-6361.
+\bibitem[{Bukvi{\'c} {et~al.}(2008)Bukvi{\'c}, Spasojevi{\'c}, \&
+  {\v{Z}}igman}]{bukvic2008advanced}
+Bukvi{\'c}, S., Spasojevi{\'c}, D., \& {\v{Z}}igman, V. 2008, Astronomy and
+  Astrophysics, 477, 967
 
-\bibitem[Council(1995)]{nrc1995}
-National~Research Council.
-\newblock {Preserving Scientiﬁc Data on our Physical Universe}.
-\newblock 1995.
+\bibitem[{Cohen {et~al.}(2003)Cohen, Wheaton, \& Megeath}]{cohen2003spectral}
+Cohen, M., Wheaton, W., \& Megeath, S. 2003, The Astronomical Journal, 126,
+  1090
 
-\bibitem[{Free Software Foundation}(2007)]{GPL}
-{Free Software Foundation}.
-\newblock {GNU General Public License}, 2007.
-\newblock URL \url{http://www.gnu.org/copyleft/gpl.html}.
+\bibitem[{{Free Software Foundation}(2007)}]{GPL}
+{Free Software Foundation}. 2007, {GNU General Public License}
 
-\bibitem[Hall et~al.(2009)Hall, Frank, Holmes, Pfahringer, Reutemann, and
-  Witten]{hall2009weka}
-M.~Hall, E.~Frank, G.~Holmes, B.~Pfahringer, P.~Reutemann, and I.H. Witten.
-\newblock {The WEKA data mining software: an update}.
-\newblock \emph{ACM SIGKDD Explorations Newsletter}, 11\penalty0 (1):\penalty0
-  10--18, 2009.
-\newblock ISSN 1931-0145.
+\bibitem[{Fukugita {et~al.}(1996)Fukugita, Ichikawa, Gunn, Doi, Shimasaku, \&
+  Schneider}]{fukugita1996sloan}
+Fukugita, M., Ichikawa, T., Gunn, J., {et~al.} 1996, The Astronomical Journal,
+  111, 1748
 
-\bibitem[Hanisch and Quinn(2010)]{hanisch2010international}
-RJ~Hanisch and PJ~Quinn.
-\newblock {The international virtual observatory}.
-\newblock \emph{Retrieved from http://www. ivoa. net/pub/info/TheIVOA. pdf on},
-  24, 2010.
+\bibitem[{Hall {et~al.}(2009)Hall, Frank, Holmes, Pfahringer, Reutemann, \&
+  Witten}]{hall2009weka}
+Hall, M., Frank, E., Holmes, G., {et~al.} 2009, ACM SIGKDD Explorations
+  Newsletter, 11, 10
 
-\bibitem[Hirata and Kogure(1984)]{hirata1984star}
-R.~Hirata and T.~Kogure.
-\newblock {The Be star phenomena. II-Spectral formation and structure of
-  envelopes}.
-\newblock \emph{Bulletin of the Astronomical Society of India}, 12:\penalty0
-  109--151, 1984.
-\newblock ISSN 0304-9523.
+\bibitem[{Hanisch \& Quinn(2010)}]{hanisch2010international}
+Hanisch, R. \& Quinn, P. 2010, http://www.ivoa.net/pub/info/TheIVOA.pdf, 24
 
-\bibitem[Kotsiantis et~al.(2007)Kotsiantis, Zaharakis, and
-  Pintelas]{kotsiantis2007supervised}
-SB~Kotsiantis, ID~Zaharakis, and PE~Pintelas.
-\newblock {Supervised machine learning: A review of classification techniques}.
-\newblock \emph{Emerging artificial intelligence applications in computer
-  engineering}, 160:\penalty0 3, 2007.
+\bibitem[{Hirata \& Kogure(1984)}]{hirata1984star}
+Hirata, R. \& Kogure, T. 1984, Bulletin of the Astronomical Society of India,
+  12, 109
 
-\bibitem[Launer(1979)]{launer1979robustness}
-R.L. Launer.
-\newblock \emph{{Robustness in statistics: proceedings of a workshop}}.
-\newblock Academic Pr, 1979.
+\bibitem[{Kotsiantis {et~al.}(2007)Kotsiantis, Zaharakis, \&
+  Pintelas}]{kotsiantis2007supervised}
+Kotsiantis, S., Zaharakis, I., \& Pintelas, P. 2007, Emerging artificial
+  intelligence applications in computer engineering, 160, 3
 
-\bibitem[Perryman et~al.(1997)Perryman, Lindegren, Kovalevsky, Hoeg, Bastian,
-  Bernacca, Cr{\'e}z{\'e}, Donati, Grenon, van Leeuwen,
-  et~al.]{perryman1997hipparcos}
-MAC Perryman, L.~Lindegren, J.~Kovalevsky, E.~Hoeg, U.~Bastian, PL~Bernacca,
-  M.~Cr{\'e}z{\'e}, F.~Donati, M.~Grenon, F.~van Leeuwen, et~al.
-\newblock {The HIPPARCOS catalogue}.
-\newblock \emph{Astronomy and Astrophysics}, 323:\penalty0 L49--L52, 1997.
-\newblock ISSN 0004-6361.
+\bibitem[{Launer(1979)}]{launer1979robustness}
+Launer, R. 1979, {Robustness in statistics: proceedings of a workshop}
+  (Academic Pr)
 
-\bibitem[Porter and Rivinius(2003)]{porter2003classical}
-J.M. Porter and T.~Rivinius.
-\newblock {Classical Be Stars}.
-\newblock \emph{Publications of the Astronomical Society of the Pacific},
-  115\penalty0 (812):\penalty0 1153--1170, 2003.
-\newblock ISSN 0004-6280.
+\bibitem[{Perryman {et~al.}(1997)Perryman, Lindegren, Kovalevsky, Hoeg,
+  Bastian, Bernacca, Cr{\'e}z{\'e}, Donati, Grenon, van Leeuwen,
+  {et~al.}}]{perryman1997hipparcos}
+Perryman, M., Lindegren, L., Kovalevsky, J., {et~al.} 1997, Astronomy and
+  Astrophysics, 323, L49
 
-\bibitem[Schlesinger(1997)]{fits1997}
-B.~Schlesinger.
-\newblock {A User’s Guide for the Flexible Image Transport System}.
-\newblock 1997.
+\bibitem[{Porter \& Rivinius(2003)}]{porter2003classical}
+Porter, J. \& Rivinius, T. 2003, Publications of the Astronomical Society of
+  the Pacific, 115, 1153
 
-\bibitem[Skrutskie et~al.(2006)Skrutskie, Cutri, Stiening, Weinberg, Schneider,
-  Carpenter, Beichman, Capps, Chester, Elias, et~al.]{skrutskie2006two}
-MF~Skrutskie, RM~Cutri, R.~Stiening, MD~Weinberg, S.~Schneider, JM~Carpenter,
-  C.~Beichman, R.~Capps, T.~Chester, J.~Elias, et~al.
-\newblock {The two micron all sky survey (2MASS)}.
-\newblock \emph{The Astronomical Journal}, 131:\penalty0 1163, 2006.
+\bibitem[{Schlesinger(1997)}]{fits1997}
+Schlesinger, B. 1997, {A User’s Guide for the Flexible Image Transport
+  System}
 
-\bibitem[Slettebak(1988)]{slettebak1988stars}
-A.~Slettebak.
-\newblock {The Be stars}.
-\newblock \emph{Publications of the Astronomical Society of the Pacific},
-  100:\penalty0 770--784, 1988.
-\newblock ISSN 0004-6280.
+\bibitem[{Skrutskie {et~al.}(2006)Skrutskie, Cutri, Stiening, Weinberg,
+  Schneider, Carpenter, Beichman, Capps, Chester, Elias,
+  {et~al.}}]{skrutskie2006two}
+Skrutskie, M., Cutri, R., Stiening, R., {et~al.} 2006, The Astronomical
+  Journal, 131, 1163
 
-\bibitem[Van~Kerkwijk et~al.(1995)Van~Kerkwijk, Waters, and
-  Marlborough]{van1995halpha}
-MH~Van~Kerkwijk, L.~Waters, and JM~Marlborough.
-\newblock {Halpha emission and infrared excess in Be stars: probing the
-  circumstellar disc.}
-\newblock \emph{Astronomy and Astrophysics}, 300:\penalty0 259, 1995.
-\newblock ISSN 0004-6361.
+\bibitem[{Slettebak(1988)}]{slettebak1988stars}
+Slettebak, A. 1988, Publications of the Astronomical Society of the Pacific,
+  100, 770
 
-\bibitem[Wenger et~al.(2000)Wenger, Ochsenbein, Egret, Dubois, Bonnarel, Borde,
-  Genova, Jasniewicz, Lalo{\\"e}, Lesteven, et~al.]{wenger2000simbad}
-M.~Wenger, F.~Ochsenbein, D.~Egret, P.~Dubois, F.~Bonnarel, S.~Borde,
-  F.~Genova, G.~Jasniewicz, S.~Lalo{\\"e}, S.~Lesteven, et~al.
-\newblock {The SIMBAD astronomical database}.
-\newblock \emph{Arxiv preprint astro-ph/0002110}, 2000.
+\bibitem[{Thibodeau(1995)}]{nrc1995}
+Thibodeau, K. 1995, {Preserving Scientiﬁc Data on our Physical Universe}
 
-\bibitem[Witten and Frank(2005)]{witten2005data}
-I.H. Witten and E.~Frank.
-\newblock \emph{{Data Mining: Practical machine learning tools and
-  techniques}}.
-\newblock Morgan Kaufmann Pub, 2005.
-\newblock ISBN 0120884070.
+\bibitem[{Van~Kerkwijk {et~al.}(1995)Van~Kerkwijk, Waters, \&
+  Marlborough}]{van1995halpha}
+Van~Kerkwijk, M., Waters, L., \& Marlborough, J. 1995, Astronomy and
+  Astrophysics, 300, 259
+
+\bibitem[{Wenger {et~al.}(2000)Wenger, Ochsenbein, Egret, Dubois, Bonnarel,
+  Borde, Genova, Jasniewicz, Lalo{\\"e}, Lesteven, {et~al.}}]{wenger2000simbad}
+Wenger, M., Ochsenbein, F., Egret, D., {et~al.} 2000, Arxiv preprint
+  astro-ph/0002110
+
+\bibitem[{Witten \& Frank(2005)}]{witten2005data}
+Witten, I. \& Frank, E. 2005, {Data Mining: Practical machine learning tools
+  and techniques} (Morgan Kaufmann Pub)
 
 \end{thebibliography}

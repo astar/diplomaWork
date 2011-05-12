@@ -1,5 +1,7 @@
 \chapter{Be candidates}
 
+
+
 \begin{figure}[!htbp]
   \begin{center}
     \leavevmode
@@ -14,25 +16,35 @@
 \end{figure}
 
 
-Astronomical objects used in this work to demonstrate some of the
-discussed technologies and methods were Be stars. The goal was to
-develop a process of finding new candidates in the available
+\noindent Astronomical objects used in this work to demonstrate some
+of the discussed technologies and methods were Be stars. The goal was
+to develop a process of finding new candidates in the available
 data. Several approaches were considered and two of them are discussed
-in the rest of this text. First one utilizes photometric properties of
-Be stars, second uses spectra characteristics.
+in the rest of this text. The first one utilizes photometric
+properties of Be stars, the second one their spectra characteristics.
 
 
 \section{Be stars}
-
-The first example of Be star was reported by Padre Angelo Secchi in
-his letter to the Astronomische Nachrichten in 1866.
+\label{sec:be}
+The first example of Be star ($\gamma$ Cas) was reported by Padre Angelo
+Secchi in his letter to the Astronomische Nachrichten in 1866.
 
 Classical Be stars are non-supergiant B-type stars whose spectrum has
 or had at some time, one or more Balmer lines in emission. The current
 accepted explanation of this phenomena is circumstellar gaseous
-component in the form of equatorial disk. Rapidly rotating central
+component in the form of equatorial disk. The rapidly rotating central
 star is important feature of these objects, which may be important
-contributor of the circumstellar medium \citep{porter2003classical}.
+contributor of the circumstellar medium. It is estimated that about 20
+percent of B stars are in fact Be stars. As the definition suggests,
+the spectra of Be stars can vary with time. Related to the Be stars
+are the shell stars: B stars with deep and narrow absorption lines in
+their spectra, superimposed on the normal broad absorption lines of
+hydrogen and helium which dominate their spectra. Stars can actually
+change from B to Be to B-shell and back to B again. Finally, there are
+variations on time scales of 0.3 to 2 days, which are due to
+non-radial pulsation, or perhaps rotation. These variations, which
+occur on or near the surface of the star, may be connected with the
+formation of the disc around the star \citep{porter2003classical}.
 
 The important characteristic used later in the work is the H$\alpha$
 emission. The explanation of its origin is on following pictures.
@@ -46,12 +58,12 @@ emission. The explanation of its origin is on following pictures.
         \else
         \includegraphics[bb = 92 86 545 742, height=6in]{beStarLine}
         \fi
-        \caption{Model of a typical Be star. Emission lines coming
+        \caption{A model of a typical Be star. Emission lines coming
           from an equatorial disk is added to the photo-spheric
           absorption spectrum. Central B star emits UV (Lyman
           continuum) and ionizes the disk, which in turn re-emits at
-          high wavelength such as visible
-          domain. \citep{hirata1984star}}
+          high wavelength such as visible domain
+          \citep{hirata1984star}}
         \label{Figjhk_be_b}
       \end{center}
     \end{figure}
@@ -71,13 +83,14 @@ emission. The explanation of its origin is on following pictures.
       \end{center}
     \end{figure}
  
-%\clearpage
+\clearpage
 
-There are still many open questions related to their rotation,
-evolutionary status, presence and origin of the magnetic fields, mass
-and angular momentum transfer and others, therefore the process for
-automatic discoveries of Be phenomena in the digitalized surveys and
-obtaining new candidates could help answer these questions.
+    There are still many open questions related to their rotation,
+    evolutionary status, presence and origin of the magnetic fields,
+    mass and angular momentum transfer and others, therefore the
+    process for automatic discoveries of Be phenomena in the digitized
+    surveys and obtaining new candidates could help to answer these
+    questions.
 
 
 \section{Photometric Data Mining}
@@ -96,14 +109,14 @@ obtaining new candidates could help answer these questions.
         \else
         \includegraphics[bb = 92 86 545 742, height=6in]{flowPhoto}
         \fi
-        \caption{Schematic diagram of the photometric Data Mining
+        \caption{A schematic diagram of the photometric Data Mining
           process. The lists of confirmed Be stars consisted of
           Hipparcos IDs, this was correlated with Hipparcos catalog to
           obtain right ascension and declination of the objects and
           subsequently cross-matched with 2MASS catalog to get
-          photometric data. The second set of B stars were acquired in
+          photometric data. The second set of B stars was acquired in
           similar manner but using SQL the condition was set to get B
-          type stars different from the list of Be stars.}
+          type stars different from the list of Be stars}
         \label{FigFlowSpectra}
       \end{center}
     \end{figure}
@@ -113,24 +126,63 @@ obtaining new candidates could help answer these questions.
 
 
 
-Classification based on photometric properties is very attractive from
-several points of view. There are much more available photometric then
-spectral data and they are easier accessible. Because they are easier
-to gain the disproportion between photometric and spectral data will
-probably increase in the future as well. The distinction between Be
-and other types of stars also should be theoretically possible since
-the Be stars exhibits infrared excess correlated to the H$\alpha$
-emission \citep{van1995halpha}.
+    The classification based on photometric properties is very
+    attractive from several points of view. There are much more
+    available photometric then spectral data and they are more
+    accessible. Because they are easier to acquire the disproportion
+    between photometric and spectral data will probably increase in
+    the future as well. The distinction between Be and other types of
+    stars also should be theoretically possible since the Be stars
+    exhibit infrared excess correlated to the H$\alpha$ emission
+    \citep{van1995halpha}.
+
+Color indices were computed from 2MASS catalog which uses JHK
+photometric system. The filters JHK are an important extension of the
+Johnson system to near-infrared wavelengths.
+
+\begin{table}[ht]
+  \centering
+  \small
+     \begin{tabular}[ht]{l c}
+     \toprule
+     Filter & Effective wavelength [$\mu\textrm{m}$] \\
+     \midrule
+     J & $1.235 \pm 0.006$ \\
+     H & $1.662 \pm 0.009$ \\
+     $K_s$ & $2.159 \pm 0.011$ \\
+     \bottomrule
+   \end{tabular}
+   \caption{JHK photometric system \citep{cohen2003spectral}}
+  \label{tab:JHKFilter}
+\end{table}
+
+
 
 \subsection{Data preprocessing}
 
-I was provided with a list of confirmed Be stars from Academy of
-Science Ondřejov. This list consist of 625 manually chosen
-objects. Data were correlated with Hipparcos
-\citep{perryman1997hipparcos} catalog to obtain RA, DEC and then with
-2MASS \citep{skrutskie2006two} catalog to obtain J,H,K Colors using
-method of multi-cone search in Virtual Observatory. The second set was
-acquired from Hipparcos catalog using following SQL query:
+The process is depicted in figure \ref{FigFlowSpectra}. The list of
+confirmed Be stars is from Astronomical Institute of the Academy of
+Science in Ond\v{r}ejov. The list contains Hipparcos IDs
+\citep{perryman1997hipparcos} of objects carefully checked in
+scientific papers. Correlation with Hipparcos was done using
+cross-matching function in STILTS application. The second part of the
+training set (stars different then Be) were obtained using SQL query
+against Hipparcos catalog. B stars were used as they are the most
+similar. J,H,K colors were obtained from 2MASS
+\citep{skrutskie2006two} using method of multi-cone search protocol of
+Virtual Observatory.
+
+
+%   I was provided with a
+% list of confirmed Be stars (Hipparcos IDs) from Astronomical Institute
+% of the Academy of Science in Ond\v{r}ejov. The list contained 625
+% manually chosen objects (their Hipparcos IDs). These IDs were used to
+% query Hipparcos catalog \citep{perryman1997hipparcos} to obtain their
+% ICRS RA, DEC. Having these coordinates 2MASS \citep{skrutskie2006two}
+% catalog was used to obtain J,H,K colors using method of multi-cone
+% search in Virtual Observatory. The complementary part of training
+% non-Be stars set was acquired from Hipparcos catalog using following
+% SQL query:
 
 \begin{lstlisting}
   Select * 
@@ -140,8 +192,8 @@ acquired from Hipparcos catalog using following SQL query:
 \end{lstlisting}
 
 The result was cross-correlated with 2MASS catalog to obtain the same
-colors as for the confirmed Be stars. Color digram of this two sets
-are on the figure \ref{Figjhk_be_b}
+colors as for the confirmed Be stars. Color digram of this two sets is
+in the figure \ref{Figjhk_be_b}
 
     \begin{figure}[!htbp]
       \begin{center}
@@ -151,24 +203,26 @@ are on the figure \ref{Figjhk_be_b}
         \else
         \includegraphics[bb = 92 86 545 742, height=6in]{jhk_be_b}
         \fi
-        \caption{Color diagram of confirmed Be stars Vs B stars}
+        \caption{Color diagram of confirmed Be stars and B stars}
         \label{Figjhk_be_b}
       \end{center}
     \end{figure}
 
     The uncertainties were computed for each object using propagation
-    of error. These errors and depicted on the figure
-    \ref{Figjhk_be_b_errors}. Although the uncertainties are
+    of errors. Equation \ref{eq:error} shows example for $m_j - m_h$.
+    The color digram with these error bars is depicted in the
+    figure \ref{Figjhk_be_b_errors}. Although the uncertainties are
     significant certain trends are presented.
 
-\begin{align*}
+\begin{align}
+\label{eq:error}
   \delta_{(m_j - m_h)} &= \sqrt{\left(\frac{\partial(m_j - m_h) }{\partial
         m_j}\right)^2\delta_{m_j}^2 + \left(\frac{\partial(m_j - m_h) }{\partial
         m_h}\right)^2\delta_{m_h}^2} \\
   \frac{\partial(m_j - m_h) }{\partial m_j } &= 1,\frac{\partial(m_j - m_h)
   }{\partial m_h } = -1 \\
   \delta_{(m_j - m_h)} &= \sqrt{\delta_{m_j}^2 + \delta_{m_h}^2}
-\end{align*}
+\end{align}
 
 
     \begin{figure}[!htbp]
@@ -219,10 +273,13 @@ correctly. More details can be obtained from confusion matrix below.
 and 157 of Be stars were classified incorrectly. In virtue of these
 results one should be sceptical if the distinction based only on
 photometric properties is significant enough to find relevant new
-candidates of Be stars. For this reason more sophisticated (and much
-more complicated) approach using spectra analysis was tested.
+candidates of Be stars. On the other side, as mentioned in
+\ref{sec:be}, about 20 percent of B stars are estimated to be Be
+stars. For this and other reasons more sophisticated (and much more
+complicated) approach using spectra analysis was tested.
 
 \section{Spectral Data Mining}
+\label{sec:spectral}
 
    \begin{figure}[!htbp]
       \begin{center}
@@ -232,17 +289,17 @@ more complicated) approach using spectra analysis was tested.
         \else
         \includegraphics[bb = 92 86 545 742, height=6in]{flowSpectra}
         \fi
-        \caption{Schematic diagram of the spectral Data Mining
-          process. Using SSA protocol the spectra from Ondřejov server
-          was acquired based on the list from photometric study. %SSH
-          %Tunneling was necessary since Ondřejov spectra are top
+        \caption{A schematic diagram of the spectral data mining
+          process. Using SSA protocol the spectra from Ond\v{r}ejov server
+          were acquired based on the list from photometric study. %SSH
+          %Tunneling was necessary since Ond\v{r}ejov spectra are top
           %secret and therefore not available to the public.
-          Convolution with profile of SDSS slit had to be performed to
-          ensure compatibility with SDSS. Afterwards desired features
-          were extracted automatically from the spectra after the
-          continuum and H$\alpha$ line were fitted by appropriate
-          functions. The same was done for spectra from SDSS except
-          the convolution process.}
+          Convolution with SDSS instrumental profile had to be
+          performed to ensure compatibility with SDSS. Afterwards the
+          desired features were extracted automatically from the
+          spectra after the continuum normalization and H$\alpha$ line
+          was fitted by appropriate function. The same was done for
+          spectra from SDSS except the convolution process}
         \label{FigFlowSpectra}
       \end{center}
     \end{figure}
@@ -250,22 +307,23 @@ more complicated) approach using spectra analysis was tested.
  
 %\clearpage
 
-Spectra provide much wider scientific informations over photometric
-properties. Spectral lines exhibits many distinguish features and
-astronomers have long tradition of analysing their properties. On the
-other side its much complicated to handle them because of different
-characteristics (resolution, calibration, wavelength range, etc.). This
-is especially true for massive automated processing.  
+    Spectra provide much wider scientific information over photometric
+    properties. Spectral lines exhibit many distinguished features and
+    astronomers have long tradition in analysing their properties. On
+    the other hand it is much more complicated to handle them because of
+    different characteristics (resolution, calibration, wavelength
+    range, etc.). This is especially true for massive automated
+    processing.
 
 \subsection{Testing Data}
-As testing sample the project SEGUE of SDSS were selected. This
-contains 178315 spectra in DR7. Following SQL query was used to
-generate the list of URL links for individual FITS files. These files
-were then downloaded to local sever using wget command.
+As testing sample the spectra from project SEGUE of SDSS were
+selected. This contains 178315 spectra in DR7. Following SQL query was
+used to generate the list of URL links for individual FITS
+files. These files were then downloaded to local sever using
+\textrm{wget} command.
 
 \begin{lstlisting}
 SELECT  objid,dbo.fGetUrlFitsSpectrum(s.specObjID)                                                           
-INTO mydb.segue_1                                                                                     
 FROM SpecPhotoAll s, platex p                                                                         
 WHERE s.specObjID is not null                                                                         
 AND s.plateid = p.plateid                                                                             
@@ -274,15 +332,19 @@ AND specClass = 1
 \end{lstlisting}
 
 \subsection{Training Data}
-The spectra from Ondřejov Observatory were used as a training
-sample. Files were downloaded using SSA protocol. The SSA server is
-not publicly available, therefore SSH tunneling was used. Two scripts
+The spectra obtained with coud\`e spectrograph of Ond\v{r}ejov
+Observatory 2m telescope were used as a training sample. Files were
+downloaded using SSA protocol. The SSA server is not publicly
+accessible outside of the local network of Ond\v{r}ejov observatory.
+That is why the SSH tunneling of HTTP protocol was used. Two scripts
 for this process were created. First to construct the list of SSA
 compliant addresses, the second to analyse acquired response in
-VOTable format. Then the spectra were downloaded using wget
-command. The function for constructing the links based on list of the
-RA, DEC which were obtained from Hipparcos catalog using the
-specification of IDs from Ondřejov's index.
+VOTable format. Then the spectra were downloaded using \emph{wget}
+command.
+
+% The function for constructing the links
+%     based on list of the RA, DEC which were obtained from Hipparcos
+%     catalog using the specification of IDs from Ondřejov's index.
 
 \begin{lstlisting}
 def createQuery(data):
@@ -300,8 +362,8 @@ def createQuery(data):
     return ssa
 \end{lstlisting}
 
-The script generate the following output. The same process were used
-later for obtaining the sample of non Be stars.
+The script generates the following output. The same process was used
+later for obtaining the sample of non-Be stars.
 
 \begin{lstlisting}
 http://tvoserver/coude/..._ssa&REQUEST=queryData&POS=83.113,-65.582&SIZE=60
@@ -310,25 +372,26 @@ http://tvoserver/coude/..._ssa&REQUEST=queryData&POS=19.907,-73.502&SIZE=60
 \end{lstlisting}
 
 
-\subsubsection{Spectra Reduction}
-Because spectra from SDSS and Ondřejov Observatory had different
-resolution, reduction was needed. Wavelength for spectra from Ondřejov
-Observatory is computed using formula:
+\subsubsection{Degradation of Spectral Resolution}
+Because spectra from Ond\v{r}ejov Observatory have higher spectral
+resolution than SDSS, the degradation of spectral resolution was
+applied on them. Wavelength for spectra from Ond\v{r}ejov Observatory
+is computed using formula:
 
 \begin{equation}
   \label{eq:computeWave1}
   \lambda = \lambda_0 + x\Delta\lambda_{OND} 
 \end{equation}
 
-and for SDSS spectra by equation:
+\noindent and for SDSS spectra by equation:
 
 \begin{equation}
   \label{eq:computeWave2}
   \lambda = 10^{\lambda_0 + x\Delta\lambda_{SDSS}},
 \end{equation}
 
-where $\lambda_0$ is value of parameter $CRVAL1$ and $\Delta\lambda$
-of $CD1\_1$. Obtaining them from FITs file is easy using
+where $\lambda_0$ is value of parameter CRVAL1 and $\Delta\lambda$ of
+CD1\_1. Obtaining them from FITS file is easy using
 \textrm{PyFITS}\footnote{PyFITS is a product of the Space Telescope
   Science Institute, which is operated by AURA for NASA.}  module:
 
@@ -337,20 +400,21 @@ of $CD1\_1$. Obtaining them from FITs file is easy using
   In [2]: hdu = pf.open('sdss_test.fit')
   In [3]: hdu[0].header['CD1_1']
   Out[3]: 0.0001 # SDSS spectrum 
-  Out[3]: 0.2567 # Onřejov spectrum
+  Out[3]: 0.2567 # Ondrejov spectrum
 \end{lstlisting}
 
 
-From equations \ref{eq:computeWave1} and \ref{eq:computeWave2} the ration
-was computed:
+\noindent From equations \ref{eq:computeWave1} and
+\ref{eq:computeWave2} the ratio of spectral resolutions was computed:
 
 \begin{equation}
   \label{eq:ratio}
-  \frac{Delta\lambda_{SDSS}}{Delta\lambda_{OND}} \doteq  3.87
+  \frac{\Delta\lambda_{SDSS}}{\Delta\lambda_{OND}} \doteq  3.87
 \end{equation}
 
-Based on this computation 4 pixels of Ondřejov's spectra were reduced
-into one. There is the critical part of the reduction program:
+\noindent Based on this computation 4 pixels of Ond\v{r}ejov spectra
+were binned into one to conserve the number of pixels in extracted
+spectral range. This is the critical part of the binning program:
 
 \begin{lstlisting}
  def convolution(f, g):
@@ -372,13 +436,15 @@ into one. There is the critical part of the reduction program:
     return xx, yy
 \end{lstlisting}
 
-Prior to binning pixels convolution with function representing the slit
-in SDSS spectrograph was performed. As good approximation Gaussian
-function was used for representing the slit:
+Prior to binning pixels the convolution with function representing the
+instrumental profile of SDSS spectrograph was performed. As its first
+order approximation the Gaussian function with $\sigma = 4$ pixels was
+used:
+
 
 \begin{equation}
   \label{eq:gauss}
-  f(x) =  e^{- { \frac{(x-\mu)^2 }{ 2 \sigma^2} } }
+  f(x) =  \mathrm{e}^{-\lambda^2/2\sigma^2}
 \end{equation}
 
  Convolution is defined:
@@ -406,12 +472,12 @@ The figure \ref{FigReduction} shows the result.
         \else
         \includegraphics[bb = 92 86 545 742, height=6in]{convolution}
         \fi
-        \caption{Reduction of Ondřejov's spectra of the Be star 4
-          Hercules. The top figure shows Gaussian function used for
-          convolution with the spectrum, followed by the original
-          spectrum then there is a spectrum after convolution with the
-          Gaussian function. The last is the final spectrum after
-          reduction.}
+        \caption{Reduction of spectral resolution of Ond\v{r}ejov
+          spectra of the Be star 4 Her. The top figure shows Gaussian
+          function used for convolution with the spectrum, followed by
+          the original spectrum then there is a spectrum after
+          convolution with the Gaussian profile. The last is the final
+          spectrum after binning}
         \label{FigReduction}
       \end{center}
     \end{figure}
@@ -421,26 +487,32 @@ The figure \ref{FigReduction} shows the result.
 
 
 
-\subsection{Spectra Lines Characteristics}
-As parameters for Data Mining process characteristic values of
+\subsection{Spectral Lines Characteristics}
+As parameters for data mining process characteristic values of
 H$\alpha$ line were extracted from the spectra. Many possible
-characteristics from fitting functions through Wavelets Coefficients
-and Eigenvalues Values were discussed with experts. Three parameters
-were finally selected. The hight and the width of the H$\alpha$
-emission line and median absolute deviation as a characterization of
-the noise level in the spectrum.
+characteristics from different fitting functions through wavelet
+coefficients to eigenvalues were discussed with experts. Three
+parameters were finally selected. The height and the width of the
+H$\alpha$ emission line and median absolute deviation as a
+characterization of the noise level in the spectrum.
 
 
-\subsubsection{Normalization}
-Spectra from SDSS are normalized but the spectra from Ondřejov are
-not. The spectra were divided by it's continuum fit function. This
-process ensures the compatibility when comparing different
-spectra. Function polyfit from numpy package was used to perform the
-fit. The solution minimizes the squared error:
+\subsubsection{Continuum normalization}
+Spectra from SDSS are absolute flux calibrated, while the Ond\v{r}ejov
+spectra state intensity only in ADUs. To be able to compare the size
+and shapes of spectral line profiles the so called rectification of
+spectra was performed. The spectra were divided by the linear function
+roughly representing its (pseudo)continuum. This process ensures the
+compatibility when comparing different spectra. Function polyfit from
+numpy package was used to perform the fit. The solution minimizes the
+squared error. To ensure the compatibility for data mining process
+only the spectral range covered by Ond\v{r}ejov spectra
+($6300-6800\AA$) was considered in SDSS spectra.
+
 
 \begin{align}
   \frac{\partial}{\partial q_j} \sum_{i = 1}^n{[y_i -
-    \operatorname{f}(q_j|x_i) ]^2} = 0,\hspace{2cm} j = 0,1
+    \operatorname{f}(q_j, x_i) ]^2} = 0,\hspace{2cm} j = 0,1
 \end{align}
 
 where 
@@ -450,9 +522,9 @@ where
 \end{align}
 
 
-\subsubsection{The hight of the H$\alpha$ line}
+\subsubsection{The height of the H$\alpha$ line}
 The maximum value in the region of $50\,\textrm{\AA}$ around H$\alpha$
-were extracted from the spectrum.
+above the linear fit was extracted from the spectrum.
 
 \begin{lstlisting}
 def getMax(x,y,line,range):
@@ -486,18 +558,18 @@ The Gaussian function:
   f(x) =  1 + e^{- { \frac{(x-x_0)^2 }{ S^2} } }
 \end{align}
 
- was fitted to the profile of H$\alpha$ spectral line. First the
-robust estimators were computed and used as input parameters for
-leastsq\footnote{"leastsqi"s a wrapper around MINPACK’s lmdif and
-  lmder algorithms.} method from scipy.opt module, which minimize the
-sum of squares.
+was fitted to the profile of H$\alpha$ spectral line. First the robust
+estimators \citep{launer1979robustness} were computed and used as
+input parameters for leastsq\footnote{"leastsqi"s a wrapper around
+  MINPACK’s lmdif and lmder algorithms.} method from scipy.opt module,
+which minimize the sum of squares.
 
 \begin{align}
   x_0 & = \frac{\operatorname{median}(w_jx_j)}{\sum{w_i}}, \\
   S & = \frac{\operatorname{mad}(x_i - x_0)}{\sum{w_i}}.
 \end{align}
 
-\citep{launer1979robustness}
+
 
 Part of the script implementing fitting the Gaussian function
 
@@ -514,28 +586,29 @@ def residuals(coeffs, y, t):
     return y - model(t, coeffs)
 \end{lstlisting}
 
-The final result is on the figure \ref{FigSpecChar1} and
-\ref{FigSpecChar2}. The script was adjust to work with SDSS and
-Ondřejov's spectra. The whole procedure was performed on all of the
-cca 200 000 SDSS spectra and few dozens Ondřejov's spectra resulting
-with the ASCII files with the characteristic values used later in Data
-Mining process.
+Final results are in the figure \ref{FigSpecChar1} and
+\ref{FigSpecChar2}. The script was adjusted to work with SDSS and
+Ond\v{r}ejov spectra. The whole procedure was performed on all of the
+cca 200 thousand SDSS spectra and almost 200 Ond\v{r}ejov spectra
+resulting in the ASCII files with the characteristic values used later
+in data mining process. The training set contains 173 confirmed Be
+stars.
 
    \begin{figure}[!htbp]
       \begin{center}
         \leavevmode
         \ifpdf
-        \includegraphics[scale =.7]{figSpecCharCyg60}
+        \includegraphics[scale =.8]{figSpecCharCyg60}
         \else
         \includegraphics[bb = 92 86 545 742, height=6in]{figSpecCharCyg60}
         \fi
         \caption{Normalized spectrum of Be star 60 Cyg. The top figure
           depicts the continuum fit. The bottom figure shows the
           region (width of the green line) used for extraction. The
-          position of the line correspond to the maximum value in the
-          region of $50\,\textrm{\AA}$. The Gaussian fit is in red. Although the
-          fit is almost perfect, this approach fails to get
-          characteristic "double peak" of the emission line. }
+          position of the line corresponds to the maximum value in the
+          region of $50\,\textrm{\AA}$. The Gaussian fit is in
+          red. Although the fit is almost perfect, this approach fails
+          to get characteristic double peak of the emission line }
         \label{FigSpecChar1}
       \end{center}
     \end{figure}
@@ -544,16 +617,15 @@ Mining process.
       \begin{center}
         \leavevmode
         \ifpdf
-        \includegraphics[scale =.7]{figSpecCharhd216057}
+        \includegraphics[scale =.8]{figSpecChar17tau}
         \else
         \includegraphics[bb = 92 86 545 742, height=6in]{figSpecCharhd216057}
         \fi
-        \caption{Normalized spectrum of Be star HR 8682. The top
-          figure depicts the continuum fit. The bottom figure shows
-          the region (width of the green line) used for
-          extraction. The position of the line correspond to the
-          maximum value in the region of $50\,\textrm{\AA}$. The Gaussian fit is
-          in red.}
+        \caption{Normalized spectrum of Be star 17 Tau. The top figure
+          depicts the continuum fit. The bottom figure shows the
+          region (width of the green line) used for extraction. The
+          position of the line corresponds to the maximum value in the
+          region of $50\,\textrm{\AA}$. The Gaussian fit is in red}
         \label{FigSpecChar2}
       \end{center}
     \end{figure}
@@ -569,9 +641,9 @@ Mining process.
 
 
 \subsection{Data Mining}
-Classification was performed using Weka software with algorithm J48
-described in the chapter \ref{chap:dataMining}. Training set had 173
-and testing set 178314 items. The excerpt from these files follows.
+The classification was performed using Weka software with algorithm
+J48 described in the chapter \ref{chap:dataMining}. Training set had
+173 and testing set 178314 items. The excerpts of these files follows.
 
 \begin{lstlisting}
 @RELATION STAR-B-BE
@@ -640,22 +712,21 @@ Root relative squared error             75.8919 %
 Total Number of Instances              173     
 \end{lstlisting}
 
-The classification tree is relatively complicated. But still we can
-learn few things. It is using all of the parameters putted in so they
-are choose correctly (if they were irrelevant classifier would not
-used them). The most important parameter was \textrm{max} which
-determines the hight of the line above the continuum. This was
-expected as H$\alpha$ emission is dominated feature of Be stars. The
-second important parameter was the noise of the spectrum expressed in
-parameter \textrm{mad}. The less important (at least in this example)
-was the width of the line. It need to be emphasized that the parameter
-\textrm{max} does not really measure the hight, \textrm{mad} the noise
-or \textrm{width} the width of the line but there are some simplified
-(and certainly buggy) versions of real parameters. Though it can give
-us some physical insight of the studied phenomenas. Decision trees are
-therefore very powerful compared to black box approaches such are
-Neural Networks where the classification process is beyond human
-understanding.
+The classification tree shown below is relatively complicated. But
+still we can learn a few things. It is using all of the parameters put
+in so they are chosen correctly (if they were irrelevant, the
+classifier would not use them). The most important parameter was
+\textrm{max} which determines the height of the line above the
+continuum. This was expected as H$\alpha$ emission is dominating
+feature of Be stars. The second important parameter was the noise of
+the spectrum expressed in parameter \textrm{mad}. The less important
+(at least in this example) was the width of the line. It needs to be
+emphasized the above mentioned parameters are only simplified
+description of the real physical shape of the line profile, though
+they can give us some physical insight of the studied
+phenomena. Decision trees are therefore very powerful compared to
+black box approaches such as Neural Networks, where the classification
+process is beyond human understanding.
 
 \begin{lstlisting}
   J48 pruned tree
@@ -692,17 +763,19 @@ max > -0.18843
  13 50   | Others
 \end{lstlisting}
 
-The Confusion Matrix evince that the classifier is more successful in
-assigning Be stars (95/15) than in the case of others types stars
+The Confusion Matrix shows that the classifier is more successful in
+assigning Be stars (95/15) than in the case of other types of stars
 where 13/50 were associated with wrong class.
 
 
-
-Spectra of some of the objects classified as Be stars are presented
-here. These samples represent tiny fraction of complete result. The
-program for generating web pages with thumbnails were created and full
-result is available on the Wiki pages of this
-project. 
+Spectra of some of the SDSS objects classified as Be stars are
+presented in the figures
+\ref{FigResult1},\ref{FigResult2},\ref{FigResult3} and
+\ref{FigResult4}. The vertical dashed line corresponds to laboratory
+wavelenght of H$\alpha$. These samples represent tiny fraction of the
+complete result. The program for generating web pages with thumbnails
+was created and full results is available on the Wiki pages of this
+project.
 
 %\url{http://physics.muni.cz/~vazny/wiki/index.php/Diploma_work}.
 
@@ -719,7 +792,7 @@ project.
    4&SDSS J120908.18+194035.8& 182.3 & 19.7 & 17.87 &16.26& 15.52& 15.19\\ 
    \bottomrule
    \end{tabular}
-  \caption{Examples of the result}
+  \caption{Examples of SDSS Be candidates}
   \label{tab:Result}
 \end{table}
 
@@ -737,7 +810,7 @@ project.
    4& \url{http://cas.sdss.org/dr7/en/tools/explore/obj.asp?sid=814541407275450368}\\ 
    \bottomrule
    \end{tabular}
-  \caption{Links to objects on SDSS Skyserver}
+   \caption{Links to Be candidates on SDSS Skyserver}
   \label{tab:Links}
 \end{table}
 
@@ -778,7 +851,7 @@ project.
         \ifpdf
         \includegraphics[scale =.6]{result3}
         \else
-        \includegraphics[bb = 92 86 545 742, height=6in]{result1}
+        \includegraphics[bb = 92 86 545 742, height=6in]{result3}
         \fi
         \caption{Example 3: SDSS J120729.12+003659.8}
         \label{FigResult3}
@@ -789,24 +862,25 @@ project.
       \begin{center}
         \leavevmode
         \ifpdf
-        \includegraphics[scale =.6]{result3}
+        \includegraphics[scale =.6]{result4}
         \else
-        \includegraphics[bb = 92 86 545 742, height=6in]{result1}
+        \includegraphics[bb = 92 86 545 742, height=6in]{result4}
         \fi
         \caption{Example 4: SDSS J120908.18+194035.8 }
-        \label{FigResult3}
+        \label{FigResult4}
       \end{center}
     \end{figure}
 %\clearpage
 
 % Samples of Be Stars           
  
-    For comparison there are spectra of know Be stars. It is clear
-    that the profile of the H$\alpha$ line is complex and just one
-    parameter cannot possibly express it's characteristic. More
-    advanced description such as Wavelets coefficients or theoretical
-    models of the line is needed if we want to create reliable
-    process for identifying Be stars.
+    For comparison there are spectra of known Be stars given in
+    figures \ref{FigBe1},\ref{FigBe2},\ref{FigBe3} and
+    \ref{FigBe4}. It is clear that the profile of the H$\alpha$ line
+    is complex and just one parameter cannot possibly express it's
+    characteristics. More advanced description such as wavelet
+    coefficients or theoretical models of the line is needed if we
+    want to create reliable process for identifying Be stars.
 
    \begin{figure}[!htbp]
       \begin{center}
@@ -833,7 +907,7 @@ project.
           star, with an equatorial rotational velocity of at least 250
           kilometers per second. Its surface temperature has been
           spectroscopically estimated to be about 13.200 K }
-        \label{FigBe4}
+        \label{FigBe2}
       \end{center}
     \end{figure}
 
@@ -845,7 +919,7 @@ project.
         \else
         \includegraphics[bb = 92 86 545 742, height=6in]{be3_6_cep}
         \fi
-        \caption{Spectrum of 6 Cepheus. Be star}
+        \caption{Spectrum of 6 Cep. Be star}
         \label{FigBe3}
       \end{center}
     \end{figure}
@@ -858,8 +932,8 @@ project.
         \else
         \includegraphics[bb = 92 86 545 742, height=6in]{gama_cas}
         \fi     
-        \caption{Spectrum of Gamma Cassiopeiae. Be Star}
-        \label{FigBe3}
+        \caption{Spectrum of Gamma Cas. Be Star}
+        \label{FigBe4}
       \end{center}
     \end{figure}
 
@@ -869,19 +943,20 @@ project.
 
 \subsection{Experiment}
 
-One could be interested what would happened if we have choose
-different parameters, used other algorithm, different training set
-etc. These are perfectly valid questions and it is actually the purpose
-and essence of Data Mining and computers in general: perform similar
-task over and over again. With some automation in mind such
+One could be interested what would happen if we had chosen different
+parameters, used other algorithm, different training set etc. These
+are perfectly valid questions and it is actually the purpose and
+essence of data mining and computers in general: to perform similar
+tasks over and over again. With some automation in mind such
 experiments are easy to do. Here is one of the test I have performed.
 
-Natural idea one could have is using just emission line hight and
-write a program to check the spectra for condition \textrm{if emission
-  > threshold}. Then we do not need "expensive" Data Mining algorithms to
-get some interesting results\footnote{This was actually done in the early
-stage of this project.}. Lets try to use Classification using just
-emission line parameter. Here is consequent tree.
+Natural idea one could have is using just a height of emission line
+and write a program to check the spectra for condition \textrm{if
+  emission $>$ threshold}. Then we do not need "expensive" data mining
+algorithms to get some interesting results\footnote{This was actually
+  done in the early stage of this project.}. Lets try to use
+classification using just the height of the emission line (parameter
+alpha). Here is consequent tree:
 
 
 \begin{lstlisting}
@@ -893,10 +968,14 @@ alpha <= -0.464633
 alpha > -0.464633: be (92.0/16.0)
 \end{lstlisting}
 
-We can see that it is not that simple. In the training set there are
-some Be stars with extreme hight in the negative direction (absorption
-line). We have some statistics from classifier. In this example
-the effectiveness were $77.6$\%. Also there is Confusion Matrix 
+We can see that it is not so straightforward. In the training set
+there are some Be stars with extreme height in the negative direction
+(the spectrum obtained out of Be phase shows H$\alpha$ in
+absorption). We have some statistics from classifier. In this example
+the effectiveness was $77.6$\%. Also there is a confusion matrix,
+which indicates how the classifier will fail to perform in individual
+cases. Here it shows that it is almost exact when the object is Be
+star but it confuses other types of stars with Be stars.
 
 \begin{lstlisting}
   === Confusion Matrix ===
@@ -905,12 +984,10 @@ the effectiveness were $77.6$\%. Also there is Confusion Matrix
   35   40 |   Others
 \end{lstlisting}
 
-which indicates how the classifier will fail to perform in individual
-cases. Here it shows that it is almost exact when the object is Be
-star but it confuses others type of stars with Be stars.
 
-This experiment proves that using Data Mining has a sense even in
-simple cases and can provide non-trivial insight on tested data.
+This experiment proves that using data mining has a sense even in
+apparently simple cases and can provide non-trivial insight on data
+examined.
 
 
 % Confusion Matrix indicates that the classifier is much better in

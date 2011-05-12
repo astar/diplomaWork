@@ -237,6 +237,7 @@
 % \end{alwayssingle}}
 
 \renewcommand{\maketitle}{
+\cfoot{}
 \begin{alwayssingle}
 \pagestyle{empty}
 \begin{center}
@@ -284,6 +285,7 @@
   \vfill
   }
 { \end{alwayssingle}}
+
 
 
 \renewenvironment{quotation}

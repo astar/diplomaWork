@@ -34,7 +34,7 @@
 
 \section{ Data avalanche: Opportunity or disaster?}
 
-There are two important trends in current astronomy surveys:
+There are two important trends in current astronomical surveys:
 
 \begin{itemize}
 
@@ -45,17 +45,17 @@ There are two important trends in current astronomy surveys:
     operations of 60 PB for the raw data \citep{becla2006designing}.
    
   \item{Complexity:} Modern surveys will cover the sky in different
-    wave-bands, from gamma- and X-rays, optical, infrared to
-    radio. The ability to cross correlate these observations together
-    may lead to new understanding of physical
+    wave-bands, from gamma and X-rays, optical, infrared to radio. The
+    ability to cross correlate these observations together may lead to
+    new understanding of physical
     phenomenas. \citep{hanisch2010international}
 \end{itemize}
 
 
 
-Such an amount of data is not possible to transfer over the
+\noindent Such an amount of data is not possible to transfer over the
 network. Data resources are heterogeneous, distributed and
-decentralized in nature.
+decentralized in their nature.
 
 
 There is an interesting analogy with the problem (and the solution)
@@ -64,11 +64,12 @@ was too many documents in different formats. Tim Berners-Lee\footnote{
   Sir Timothy John "Tim" Berners-Lee. British engineer and computer
   scientist and MIT professor credited with inventing the World Wide
   Web.} designed set of protocols (URIs, HTTP and HTML) which allowed
-link and share documents \citep{berners1990worldwideweb}. This was
-recognized as generally useful and World Wide Web was born. An
-important role plays the World Wide Web Consortium (W3C) in developing
-Web standards\footnote{Prior to its creation, incompatible versions of
-  HTML were offered by different vendors, increasing the potential for
+to cross-link and share documents
+\citep{berners1990worldwideweb}. This was recognized as generally
+useful and World Wide Web was born. An important role in developing
+Web standards plays the World Wide Web Consortium
+(W3C)\,\footnote{Prior to its creation, incompatible versions of HTML
+  were offered by different vendors, increasing the potential for
   inconsistency between web pages.}.
     
     
@@ -89,17 +90,16 @@ Web standards\footnote{Prior to its creation, incompatible versions of
    \end{wrapfigure}
 
 
-   What is necessary is sets of standards and protocols to deal with
-   heterogeneous distributed data and authority which encourages their
-   implementation. Such an authority is the International Virtual
-   Observatory Alliance (IVOA). It comprises 19~VO programs from
-   Argentina, Armenia, Australia, Brazil, Canada, China, Europe,
-   France, Germany, Hungary, India, Italy, Japan, Russia, Spain, the
-   United Kingdom, and the United States and inter-governmental
-   organizations (ESA and ESO) \citep{hanisch2010international}.
-   
-    Standards and specifications produced by IVOA can be obtained at
-    \url{http://www.ivoa.net/}.
+   For handling of heterogeneous distributed data it is necessary to
+   have the set of common standards and protocols as well as an
+   authority encouraging their implementation. Such an authority is
+   the International Virtual Observatory Alliance (IVOA). It currently
+   comprises 19~VO programs from Argentina, Armenia, Australia,
+   Brazil, Canada, China, Europe, France, Germany, Hungary, India,
+   Italy, Japan, Russia, Spain, the United Kingdom, and the United
+   States and inter-governmental organizations (ESA and ESO)
+   \citep{hanisch2010international}. Standards and specifications
+   produced by IVOA can be obtained at \url{http://www.ivoa.net/}.
 
     %% \begin{figure}[!htbp]
     %%   \begin{center}
@@ -123,15 +123,15 @@ Web standards\footnote{Prior to its creation, incompatible versions of
 
  
 The Architecture is depicted on the figure \ref{FigArchitecture}. The
-level of abstraction goes from top to bottom. Starting with interfaces,
-used by people or applications to discover resources.  Next level is
-the service layer implemented by standard protocols, followed by the
-hardware level where actual data are stored. This onion like structure
-hides the complexity of the lower layer and provide data and meta-data
-to the higher layer. This concept is similar to TCP/IP
-\footnote{TCP/IP (Transmission Control Protocol/Internet Protocol).
-  The basic communication language or protocol of the Internet.}
-protocol.
+level of abstraction goes from top to bottom. Starting with
+interfaces, used by people or applications to discover resources.  The
+next level is the service layer implemented by standard protocols,
+followed by the hardware level where actual data are stored. This
+onion-like structure hides the complexity of the lower layer and
+provide data and meta-data to the higher layer. This concept is
+similar to TCP/IP \footnote{TCP/IP (Transmission Control
+  Protocol/Internet Protocol).  The basic communication language or
+  protocol of the Internet.}  protocol.
 
     \begin{figure}[!htbp]
       \begin{center}
@@ -148,21 +148,33 @@ protocol.
 
 %\clearpage
 
-The VO architecture is serviced oriented. Each service is autonomous
-with well defined defined boundaries. Very important aspect of VO
-implementation is the adoption of formats and protocols used in
-astronomy (FITS) and Computer Science (XML\,\footnote{Extensible
-  Markup Language (XML) is a set of rules for encoding documents in
-  machine-readable form.} , Web service\,\footnote{method of
-  communication between two electronic devices over a network.} SOAP\,\footnote{Simple Object Access Protocol, is a protocol specification
-  for exchanging structured information in the implementation of Web
-  Services in computer networks.}) for many years. In other words VO
-does not try to reinvent the wheel but it stands on the shoulders of
-giants.
+    The VO architecture is serviced oriented. Each service is
+    autonomous with well defined boundaries. The very important aspect
+    of VO implementation is the adoption of formats and protocols used
+    in astronomy (FITS) and Computer Science
+    (XML\,\footnote{Extensible Markup Language (XML) is a set of rules
+      for encoding documents in machine-readable form.} , Web
+    Service\,\footnote{method of communication between two electronic
+      devices over a network.}  SOAP\,\footnote{Simple Object Access
+      Protocol, is a protocol specification for exchanging structured
+      information in the implementation of Web Services in computer
+      networks.},REST\footnote{Representational State Transfer (REST)
+      is a style of software architecture for distributed hyper-media
+      systems such as the World Wide Web. Used in
+      \url{www.youtube.com} }) for many years. In other words VO does
+    not try to reinvent the wheel but it stands on the shoulders of
+    giants.
 
+\section{VO Registry}
+\noindent 
+The VO Registry will allow an astronomer to be able to locate, get
+details of, and make use of, any resource located anywhere in the ivo
+://space, i.e. in whole Virtual Observatory. The IVOA will define the
+protocols and standards whereby different registry services are able
+to inter-operate and thereby realize this goal.
 
-\section{VOResources}
-
+\section{VO Resources}
+\noindent
 A resource is a general term referring to a VO element that can be
 described in terms of who curates or maintains it and which can be
 given a name and a unique identifier. Just about anything can be a
@@ -170,18 +182,18 @@ resource: it can be an abstract idea, such as sky coverage or an
 instrumental setup, or it can be fairly concrete, like an organization
 or a data collection. \citep{bensonivoa}
 
-UML\footnote{Unified Modeling Language. Standardized general-purpose
-  modeling language in the field of object-oriented software
-  engineering.}  diagram of the resource is on the figure
-\ref{FigResource}. Next paragraph is an attempt to explain this
-diagram to non-programmers. Full arrow means generalization, Resource
+The UML\,\footnote{Unified Modeling Language. Standardized
+  general-purpose modeling language in the field of object-oriented
+  software engineering.}  diagram of the resource is on the figure
+\ref{FigResource}. The next paragraph is an attempt to explain this
+diagram to non-programmers. Full arrow means generalization. Resource
 can be a generalization of organization, data collection, application
-or service. Single arrow means association. Organization can be linked
-(associated) together with other organization (multiplicity is
-represented by number 1, 0..). The same is true for data
+or service. Single arrow means association. An organization can be
+linked (associated) together with other organization (multiplicity is
+represented by number 0,1,\ldots). The same is true for data
 collection. Organization is a generalization of and/or provider which
-can own zero to N services. Diamond means the aggregation. Publisher
-can have any resources.
+can own zero to N services. The diamond means the aggregation. The
+publisher can have any resources.
   
     \begin{figure}[!htbp]
       \begin{center}
@@ -211,9 +223,9 @@ regurl=http://registry.euro-vo.org/services/RegistrySearch
 ofmt=votable-tabledata > resourceExample.vot
 \end{lstlisting}
 
-Rows 1--4 define XML nd VOTable schema with adequate locations
+Rows 1--4 define XML and VOTable schema with adequate locations
 (xmlns\footnote{XML namespaces. Provide uniquely named elements and
-  attributes in an XML document.}) followed by informations about the
+  attributes in an XML document.}) followed by information about the
 actual resource. The listing is abbreviated.
 
   \input{resourceExample.vot}
@@ -256,29 +268,34 @@ actual resource. The listing is abbreviated.
 
 \section{Data Access Protocols}
 
-Protocols are very important part of Virtual Observatory. Their
-understanding is key to comprehend the concepts behind VO. They allow
-to discover resource and obtain desirable data. All of them are based
-on existing web standards and are designed to be simple and therefor
-easy to implement on existing astronomical archives. The main idea is
-simple and universal: HTTP GET request with parameter is sent to the
-resource and structured document (VOTable) is sent back.
+Protocols are a very important part of Virtual Observatory. Their
+understanding is a key to comprehend the concepts behind VO. They
+allow to discover a resource and obtain desirable data. All of them
+are based on existing web standards and are designed to be simple and
+implement in existing astronomical archives. The main idea is simple
+and universal: HTTP GET request with parameters is sent to the
+resource and structured document (VOTable) is sent back. There are
+many Data Access Protocols like TAP (Table Access Protocol) or SLAP
+(Single Line Access Protocol). The most evolved and important for the
+practical part of this work are described below.
 
-\subsection{Cone Search Protocol} \label{sec:csp}
-Cone Search was the first standard protocol of Virtual Observatory. It
-enables to retrieve records from an astronomical catalog. The input is
-the query which describes sky position and the radius on the sky. The
-output is a list of objects whose positions lie in the defined
-vicinity. The output is formatted as a VOTable. Service compliant with
-Cone Search Protocol is called Cone Search Service. Only the request
-and response is specified not the implementation or data storage.
+\subsection{Cone Search Protocol} \label{sec:csp} 
+
+The cone Search was the first standard protocol of Virtual
+Observatory. It enables to retrieve records from an astronomical
+catalog. The input is the query which describes sky position and the
+searched radius on the sky. The output is a list of objects whose
+positions lie in the defined vicinity. The output is formatted as a
+VOTable. Service compliant with The Cone Search Protocol is called
+Cone Search Service. Only the request and response is specified not
+the implementation or data storage.
 
 
 The requirements are:
 
 
 \begin{enumerate}
-\item Respond to a HTTP GET request represented by a URL 
+\item A respond to a HTTP GET request represented by a URL 
 
 \begin{lstlisting}
   http://<server-address>/<path>?[<extra-GET-arg>&[...]]
@@ -291,11 +308,11 @@ arguments. For example:
   http://simbad.u-strasbg.fr/simbad-conesearch.pl?RA=24.5&DEC=-57.2&SR=0.1
 \end{lstlisting}
 
-Where RA is right-ascension, DEC declination and SR the radius of the
-cone in the ICRS coordinate system in decimal degrees. These
-parameters are required others are optional.
+Where RA is right-ascension, DEC declination and SR the searched
+radius of the cone in the ICRS coordinate system in decimal
+degrees. These parameters are required, others are optional.
 
-\item Return an XML document in the VOTable format.  
+\item A return an XML document in the VOTable format.
 
   There are several requirements on the contents of the table:
 
@@ -333,17 +350,15 @@ image service produces a list of images it can return in the VOTable
 format. The user then could issue getImage request to retrieve
 desirable images.
 
-There are following requirements for compliance. To be a SIA service
-To be a SIA service, it must support:
+There are following requirements for compliance. A SIA service must
+support:
 
 \begin{itemize}
 \item Image Query web method,
 \item Image Retrieval (getImage) web method.
 \end{itemize}
 
-\noindent Furthermore the image service should be registered to be
-able to locate optimal service. There are several types of image
-services:
+\noindent Other optional services may be provided by servers: 
 
 \begin{itemize}
 \item Image Cutout Service.
@@ -362,9 +377,10 @@ services:
 \end{itemize}
 
 
-To get a list of images query has to send via HTTP GET method. The
-first part is base URL. The second part are parameters specifying image
-properties such as position (POS), size (SIZE), etc.
+To get a list of images query has to sent via HTTP GET method. The
+first part is base URL. The second part are parameters specifying
+image properties such as position (POS), size of searched radius
+(SIZE), etc.
 
 \begin{lstlisting}
   http://<server-address>/<path>?[<extra GET arg>&[...]]
@@ -378,10 +394,10 @@ one from SDSS, second from Hubble Space Telescope archive.
   http://hubblesite.org/cgi-bin/sia/hst_pr_sia.pl?POS=83.6,22.0&SIZE=1.0
 \end{lstlisting}
 
-There is more complex example using Astrogrid framework to show how to
-discover SIA service and obtain an image. First registry method
+There is more complex example using the Astrogrid framework to show
+how to discover SIA service and obtain an image. First registry method
 searchSiap is used to find SIA service for SDSS, this is then used in
-SiapSearch method to obtain result in VOTable format.  
+SiapSearch method to obtain result in VOTable format.
 
 \begin{lstlisting}
   In [1]: from astrogrid import Registry, ConeSearch
@@ -405,15 +421,15 @@ SiapSearch method to obtain result in VOTable format.
 \subsection{Simple Spectra Access Protocol}
 
 SSA Protocol allows to discover and obtain 1-D spectra from VO
-Service. It shares many similarities to the previously discussed SIA
+Service. It shares many similarities with the previously discussed SIA
 Protocol. It defines a uniform interface to remotely discover and
 access simple 1-D spectra.
 
-\noindent The process to obtain a spectrum compose of following steps:
+\noindent The process to obtain a spectrum consists of following steps:
 
 \begin{itemize}
 \item Query the resource registry.
-\item Data discovery to selected service to get available resources in
+\item Data discovery of selected services to get available spectra in
   VOTable format.
 \item Download selected spectra using URL.
 \end{itemize}
@@ -421,18 +437,19 @@ access simple 1-D spectra.
 \noindent The spectra could be one of the following types:
 
 \begin{itemize}
-\item Pre-computed
-\item Computed on the fly
+\item Observed spectra.
+\item Theoretical spectra.
 \end{itemize}
 
 \noindent To be a SSA-compliant, the service must provide:
 
 \begin{enumerate}
-\item HTTP GET interface, returning the query response encoded as a
-VOTable document, with at least parameters POS, SIZE, TIME, BAND, and FORMAT.
+\item HTTP GET interface, understanding at least parameters POS, SIZE,
+  TIME (time and date of exposure), BAND (spectral range covered) and
+  returning the query response encoded as a VOTable document.
 \item GetData method returning data in at least one of the
   SSA-compliant data formats (VOTable, FITS)
-\item FORMAT=METADATA� metadata query feature
+\item FORMAT=METADATA metadata query feature
 \end{enumerate}
 
 
@@ -454,40 +471,38 @@ browser or via programs such \emph{wget} or \emph{curl}.
 \end{lstlisting}
 
 \section{Data Formats}
-Astronomy has always been, by its nature, on vanguard of image
-producing and processing. This is especially true for the era of
-digitalization. The situation with data formats in astronomy is
-unique. There are just few very good standards with variety of
-implementation in many programming languages. Virtual Observatory
-takes advantage of this heritage and implement these formats in
-sensible way into its own standards. 
+Astronomy has always been in forefront of image producing and
+processing. This is especially true for the era of digitization. The
+situation with data formats in astronomy is unique. There are just few
+very good standards with variety of implementation in many programming
+languages. Virtual Observatory takes advantage of this heritage and
+implements these formats in a sensible way into its own standards.
  
 \subsection{VOTable}
 \label{sec:votable}
 \subsubsection*{Motivation}
-VOTable is flexible storage and exchange format fundamentally
+VOTable is an flexible storage and exchange format fundamentally
 interconnected with Virtual Observatory. It has features for big-data
-and Grid computing. Data can be stored in different ways in dependence
-on the character and size. Small tables can be stored in pure
-XML\,\footnote{Extensible Markup Language. W3C standard. Set of rules
-  for encoding documents in machine-readable form}, while large-scale
-data can be referenced with the URL\,\footnote{Uniform Resource
-  Locator. Uniform Resource Identifier (URI) that specifies where an
-  identified resource is available and the mechanism for retrieving
-  it.} syntax protocol://location.  It combines web standards (it is
-based on XML) and astronomy tradition in storing data (it is FITS
-compatible). Expiration and authentication are also supported.
+and Grid computing. Data can be stored in the different ways in
+dependence of their nature and size. Small tables can be stored in
+pure XML\,\footnote{Extensible Markup Language. W3C standard. Set of
+  rules for encoding documents in machine-readable form}, while
+large-scale data can be referenced with the URL\,\footnote{Uniform
+  Resource Locator. Uniform Resource Identifier (URI) that specifies
+  where an identified resource is available and the mechanism for
+  retrieving it.} syntax protocol://location.  It combines web
+standards (it is based on XML) and astronomy tradition in storing data
+(it is FITS compatible). The expiration and the authentication are
+also supported.
 
 \subsubsection*{Structure}
 Following example of VOTable was created from SDSS FITS file used in
 this work. First there is an information about XML and VOTable
 versions and references to corresponding XML Schema \footnote{Define
-  the legal building blocks of an XML document. Note: XML schema can
-  be described by XML Schema, Document Type Definition (DTD) or RELAX
-  NG }. \textrm{TABLE} tag encapsulating tabular data. \textrm{FIELD}
-tag describe identification (ID), type and precision of
-columns. \textrm{DATA} tag contains data (here) in TABLEDATA format
-(other types are FITS and BINARY)
+  the legal building blocks of an XML document.}. \textrm{TABLE} tag
+encapsulates tabular data. \textrm{FIELD} tag describes identification
+(ID), type and precision of columns. \textrm{DATA} tag contains data
+(here) in TABLEDATA format (other types are FITS and BINARY).
  
 \begin{lstlisting}
 <?xml version="1.0" encoding="utf-8"?>
@@ -518,9 +533,9 @@ columns. \textrm{DATA} tag contains data (here) in TABLEDATA format
 \subsubsection*{Examples}
 All examples were created using ATpy\,\footnote{High-level Python
   package providing a way to manipulate tables of astronomical data in
-  a uniform way.}
+  a uniform way.}. Following example shows transformation of FITS into
+VOTable.
 
-Following example shows transformation FITS into VOTable. 
 \begin{lstlisting}
   In [1]: import atpy
   In [2]: tbl = atpy.Table('spSpec-53401-2052-458.fit',hdu=1)
@@ -535,7 +550,7 @@ Following example shows transformation FITS into VOTable.
 "An archival format must be utterly portable and self-describing, on
 the assumption that, apart from the transcription device, neither the
 software nor the hardware that wrote the data will be available when
-the data are read." \citep{nrc1995}}
+the data are read."} \citep{nrc1995}
 
 
 \bigskip
@@ -550,10 +565,11 @@ in astronomy.
 
 \subsubsection*{Structure}
 
-One file can contains several HDUs (Header Data Units).The first part
-of each HDU is the header, composed of ASCII card images containing
-\textrm{keyword=value} statements that describe the size, format, and
-structure of the data that follow.
+A FITS file can contain several HDUs (Header and Data Units). The
+first part of each HDU is the header, composed of ASCII card images
+containing \textrm{keyword=value} statements that describe the size,
+format and structure. A FITS file shall be composed of the following
+FITS structures, in the order listed:
 
 \begin{itemize}
 \item Primary header and data unit (HDU).
@@ -563,8 +579,8 @@ structure of the data that follow.
 
 
 Standards and documents related to FITS are maintained by IAU-FWG
-\footnote{International Astronomical Union FITS} and available at
-\url{http://fits.gsfc.nasa.gov}.
+\footnote{International Astronomical Union FITS Working Group.} and
+available at \url{http://fits.gsfc.nasa.gov}.
 
 \subsubsection*{Examples}
 
@@ -591,7 +607,7 @@ No.    Name         Type      Cards   Dimensions   Format
 3                BinTableHDU     18  1R x 5C       [1E, 1E, ...
 \end{lstlisting}
 
-Printing primary HDU.
+\noindent Printing primary HDU.
 
 \begin{lstlisting}
 In [4]: print hdulist[0].header
@@ -614,20 +630,25 @@ Updating FITS file.
   In [3]: prihdr.add_history('I updated this file 3/27/11')
 \end{lstlisting}
 
-\section{Tools \& Libraries}
+\section{VO Tools \& Libraries}
 There are many programs and libraries allowing user to interact with
-VO services. Such application is called VO Enabled. Thanks to openness
-and standardization anyone can develop his own application or enable
-existing\footnote{For example Astroweka or Mirage.} application to
-interact with VO Services . Libraries are also available for many
-programming languages enabling advanced users to interact with VO from
-scripts and programs. Such diversity is healthy and probably the only
-possible way to ensure natural evolution of Virtual Observatory. 
+VO services. Such application is called to be VO-enabled. Thanks to
+the openness and the standardization anyone can develop his own
+application or enable existing\footnote{For example Astroweka or
+  Mirage.} application to interact with VO Services. Libraries are
+also available for many programming languages enabling advanced users
+to interact with VO from scripts and programs. A such diversity is
+healthy and probably the only possible way to ensure natural evolution
+of Virtual Observatory.
 % This chapter describes some of the libraries and applications ued during
 % this work. Low level tools and libraries are stressed as opposite to
 % standard introductory texts of Virtual Observatory where the focus is
 % on "user friendly" GUI applications.
 
+Every VO-enabled application can communicate with each other by
+sending messages and data (e.g. in VOTable format) by protocols
+PLASTIC and SAMP. It enables to create complex analysis systems by
+chaining individual components.
 
 % \subsection{Command line tools}
 % \subsubsection*{Astro Runtime}

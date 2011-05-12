@@ -6,26 +6,27 @@ solvable problem. The technology of Virtual Observatory offers solid
 background for data discovery and retrieval. The whole process can be
 automated using UN*X like approach of small and single purpose scripts
 or programs. The last stage of choosing the right characteristics and
-Data Mining method is even more complex task requiring deep
-understanding of the researched phenomenas and Machine Learning theory
-and technology. The possible solution can be based on cooperation
-between experts in scientific and computer science field. Without such
-collaboration we are missing lots of opportunities.
+data mining method is even more complex task requiring deep
+understanding of the investigated phenomena and machine learning
+theory and technology. The possible solution can be based on
+cooperation between experts in scientific and computer science
+field. Without such collaboration we are missing lots of
+opportunities.
 
 It is evident that dealing with spectroscopic data is much more
 complicated but also more fruitful. One could extract many
-characteristic features which fit to the actual problem. The FITs
+characteristic features which fit to the actual problem. The FITS
 standard is real godsend and makes work with spectra from different
-sources possible. The results obtained from the Data Miming process
+sources possible. The results obtained from the data mining process
 are reasonable. During the work it was also "discovered" how humans
-are good at visual judgment: when thumbnails of result spectra were
-created it provided much better understanding if something went wrong
-then statistics and numbers. This is one example how machines and
-humans could work together when we utilize ours and theirs natural
+are good at visual judgment: when thumbnails of resulting spectra were
+created they provided much better understanding if something went
+wrong then statistics and numbers. This is one example how machines
+and humans could work together when we utilize ours and theirs natural
 abilities.
 
-There are many aspect which could be done better, some of the
-considered but not implemented subjects are discussed here.
+There are many issues which could be done better, some of the
+considered but not implemented subjects are discussed here:
 
 \begin{itemize}
 \item Spectral Characteristics 
@@ -34,9 +35,10 @@ considered but not implemented subjects are discussed here.
   which can be similar in different types of objects. We have
   discussed \footnote{Petr Skoda initiated rich and interesting email
     conversation with leading experts regarding this topic.} many
-  advanced possibilities such are wavelets eigen values etc. This
-  could be subject of further investigation.
-\item Continuum fit
+  advanced possibilities such as wavelets, eigenvalues etc. This could
+  be subject of further investigation.
+
+\item Continuum fit.
 
   The simple linear function is too rough to capture true continuum
   features. There is an interesting and effective algorithm discussed
@@ -44,30 +46,40 @@ considered but not implemented subjects are discussed here.
   S. Bukvi{\'c} et. al. from University of Belgrade
   \citep{bukvic2008advanced} which seems ideal for this purpose.
 
-\item More Data Mining algorithms
+\item More data mining algorithms
 
 Originally more advanced approaches such are Support Vector Machines
 were considered.
-\item Larger training sample
+
+\item Larger training sample.
 
   To obtain large enough meaningful training sample of confirmed Be
-  stars was a real problem and  many surveys were consider
-  (e.g. IPHAS)  but without success.
+  stars was a real problem and many surveys were considered
+  (e.g. IPHAS) but without success.
 
-\item Usage of Light curves 
+\item Using the time information.
 
-  The whole process static but the "Be phenomena" is dynamic in
-  nature. Using light curves could significantly improve the
-  efficiency.
-\item Unknown errors 
+  The whole process presented is static but the "Be phenomena" is
+  dynamic in nature. Using light curves or time series of spectra
+  could significantly improve the efficiency.
+\item Unknown errors. 
 
-  There are things we do not know we don't know. The overall process
-  were very complicated and involved hundreds lines of codes. Any
-  overlooked mistake could effect the results. The absence of evidence
+  There are things we do not know we do not know. The overall process
+  was very complicated and involved hundreds lines of code. Any
+  mistake overlooked could affect the results. The absence of evidence
   is not evidence of absence.
 \end{itemize}
 
+Nevertheless even with these simple parameters some interesting results
+were achieved: 
 
-
+\begin{itemize}
+\item Semi-automatic process from retrieving data through convolution
+  up to data mining classification was implemented.
+ 
+\item From the 178314 analyzed spectra 1110 were classified as Be
+  candidates (but there are many imperfect spectra in SDSS). A sample
+  of 46 objects is given in the Appendix 1.
+\end{itemize}
 
 

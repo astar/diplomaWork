@@ -14,19 +14,19 @@
 \end{figure}
 
 \label{chap:dataMining}
-Virtual Observatory may be seen as data infrastructure. It enables
+\noindent Virtual Observatory may be seen as data infrastructure. It enables
 astronomers to get data more easily in a uniform way. But there is
 another and even bigger problem now. How to deal with huge amount of
 data? Can we change the problem to opportunity? Can we discover new
 phenomena, new types of objects or exploit natural groups in the data?
 Data Mining and related techniques are created exactly for such
 purposes. Used correctly, it can be powerful approach, promising
-scientific advance. On the other side this field is very complex with
-dozens of different methods and algorithms. This forms needs and
+scientific advance. On the other hand this field is very complex with
+dozens of different methods and algorithms. This form needs and
 opportunity for interdisciplinary cooperation with Data Mining
-experts. This can be very beneficially for both fields, providing
+experts. This can be very beneficial for both fields, providing
 astronomers with interesting methods for data analysis and computer
-scientist with large ammout of quality data.
+scientist with the large ammout of quality data.
 
 \section{Supervised Methods}
 These methods are also known as predictive\citep{ball2010data}. They
@@ -37,9 +37,9 @@ known. Among supervised method are classification, regression, anomaly
 detection and others.
 
 \subsection{Decision Tree (DT)}
-Is an example of supervised classification. Based on final number of
+DT Is an example of supervised classification. Based on final number of
 data $(x^{(1)},\ldots,x^{(p)})$ with known class $C_1,\ldots, C_m$
-classifier is created, i.e. image $f$ classifying any $x \in
+classifier is created, i.e. mapping $f$ classifying any $x \in
 \mathcal{X}, f:\mathcal{X}\rightarrow \mathcal{Y}$, where
 $\mathcal{X}$ is a set of possible input vectors and $\mathcal{Y}$ is
 a set which values represent classes $C_1,\ldots, C_m$ (for example
@@ -51,39 +51,40 @@ those classifications. The main advantages of DT are:
 \begin{itemize}
 \item Simple to understand and interpret.
 \item Able to handle both numerical and categorical data.
-\item Uses a white box model.
+\item Internal details are easily seen (white box model).
 \item Perform well with large data in a short time.
 \end{itemize}
 
 \noindent In pseudo-code, the general algorithm for building decision
-trees is \citep{kotsiantis2007supervised}:
+trees is demonstrated below \citep{kotsiantis2007supervised}:
 \begin{enumerate}
 \item Check for base cases
 \item For each attribute A
-  \begin{itemize}
-  \item Find the normalized information gain from splitting on A
-  \end{itemize}
+
+
+  \hspace{1cm} Find the normalized information gain from splitting on A
+  % \begin{itemize}
+  % \item Find the normalized information gain from splitting on A
+  % \end{itemize}
 \item Let "A best" be the attribute with the highest normalized information gain
 \item Create a decision node that splits on "{A best}"
 \item Recur on the sublists obtained by splitting on "{A best}",
   and add those nodes as children of node
 \end{enumerate}
 
-Furthermore algorithms C4.5 is described for several reasons: Its code
-is available and free implementations exist (J48 in Weka), is de-facto
-standard in classification using DT, is used in practical part of this
-work. The key question of DT algorithm is how to choose attribute for
-splitting the tree. C4.5 Uses measures based on information entropy:
+In practical part of this work algorithms C4.5 was used for several
+reasons: Its code is available and free implementations exist (J48 in
+Weka) and it is de-facto standard. The key question of DT algorithm is
+how to choose attribute for splitting the tree. C4.5 uses measure
+based on information entropy:
 
 \begin{equation}
   \label{eq:entropy}
   H = -\sum_{i=1}^T {p_t \log_2 p_t},
 \end{equation}
 where $p(x_i)$ is probability of occurrence of class $t$ and $T$ is
-the number of classes \citep{berka2003dobyvani}.
-
-After the tree is created it is optimized by pruning, which prevents
-over-fitting.
+the number of classes \citep{berka2003dobyvani}. After the tree is
+created it is optimized by pruning, which prevents over-fitting.
 
 %\subsubsection{Pruning}         
 \subsubsection{Cross-validation}
@@ -91,27 +92,25 @@ The quality of the training set is crucial to good results. The amount
 of data for testing is always limited. In general, one cannot be sure
 whether a sample is representative. If for example certain group is
 missing, one could not expect a classifier learned from such data to
-perform well on the examples s of that class. One of the technique used
+perform well on the examples of that class. One of the technique used
 here is cross-validation.
 
-The data is divided into fixed number of partitions (folds) and each
-in turn is used for testing and the reminder is used for
-training. Finally, the number of partitions error estimates are
-averaged to yield an overall error. The standard is to used 10-fold
+The data are divided into fixed number of partitions (folds) where
+each in turn is used for testing while the reminder is used for
+training. Finally, the error estimates of partitions are averaged to
+yield an overall error. The standard way is to use 10-fold
 cross-validation. This number is a result of tests on numerous data
 sets \citep{witten2005data}
 
-\subsubsection{Example: Classifying Galaxies Stars and QSO using color
-indices}
+\subsubsection{Example: Classifying Galaxies, Stars and QSO using Color
+Indices}
 
-
-
-  There is an example of classifying Galaxies Stars
-and QSO based on photometric properties using Decision Tree algorithm
-J48 (C4.5 in Weka). The data come from SDSS (Sloan Digital Sky Survey)
-DR7. 298 Objects were used (100 Stars, 99 Galaxies, 99 QSO). SDSS
-Filters u,g,r,i were used as parameters. Data were obtained using SQL
-query from SDSS CAS.
+There is an example of classifying galaxies stars and QSO based on
+photometric properties using Decision Tree algorithm J48 (C4.5 in
+Weka). The data come from SDSS (Sloan Digital Sky Survey)
+DR7. Altogether 298 objects were used (100 stars, 99 galaxies, 99
+QSOs). SDSS filters u,g,r,i were used as parameters. Data were
+obtained using SQL query from SDSS CAS.
 
 \begin{table}[ht]
   \centering
@@ -127,9 +126,10 @@ query from SDSS CAS.
      Infrared (z) & 9134 \\
      \bottomrule
    \end{tabular}
-  \caption{SDSS photometric system}
+  \caption{SDSS photometric system \citep{fukugita1996sloan} }
   \label{tab:SDSSFilter}
 \end{table}
+
 
 
 
@@ -156,22 +156,23 @@ classifier was able to distinguish 95\% of the processed objects.
 
 
 \begin{lstlisting}
-Correctly Classified Instances          96               95.0495 %
-Incorrectly Classified Instances         5                4.9505 %
-Kappa statistic                          0.9257
-Mean absolute error                      0.0669
-Root mean squared error                  0.1778
-Relative absolute error                 15.0587 %
-Root relative squared error             37.6973 %
-Total Number of Instances              101     
+Correctly Classified Instances         277               92.953  %
+Incorrectly Classified Instances        21                7.047  %
+Kappa statistic                          0.8943
+Mean absolute error                      0.0736
+Root mean squared error                  0.2096
+Relative absolute error                 16.5627 %
+Root relative squared error             44.4707 %
+Total Number of Instances              298
 \end{lstlisting}
 
 The big advantage of Decision Trees over black box algorithms (such as
 Neural Network) is that one could understand the classification
-process. The decision tree generated for this example is following:
+process. The decision tree generated by Weka for this example is
+following:
 
 \begin{lstlisting}
-  ug <= 0.663668
+ug <= 0.663668
 |   gr <= -0.191208: 1 (7.0)
 |   gr > -0.191208: 3 (104.0/5.0)
 ug > 0.663668
@@ -183,19 +184,19 @@ ug > 0.663668
 |   |   ri > 0.314657: 2 (90.0/2.0)
 \end{lstlisting}
 
-Useful tool for understanding how classifier was successful on
+The useful tool for understanding how classifier was successful on
 individual classes is the confusion matrix. Columns show how the
 object was classified and the row what is his actual class. In this
-example QSO were classified correctly in 100\% cases. Distinction
-between stars and galaxies are a bit worse and the algorithm classify
-2 galaxies incorrectly as stars and two stars were confused with
-galaxies. One stars was incorrectly classified as QSO.
+example QSO were classified correctly in 97 of 99 cases. Distinction
+between stars and galaxies are a bit worse and the algorithm
+classified 7 galaxies incorrectly as stars and 7 stars were confused
+with galaxies. Five stars were incorrectly classified as QSO.
  
 \begin{lstlisting}
   s  g  q   <-- classified as
- 30  2  1 |  s 
-  2 33  0 |  g 
-  0  0 33 |  q 
+ 88  7  5 |  s
+  7 92  0 |  g
+  2  0 97 |  q
 \end{lstlisting}
  
 \begin{figure}[!htbp]
@@ -206,7 +207,7 @@ galaxies. One stars was incorrectly classified as QSO.
         \else
         \includegraphics[bb = 92 86 545 742, height=6in]{starsGalaxiesQSO}
         \fi
-        \caption{Color Diagram of the problem.It shows that individual
+        \caption{Color Diagram of the problem. It shows that individual
           object classes occupies different regions in the diagram }
         \label{FigStarsGalaxiesQSO}
  %     \end{center}
@@ -236,7 +237,7 @@ galaxies. One stars was incorrectly classified as QSO.
 % \subsection{Support Vector Machine (SVM)} 
 
 % \section{Unsupervised Methods}
-\section{Data Mining tools}
+\section{Data Mining Tools}
 There are many open source projects related to Machine Learning and
 Data Mining. I would like to mention those which were used during
 experiments related to this work.
@@ -247,7 +248,7 @@ Weka is a collection of machine learning algorithms developed at
 University of Waikato, New Zealand. It includes functions for
 preprocessing, clustering, classification, regression, visualization,
 and feature selection. Originally designed as a tool for analyzing
-data from agricultural domains become extremely popular in data mining
+data from agricultural domains became extremely popular in data mining
 community because of its quality, openness, perfect documentation, and
 multi-platform implementation. Weka can be obtained at
 \url{http://www.cs.waikato.ac.nz/~ml/weka/}
@@ -255,7 +256,7 @@ multi-platform implementation. Weka can be obtained at
 
 
 \subsection{SVM lib}
-Is library implementing Support Vector Machine with following properties
+It is the library implementing Support Vector Machine with following properties
 \begin{itemize}
     \item Different SVM formulations
     \item Efficient multi-class classification
@@ -279,12 +280,12 @@ project is useful and well written practical guide to SVM
 classification.
 
 \subsection{DAME}
-
-Is great example of full understanding of the paradigm shift in
-astronomy. The project implements Neural Networks and Support Vector
-Machines algorithms and it is VO-compatible. The documentation includes
-scientific use cases, masters and PhD thesis and lectures. As it is
-typical in these projects it exceeds its original domain of
-astronomical data into general platform. The projects is available at
+The project DAME (Data Mining \& Exploration) is a great example of
+full understanding of the paradigm shift in astronomy. The project
+implements Neural Networks and Support Vector Machines algorithms and
+it is VO-compatible. The documentation includes scientific use cases,
+masters and PhD thesis and lectures. As it is typical in these
+projects it exceeds its original domain of astronomical data into
+general platform. The project is available at:
 \url{http://dame.dsf.unina.it/}
 

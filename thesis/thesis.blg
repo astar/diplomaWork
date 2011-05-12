@@ -11,50 +11,46 @@ A level-1 auxiliary file: chapter3.aux
 A level-1 auxiliary file: conclusion.aux
 A level-1 auxiliary file: appendix1.aux
 A level-1 auxiliary file: appendix2.aux
-The style file: plainnat.bst
+The style file: aa.bst
 Database file #1: references.bib
-Warning--empty journal in ballastroinformatics
-Warning--empty journal in nrc1995
-Warning--empty journal in fits1997
-You've used 22 entries,
-            2773 wiz_defined-function locations,
-            737 strings with 8560 characters,
-and the built_in function-call counts, 10613 in all, are:
-= -- 896
-> -- 779
+You've used 24 entries,
+            2995 wiz_defined-function locations,
+            799 strings with 8504 characters,
+and the built_in function-call counts, 11115 in all, are:
+= -- 931
+> -- 882
 < -- 12
-+ -- 265
-- -- 243
-* -- 879
-:= -- 1726
-add.period$ -- 76
-call.type$ -- 22
-change.case$ -- 140
-chr.to.int$ -- 22
-cite$ -- 47
-duplicate$ -- 437
-empty$ -- 762
-format.name$ -- 277
-if$ -- 2151
++ -- 294
+- -- 270
+* -- 883
+:= -- 2135
+add.period$ -- 24
+call.type$ -- 24
+change.case$ -- 182
+chr.to.int$ -- 24
+cite$ -- 24
+duplicate$ -- 425
+empty$ -- 629
+format.name$ -- 336
+if$ -- 2185
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 24
-newline$ -- 128
-num.names$ -- 88
-pop$ -- 278
+missing$ -- 23
+newline$ -- 76
+num.names$ -- 96
+pop$ -- 190
 preamble$ -- 1
-purify$ -- 121
+purify$ -- 182
 quote$ -- 0
-skip$ -- 357
+skip$ -- 369
 stack$ -- 0
-substring$ -- 249
-swap$ -- 19
+substring$ -- 390
+swap$ -- 0
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 227
-warning$ -- 3
-while$ -- 83
+type$ -- 207
+warning$ -- 0
+while$ -- 84
 width$ -- 0
-write$ -- 299
-(There were 3 warnings)
+write$ -- 235
