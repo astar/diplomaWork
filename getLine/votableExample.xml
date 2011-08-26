@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Produced with vo.table version 0.6
+     http://www.stsci.edu/trac/ssb/astrolib
+     Author: Michael Droettboom <support@stsci.edu> -->
+<VOTABLE version="1.0"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="http://www.ivoa.net/xml/VOTable/v1.0"
+ xmlns="http://www.ivoa.net/xml/VOTable/v1.0">
+ <RESOURCE type="results" >
+  <TABLE >
+   <FIELD ID="col0" name="wave" datatype="float" unit="" precision="F9"/>
+   <FIELD ID="col1" name="waveErr" datatype="float" unit="" precision="F9"/>
+   <FIELD ID="col2" name="waveMin" datatype="float" unit="" precision="F9"/>
+   <FIELD ID="col3" name="waveMax" datatype="float" unit="" precision="F9"/>
+   <FIELD ID="col4" name="sigma" datatype="float" unit="" precision="F9"/>
+   <FIELD ID="col5" name="sigmaErr" datatype="float" unit="" precision="F9"/>
+   <FIELD ID="col6" name="sigmaMin" datatype="float" unit="" precision="F9"/>
+   <FIELD ID="col7" name="sigmaMax" datatype="float" unit="" precision="F9"/>
+   <FIELD ID="col8" name="height" datatype="float" unit="" precision="F9"/>
+   <FIELD ID="col9" name="heightErr" datatype="float" unit="" precision="F9"/>
+   <FIELD ID="col10" name="continuum" datatype="float" unit="" precision="F9"/>
+   <FIELD ID="col11" name="ew" datatype="float" unit="" precision="F9"/>
+   <FIELD ID="col12" name="ewErr" datatype="float" unit="" precision="F9"/>
+   <FIELD ID="col13" name="ewMin" datatype="float" unit="" precision="F9"/>
+   <FIELD ID="col14" name="specIndex" datatype="float" unit="" precision="F9"/>
+   <FIELD ID="col15" name="nsigma" datatype="float" unit="" precision="F9"/>
+   <FIELD ID="col16" name="chisq" datatype="float" unit="" precision="F9"/>
+   <FIELD ID="col17" name="nu" datatype="int" unit=""/>
+   <FIELD ID="col18" name="restWave" datatype="float" unit="" precision="F9"/>
+   <FIELD ID="col19" name="weight" datatype="float" unit="" precision="F9"/>
+   <FIELD ID="col20" name="z" datatype="float" unit="" precision="F9"/>
+   <FIELD ID="col21" name="zErr" datatype="float" unit="" precision="F9"/>
+   <FIELD ID="col22" name="lineMask" datatype="char" unit=""/>
+   <DATA>
+    <TABLEDATA>
+     <TR>
+      <TD>4012.50757</TD>
+      <TD>1.16687012</TD>
+      <TD>3981.98853</TD>
+      <TD>4042.03442</TD>
+      <TD>15.3279495</TD>
+      <TD>1.43649721</TD>
+      <TD>0.5</TD>
+      <TD>-9999</TD>
+      <TD>11.7777243</TD>
+      <TD>0.690101624</TD>
+      <TD>46.9809914</TD>
+      <TD>9.63181877</TD>
+      <TD>1.21579635</TD>
+      <TD>2</TD>
+      <TD>-9999</TD>
+      <TD>1.42354858</TD>
+      <TD>260.267059</TD>
+      <TD>63</TD>
+      <TD>0</TD>
+      <TD>1.35631564e-19</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD> </TD>
+     </TR>
+     <TR>
+      <TD>4041.53882</TD>
+      <TD>5.20837402</TD>
+      <TD>4036.45386</TD>
+      <TD>4044.82739</TD>
+      <TD>2.30163622</TD>
+      <TD>0.25135088</TD>
+      <TD>0.5</TD>
+      <TD>-9999</TD>
+      <TD>12.4929476</TD>
+      <TD>1.56161785</TD>
+      <TD>49.7219658</TD>
+      <TD>1.4495672</TD>
+      <TD>0.165984288</TD>
+      <TD>2</TD>
+      <TD>-9999</TD>
+      <TD>1.55380082</TD>
+      <TD>260.267059</TD>
+      <TD>63</TD>
+      <TD>0</TD>
+      <TD>1.35631564e-19</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD> </TD>
+     </TR>
+     <TR>
+      <TD>4053.19775</TD>
+      <TD>0.364013672</TD>
+      <TD>4049.48682</TD>
+      <TD>4061.62671</TD>
+      <TD>2.40398932</TD>
+      <TD>0.37492013</TD>
+      <TD>0.5</TD>
+      <TD>-9999</TD>
+      <TD>14.8576908</TD>
+      <TD>1.82819176</TD>
+      <TD>50.7946167</TD>
+      <TD>1.76258957</TD>
+      <TD>0.198653623</TD>
+      <TD>2</TD>
+      <TD>-9999</TD>
+      <TD>1.3088547</TD>
+      <TD>24.882822</TD>
+      <TD>13</TD>
+      <TD>0</TD>
+      <TD>1.35631564e-19</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD> </TD>
+     </TR>
+     <TR>
+      <TD>4090.81519</TD>
+      <TD>0.488647461</TD>
+      <TD>4082.25366</TD>
+      <TD>4098.26465</TD>
+      <TD>5.52124929</TD>
+      <TD>0.646513939</TD>
+      <TD>0.5</TD>
+      <TD>-9999</TD>
+      <TD>16.7161331</TD>
+      <TD>1.37124443</TD>
+      <TD>54.1482506</TD>
+      <TD>4.2724185</TD>
+      <TD>0.571881056</TD>
+      <TD>2</TD>
+      <TD>-9999</TD>
+      <TD>1.26486397</TD>
+      <TD>20.3359795</TD>
+      <TD>16</TD>
+      <TD>0</TD>
+      <TD>1.35631564e-19</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD> </TD>
+     </TR>
+     <TR>
+      <TD>4139.79297</TD>
+      <TD>0.350585938</TD>
+      <TD>4136.18555</TD>
+      <TD>4142.85742</TD>
+      <TD>2.03020144</TD>
+      <TD>0.316515803</TD>
+      <TD>0.5</TD>
+      <TD>-9999</TD>
+      <TD>13.4075909</TD>
+      <TD>1.70213509</TD>
+      <TD>58.2770729</TD>
+      <TD>1.17078507</TD>
+      <TD>0.201054797</TD>
+      <TD>2</TD>
+      <TD>-9999</TD>
+      <TD>1.68430328</TD>
+      <TD>11.3471937</TD>
+      <TD>5</TD>
+      <TD>0</TD>
+      <TD>1.35631564e-19</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD> </TD>
+     </TR>
+     <TR>
+      <TD>4510.04346</TD>
+      <TD>1.30932617</TD>
+      <TD>4470.95215</TD>
+      <TD>4522.72314</TD>
+      <TD>5.96782303</TD>
+      <TD>1.25762677</TD>
+      <TD>0.5</TD>
+      <TD>-9999</TD>
+      <TD>10.3392401</TD>
+      <TD>1.33279228</TD>
+      <TD>82.0408554</TD>
+      <TD>1.88520861</TD>
+      <TD>0.247034177</TD>
+      <TD>2</TD>
+      <TD>-9999</TD>
+      <TD>1.16226935</TD>
+      <TD>134.795898</TD>
+      <TD>49</TD>
+      <TD>0</TD>
+      <TD>1.35631564e-19</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD> </TD>
+     </TR>
+     <TR>
+      <TD>6565.09912</TD>
+      <TD>0.124023438</TD>
+      <TD>6559.94189</TD>
+      <TD>6570.52393</TD>
+      <TD>1.86180699</TD>
+      <TD>0.145063162</TD>
+      <TD>0.5</TD>
+      <TD>-9999</TD>
+      <TD>36.0180206</TD>
+      <TD>2.5676918</TD>
+      <TD>115.950432</TD>
+      <TD>1.4496634</TD>
+      <TD>0.10560739</TD>
+      <TD>2</TD>
+      <TD>-9999</TD>
+      <TD>1.84546447</TD>
+      <TD>1.56712961</TD>
+      <TD>5</TD>
+      <TD>0</TD>
+      <TD>1.35631564e-19</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD> </TD>
+     </TR>
+     <TR>
+      <TD>4508.7251</TD>
+      <TD>0.711914062</TD>
+      <TD>4500.90674</TD>
+      <TD>4517.51904</TD>
+      <TD>5.15838623</TD>
+      <TD>0.885933399</TD>
+      <TD>1</TD>
+      <TD>10</TD>
+      <TD>11.1580381</TD>
+      <TD>1.26399708</TD>
+      <TD>81.9762192</TD>
+      <TD>1.75994396</TD>
+      <TD>0</TD>
+      <TD>2</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>12.9445629</TD>
+      <TD>14</TD>
+      <TD>2799.11694</TD>
+      <TD>2</TD>
+      <TD>0.610357404</TD>
+      <TD>-9999</TD>
+      <TD> </TD>
+     </TR>
+     <TR>
+      <TD>5996.3374</TD>
+      <TD>2.54296875</TD>
+      <TD>5993.76904</TD>
+      <TD>6015.8916</TD>
+      <TD>7.1540904</TD>
+      <TD>4.74910307</TD>
+      <TD>1</TD>
+      <TD>10</TD>
+      <TD>5.73437071</TD>
+      <TD>1.03039503</TD>
+      <TD>111.91098</TD>
+      <TD>0.918866754</TD>
+      <TD>0</TD>
+      <TD>2</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>7.80531931</TD>
+      <TD>14</TD>
+      <TD>3727.09204</TD>
+      <TD>0.5</TD>
+      <TD>0.607754469</TD>
+      <TD>-9999</TD>
+      <TD> </TD>
+     </TR>
+    </TABLEDATA>
+   </DATA>
+  </TABLE>
+ </RESOURCE>
+</VOTABLE>
